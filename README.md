@@ -10,16 +10,20 @@
 ### Build Info ###
 
 1. Clone the repo
-    git clone https://github.com/skratchdot/skratchdot.github.com.git
+
+        git clone https://github.com/skratchdot/skratchdot.github.com.git
 
 2. Checkout the "jekyll" branch
-    git checkout jekyll
+
+        git checkout jekyll
 
 3. Grab latest README.md files
-    sh ./_pages/get_pages.sh
+
+        sh ./_pages/get_pages.sh
 
 4. Build site by running:
-    jekyll
+
+        jekyll
 
 5. Copy the generated _site folder to server.
 
