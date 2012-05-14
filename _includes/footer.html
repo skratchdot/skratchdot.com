@@ -1,0 +1,49 @@
+	<div class="footerSpacer"><br /></div>
+	<footer class="oneColumn">
+		<div>
+			Copyright &copy; {{ site.time | date: "%Y" }} <a href="/">skratchdot</a>
+			<span class="hspace">&#x2022;</span>
+			Validate:&nbsp;&nbsp;
+			<a href="http://validator.w3.org/check/referer">HTML5</a>
+		</div>
+	</footer>
+	<div id="github_link"><a href="http://github.com/skratchdot" style="border:0"><img src="/images/forkme_right_red_aa0000.png" alt="Fork me on GitHub" width="149" height="149" /></a></div>
+	<div id="homepage_link"><a href="/" style="border:0"><img src="/favicon.ico" alt="skratchdot" width="16" height="16" /></a></div>
+	<!-- Javascript -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/skratchdot.js?{{ site.time | date: "%Y%m%d%H%M" }}"></script>
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-10768188-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	{% if get_comment_counts == true %}
+	<script type="text/javascript">
+		var disqus_shortname = 'skratchdot';
+		(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
+	</script>
+	{% endif %}
+	<!-- AddThis -->
+	{% if addthis_share_homepage == true %}
+	<script type="text/javascript">
+		var addthis_share = {
+			url : 'http://skratchdot.com/',
+			title : '[skratchdot.]'
+		};
+	</script>
+	{% endif %}
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f95a18f2f5627c9"></script>
+</body>
+</html>

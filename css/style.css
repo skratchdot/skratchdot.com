@@ -1,0 +1,196 @@
+/* ----------------------------- */
+/* PAGE LAYOUT                   */
+/* ----------------------------- */
+html, body { width: 100%; height: 100%; font-family: "Georgia", "Palatino Linotype", "Times New Roman", "Serif"; line-height: 1.5em; background: #f5f5f5 url(/images/body-bg.png); box-sizing: border-box; color: #373737; }
+img { border: 0 }
+div.hrBlack { background: #000; width: 100%; height: 2px; border: 0; margin: 0; overflow: hidden; }
+div.hrRed { background: #c00; width: 100%; height: 2px; border: 0; margin: 0; overflow: hidden; }
+.oneColumn { width: 750px; margin: auto; clear: both; position: relative; }
+.placeholder { color: #aaa }
+.underline { text-decoration: underline }
+::selection { background: #c00; color: #fff; }
+::-moz-selection { background: #c00; color: #fff; }
+p { margin: 10px 0 15px 0 }
+em { font-style: italic }
+strong { font-weight: bold }
+img { position: relative; max-width: 698px; border: 0; margin: 0 auto; padding: 0; }
+pre, code { color: #222; background-color: #f5f5f5; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; font-size: 14px; border-radius: 2px; }
+pre { width: 678px; overflow-x: auto; margin: 2em 0; padding: 10px; box-shadow: 0 0 10px rgba(0,0,0,.3); }
+code { padding: 3px; margin: 0 3px; box-shadow: 0 0 10px rgba(0,0,0,.1); }
+pre code { box-shadow: none }
+blockquote { color: #666; margin-bottom: 20px; padding: 0 0 0 20px; border-left: 3px solid #bbb; }
+ul, ol, dl { margin-bottom: 15px; padding-left: 20px; }
+ul li, ol li { padding-left: 20px }
+dl dt { font-weight: bold }
+dl dd { padding-left: 20px; font-style: italic; }
+dl p { padding-left: 20px; font-style: italic; }
+hr { height: 1px; margin-bottom: 5px; border-top: 1px dotted; }
+table { border: 1px solid #373737; margin-bottom: 20px; text-align: left; }
+th { font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 10px; background: #373737; color: #fff; }
+td { padding: 10px; border: 1px solid #373737; }
+form { background: #f2f2f2; padding: 20px; }
+
+
+/* ----------------------------- */
+/* HEADERS                       */
+/* ----------------------------- */
+h1, h2, h3, h4, h5, h6 { margin: 10px 0; padding-bottom: 10px; font-weight: 700; color: #222222; letter-spacing: -1px; line-height: 1em; }
+h1 { font-size: 36px; font-weight: 700; border-bottom: 1px solid; }
+h2 { font-size: 28px; border-bottom: 1px dotted; }
+h3 { font-size: 24px }
+h4 { font-size: 21px }
+h5 { font-size: 18px }
+h6 { font-size: 16px }
+
+
+/* ----------------------------- */
+/* LINKS                         */
+/* ----------------------------- */
+/* normal links: transparent border */
+a:link, a:visited, a:hover, a:active { color: #c00; border: 1px solid transparent; text-decoration: none; }
+/* ie6 hacks for normal links */
+*html a:link, *html a:visited, *html a:hover, *html a:active { border: 0 }
+*html a:hover { background: #f5f5f5; border: 1px solid #678; text-decoration: none; }
+/* normal hover: blue border */
+a:hover { background: #f5f5f5; border: 1px solid #678; text-decoration: none; }
+/* noBackground */
+.noBackground, a.noBackground, a.noBackground:link, a.noBackground:visited, a.noBackground:hover, a.noBackground:active { background-color: transparent }
+/* noBorder */
+.noBorder, a.noBorder, a.noBorder:link, a.noBorder:visited, a.noBorder:hover, a.noBorder:active, a#lbNextLink:hover, a#lbPrevLink:hover { border: 0 }
+/* addthis */
+.addthis_toolbox a, .addthis_toolbox a:link, .addthis_toolbox a:visited, .addthis_toolbox a:hover, .addthis_toolbox a:active { border: 0; background-color: transparent; }
+a.at_item { margin: 0 !important }
+#addthis_container_skratchdot { width: 750px; text-align: center; height: 22px; margin: 15px auto; }
+
+
+/* ----------------------------- */
+/* HEADER                        */
+/* ----------------------------- */
+header { text-align: center; border-top: #000 solid 10px; padding: 10px 0 0 0; }
+header h1 { font-size: 2em; text-transform: lowercase; border: 0; }
+/* link in normal state */
+header a:link, header a:visited, header a:hover, header a:active { color: #000; text-decoration: none; background: transparent; border: 0; }
+header a:link span, header a:visited span, header a:hover span, header a:active span { color: #c00 }
+/* link in hover state */
+header a:hover { color: #c00; text-shadow: 1px 1px 1px #000; }
+header a:hover span { color: #000 }
+
+
+/* ----------------------------- */
+/* MAIN NAVIGATION               */
+/* ----------------------------- */
+nav#mainNav { border-top: #999 double 5px; border-bottom: #999 double 5px; padding: 5px 0; text-align: center; text-transform: lowercase; }
+nav#mainNav ul { display: block; margin: 0; }
+nav#mainNav ul li { display: inline; padding: 0; }
+nav#mainNav ul li:before { content: "\0020 \2022 \0020" }
+nav#mainNav ul li:first-child:before { content: "" }
+/* links in normal state */
+nav#mainNav a, nav#mainNav a:link, nav#mainNav a:visited, nav#mainNav a:hover, nav#mainNav a:active { color: #000; text-decoration: none; background: transparent; border: 0; margin: 0 5px; }
+nav#mainNav a span { visibility: hidden }
+/* links in hover state */
+nav#mainNav a:hover { color: #c00; text-shadow: 1px 1px 1px #000; }
+nav#mainNav a:hover span { visibility: visible }
+
+
+/* ----------------------------- */
+/* ARTICLE INFO                  */
+/* ----------------------------- */
+article { background: #fff; padding: 25px 25px 15px 25px; clear: both; overflow: hidden; padding-bottom: 1em; margin-bottom: 2em; border: 1px solid #000; -moz-border-radius: .75em; -webkit-border-radius: .75em; border-radius: .75em; -moz-box-shadow: 0 0 .8em #000; -webkit-box-shadow: 0 0 .8em #000; box-shadow: 0 0 .8em #000; }
+article div.title { position: relative; margin-left: 50px; }
+article div.date { position: absolute; background: #211212; color: #fff; text-align: center; font-size: 12px; line-height: 16px; padding: 8px 0; width: 65px; top: 0; left: -75px; cursor: default; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+article h2.title { min-height: 30px; height: auto !important; height: 30px; border: 0; margin: 0; padding: 0; }
+article h2.title a { font-size: 22px; line-height: 30px; text-shadow: 1px 1px 1px #000; }
+article div.info { border-top: 1px dotted #000; margin-top: 5px; margin-bottom: 10px; clear: both; }
+article div.info div { font-size: 12px; line-height: 20px; }
+article div.info div.category { float: left }
+article div.info div.comments { float: right }
+article div.entry { line-height: 1.3em }
+article div.entry p { margin-bottom: 1em }
+article div.readFull, article div.editArticle, article div.tagList, article div.commentsTemplate { padding-top: 20px }
+article div.tagList { text-align: right }
+nav#articlesNav { background: #fff; padding: 25px 25px 15px 25px; clear: both; padding-bottom: 1em; margin-bottom: 2em; border: 1px solid #000; -moz-border-radius: .75em; -webkit-border-radius: .75em; border-radius: .75em; -moz-box-shadow: 0 0 .8em #000; -webkit-box-shadow: 0 0 .8em #000; box-shadow: 0 0 .8em #000; }
+nav#articlesNav div.newEntries { float: left; width: 340px; line-height: 20px; text-align: left; }
+nav#articlesNav div.oldEntries { float: right; width: 340px; line-height: 20px; text-align: right; }
+nav#articlesNav div.homeEntries { float: none; clear: both; line-height: 20px; text-align: center; }
+
+
+/* ----------------------------- */
+/* BROWSE/SEARCH                 */
+/* ----------------------------- */
+nav#archivesNav, nav#categoriesNav { width: 324px; border: 0; margin: 0; padding: 0; line-height: 1.3em; }
+nav#archivesNav { float: left }
+nav#categoriesNav { float: right }
+#searchform { margin: 25px 0; border: 0; padding: 0; }
+#searchform input#s { width: 250px; background: #f0f0f0; border: 1px solid #ccc; font-weight: bold; padding: 4px; color: #000; }
+#searchform input#s.placeholder { color: #aaa }
+#searchform input#go { background: #000; padding: 5px; color: #fff; border: 1px solid #c00; cursor: pointer; text-transform: uppercase; }
+#searchform div#searchFormError { background: #c00; color: #fff; padding: 5px 10px; margin: 5px 0; display: none; }
+h2.searchTitle { color: #c00; font-size: 18px; line-height: 30px; }
+h2.searchTitle span { color: #000; font-size: 14px; font-weight: bold; }
+
+
+/* ----------------------------- */
+/* ARCHIVE                       */
+/* ----------------------------- */
+h4.archiveTitle { border-top: 1px dashed #000; border-bottom: 1px dashed #000; padding: 15px; margin-bottom: 20px; }
+
+
+/* ----------------------------- */
+/* FOOTER                        */
+/* ----------------------------- */
+.footerSpacer { height: 10px; overflow: hidden; }
+footer { border-top: #999 double 5px; border-bottom: #999 double 5px; margin-top: 40px; padding: 10px 0 10px 0; text-align: center; text-transform: lowercase; }
+footer span.hspace { padding: 0 10px 0 10px }
+div#github_link { position: absolute; top: 2px; right: 0px; }
+div#homepage_link { position: fixed; bottom: 0; right: 0; }
+
+
+/* ----------------------------- */
+/* INFO PAGES                    */
+/* ----------------------------- */
+.info-nav { background: #eee; padding: 10px; margin-bottom: 10px; border: 1px solid #c00; -moz-border-radius: .75em; -webkit-border-radius: .75em; border-radius: .75em; -moz-box-shadow: 0 0 .8em #000; -webkit-box-shadow: 0 0 .8em #000; box-shadow: 0 0 .8em #000; }
+.info-nav ul li { display: inline; list-style-type: none; padding-left: 10px; }
+.info-link, a.info-link, a:link.info-link, a:visited.info-link, a:hover.info-link, a:active.info-link { text-decoration: none; color: #000; background: transparent; border: 0; }
+.info-section-title { border-bottom: 1px solid; padding-top: 5px; margin-bottom: 10px; }
+.info-section { margin-bottom: 10px }
+.info-section ul { padding-left: 20px }
+.info-section ul li { list-style-type: circle; list-style-position: outside; }
+.info-section-note { background: #efefef; padding: 10px; border: 1px solid #000; -moz-border-radius: .75em; -webkit-border-radius: .75em; border-radius: .75em; -moz-box-shadow: 0 0 .8em #000; -webkit-box-shadow: 0 0 .8em #000; box-shadow: 0 0 .8em #000; }
+
+
+/* ----------------------------- */
+/* POSTLIST                      */
+/* ----------------------------- */
+ul.postlist { list-style: none; padding: 0; }
+ul.postlist li { padding: 20px 8px; border-bottom: 1px dotted; background: #f5f5f5; }
+ul.postlist li:hover { background: #eee }
+ul.postlist li div.pl-date { float:left; background:#511212; border-radius:5px; color:white; width:100px; text-align:center; margin-right:10px; }
+ul.postlist li div.pl-title { float:left; }
+ul.postlist li div.pl-comments { float:right; font-size:12px; }
+ul.postlist li div.sublist { font-size:12px; }
+ul.postlist li div.sublist-title { float:left; width:180px; text-align:right; margin-right:10px; }
+
+/* ----------------------------- */
+/* FLOATING AND ALIGNMENT        */
+/* ----------------------------- */
+.right { float: right }
+.block { display: block }
+.left { float: left }
+.clear { clear: both }
+.center { text-align: center }
+
+
+/* ----------------------------- */
+/* PADDING                       */
+/* ----------------------------- */
+.padLeft5px { padding-left: 5px }
+.padRight5px { padding-right: 5px }
+
+
+/* ----------------------------- */
+/* CLEARFIX                      */
+/* ----------------------------- */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block }
+* html .clearfix { height: 1% }
+.clearfix { display: block }

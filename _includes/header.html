@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="publisher" content="skratchdot.com" />
+	<meta name="generator" content="Jekyll" />
+	{% if page.title %}
+	<title>{{ page.title }} &raquo; {{ site.title }}</title>
+	{% else %}
+	<title>{{ site.title }}</title>
+	{% endif %}
+	<link href="/favicon.ico" rel="shortcut icon" />
+	<link rel="alternate" type="application/atom+xml" title="Skratchdot (Atom 0.3)" href="/atom.xml" />
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" media="all" href="/css/html5reset-1.6.1.css?{{ site.time | date: "%Y%m%d%H%M" }}" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css?{{ site.time | date: "%Y%m%d%H%M" }}" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/pygments.css?{{ site.time | date: "%Y%m%d%H%M" }}" />
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="hrRed"></div>
+	<div class="hrBlack"></div>
+	<header class="oneColumn">
+		<h1><a href="/">&#91;skratchdot<span>.</span>&#93;</a></h1>
+	</header>
+	<nav id="mainNav" class="oneColumn">
+		<ul>
+			<li><a title="Home" href="/"><span>&#91;</span>Home<span>&#93;</span></a></li>
+			<!--<li><a title="Browse" href="/browse/"><span>&#91;</span>Browse<span>&#93;</span></a></li>-->
+			<li><a title="Projects" href="/projects/"><span>&#91;</span>Projects<span>&#93;</span></a></li>
+			<li><a title="Contact" href="/contact/"><span>&#91;</span>Contact<span>&#93;</span></a></li>
+			<li><a title="Subscribe" href="/atom.xml"><span>&#91;</span>Subscribe<span>&#93;</span></a></li>
+		</ul>
+	</nav>
+	<!-- AddThis -->
+	<div id="addthis_container_skratchdot">
+		<div class="addthis_toolbox addthis_default_style" style="display:inline-block">
+			<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+			<a class="addthis_button_tweet"></a>
+			<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+			<a class="addthis_counter addthis_pill_style"></a>
+		</div>
+	</div>

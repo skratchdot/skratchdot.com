@@ -1,0 +1,74 @@
+{% include header.html %}
+<section class="oneColumn">
+	<article>
+		<div class="title">
+			<div class="date">
+				<div>
+					<span>{{ page.date | date: "%b" }}</span>
+					<span>{{ page.date | date: "%d" }}</span>
+				</div>
+				<div>
+					<span>{{ page.date | date: "%Y" }}</span>
+				</div>
+			</div>
+			<h2 class="title"><a href="{{ page.url | slugize }}" rel="bookmark" title="Permanent Link to {{ page.title }}">{{ page.title }}</a></h2>
+			<div class="info">
+				<div class="category">
+				{% for category in page.categories %}
+					<a href="/category/{{ category | slugize }}" title="View all posts in {{ category }}">{{ category }}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
+				{% endfor %}
+					&nbsp;
+				</div>
+				<div class="comments"><?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></div>
+			</div>
+			<div class="clearfix">&nbsp;</div>
+		</div>
+		<div class="entry">{{ content }}</div>
+		{% for tag in page.tags %}
+			{% if forloop.first %}
+				<div class="tagList">
+					Tagged with:
+			{% endif %}
+					<a href="/tag/{{ tag | slugize }}" title="View all posts in {{ tag }}">{{ tag }}</a>{% if forloop.rindex0 > 0 %} &bull; {% endif %}
+			{% if forloop.last %}
+				</div>
+			{% endif %}
+		{% endfor %}
+		</div>
+		{% unless page.hide_comments %}
+		<div><br><div style="border-bottom:1px dotted"></div><br></div>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'skratchdot';
+			var disqus_identifier = '{{ page.url | slugize }}';
+			var disqus_url = '{{ site.url }}{{ page.url | slugize }}';
+			{% if site.devmode %}
+			var disqus_developer = 1;
+			{% endif %}
+			(function () {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+		{% endunless %}
+	</article>
+	<nav id="articlesNav">
+		<div>
+			<div class="newEntries">
+			{% if page.next.url %}
+				<a href="{{ page.next.url }}">&laquo; {{ page.next.title }}</a>
+			{% endif %}
+			</div>
+			<div class="oldEntries">
+			{% if page.previous.url %}
+				<a href="{{ page.previous.url }}">{{ page.previous.title }} &raquo;</a>
+			{% endif %}
+			</div>
+		</div>
+		<div class="homeEntries"><a href="/">HOME</a></div>
+	</nav>
+</section>
+{% include footer.html %}

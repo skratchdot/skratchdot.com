@@ -1,0 +1,6 @@
+---
+layout: default
+---
+{% assign post_list = site.categories[page.category] %}
+{% assign post_list_title = "Category &quot;{{ page.category }}&quot;:" %}
+{% include postlist.html %}
