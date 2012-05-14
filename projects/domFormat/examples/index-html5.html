@@ -1,0 +1,122 @@
+<!doctype html>
+<html xmlns:svg="http://www.w3.org/2000/svg">
+         <head>
+ <meta charset="utf-8">
+	     <title>domFormat - Simple Example (HTML5 as text/html)</title>
+<script type="text/javascript" src="../domFormat-1.0.min.js"></script>
+	                 <script type="text/javascript">
+	//<![CDATA[
+		var populateTextarea = function(node) {
+			var domString = domFormat.getString(node);
+			document.getElementById('showSource').value = domString;
+		};
+	//]]>
+	</script>
+  <style type="text/css">
+		html, body, textarea {
+			border: 0;
+			  padding: 0;
+	 margin: 0;
+			width:100%;
+			height:100%;
+		}
+		textarea {
+			width:580px;height:385px;
+			whitespace: nowrap;
+		}
+	</style>
+</head>
+        <body>
+	<!-- Intentionally using bad/weird markup for testing purposes -->
+	<div style="width:530px;margin:0 auto;">
+		<table border="0" cellpadding="0" cellspacing="10">
+			<tr>
+				<td align="right">[Content Type: text/html]:</td>
+				<td><a href="index-xhtml.html">xhtml</a></td>
+				<td><a href="index-html5.html">html5</a></td>
+			</tr>
+			<tr>
+				<td align="right">[Content Type: xhtml+xml]:</td>
+				<td><a href="index-xhtml.xhtml">xhtml</a></td>
+				<td><a href="index-html5.xhtml">html5 (will not display)</a></td>
+			</tr>
+			<tr>
+			<td colspan="3">
+					<input type="button" value="document" onclick="populateTextarea(document);" />
+					<input type="button" value="example1" onclick="populateTextarea(document.getElementById('example1'));" />
+	<input type="button" value="example2" onclick="populateTextarea(document.getElementById('example2'));" />
+		<input type="button" value="example3" onclick="populateTextarea(document.getElementById('example3'));" />
+									</td>
+			</tr>
+		</table>
+	</div>
+	<hr />
+	<div style="width:1200px;height:500px;margin:0 auto;">
+		<div style="width:580px;height:385px;border:1px solid #000;overflow:hidden;float:right;">
+			<textarea id="showSource" wrap="off"></textarea>
+		</div>
+		<div style="width:580px;height:385px;border:1px solid #000;overflow:auto;float:left;">
+	<h1>domFormat - Simple Example</h1>
+			<h2>HTML5 as text/html</h2>
+	<h4>Below is some bad/weird markup that tests the way domFormat handle various HTML snippets.</h4>
+			<div id="example1">
+				<div class="emptydiv nothing"></div>
+				<DIV>UPPER CASE DIV</DIV>
+				<div id="example1-div" class="test1 test2" data-test="wo&gt;&quot;wow">
+					some text before a div
+					<div>
+						<span>text1 text1 &amp; text1 text1</span>
+		<br />
+						<span>text2 text2 <span>text3</span> text4 text4 <u>text5</u></span>
+					</div>
+					some 
+		
+		text after that same div
+				</div>
+				<div><![CDATA[  wierd div 
+				
+		inside c-data start: <div>
+				
+			text at the end of c-data]]></div>
+				<span style="color:green" id="example2"><span style="color:red" />
+					If it's red, it's HTML. Green is XHTML.
+				</span>
+				<br />
+				<svg:svg version="1.1"
+					width="100px" height="100px"
+			viewBox="0 0 100 100">
+					<svg:circle cx="50" cy="50" r="30" style="fill:#aaa" id="circle"/>
+				</svg:svg>
+				<dIv style="color:black;">Weird div capitalization</dIv>
+	<svg id="svgelem" height="200" xmlns="http://www.w3.org/2000/svg">
+		<circle id="redcircle" cx="50" cy="50" r="50" fill="red" />
+	</svg>
+				<!-- Test "Quotes" in comments & stuff -->
+				<p><div style="color:#000;">end...</div></p>
+			</div>
+			<div id="example3" style="clear:both;">
+		     						<script type="text/javascript">
+		//<![CDATA[
+			function testOne() {
+	
+		alert('weird formatting');
+			};
+		//]]>
+		</script><style type='text/css'>.red {background:#f00;} .blue    {background:
+		
+		
+		#0000ff;}
+		
+		
+		</style><div class="red">done</div><div class="blue">done</div>
+<script type="text/javascript">
+		function testTwo() {                           alert('more weird formatting');};</script>
+	
+			
+			</div>		
+
+
+		</div>
+	</div>
+</body>
+</html>
