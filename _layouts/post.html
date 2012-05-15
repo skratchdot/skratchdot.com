@@ -23,7 +23,9 @@
 			</div>
 			<div class="clearfix">&nbsp;</div>
 		</div>
-		<div class="entry">{{ content }}</div>
+		<div class="entry">
+			{{ content }}
+		</div>
 		{% for tag in page.tags %}
 			{% if forloop.first %}
 				<div class="tagList">
@@ -34,7 +36,6 @@
 				</div>
 			{% endif %}
 		{% endfor %}
-		</div>
 		{% unless page.hide_comments %}
 		<div><br><div style="border-bottom:1px dotted"></div><br></div>
 		<div id="disqus_thread"></div>

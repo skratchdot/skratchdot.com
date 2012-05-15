@@ -1,7 +1,9 @@
 {% include header.html %}
 <section class="oneColumn">
 	<article>
-		<div class="entry">{{ content }}</div>
+		<div class="entry">
+			{{ content }}
+		</div>
 		{% unless page.hide_comments %}
 		<div><br><div style="border-bottom:1px dotted"></div><br></div>
 		<div id="disqus_thread"></div>
