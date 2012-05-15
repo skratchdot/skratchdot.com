@@ -162,8 +162,9 @@ div#homepage_link { position: fixed; bottom: 0; right: 0; }
 /* POSTLIST                      */
 /* ----------------------------- */
 ul.postlist { list-style: none; padding: 0; }
-ul.postlist li { padding: 20px 8px; border-bottom: 1px dotted; background: #f5f5f5; }
-ul.postlist li:hover { background: #eee }
+ul.postlist li { padding: 20px 8px; border-bottom: 1px dotted #000; background: #f5f5f5; }
+ul.postlist li:nth-child(even) { background: #eee; }
+ul.postlist li:hover { background: #ddd; box-shadow: 5px 5px 15px #666; }
 ul.postlist li div.pl-date { float:left; background:#511212; border-radius:5px; color:white; width:100px; text-align:center; margin-right:10px; }
 ul.postlist li div.pl-title { float:left; }
 ul.postlist li div.pl-comments { float:right; font-size:12px; }
