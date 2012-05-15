@@ -16,7 +16,7 @@
 				</div>
 				{% unless page.hide_comments %}
 				<div class="pl-comments">
-					<a href="{{ post.url | slugize }}#disqus_thread" data-disqus-identifier="{{ page.url | slugize }}"></a>
+					<a href="{{ post.url | slugize }}#disqus_thread" data-disqus-identifier="{{ post.url | slugize }}"></a>
 				</div>
 				{% endunless %}
 			</div>
