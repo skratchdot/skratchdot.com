@@ -8,7 +8,7 @@ paginate: 10
 exclude: ["README.md"]
 title: skratchdot.com
 url: http://skratchdot.com
-devmode: true
+devmode: false
 
 source:      .
 destination: ./_site
