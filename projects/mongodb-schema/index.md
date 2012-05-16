@@ -4,7 +4,7 @@ title: MongoDB - schema.js
 ---
 # MongoDB - schema.js #
 
-[Project Page](http://skratchdot.github.com/mongodb-schema/)  
+[Project Page](http://skratchdot.com/projects/mongodb-schema/)  
 [Source Code](https://github.com/skratchdot/mongodb-schema/)  
 [Issues](https://github.com/skratchdot/mongodb-schema/issues/)  
 
@@ -69,7 +69,7 @@ Download: [schema.js](https://github.com/skratchdot/mongodb-schema/raw/master/sc
 
 Add this script to your .mongorc.js file.  
 
-See: http://www.mongodb.org/display/DOCS/Overview+-+The+MongoDB+Interactive+Shell#Overview-TheMongoDBInteractiveShell-.mongorc.js
+See: [http://www.mongodb.org/display/DOCS/Overview+-+The+MongoDB+Interactive+Shell#Overview-TheMongoDBInteractiveShell-.mongorc.js](http://www.mongodb.org/display/DOCS/Overview+-+The+MongoDB+Interactive+Shell#Overview-TheMongoDBInteractiveShell-.mongorc.js)
 
 ### Option 2 ###
 
@@ -79,4 +79,4 @@ Start the shell after executing this script
 
 ## Inspired by: ##
 
-Variety: https://github.com/JamesCropcho/variety
+Variety: [https://github.com/JamesCropcho/variety](https://github.com/JamesCropcho/variety)

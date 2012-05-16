@@ -4,7 +4,7 @@ title: MongoDB - wild.js
 ---
 # MongoDB - wild.js #
 
-[Project Page](http://skratchdot.github.com/mongodb-wild/)  
+[Project Page](http://skratchdot.com/projects/mongodb-wild/)  
 [Source Code](https://github.com/skratchdot/mongodb-wild/)  
 [Issues](https://github.com/skratchdot/mongodb-wild/issues/)  
 
@@ -40,7 +40,7 @@ Download: [wild.js](https://github.com/skratchdot/mongodb-wild/raw/master/wild.j
 
 Add this script to your .mongorc.js file.  
 
-See: http://www.mongodb.org/display/DOCS/Overview+-+The+MongoDB+Interactive+Shell#Overview-TheMongoDBInteractiveShell-.mongorc.js
+See: [http://www.mongodb.org/display/DOCS/Overview+-+The+MongoDB+Interactive+Shell#Overview-TheMongoDBInteractiveShell-.mongorc.js](http://www.mongodb.org/display/DOCS/Overview+-+The+MongoDB+Interactive+Shell#Overview-TheMongoDBInteractiveShell-.mongorc.js)
 
 ### Option 2 ###
 
