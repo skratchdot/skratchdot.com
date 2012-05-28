@@ -64,13 +64,13 @@ to turn the demo on/off or change the speed of the animation.
 	<br />
 	<h3>Speed:</h3>
 	<label for="fast">Fast:</label>
-	<input type="radio" name="speed" value="fast" checked="checked" />
+	<input type="radio" name="speed" id="fast" value="fast" checked="checked" />
 	<br />
 	<label for="medium">Medium:</label>
-	<input type="radio" name="speed" value="medium" />
+	<input type="radio" name="speed" id="medium" value="medium" />
 	<br />
 	<label for="slow">Slow:</label>
-	<input type="radio" name="speed" value="slow" />
+	<input type="radio" name="speed" id="slow" value="slow" />
 	<div style="height:50px">&nbsp;</div>
 	<img id="zoopraxiscope" src="/images/zoopraxiscope.jpg" />
 </form>
@@ -121,13 +121,13 @@ to turn the demo on/off or change the speed of the animation.
 	<br />
 	<h3>Speed:</h3>
 	<label for="fast">Fast:</label>
-	<input type="radio" name="speed" value="fast" checked="checked" />
+	<input type="radio" name="speed" id="fast" value="fast" checked="checked" />
 	<br />
 	<label for="medium">Medium:</label>
-	<input type="radio" name="speed" value="medium" />
+	<input type="radio" name="speed" id="medium" value="medium" />
 	<br />
 	<label for="slow">Slow:</label>
-	<input type="radio" name="speed" value="slow" />
+	<input type="radio" name="speed" id="slow" value="slow" />
 	<div style="height:50px">&nbsp;</div>
 	<img id="zoopraxiscope" src="/images/zoopraxiscope.jpg" />
 </form>
