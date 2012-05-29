@@ -1,6 +1,8 @@
+_build/build.sh
 _drafts/
 _import/
 _site/
 .DS_Store
 *.swp
 .project
+build.sh

@@ -19,11 +19,21 @@
 
 3. Grab latest README.md files
 
-        sh ./_pages/get_pages.sh
+        sh ./_build/get_pages.sh
 
 4. Build site by running:
 
         jekyll
 
 5. Copy the generated _site folder to server.
+
+_Alternatively_:
+
+You can combine steps 3-5 by running:
+
+    sh ./_build/build.sh
+
+For **build.sh** to work, you will need **ncftp** to be installed:
+
+    brew home ncftp
 
