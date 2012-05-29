@@ -23,7 +23,7 @@ to turn the demo on/off or change the speed of the animation.
 
 ## Demo ##
 
-<style type="text/css" media="screen">
+<style type="text/css">
 	img#zoopraxiscope {
 		width:230px;
 		height:230px;		
@@ -77,7 +77,7 @@ to turn the demo on/off or change the speed of the animation.
 
 ## CSS: ##
 {% highlight css %}
-<style type="text/css" media="screen">
+<style type="text/css">
 	img#zoopraxiscope {
 		width:230px;
 		height:230px;		

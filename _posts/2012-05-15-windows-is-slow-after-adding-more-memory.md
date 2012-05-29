@@ -7,6 +7,7 @@ categories:
 tags: 
 - Windows
 - Ubuntu
+- Dual Boot
 - RAM
 - Memory
 - Upgrade
