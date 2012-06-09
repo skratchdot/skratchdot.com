@@ -10,29 +10,18 @@
 	<div id="github_link"><a href="http://github.com/skratchdot" style="border:0"><img src="/images/forkme_right_red_aa0000.png" alt="Fork me on GitHub" width="149" height="149" /></a></div>
 	<div id="homepage_link"><a href="/" style="border:0"><img src="/favicon.ico" alt="skratchdot" width="16" height="16" /></a></div>
 	<!-- Javascript -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/skratchdot.js?{{ site.time | date: "%Y%m%d%H%M" }}"></script>
 	<!-- Google Analytics -->
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-10768188-1']);
 		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+		$.getScript(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js');
 	</script>
 	{% if get_comment_counts == true %}
 	<script type="text/javascript">
 		var disqus_shortname = 'skratchdot';
-		(function () {
-			var s = document.createElement('script'); s.async = true;
-			s.type = 'text/javascript';
-			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-		}());
+		$.getScript('http://' + disqus_shortname + '.disqus.com/count.js');
 	</script>
 	{% endif %}
 	<!-- AddThis -->
@@ -42,8 +31,10 @@
 			url : 'http://skratchdot.com/',
 			title : '[skratchdot.]'
 		};
+		$.getScript('http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f95a18f2f5627c9&async=1', function () {
+			addthis.init();
+		});
 	</script>
 	{% endif %}
-	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f95a18f2f5627c9"></script>
 </body>
 </html>
