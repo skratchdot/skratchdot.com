@@ -16,7 +16,7 @@ strong { font-weight: bold }
 img { position: relative; max-width: 698px; border: 0; margin: 0 auto; padding: 0; }
 pre, code { color: #222; background-color: #f5f5f5; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; font-size: 14px; border-radius: 2px; }
 pre { width: 678px; overflow-x: auto; margin: 2em 0; padding: 10px; box-shadow: 0 0 10px rgba(0,0,0,.3); }
-code { padding: 3px; margin: 0 3px; box-shadow: 0 0 10px rgba(0,0,0,.1); }
+code { box-shadow: 0 0 10px rgba(0,0,0,.1); }
 pre code { box-shadow: none }
 blockquote { color: #666; margin-bottom: 20px; padding: 0 0 0 20px; border-left: 3px solid #bbb; }
 ul, ol, dl { margin-bottom: 15px; padding-left: 20px; }
