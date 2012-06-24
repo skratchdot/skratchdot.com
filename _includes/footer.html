@@ -25,16 +25,16 @@
 	</script>
 	{% endif %}
 	<!-- AddThis -->
-	{% if addthis_share_homepage == true %}
 	<script type="text/javascript">
+	{% if addthis_share_homepage == true %}
 		var addthis_share = {
 			url : 'http://skratchdot.com/',
 			title : '[skratchdot.]'
 		};
+	{% endif %}
 		$.getScript('http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f95a18f2f5627c9&async=1', function () {
 			addthis.init();
 		});
 	</script>
-	{% endif %}
 </body>
 </html>
