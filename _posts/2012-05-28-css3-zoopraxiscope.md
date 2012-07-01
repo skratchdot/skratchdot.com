@@ -72,7 +72,7 @@ to turn the demo on/off or change the speed of the animation.
 	<label for="slow">Slow:</label>
 	<input type="radio" name="speed" id="slow" value="slow" />
 	<div style="height:50px">&nbsp;</div>
-	<img id="zoopraxiscope" src="/images/zoopraxiscope.jpg" />
+	<img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
 </form>
 
 ## CSS: ##
@@ -129,7 +129,7 @@ to turn the demo on/off or change the speed of the animation.
 	<label for="slow">Slow:</label>
 	<input type="radio" name="speed" id="slow" value="slow" />
 	<div style="height:50px">&nbsp;</div>
-	<img id="zoopraxiscope" src="/images/zoopraxiscope.jpg" />
+	<img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
 </form>
 {% endhighlight %}
 

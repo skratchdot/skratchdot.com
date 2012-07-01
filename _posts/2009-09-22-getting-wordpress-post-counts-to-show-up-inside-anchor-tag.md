@@ -403,10 +403,10 @@ After completing the above steps, your post count will show up inside the anchor
 <div class="clearfix" style="width:600px;margin:0 auto;">
 	<div class="left">
 		<p><b>BEFORE (default archive widget):</b></p>
-		<img src="/images/posts/classic-screen.gif" alt="BEFORE (default archive widget)" title="Classic Theme Screenshot" width="212" height="102" />
+		<img src="/images/posts/2009/09/22/classic-screen.gif" alt="BEFORE (default archive widget)" title="Classic Theme Screenshot" width="212" height="102" />
 	</div>
 	<div class="right">
 		<p><b>AFTER (modified archive widget):</b></p>
-		<img src="/images/posts/classic-modified-screen.gif" alt="AFTER (modified archive widget)" title="Classic-Modified Theme Screenshot" width="212" height="102" />
+		<img src="/images/posts/2009/09/22/classic-modified-screen.gif" alt="AFTER (modified archive widget)" title="Classic-Modified Theme Screenshot" width="212" height="102" />
 	</div>
 </div>
