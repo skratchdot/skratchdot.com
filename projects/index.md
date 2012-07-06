@@ -35,20 +35,22 @@ hide_comments: true
 
 ### Github User Scripts ###
 
-- [GitHub Code Search](/projects/github-code-search.user.js/) - A user script that adds a search box 
+- [GitHub: Code Search](/projects/github-code-search.user.js/) - A user script that adds a search box 
   to repository pages which allows you to search the code in that repository.
 
-- [GitHub Fork Count](/projects/github-fork-count.user.js/) - A user script to display the fork count 
+- [GitHub: Fork Count](/projects/github-fork-count.user.js/) - A user script to display the fork count 
   underneath the "public" repo count on a user's main profile page.
 
-- [GitHub Repo Counts](/projects/github-repo-counts.user.js/) - A user script to display repo counts 
+- [GitHub: Repo Counts](/projects/github-repo-counts.user.js/) - A user script to display repo counts 
   when browsing repository pages.
 
-- [GitHub Repo-Filter Info](/projects/github-repo-filter-info.user.js/) - A user script to display some 
+- [GitHub: Repo-Filter Info](/projects/github-repo-filter-info.user.js/) - A user script to display some 
   additional info below the repository filter on a user's main profile page.
 
-- [Github Pull Request Links](/projects/github-pull-request-links.user.js/) - A user script to "linkify" 
+- [Github: Pull Request Links](/projects/github-pull-request-links.user.js/) - A user script to "linkify" 
   the to/from branches on Pull Request pages.
+
+- [Github: Twitter Link](/projects/github-twitter-link.user.js/) - Adds a twitter link on Github profile pages if a corresponding user name exists at Twitter.
 
 
 ### Miscelaneous Libraries ###

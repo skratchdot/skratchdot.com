@@ -32,6 +32,7 @@ get_page "./projects/github-fork-count.user.js" "index.md" "https://raw.github.c
 get_page "./projects/github-repo-counts.user.js" "index.md" "https://raw.github.com/skratchdot/github-repo-counts.user.js/master/README.md" "page" "Github - Repo Counts" false
 get_page "./projects/github-repo-filter-info.user.js" "index.md" "https://raw.github.com/skratchdot/github-repo-filter-info.user.js/master/README.md" "page" "Github - Repo Filter Info" false
 get_page "./projects/github-pull-request-links.user.js" "index.md" "https://raw.github.com/skratchdot/github-pull-request-links.user.js/master/README.md" "page" "Github - Pull Request Links" false
+get_page "./projects/github-twitter-link.user.js" "index.md" "https://raw.github.com/skratchdot/github-twitter-link.user.js/master/README.md" "page" "Github - Twitter Link" false
 
 get_page "./projects/domFormat" "index.md" "https://raw.github.com/skratchdot/domFormat/master/README.md" "page" "domFormat" false
 get_page "./projects/riff-wav-for-java" "index.md" "https://raw.github.com/skratchdot/riff-wav-for-java/master/README.md" "page" "RIFF Wav for Java" false
