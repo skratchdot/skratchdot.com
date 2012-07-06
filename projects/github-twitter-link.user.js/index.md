@@ -25,7 +25,7 @@ may add a "time limit" on when to check again.
     * IE: Install [Trixie](http://www.bhelpuri.net/Trixie/). Continue to STEP 2.
     * SAFARI: Install [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php). Install [GreaseKit](http://8-p.info/greasekit/). Continue to STEP 2.
     * OPERA: Follow instructions located on Opera's site: [User JS](http://www.opera.com/docs/userjs/). Continue to STEP 2.
-2. Install the "GitHub Repo-Filter Info" user script by clicking here: [github-twitter-link.user.js](https://github.com/skratchdot/github-twitter-link.user.js/raw/master/github-twitter-link.user.js).  
+2. Install the "GitHub Twitter Link" user script by clicking here: [github-twitter-link.user.js](https://github.com/skratchdot/github-twitter-link.user.js/raw/master/github-twitter-link.user.js).  
 
 ### Screenshots ###
 
