@@ -25,34 +25,34 @@ default browser behavior.
 ### Un-Minified Version: ###
 
 {% highlight js %}
-/*jslint browser: true, plusplus: true, indent: 4, maxerr: 50 */
-(function () {
-    'use strict';
+/*jslint browser: true, plusplus: true */
+(function (window) {
+	'use strict';
 
-    // Make sure window.console exists
-    window.console = window.console || {};
+	var i = 0,
+		emptyFunction = function () {},
+		functionNames = [
+			'assert', 'clear', 'count', 'debug', 'dir',
+			'dirxml', 'error', 'exception', 'group', 'groupCollapsed',
+			'groupEnd', 'info', 'log', 'profile', 'profileEnd', 'table',
+			'time', 'timeEnd', 'timeStamp', 'trace', 'warn'
+		];
 
-    // Make sure all functions exist
-    (function (emptyFunction) {
-        var i = 0, functionNames = [
-            'assert', 'clear', 'count', 'debug', 'dir',
-            'dirxml', 'error', 'exception', 'group', 'groupCollapsed',
-            'groupEnd', 'info', 'log', 'profile', 'profileEnd', 'table',
-            'time', 'timeEnd', 'timeStamp', 'trace', 'warn'
-        ];
+	// Make sure window.console exists
+	window.console = window.console || {};
 
-        for (i = 0; i < functionNames.length; i++) {
-            window.console[functionNames[i]] = window.console[functionNames[i]] || emptyFunction;
-        }
-    }(function () {}));
+	// Make sure all functions exist
+	for (i = 0; i < functionNames.length; i++) {
+		window.console[functionNames[i]] = window.console[functionNames[i]] || emptyFunction;
+	}
 
-}());
+}(window));
 {% endhighlight %}
 
 ### Minified Version: ###
 
 {% highlight js %}
 /* http://skratchdot.com/2012/05/prevent-console-calls-from-throwing-errors/ */
-(function(){window.console=window.console||{},function(a){var b=0,c=['assert','clear','count','debug','dir','dirxml','error','exception','group','groupCollapsed','groupEnd','info','log','profile','profileEnd','table','time','timeEnd','timeStamp','trace','warn'];for(b=0;b<c.length;b++)window.console[c[b]]=window.console[c[b]]||a}(function(){})})()
+(function(b){var a=0,c=function(){},d=["assert","clear","count","debug","dir","dirxml","error","exception","group","groupCollapsed","groupEnd","info","log","profile","profileEnd","table","time","timeEnd","timeStamp","trace","warn"];b.console=b.console||{};for(a=0;a<d.length;a++){b.console[d[a]]=b.console[d[a]]||c}}(window));
 {% endhighlight %}
 
