@@ -7,8 +7,9 @@ User Script : GitHub Fork Count
 
 ### Description ###
 
-This is a user script to display the fork count
-underneath the "public" repo count on a user's main GitHub page.
+This is a user script to display repo 
+counts (public, private, sources, forks, mirrors) where 
+the "public" repo counts used to be on a user's main Github page.
 
 
 ### Installation ###

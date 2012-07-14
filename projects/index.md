@@ -38,8 +38,8 @@ hide_comments: true
 - [GitHub: Code Search](/projects/github-code-search.user.js/) - A user script that adds a search box 
   to repository pages which allows you to search the code in that repository.
 
-- [GitHub: Fork Count](/projects/github-fork-count.user.js/) - A user script to display the fork count 
-  underneath the "public" repo count on a user's main profile page.
+- [GitHub: Fork Count](/projects/github-fork-count.user.js/) - A user script to display repo 
+  counts (public, private, sources, forks, mirrors) where the "public" repo counts used to be.
 
 - [GitHub: Repo Counts](/projects/github-repo-counts.user.js/) - A user script to display repo counts 
   when browsing repository pages.
@@ -50,13 +50,18 @@ hide_comments: true
 - [Github: Pull Request Links](/projects/github-pull-request-links.user.js/) - A user script to "linkify" 
   the to/from branches on Pull Request pages.
 
-- [Github: Twitter Link](/projects/github-twitter-link.user.js/) - Adds a twitter link on Github profile pages if a corresponding user name exists at Twitter.
+- [Github: Twitter Link](/projects/github-twitter-link.user.js/) - Adds a twitter link on Github profile
+  pages if a corresponding user name exists at Twitter.
 
 
-### Miscelaneous Libraries ###
+### Miscellaneous Libraries / Utilities ###
 
 - [domFormat](/projects/domFormat/) - A simple javascript library to get DOM nodes as formatted/pretty strings. 
 
-- [riff-wav-for-java](/projects/riff-wav-for-java/) - This EMF based project was created to allow the reading and writing of .wav files in Java. 
-  It attempts to read in well-known RIFF chunks, and provide an API for reading/manipulating those chunks. 
+- [framecapture](/projects/framecapture/) - Take a screenshot of a portion of your screen, and add
+  a border to it in one swoop.
+
+- [riff-wav-for-java](/projects/riff-wav-for-java/) - This EMF based project was created to allow the reading 
+  and writing of .wav files in Java. It attempts to read in well-known RIFF chunks, and provide an API for 
+  reading/manipulating those chunks. 
 
