@@ -22,6 +22,11 @@ hide_comments: true
 
 ### MongoDB Shell Extensions ###
 
+- [mesh: MongoDB Extended Shell](/projects/mesh/) - A javascript file that extends
+  the mongo shell.  It includes some useful libraries, as well as new functions
+  for dealing with Mongo collections and queries. All of the extensions listed below
+  are included in [mesh](/projects/mesh/).
+
 - [mongodb-distinct-types](/projects/mongodb-distinct-types/) - Similar to the 
   db.myCollection.distinct() function, distinctTypes() will return "types" rather than "values".
 

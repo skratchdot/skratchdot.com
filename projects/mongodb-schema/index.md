@@ -1,6 +1,6 @@
 ---
-layout: page
-title: MongoDB - schema.js
+layout: "page"
+title: "MongoDB - schema.js"
 ---
 # MongoDB - schema.js #
 

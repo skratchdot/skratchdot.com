@@ -1,6 +1,6 @@
 ---
-layout: page
-title: MongoDB - distinct-types.js
+layout: "page"
+title: "MongoDB - distinct-types.js"
 ---
 # MongoDB - distinct-types.js #
 

@@ -1,6 +1,6 @@
 ---
-layout: page
-title: MongoDB - flatten.js
+layout: "page"
+title: "MongoDB - flatten.js"
 ---
 # MongoDB - flatten.js #
 

@@ -1,6 +1,6 @@
 ---
-layout: page
-title: domFormat
+layout: "page"
+title: "domFormat"
 ---
 
  domFormat - v1.0 (Released July 25, 2011)

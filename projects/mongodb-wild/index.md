@@ -1,6 +1,6 @@
 ---
-layout: page
-title: MongoDB - wild.js
+layout: "page"
+title: "MongoDB - wild.js"
 ---
 # MongoDB - wild.js #
 

@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Open Electribe Editor
+layout: "page"
+title: "Open Electribe Editor"
 ---
 Open Electribe Editor
 =================================================

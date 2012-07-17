@@ -1,6 +1,6 @@
 ---
-layout: page
-title: RIFF Wav for Java
+layout: "page"
+title: "RIFF Wav for Java"
 ---
 RIFF WAV for Java
 ==================================
