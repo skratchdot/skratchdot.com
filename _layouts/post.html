@@ -11,11 +11,11 @@
 					<span>{{ page.date | date: "%Y" }}</span>
 				</div>
 			</div>
-			<h2 class="title"><a href="{{ page.url | slugize }}" rel="bookmark" title="Permanent Link to {{ page.title }}">{{ page.title }}</a></h2>
+			<h2 class="title"><a href="{{ page.url | slugize | replace:' ','%20' }}" rel="bookmark" title="Permanent Link to {{ page.title }}">{{ page.title }}</a></h2>
 			<div class="info">
 				<div class="category">
 				{% for category in page.categories %}
-					<a href="/category/{{ category | slugize }}" title="View all posts in {{ category }}">{{ category }}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
+					<a href="/category/{{ category | slugize | replace:' ','%20' }}" title="View all posts in {{ category }}">{{ category }}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
 				{% endfor %}
 					&nbsp;
 				</div>
@@ -36,7 +36,7 @@
 				<div class="tagList">
 					Tagged with:
 			{% endif %}
-					<a href="/tag/{{ tag | slugize }}" title="View all posts in {{ tag }}">{{ tag }}</a>{% if forloop.rindex0 > 0 %} &bull; {% endif %}
+					<a href="/tag/{{ tag | slugize | replace:' ','%20' }}" title="View all posts in {{ tag }}">{{ tag }}</a>{% if forloop.rindex0 > 0 %} &bull; {% endif %}
 			{% if forloop.last %}
 				</div>
 			{% endif %}

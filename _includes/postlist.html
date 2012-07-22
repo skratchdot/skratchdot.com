@@ -12,11 +12,11 @@
 					{{ post.date | date: "%Y-%m-%d" }}
 				</div>
 				<div class="pl-title">
-					<a href="{{ post.url | slugize }}">{{ post.title }}</a>
+					<a href="{{ post.url | slugize | replace:' ','%20' }}">{{ post.title }}</a>
 				</div>
 				{% unless page.hide_comments %}
 				<div class="pl-comments">
-					<a href="{{ post.url | slugize }}#disqus_thread" data-disqus-identifier="{{ post.url | slugize }}"></a>
+					<a href="{{ post.url | slugize | replace:' ','%20' }}#disqus_thread" data-disqus-identifier="{{ post.url | slugize }}"></a>
 				</div>
 				{% endunless %}
 			</div>
@@ -27,7 +27,7 @@
 				</div>
 				<div class="left">
 				{% for category in post.categories %}
-					<a href="/category/{{ category | slugize }}" title="View all posts in {{ category }}">{{ category }}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
+					<a href="/category/{{ category | slugize | replace:' ','%20' }}" title="View all posts in {{ category }}">{{ category }}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
 				{% endfor %}
 				</div>
 			</div>
@@ -39,7 +39,7 @@
 				</div>
 				<div class="left">
 				{% for tag in post.tags %}
-					<a href="/tag/{{ tag | slugize }}" title="View all posts in {{ tag }}">{{ tag }}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
+					<a href="/tag/{{ tag | slugize | replace:' ','%20' }}" title="View all posts in {{ tag }}">{{ tag }}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
 				{% endfor %}
 				</div>
 			</div>
