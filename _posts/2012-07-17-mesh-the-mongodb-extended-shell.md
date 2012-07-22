@@ -35,7 +35,7 @@ are a few different types of prompts you can use:
 - 1: 'dbname>'
 - 2: 'dbname>' for PRIMARY, '(dbname)>' for SECONDARY
 - 3: 'host:dbname>'
-- 4: '[YYYY-MM-DD hh:mm:ss] host:dbname>'
+- 4: '\[YYYY-MM-DD hh:mm:ss\] host:dbname>'
 - passing in a function() is the same thing as setting: prompt = myFunction()
 
 **mesh.setPrompt()** was inspired by the blog post:
