@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% include header.html %}
 {% assign post_list = site.tags[page.tag] %}
 {% assign post_list_title = "Tag &quot;{{ page.tag }}&quot;:" %}
 {% include postlist.html %}
