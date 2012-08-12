@@ -46,6 +46,10 @@ hide_comments: true
 - [GitHub: Fork Count](/projects/github-fork-count.user.js/) - A user script to display repo 
   counts (public, private, sources, forks, mirrors) where the "public" repo counts used to be.
 
+- [GitHub: Get Missing Descriptions](/projects/github-get-missing-descriptions.user.js/) - If there are missing
+  descriptions on a Github profile page, a button will be added. When clicked, ajax requests will be made 
+  to grab the descriptions.
+
 - [GitHub: Repo Counts](/projects/github-repo-counts.user.js/) - A user script to display repo counts 
   when browsing repository pages.
 

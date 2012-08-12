@@ -1,15 +1,15 @@
 ---
 layout: "page"
-title: "Github - Fork Count"
+title: "Github - Get Missing Descriptions"
 ---
-User Script : GitHub Fork Count
-===============================
+User Script : GitHub Get Missing Descriptions
+=============================================
 
 ### Description ###
 
-This is a user script to display repo 
-counts (public, private, sources, forks, mirrors) where 
-the "public" repo counts used to be on a user's main Github page.
+If there are missing descriptions on a Github profile page, 
+a button will be added. When clicked, ajax requests will be made 
+to grab the descriptions.
 
 
 ### Installation ###
@@ -24,16 +24,20 @@ the "public" repo counts used to be on a user's main Github page.
     * ***IE***: Install [Trixie](http://www.bhelpuri.net/Trixie/). Continue to STEP 2.
     * ***OPERA***: Follow instructions located on Opera's site: [User JS](http://www.opera.com/docs/userjs/). Continue to STEP 2.
     * ***SAFARI***: Install [NinjaKit](http://d.hatena.ne.jp/os0x/20100612/1276330696). Continue to STEP 2.
-2. Install the "GitHub Fork Count" user script by clicking here: [github-fork-count.user.js](https://github.com/skratchdot/github-fork-count.user.js/raw/master/github-fork-count.user.js).  
+2. Install the "GitHub Fork Count" user script by clicking here: [github-get-missing-descriptions.user.js](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/github-get-missing-descriptions.user.js).  
 
 ### Screenshots ###
 
 #### Before installing the user script: ####
   
-![Screenshot 1](https://github.com/skratchdot/github-fork-count.user.js/raw/master/images/screen1.gif)
+![Before Installation](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/before.png)
   
 #### After installing the user script: ####
   
-![Screenshot 2](https://github.com/skratchdot/github-fork-count.user.js/raw/master/images/screen2.gif)
+**Before clicking the button:**  
+![After Installation (before clicking the button)](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/after1.png)
+  
+**After clicking the button:**  
+![After Installation (after clicking the button)](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/after2.png)
   
   
