@@ -144,6 +144,13 @@ footer span.hspace { padding: 0 10px 0 10px }
 div#github_link { position: absolute; top: 2px; right: 0px; }
 div#homepage_link { position: fixed; bottom: 0; right: 0; }
 footer .twitter-follow-button { height:24px; line-height:24px; vertical-align:middle; }
+/* link in normal state */
+a.bmore:link, a.bmore:visited, a.bmore:hover, a.bmore:active { color: #373737; }
+a.bmore:link span, a.bmore:visited span, a.bmore:hover span, a.bmore:active span { color: #c00; }
+/* link in hover state */
+a.bmore:hover { color: #c00; }
+a.bmore:hover span { color: #373737; }
+
 
 /* ----------------------------- */
 /* INFO PAGES                    */
