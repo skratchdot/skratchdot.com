@@ -27,6 +27,9 @@ hide_comments: true
   for dealing with Mongo collections and queries. All of the extensions listed below
   are included in [mesh](/projects/mesh/).
 
+- [mongodb-distinct2](/projects/mongodb-distinct2/) - Similar to the built-in distinct()
+  function, but with more capabilities.
+
 - [mongodb-distinct-types](/projects/mongodb-distinct-types/) - Similar to the 
   db.myCollection.distinct() function, distinctTypes() will return "types" rather than "values".
 

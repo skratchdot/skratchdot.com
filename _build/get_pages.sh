@@ -40,6 +40,7 @@ get_page "./projects/framecapture" "index.md" "https://raw.github.com/skratchdot
 get_page "./projects/riff-wav-for-java" "index.md" "https://raw.github.com/skratchdot/riff-wav-for-java/master/README.md" "page" "RIFF Wav for Java" false
 
 get_page "./projects/mesh" "index.md" "https://raw.github.com/skratchdot/mesh/master/README.md" "page" "mesh: MongoDB Extended Shell" false
+get_page "./projects/mongodb-distinct2" "index.md" "https://raw.github.com/skratchdot/mongodb-distinct2/master/README.md" "page" "MongoDB - distinct2.js" false
 get_page "./projects/mongodb-distinct-types" "index.md" "https://raw.github.com/skratchdot/mongodb-distinct-types/master/README.md" "page" "MongoDB - distinct-types.js" false
 get_page "./projects/mongodb-flatten" "index.md" "https://raw.github.com/skratchdot/mongodb-flatten/master/README.md" "page" "MongoDB - flatten.js" false
 get_page "./projects/mongodb-schema" "index.md" "https://raw.github.com/skratchdot/mongodb-schema/master/README.md" "page" "MongoDB - schema.js" false
