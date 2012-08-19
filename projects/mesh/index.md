@@ -25,6 +25,12 @@ for dealing with Mongo collections and queries.
 - [moment.js](http://momentjs.com/) - A lightweight javascript date library for parsing,
   validating, manipulating, and formatting dates.
 
+- [Sugar](http://sugarjs.com/) - Sugar is a Javascript library that extends native objects with
+  helpful methods. It is designed to be intuitive, unobtrusive, and let you do more with less code.
+
+- [science.js](https://github.com/jasondavies/science.js) - Scientific and statistical computing
+  in JavaScript.
+
 - [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/) - Similar to the built-in distinct()
   function, but with more capabilities.
 
@@ -108,16 +114,23 @@ coming soon
 
 ## Version History ##
 
-#### v1.0.0 - Released July 17, 2012 ####
-  * Initial Release
+#### v1.1.3 - Released August 16, 2012
+  * adding science.js: https://github.com/jasondavies/science.js
 
-#### v1.1.0 - Released August 15, 2012 ####
-  * Adding [distinct2.js](http://skratchdot.com/projects/mongodb-distinct2/)
-  * implementing mesh.toString() so the console prints help info
+#### v1.1.2 - Released August 16, 2012
+  * Mix in non-conflicting string functions to the Underscore namespace
+  * adding Sugar: http://sugarjs.com/
+  * using minified version of moment.js
 
 #### v1.1.1 - Released August 16, 2012
   * Updating submodules
   * Updating README.md with "What's Included?" descriptions
   * Updating README.md with "For Deveopers" section
   * Small fix to [distinct2.js](http://skratchdot.com/projects/mongodb-distinct2/)
-  
+
+#### v1.1.0 - Released August 15, 2012 ####
+  * Adding [distinct2.js](http://skratchdot.com/projects/mongodb-distinct2/)
+  * implementing mesh.toString() so the console prints help info
+
+#### v1.0.0 - Released July 17, 2012 ####
+  * Initial Release
