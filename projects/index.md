@@ -53,14 +53,18 @@ hide_comments: true
   descriptions on a Github profile page, a button will be added. When clicked, ajax requests will be made 
   to grab the descriptions.
 
+- [Github: gh-pages Link](/projects/github-gh-pages-link.user.js/) - If a repository has a gh-pages 
+  branch, then this will add links to the Github Page, as well as the source code.  These links will be
+  added to the "description" section of Github repository pages.
+
+- [Github: Pull Request Links](/projects/github-pull-request-links.user.js/) - A user script to "linkify" 
+  the to/from branches on Pull Request pages.
+
 - [GitHub: Repo Counts](/projects/github-repo-counts.user.js/) - A user script to display repo counts 
   when browsing repository pages.
 
 - [GitHub: Repo-Filter Info](/projects/github-repo-filter-info.user.js/) - A user script to display some 
   additional info below the repository filter on a user's main profile page.
-
-- [Github: Pull Request Links](/projects/github-pull-request-links.user.js/) - A user script to "linkify" 
-  the to/from branches on Pull Request pages.
 
 - [Github: Twitter Link](/projects/github-twitter-link.user.js/) - Adds a twitter link on Github profile
   pages if a corresponding user name exists at Twitter.

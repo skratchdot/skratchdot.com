@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: "Github - Twitter Link"
+title: "Github: Twitter Link"
 ---
 User Script : GitHub Twitter Link
 =================================

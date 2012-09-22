@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: "Github - Repo Filter Info"
+title: "Github: Repo Filter Info"
 ---
 User Script : GitHub Repo-Filter Info
 =====================================

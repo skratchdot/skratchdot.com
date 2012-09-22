@@ -1,15 +1,15 @@
 ---
 layout: "page"
-title: "Github: Get Missing Descriptions"
+title: "Github: gh-pages Link"
 ---
-User Script : GitHub Get Missing Descriptions
-=============================================
+User Script : GitHub gh-pages Link
+==================================
 
 ### Description ###
 
-If there are missing descriptions on a Github profile page, 
-a button will be added. When clicked, ajax requests will be made 
-to grab the descriptions.
+If a repository has a gh-pages branch, then this will add links to 
+the Github Page, as well as the source code.  These links will be
+added to the "description" section of Github repository pages.
 
 
 ### Installation ###
@@ -24,20 +24,17 @@ to grab the descriptions.
     * ***IE***: Install [Trixie](http://www.bhelpuri.net/Trixie/). Continue to STEP 2.
     * ***OPERA***: Follow instructions located on Opera's site: [User JS](http://www.opera.com/docs/userjs/). Continue to STEP 2.
     * ***SAFARI***: Install [NinjaKit](http://d.hatena.ne.jp/os0x/20100612/1276330696). Continue to STEP 2.
-2. Install the "GitHub Get Missing Descriptions" user script by clicking here: [github-get-missing-descriptions.user.js](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/github-get-missing-descriptions.user.js).  
+2. Install the "GitHub Get Missing Descriptions" user script by clicking here: [github-gh-pages-link.user.js](https://github.com/skratchdot/github-gh-pages-link.user.js/raw/master/github-gh-pages-link.user.js).  
 
 ### Screenshots ###
 
 #### Before installing the user script: ####
   
-![Before Installation](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/before.png)
+![Before Installation](https://github.com/skratchdot/github-gh-pages-link.user.js/raw/master/images/before.png)
   
 #### After installing the user script: ####
   
-**Before clicking the button:**  
-![After Installation (before clicking the button)](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/after1.png)
+![After Installation](https://github.com/skratchdot/github-gh-pages-link.user.js/raw/master/images/after.png)
   
-**After clicking the button:**  
-![After Installation (after clicking the button)](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/after2.png)
-  
+**NOTE:** When no gh-pages branch exists, then there will be no modification to the look of the page.
   

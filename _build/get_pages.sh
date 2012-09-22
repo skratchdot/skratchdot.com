@@ -27,13 +27,14 @@ function get_page {
 # Start grabbing pages
 get_page "./projects/open-electribe-editor" "index.md" "https://raw.github.com/skratchdot/open-electribe-editor/master/README.md" "page" "Open Electribe Editor" false
 
-get_page "./projects/github-code-search.user.js" "index.md" "https://raw.github.com/skratchdot/github-code-search.user.js/master/README.md" "page" "Github - Code Search" false
-get_page "./projects/github-fork-count.user.js" "index.md" "https://raw.github.com/skratchdot/github-fork-count.user.js/master/README.md" "page" "Github - Fork Count" false
-get_page "./projects/github-get-missing-descriptions.user.js" "index.md" "https://raw.github.com/skratchdot/github-get-missing-descriptions.user.js/master/README.md" "page" "Github - Get Missing Descriptions" false
-get_page "./projects/github-repo-counts.user.js" "index.md" "https://raw.github.com/skratchdot/github-repo-counts.user.js/master/README.md" "page" "Github - Repo Counts" false
-get_page "./projects/github-repo-filter-info.user.js" "index.md" "https://raw.github.com/skratchdot/github-repo-filter-info.user.js/master/README.md" "page" "Github - Repo Filter Info" false
-get_page "./projects/github-pull-request-links.user.js" "index.md" "https://raw.github.com/skratchdot/github-pull-request-links.user.js/master/README.md" "page" "Github - Pull Request Links" false
-get_page "./projects/github-twitter-link.user.js" "index.md" "https://raw.github.com/skratchdot/github-twitter-link.user.js/master/README.md" "page" "Github - Twitter Link" false
+get_page "./projects/github-code-search.user.js" "index.md" "https://raw.github.com/skratchdot/github-code-search.user.js/master/README.md" "page" "Github: Code Search" false
+get_page "./projects/github-fork-count.user.js" "index.md" "https://raw.github.com/skratchdot/github-fork-count.user.js/master/README.md" "page" "Github: Fork Count" false
+get_page "./projects/github-get-missing-descriptions.user.js" "index.md" "https://raw.github.com/skratchdot/github-get-missing-descriptions.user.js/master/README.md" "page" "Github: Get Missing Descriptions" false
+get_page "./projects/github-repo-counts.user.js" "index.md" "https://raw.github.com/skratchdot/github-repo-counts.user.js/master/README.md" "page" "Github: Repo Counts" false
+get_page "./projects/github-repo-filter-info.user.js" "index.md" "https://raw.github.com/skratchdot/github-repo-filter-info.user.js/master/README.md" "page" "Github: Repo Filter Info" false
+get_page "./projects/github-pull-request-links.user.js" "index.md" "https://raw.github.com/skratchdot/github-pull-request-links.user.js/master/README.md" "page" "Github: Pull Request Links" false
+get_page "./projects/github-twitter-link.user.js" "index.md" "https://raw.github.com/skratchdot/github-twitter-link.user.js/master/README.md" "page" "Github: Twitter Link" false
+get_page "./projects/github-gh-pages-link.user.js" "index.md" "https://raw.github.com/skratchdot/github-gh-pages-link.user.js/master/README.md" "page" "Github: gh-pages Link" false
 
 get_page "./projects/domFormat" "index.md" "https://raw.github.com/skratchdot/domFormat/master/README.md" "page" "domFormat" false
 get_page "./projects/framecapture" "index.md" "https://raw.github.com/skratchdot/framecapture/master/README.md" "page" "framecapture" false

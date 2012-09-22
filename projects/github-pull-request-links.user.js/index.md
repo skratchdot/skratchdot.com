@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: "Github - Pull Request Links"
+title: "Github: Pull Request Links"
 ---
 User Script : Github Pull Request Links
 =======================================

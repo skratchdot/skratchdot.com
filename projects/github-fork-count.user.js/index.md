@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: "Github - Fork Count"
+title: "Github: Fork Count"
 ---
 User Script : GitHub Fork Count
 ===============================

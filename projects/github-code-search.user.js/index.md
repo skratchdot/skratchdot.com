@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: "Github - Code Search"
+title: "Github: Code Search"
 ---
 User Script : GitHub Code Search
 ================================
