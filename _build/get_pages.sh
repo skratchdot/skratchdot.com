@@ -21,7 +21,8 @@ function get_page {
 	echo "---" >> "$file"
 
 	## Grab the remote file, and append it to our local file
-	curl "$remote_url" >> "$file"
+	curl "$remote_url" | sed -E 's/^\s*\`\`\`\s*([a-zA-Z0-9]+)\s*$/\{% highlight \1 %\}/' | sed -E 's/^\s*\`\`\`\s*$/\{% endhighlight %\}/' >> "$file"
+
 }
 
 # Start grabbing pages
