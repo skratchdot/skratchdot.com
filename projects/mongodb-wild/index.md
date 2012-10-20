@@ -17,20 +17,22 @@ and then running a regex on that json.
 
 ## Usage: ##
 
-	// Search entire users collection for Bob
-	db.users.wild('Bob');
-	db.users.wild(/Bob/gi);
-	db.users.find().wild('Bob');
-	
-	// Search for exact values of 'Bob'
-	db.users.wild(': "Bob"');
-	
-	// Search for exact keys called 'Bob'
-	db.users.wild('"Bob" :');
-	
-	// Search for documents containing 'Bob', filtering by last name of 'Smith'
-	db.users.wild('Bob', {'name.last' : 'Smith'});
-	db.users.find({'name.last' : 'Smith'}).wild('Bob');
+{% highlight javascript %}
+// Search entire users collection for Bob
+db.users.wild('Bob');
+db.users.wild(/Bob/gi);
+db.users.find().wild('Bob');
+
+// Search for exact values of 'Bob'
+db.users.wild(': "Bob"');
+
+// Search for exact keys called 'Bob'
+db.users.wild('"Bob" :');
+
+// Search for documents containing 'Bob', filtering by last name of 'Smith'
+db.users.wild('Bob', {'name.last' : 'Smith'});
+db.users.find({'name.last' : 'Smith'}).wild('Bob');
+{% endhighlight %}
 
 ## Installation: ##
 

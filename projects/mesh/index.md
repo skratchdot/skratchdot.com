@@ -47,6 +47,8 @@ for dealing with Mongo collections and queries.
 
 - mesh.keys(): will return all the "global" properties as a sorted array.
 
+- [JSON2.js](https://github.com/douglascrockford/JSON-js) - JSON.stringify() and JSON.parse()
+
 
 ## Installation ##
 
@@ -110,6 +112,19 @@ coming soon
 
 
 ## Version History ##
+
+#### v1.2.2 - Released October 20, 2012
+  * updating libraries: mongodb-flatten, underscore, and underscore.string
+
+#### v1.2.1 - Released October 7, 2012
+  * updating libraries: moment.js, mongodb-distinct2.js, and underscore.js
+  * [json2.js](https://github.com/douglascrockford/JSON-js) is now included due 
+    to the mongodb-distinct2.js upgrade
+
+#### v1.2.0 - Released September 24, 2012
+  * mesh.setPrompt() is now mesh.prompt()
+  * updating libraries
+  * adding mesh.time() which displays function execution times
 
 #### v1.1.4 - Released August 20, 2012
   * removing [Sugar](http://sugarjs.com/) (rely on [underscore.js](http://documentcloud.github.com/underscore/) instead)

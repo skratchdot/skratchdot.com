@@ -14,27 +14,31 @@ Similar to the db.myCollection.distinct() function, distinctTypes() will return
 "types" rather than "values".  To accomplish this, it adds the following
 function to the DBCollection prototype:  
 
-    DBCollection.prototype.distinctTypes = function (keyString, query, limit, skip) {};
+{% highlight javascript %}
+DBCollection.prototype.distinctTypes = function (keyString, query, limit, skip) {};
+{% endhighlight %}
 
 ## Usage: ##
 
-    // we hope this would return ['bson'] not ['bson','string']
-    db.users.distinctTypes('name');
-    
-    // should return ['string']
-    db.users.distinctTypes('name.first');
-    
-    // should return ['string']
-    db.users.distinctTypes('address.phone');
-    
-    // only search documents that have { 'name.first' : 'Bob' }
-    db.users.distinctTypes('address.phone', {'name.first':'Bob'});
-    
-    // only search the first 10 documents
-    db.users.distinctTypes('address.phone', {}, 10);
-    
-    // only search documents 10-15
-    db.users.distinctTypes('address.phone', {}, 10, 5);
+{% highlight javascript %}
+// we hope this would return ['bson'] not ['bson','string']
+db.users.distinctTypes('name');
+
+// should return ['string']
+db.users.distinctTypes('name.first');
+
+// should return ['string']
+db.users.distinctTypes('address.phone');
+
+// only search documents that have { 'name.first' : 'Bob' }
+db.users.distinctTypes('address.phone', {'name.first':'Bob'});
+
+// only search the first 10 documents
+db.users.distinctTypes('address.phone', {}, 10);
+
+// only search documents 10-15
+db.users.distinctTypes('address.phone', {}, 10, 5);
+{% endhighlight %}
 
 ## Caveats: ##
 

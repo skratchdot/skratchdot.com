@@ -20,28 +20,32 @@ can't currently do with the built in distinct() function).
 
 To accomplish this, it adds the following functions to our built in mongo prototypes:  
 
-    DBCollection.prototype.distinct2 = function (keys, count) {};
-    DBQuery.prototype.distinct2 = function (keys, count) {};
+{% highlight javascript %}
+DBCollection.prototype.distinct2 = function (keys, count) {};
+DBQuery.prototype.distinct2 = function (keys, count) {};
+{% endhighlight %}
 
 ## Usage: ##
-	
-	// All 4 of these statements are the same as:
-	//
-	//     db.users.distinct('name.first')
-	//
-	db.users.distinct2('name.first');
-	db.users.distinct2('name.first', false);
-	db.users.distinct2(['name.first']);
-	db.users.distinct2(['name.first'], false);
-	
-	// you can pass in an array of values
-	db.users.distinct2(['name.first','name.last']);
-	
-	// you can get counts
-	db.users.distinct2('name.first', true);
-	
-	// you can get distinct values from the results of a query
-	db.users.find({'name.first':'Bob'}).distinct('name.last');
+
+{% highlight javascript %}
+// All 4 of these statements are the same as:
+//
+//     db.users.distinct('name.first')
+//
+db.users.distinct2('name.first');
+db.users.distinct2('name.first', false);
+db.users.distinct2(['name.first']);
+db.users.distinct2(['name.first'], false);
+
+// you can pass in an array of values
+db.users.distinct2(['name.first','name.last']);
+
+// you can get counts
+db.users.distinct2('name.first', true);
+
+// you can get distinct values from the results of a query
+db.users.find({'name.first':'Bob'}).distinct('name.last');
+{% endhighlight %}
 
 ## Installation: ##
 
