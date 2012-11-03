@@ -1,9 +1,9 @@
 	<div class="footerSpacer"><br /></div>
 	<footer class="oneColumn">
 		<div>
-			Copyright &copy; {{ site.time | date: "%Y" }} <a href="/">skratchdot</a>
+			Copyright &#169; {{ site.time | date: "%Y" }} <a href="/">skratchdot</a>
 			<span class="hspace">&#x2022;</span>
-			Validate:&nbsp;&nbsp;
+			Validate:&#160;&#160;
 			<a href="http://validator.w3.org/check/referer">HTML5</a>
 			<span class="hspace">&#x2022;</span>
 			<a href="https://twitter.com/skratchdot" class="twitter-follow-button" data-show-count="false">Follow @skratchdot</a>
@@ -15,19 +15,24 @@
 	<script type="text/javascript" src="/js/skratchdot.js?{{ site.time | date: "%Y%m%d%H%M" }}"></script>
 	<!-- Google Analytics -->
 	<script type="text/javascript">
+	//<![CDATA[
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-10768188-1']);
 		_gaq.push(['_trackPageview']);
 		$.getScript(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js');
+	//]]>
 	</script>
 	{% if get_comment_counts == true %}
 	<script type="text/javascript">
+	//<![CDATA[
 		var disqus_shortname = 'skratchdot';
 		$.getScript('http://' + disqus_shortname + '.disqus.com/count.js');
+	//]]>
 	</script>
 	{% endif %}
 	<!-- AddThis -->
 	<script type="text/javascript">
+	//<![CDATA[
 	{% if addthis_share_homepage == true %}
 		var addthis_share = {
 			url : 'http://skratchdot.com/',
@@ -37,6 +42,7 @@
 		$.getScript('http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f95a18f2f5627c9&async=1', function () {
 			addthis.init();
 		});
+	//]]>
 	</script>
 </body>
 </html>
