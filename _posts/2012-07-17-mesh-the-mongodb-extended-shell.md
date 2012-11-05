@@ -4,8 +4,10 @@ title: "mesh: the MongoDB Extended Shell"
 published: true
 categories:
 - MongoDB
+- Shell
 tags: 
 - MongoDB
+- Shell
 - Shell Extensions
 - Projects
 - Update

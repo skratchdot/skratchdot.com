@@ -3,8 +3,10 @@ layout: post
 title: MongoDB - Shell Extensions
 categories:
 - MongoDB
+- Shell
 tags: 
 - MongoDB
+- Shell
 - Shell Extensions
 - Projects
 - Update

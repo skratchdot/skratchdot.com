@@ -5,10 +5,14 @@ published: true
 categories:
 - OSX
 - Screenshot
+- Bash
+- Shell
 tags: 
 - OSX
 - Screenshot
 - ImageMagick
+- Bash
+- Shell
 - screencapture
 - framecapture
 ---

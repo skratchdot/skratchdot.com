@@ -3,10 +3,13 @@ layout: post
 title: Git Diff Build Script (AKA read your Git docs)
 categories:
 - Git
+- Bash
+- Shell
 tags: 
 - Ant
 - AWK
 - Bash
+- Shell
 - Git
 - SVN
 ---
