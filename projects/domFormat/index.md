@@ -64,6 +64,12 @@ IE Quirks/Bugs:
 
 ### Version History ###
 
+#### v1.1 - Released November 6, 2012 ####
+
+* Fixing IE bug when rendering Node.DOCUMENT_TYPE_NODE
+
+* Reformatting source code.
+
 #### v1.0 - Released July 25, 2011 ####
 
 * Initial Release
