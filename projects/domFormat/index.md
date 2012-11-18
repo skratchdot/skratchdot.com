@@ -64,6 +64,14 @@ IE Quirks/Bugs:
 
 ### Version History ###
 
+#### v1.2 - Released November 17, 2012 ####
+
+* Updating [CSS Beautify](https://github.com/senchalabs/cssbeautify)
+
+* Updating [JS Beautifier](https://github.com/einars/js-beautify)
+
+* Updating [Bookmarklet](./bookmarklet)
+
 #### v1.1 - Released November 6, 2012 ####
 
 * Fixing IE bug when rendering Node.DOCUMENT_TYPE_NODE

@@ -49,6 +49,10 @@ for dealing with Mongo collections and queries.
 
 - [JSON2.js](https://github.com/douglascrockford/JSON-js) - JSON.stringify() and JSON.parse()
 
+- mesh.oid() - a wrapper for ObjectId()
+
+- mesh.tid() - a wrapper for creating ObjectId values based on a timestamp
+
 
 ## Installation ##
 
@@ -60,7 +64,7 @@ Add this script to your .mongorc.js file.
 
 _See:_ [http://www.mongodb.org/display/DOCS/Overview+-+The+MongoDB+Interactive+Shell#Overview-TheMongoDBInteractiveShell-.mongorc.js](http://www.mongodb.org/display/DOCS/Overview+-+The+MongoDB+Interactive+Shell#Overview-TheMongoDBInteractiveShell-.mongorc.js)
 
-_Example:_
+_Example .mongorc.js:_
 
     load('mesh.js');
     load('mesh.config.js');
@@ -75,14 +79,19 @@ Start the shell after executing this script
 
 ## Configuration ##
 
-You can configure mesh by calling **mesh.config(settings)**. The benefit of keeping a config file, is that
-you won't lose your default settings when updating mesh. Currently, there is only 1 config value:
-	defaultPrompt
+You can configure mesh by calling **mesh.config(settings)**. The benefit of keeping a config file,
+is that you won't lose your default settings when updating mesh. Currently, there are 2 config values:
+defaultPrompt and aliases.
 
 You can create a file "mesh.config.js".  It might look like:
 
     mesh.config({
-        defaultPrompt : 4
+    		defaultPrompt : 4,		// 0-4 or a string
+    		aliases : {				// can pass in a map of aliases.
+    			't' : 'mesh.tid',	// t() is an alias for mesh.tid()
+    			'o' : 'ObjectId',	// o() is an alias for ObjectId()
+    			'm' : 'mesh'		// m is an alias for mesh
+    		}
     });
 
 Now, when starting the shell, you can pass in the **mesh.config.js** file along with your 
@@ -90,6 +99,10 @@ Now, when starting the shell, you can pass in the **mesh.config.js** file along 
 
     mongo --shell mesh.js mesh.config.js
 
+Or if you are using .mongorc.js:
+
+    load('mesh.js');
+    load('mesh.config.js');
 
 ## Usage ##
 
@@ -112,6 +125,24 @@ coming soon
 
 
 ## Version History ##
+
+#### v1.3.1 - Released November 15, 2012
+  * adding mesh.setAliases()
+  * removing globalTid and globalOid from mesh.config in favor of using 'aliases'.
+  * mesh.tid() now accepts an optional "increment" argument
+  * reload mesh each time load('mesh.js') is called
+  * fixing build process (version and date replaced)
+  * fixing bug w/ how hostname is determined in prompt
+  * removing moment() / window hack
+
+#### v1.3.0 - Released November 13, 2012
+  * updating libraries: [moment.js](http://momentjs.com/),
+  [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/),
+  [underscore.js](http://documentcloud.github.com/underscore/), and
+  [underscore.string.js](http://epeli.github.com/underscore.string/)
+  * adding mesh.oid() - a wrapper for ObjectId()
+  * adding mesh.tid() - a wrapper for creating ObjectId values based on a timestamp
+  * config values to change mesh.tid() to t() or mesh.oid() to o()
 
 #### v1.2.4 - Released October 22, 2012
   * updating libraries: [flatten()](http://skratchdot.com/projects/mongodb-flatten/)

@@ -33,8 +33,8 @@ hide_comments: true
 - [mongodb-distinct-types](/projects/mongodb-distinct-types/) - Similar to the 
   db.myCollection.distinct() function, distinctTypes() will return "types" rather than "values".
 
-- [mongodb-flatten](/projects/mongodb-flatten/) - The flatten() function is 
-  a mapReduce that flattens documents into key/value pairs.
+- [mongodb-flatten](/projects/mongodb-flatten/) - The flatten() function provides a way to 
+  flatten documents into id/key/value pairs.
 
 - [mongodb-schema](/projects/mongodb-schema/) - A schema analysis tool for MongoDB.
 
