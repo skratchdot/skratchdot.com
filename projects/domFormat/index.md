@@ -70,7 +70,7 @@ IE Quirks/Bugs:
 
 * Updating [JS Beautifier](https://github.com/einars/js-beautify)
 
-* Updating [Bookmarklet](./bookmarklet)
+* Updating [Bookmarklet](http://skratchdot.github.com/domFormat/bookmarklet/index.html)
 
 #### v1.1 - Released November 6, 2012 ####
 

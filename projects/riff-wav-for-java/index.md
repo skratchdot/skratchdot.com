@@ -41,10 +41,12 @@ riffWave.write(file);
 
 ### Links: ###
 
-[The Sonic Spot](http://www.sonicspot.com/guide/wavefiles.html)  
-  
-[Wikipedia: WAV](http://en.wikipedia.org/wiki/WAV)  
-  
-[Eclipse Modeling Framework](http://www.eclipse.org/modeling/emf/)  
-  
-  
+- [Javadocs](http://skratchdot.com/projects/riff-wav-for-java/javadocs/)
+
+- [The Sonic Spot](http://www.sonicspot.com/guide/wavefiles.html)  
+
+- [Wikipedia: WAV](http://en.wikipedia.org/wiki/WAV)  
+
+- [Eclipse Modeling Framework](http://www.eclipse.org/modeling/emf/)  
+
+
