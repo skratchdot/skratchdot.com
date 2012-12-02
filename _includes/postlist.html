@@ -24,7 +24,7 @@
 				<div class="sublist-title">
 					<strong><em>Categories:</em></strong>
 				</div>
-				<div class="left">
+				<div>
 				{% for category in post.categories %}
 					<a href="/category/{{ category | slugize | replace:' ','%20' }}" title="View all posts in {{ category }}">{{ category }}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
 				{% endfor %}
@@ -36,7 +36,7 @@
 				<div class="sublist-title">
 					<strong><em>Tags:</em></strong>
 				</div>
-				<div class="left">
+				<div>
 				{% for tag in post.tags %}
 					<a href="/tag/{{ tag | slugize | replace:' ','%20' }}" title="View all posts in {{ tag }}">{{ tag }}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
 				{% endfor %}

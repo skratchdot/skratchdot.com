@@ -196,3 +196,33 @@ ul.postlist li div.sublist-title { float:left; width:180px; text-align:right; ma
 .clearfix { display: inline-block }
 * html .clearfix { height: 1% }
 .clearfix { display: block }
+
+@media all and (max-width: 800px) {
+	.oneColumn, #addthis_container_skratchdot {
+		width: 95%;
+	},
+	img {
+		max-width: 95% !important;
+	}
+	pre {
+		width: 90%;
+	}
+	ul.postlist li div.pl-title {
+		clear: both;
+		float: none;
+		padding-top: 5px;
+	}
+	ul.postlist li div.pl-comments {
+		display: none;
+	}
+	ul.postlist li div.sublist-title {
+		width: 80px;
+	}
+	nav#articlesNav div.newEntries,
+	nav#articlesNav div.oldEntries {
+		width: 45%;
+	}
+	#github_link {
+		display: none;
+	}
+}
