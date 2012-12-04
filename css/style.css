@@ -167,8 +167,8 @@ ul.postlist li { padding: 20px 8px; border-bottom: 1px dotted #000; background: 
 ul.postlist li:nth-child(even) { background: #eee; }
 ul.postlist li:hover { background: #ddd; box-shadow: 5px 5px 15px #666; }
 ul.postlist li div.pl-date { float:left; background:#511212; border-radius:5px; color:white; width:100px; text-align:center; margin-right:10px; }
-ul.postlist li div.pl-title { float:left; }
-ul.postlist li div.pl-comments { float:right; font-size:12px; }
+ul.postlist li div.pl-title { float:left; width:495px; }
+ul.postlist li div.pl-comments { position:absolute; top:0; right:0; font-size:12px; }
 ul.postlist li div.sublist { font-size:12px; }
 ul.postlist li div.sublist-title { float:left; width:180px; text-align:right; margin-right:10px; }
 
@@ -180,7 +180,8 @@ ul.postlist li div.sublist-title { float:left; width:180px; text-align:right; ma
 .left { float: left }
 .clear { clear: both }
 .center { text-align: center }
-
+.rel { position: relative; }
+.abs { position: absolute; }
 
 /* ----------------------------- */
 /* PADDING                       */
@@ -198,31 +199,12 @@ ul.postlist li div.sublist-title { float:left; width:180px; text-align:right; ma
 .clearfix { display: block }
 
 @media all and (max-width: 800px) {
-	.oneColumn, #addthis_container_skratchdot {
-		width: 95%;
-	},
-	img {
-		max-width: 95% !important;
-	}
-	pre {
-		width: 90%;
-	}
-	ul.postlist li div.pl-title {
-		clear: both;
-		float: none;
-		padding-top: 5px;
-	}
-	ul.postlist li div.pl-comments {
-		display: none;
-	}
-	ul.postlist li div.sublist-title {
-		width: 80px;
-	}
+	.oneColumn, #addthis_container_skratchdot { width: 95%; }
+	img { max-width: 95% !important; }
+	pre { width: 90%; }
+	ul.postlist li div.pl-title { clear: both; float: none; padding-top: 5px; width: auto; }
+	ul.postlist li div.sublist-title { width: 80px; }
 	nav#articlesNav div.newEntries,
-	nav#articlesNav div.oldEntries {
-		width: 45%;
-	}
-	#github_link {
-		display: none;
-	}
+	nav#articlesNav div.oldEntries { width: 45%; }
+	#github_link { display: none; }
 }
