@@ -1,5 +1,6 @@
 _build/build.sh
 _drafts/
+_ftp/
 _import/
 _site/
 .DS_Store

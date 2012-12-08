@@ -7,7 +7,8 @@ FTP_HOST='example.com'
 FTP_USER='username'
 FTP_PASS='password'
 FTP_FOLDER='/'
-LOCAL_FOLDER='./_site/'
+LOCAL_SITE_FOLDER='./_site/'
+LOCAL_FTP_FOLDER='./_ftp/'
 
 #################################
 # Get our user input
@@ -17,6 +18,8 @@ LOCAL_FOLDER='./_site/'
 read -p "Do you want to grab the latest README files by running get_pages.sh (y/n)?" isGetPagesEnabled
 # isFtpEnabled
 read -p "Do you want to ftp the results (y/n)?" isFtpEnabled
+# ftpJavaDocs
+read -p "Do you want to ftp the javadocs (y/n)?" ftpJavaDocs
 
 
 #################################
@@ -25,8 +28,8 @@ read -p "Do you want to ftp the results (y/n)?" isFtpEnabled
 
 # Get Pages
 if [ "$isGetPagesEnabled" = "y" ]; then
-	echo "Running: sh ./_pages/get_pages.sh"
-	sh ./_pages/get_pages.sh
+	echo "Running: sh ./_build/get_pages.sh"
+	sh ./_build/get_pages.sh
 else
 	echo "Skipping: sh ./_pages/get_pages.sh"
 fi
@@ -37,8 +40,25 @@ jekyll
 
 # FTP the site we just built
 if [ "$isFtpEnabled" = "y" ]; then
-	echo "FTPing our _site"
-	cd "$LOCAL_FOLDER"
+	# clean local ftp folder
+	echo "Cleaning local FTP folder"
+	rm -rf "$LOCAL_FTP_FOLDER"
+	mkdir "$LOCAL_FTP_FOLDER"
+
+	# populate local ftp folder
+	echo "Populating local FTP folder"
+	cp -r "$LOCAL_SITE_FOLDER"* "$LOCAL_FTP_FOLDER"
+
+	# remove javadocs
+	if [ "$ftpJavaDocs" = "n" ]; then
+		echo "Removing javadocs from local FTP folder"
+		rm -rf "$LOCAL_FTP_FOLDER""projects/open-electribe-editor/javadocs/"
+		rm -rf "$LOCAL_FTP_FOLDER""projects/riff-wav-for-java/javadocs/"
+	fi
+
+	# ftp
+	echo "FTPing our local ftp folder"
+	cd "$LOCAL_FTP_FOLDER"
 	ncftpput -R -u "$FTP_USER" -p "$FTP_PASS" "$FTP_HOST" "$FTP_FOLDER" .
 else
 	echo "Skipping the FTP step."
