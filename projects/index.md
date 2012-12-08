@@ -72,6 +72,8 @@ hide_comments: true
 
 ### Miscellaneous Libraries / Utilities ###
 
+- [List Tool](/projects/list-tool/) - A simple web application to compare lists.
+
 - [domFormat](/projects/domFormat/) - A simple javascript library to get DOM nodes as formatted/pretty strings. 
 
 - [framecapture](/projects/framecapture/) - Take a screenshot of a portion of your screen, and add
