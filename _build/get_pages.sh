@@ -29,6 +29,7 @@ function get_page {
 get_page "./projects/open-electribe-editor" "index.md" "https://raw.github.com/skratchdot/open-electribe-editor/master/README.md" "page" "Open Electribe Editor" false
 
 get_page "./projects/github-code-search.user.js" "index.md" "https://raw.github.com/skratchdot/github-code-search.user.js/master/README.md" "page" "Github: Code Search" false
+get_page "./projects/github-editor-theme.user.js" "index.md" "https://raw.github.com/skratchdot/github-editor-theme.user.js/master/README.md" "page" "Github: Editor Theme" false
 get_page "./projects/github-fork-count.user.js" "index.md" "https://raw.github.com/skratchdot/github-fork-count.user.js/master/README.md" "page" "Github: Fork Count" false
 get_page "./projects/github-get-missing-descriptions.user.js" "index.md" "https://raw.github.com/skratchdot/github-get-missing-descriptions.user.js/master/README.md" "page" "Github: Get Missing Descriptions" false
 get_page "./projects/github-repo-counts.user.js" "index.md" "https://raw.github.com/skratchdot/github-repo-counts.user.js/master/README.md" "page" "Github: Repo Counts" false

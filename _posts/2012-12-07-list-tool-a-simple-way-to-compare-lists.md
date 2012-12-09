@@ -33,6 +33,8 @@ As of now, the app has the following features:
 
 - a logo visualization of the currently selected comparison operation
 
+- using [Web Workers](http://www.w3.org/TR/workers/) (when available) to support larger datasets
+
 You can check out the project page here:  
 
 [Project Page](http://skratchdot.com/projects/list-tool/)

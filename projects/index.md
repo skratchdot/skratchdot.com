@@ -46,6 +46,9 @@ hide_comments: true
 - [GitHub: Code Search](/projects/github-code-search.user.js/) - A user script that adds a search box 
   to repository pages which allows you to search the code in that repository.
 
+- [GitHub: Editor Theme](/projects/github-editor-theme.user.js/) - Add a "theme" dropdown when editing
+  files in the Github UI.
+
 - [GitHub: Fork Count](/projects/github-fork-count.user.js/) - A user script to display repo 
   counts (public, private, sources, forks, mirrors) where the "public" repo counts used to be.
 
