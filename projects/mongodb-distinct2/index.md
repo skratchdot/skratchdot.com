@@ -46,6 +46,20 @@ db.users.distinct2('name.first', true);
 
 // you can get distinct values from the results of a query
 db.users.find({'name.first':'Bob'}).distinct2('name.last');
+
+//
+// When calling distinct2() on large datasets, status on the operation
+// will be printed to the shell. By default, the status interval is 1000ms.
+// If you would like more/less frequent updates, you can pass in an interval
+// time to a setStatusInterval() function. If you would like to disable
+// status updates, you can pass in a negative number.
+//
+
+// Print status updates every 5 seconds:
+db.users.distinct2.setStatusInterval(5000);
+
+// Disable status updates
+db.users.distinct.setStatusInterval(0);
 {% endhighlight %}
 
 ## Installation: ##
@@ -63,3 +77,10 @@ See: [http://www.mongodb.org/display/DOCS/Overview+-+The+MongoDB+Interactive+She
 Start the shell after executing this script  
 
     mongo --shell distinct2.js
+
+### Disclaimer
+
+This is not a highly efficient function. Use caution when running this on large
+collections.  It works great on smaller datasets, but may be unusable on huge
+collections.  There is a status line that will be printed every 1000ms. You can always
+ctrl-c if it takes too long.

@@ -9,7 +9,6 @@ tags:
 - Javascript
 - Git
 - Github
-- Twitter
 ---
 Yesterday I saw the following post on [HackerNews](http://news.ycombinator.com/):
 
