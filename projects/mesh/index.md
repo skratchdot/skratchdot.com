@@ -47,13 +47,15 @@ for dealing with Mongo collections and queries.
 
 - mesh.keys(): will return all the "global" properties as a sorted array.
 
-- [JSON2.js](https://github.com/douglascrockford/JSON-js) - JSON.stringify() and JSON.parse()
+- [JSON-js](https://github.com/douglascrockford/JSON-js) - JSON.stringify() and JSON.parse()
 
 - mesh.oid() - a wrapper for ObjectId()
 
 - mesh.tid() - a wrapper for creating ObjectId values based on a timestamp
 
 - a few [underscore.js mixins](https://github.com/skratchdot/snippets/tree/master/underscore.js/)
+
+- DBCollection.insertArray() - insert an array of objects into a collection
 
 
 ## Installation ##
@@ -127,6 +129,13 @@ coming soon
 
 
 ## Version History ##
+
+#### v1.4.1 - Released December 10, 2012
+  * adding DBCollection.insertArray()
+  * adding [JSON-js](https://github.com/douglascrockford/JSON-js) - json2.js and cycle.js
+  * updating [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/),
+  [underscore.js](http://documentcloud.github.com/underscore/), and
+  [moment.js](http://momentjs.com/)
 
 #### v1.4.0 - Released December 9, 2012
   * updating [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/)
