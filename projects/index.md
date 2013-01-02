@@ -86,5 +86,6 @@ hide_comments: true
   and writing of .wav files in Java. It attempts to read in well-known RIFF chunks, and provide an API for 
   reading/manipulating those chunks. 
 
-- [tojs](/projects/tojs/) - Convert a file to a series of document.write() statements.
+- [tojs](/projects/tojs/) - Convert files between plain text, javascript strings,
+  and document.write() statements
 
