@@ -43,9 +43,13 @@ riffWave.write(file);
 
 - [Javadocs](http://skratchdot.com/projects/riff-wav-for-java/javadocs/)
 
-- [The Sonic Spot](http://www.sonicspot.com/guide/wavefiles.html)  
-
 - [Wikipedia: WAV](http://en.wikipedia.org/wiki/WAV)  
+
+- [Wave File Format: The Sonic Spot](http://www.sonicspot.com/guide/wavefiles.html)  
+
+- [Wave File Format: MMSP Lab, ECE, McGill University](http://www-mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html)
+
+- [Example Wave Files: MMSP Lab, ECE, McGill University](http://www-mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/Samples.html)
 
 - [Eclipse Modeling Framework](http://www.eclipse.org/modeling/emf/)  
 
