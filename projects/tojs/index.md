@@ -4,10 +4,6 @@ title: "tojs"
 ---
 # tojs #
 
-[Project Page](http://skratchdot.com/projects/tojs/)
-
-[Github Page](https://github.com/skratchdot/tojs/)
-
 ## Description ##
 
 **tojs** lets you convert files between plain text, javascript strings,
@@ -22,11 +18,6 @@ to the file you created with **tojs**.
 Since version 1.2.0, **tojs** was converted to a node.js project, and now
 supports a few different input/output formats.  To see the new options,
 check out the **Usage** and **Options** sections below.
-
-
-## Installation ##
-
-    npm install -g tojs
 
 
 ## Usage ##
@@ -57,7 +48,23 @@ check out the **Usage** and **Options** sections below.
     $ echo -e "one\ntwo\nthree" | tojs
 
 
+## Installation ##
+
+    npm install -g tojs
+
+
+## Links ##
+
+[Project Page](http://skratchdot.com/projects/tojs/)
+
+[Github Page](https://github.com/skratchdot/tojs/)
+
+
 ## Version History ##
+
+### v1.2.1 (Released January 2, 2012)
+
+- adding man page
 
 ### v1.2.0 (Released December 27, 2012)
 
