@@ -45,8 +45,8 @@ Below is the function definition.  Rather than using
 [mesh.js](http://skratchdot.com/projects/mesh/)).
 
 {% highlight js %}
-/*jslint plusplus: true, nomen: true */
-/*globals DBCollection, _ */
+/*jslint nomen: true, plusplus: true */
+/*global _, DBCollection, print */
 /**
  * @function
  * @name insertArray
@@ -62,14 +62,14 @@ DBCollection.prototype.insertArray = function (arr, options, _allow_dot) {
 	if (_.isArray(arr)) {
 		for (i = 0; i < arr.length; i++) {
 			obj = arr[i];
-			if (_.isObject(obj)) {
+			if (_.isObject(obj) && !_.isFunction(obj)) {
 				this.insert(obj, options, _allow_dot);
 			} else {
-				throw "we can't insert a non-object!";
+				print('Cannot insert a non-object, so skipping: ' + obj);
 			}
 		}
 	} else {
-		throw "first argument is not an array!";
+		throw 'first argument is not an array!';
 	}
 };
 {% endhighlight %}

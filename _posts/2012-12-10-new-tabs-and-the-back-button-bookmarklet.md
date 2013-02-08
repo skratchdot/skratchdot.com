@@ -9,7 +9,7 @@ tags:
 - Bookmarklet
 ---
 
-If you're anything like me, then you constantly open links in new tabs.  Sometimes,
+If you're anything like me, then you open new links in tabs.  Sometimes,
 if the link has been open for a while, you forget what page you were on when you clicked
 the link.  The back button is disabled since you are in a new tab.
 
