@@ -61,7 +61,7 @@ a:hover { background: #f5f5f5; border: 1px solid #678; text-decoration: none; }
 .addthis_toolbox a, .addthis_toolbox a:link, .addthis_toolbox a:visited, .addthis_toolbox a:hover, .addthis_toolbox a:active { border: 0; background-color: transparent; }
 a.at_item { margin: 0 !important }
 #addthis_container_skratchdot { width: 750px; text-align: center; height: 22px; margin: 15px auto; }
-
+#addthis_toolbox_skratchdot { display: table; margin: 0px auto; }
 
 /* ----------------------------- */
 /* HEADER                        */
