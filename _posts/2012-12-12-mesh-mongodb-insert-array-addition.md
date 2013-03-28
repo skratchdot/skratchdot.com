@@ -24,7 +24,8 @@ It allows you to insert an array of objects into a collection using a shell vers
 All it does is loop through the array that was passed in, calling
 **DBCollection.insert()** on each object in the array.
 
-If an item in the array is not an object, it will stop processing and throw an error.
+If an item in the array is not an object, it will skip the insert, print a warning, and continue
+processing the next item in the array.
 
 If you don't pass in a valid array, it will throw an error.
 
