@@ -59,7 +59,34 @@ db.users.find({'name.first':'Bob'}).distinct2('name.last');
 db.users.distinct2.setStatusInterval(5000);
 
 // Disable status updates
-db.users.distinct.setStatusInterval(0);
+db.users.distinct2.setStatusInterval(0);
+
+// distinct2 can be used like group(), but has a simpler syntax.
+// Take for instance the following 2 queries (which return the same
+// results- but in a slightly different format). Let's say the users
+// collection has 37 documents. All users have a first name of either
+// 'Bob' or 'Amy'. Compare these 2 queries (and results):
+
+// query 1
+db.users.distinct2("name.first", true);
+// result 1
+[
+	[ "Bob", 22 ],
+	[ "Amy", 15 ]
+]
+
+// query 2
+db.users.group({
+	key : { "name.first" : 1 },
+	$reduce : function (curr, result) { result.total++; },
+	initial : { total : 0 }
+});
+// result 2
+[
+	{ "first.name" : "Bob", "total" : 22 },
+	{ "first.name" : "Amy", "total" : 15 }
+]
+
 {% endhighlight %}
 
 ## Installation: ##
