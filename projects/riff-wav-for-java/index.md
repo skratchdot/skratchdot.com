@@ -19,25 +19,25 @@ and from links in the Wikipedia article on wave files. (For more info, see the l
 
 Loading a wave file (preferred method using EMF):  
 
-```java
+{% highlight java %}
 File file = new File("C:\\my_sample.wav");
 RIFFWave riffWave = WavFactory.eINSTANCE.createRIFFWave(file);
-```
+{% endhighlight %}
 
 Loading a wave file (method 2):  
 
-```java
+{% highlight java %}
 File file = new File("C:\\my_sample.wav");
 RIFFWave riffWave = new RIFFWaveImpl(file);
-```
+{% endhighlight %}
 
 Saving a wave file:  
 
-```java
+{% highlight java %}
 // riffWave object was created elsewhere
 File file = new File("C:\\my_sample.wav");
 riffWave.write(file);
-```
+{% endhighlight %}
 
 ### Links: ###
 

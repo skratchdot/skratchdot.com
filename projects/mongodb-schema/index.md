@@ -14,9 +14,9 @@ This is a schema analysis tool for MongoDB. It accomplishes this by
 extending the mongo shell, and providing a new function called schema()
 with the following signature:  
 
-```javascript
+{% highlight javascript %}
 DBCollection.prototype.schema = function (optionsOrOutString)  
-```
+{% endhighlight %}
 
 The schema() function accepts all the same parameters that the mapReduce() function
 does. It adds/modifies the following 4 parameters that can be used as well:
@@ -42,7 +42,7 @@ does. It adds/modifies the following 4 parameters that can be used as well:
 
 ## Usage: ##
 
-```javascript
+{% highlight javascript %}
 // Return schema results inline
 db.users.schema();
 
@@ -68,11 +68,11 @@ db.users.schema();
 
 // Process all documents
 db.users.schema({limit:-1});
-```
+{% endhighlight %}
 
 ## Example Result Set: ##
 
-```javascript
+{% highlight javascript %}
 > // Start fresh with a new collection called 'users'
 > db.users.remove();
 > 
@@ -172,7 +172,7 @@ Processing 4 document(s)...
   "counts" : {"input" : 4,"emit" : 26,"reduce" : 7,"output" : 7},
   "ok" : 1,
 }
-```
+{% endhighlight %}
 
 ## Caveats: ##
 

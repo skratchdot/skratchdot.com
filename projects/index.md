@@ -82,6 +82,9 @@ hide_comments: true
 - [framecapture](/projects/framecapture/) - Take a screenshot of a portion of your screen, and add
   a border to it in one swoop.
 
+- [npm-dview](/projects/npm-dview/) - A command line tool for comparing a package.json file's 
+  dependency version numbers with the latest remote version number.
+
 - [riff-wav-for-java](/projects/riff-wav-for-java/) - This EMF based project was created to allow the reading 
   and writing of .wav files in Java. It attempts to read in well-known RIFF chunks, and provide an API for 
   reading/manipulating those chunks. 
