@@ -16,7 +16,7 @@ tags:
 I've been working on a few node apps lately, and have sometimes been specifying specific
 version numbers in my [package.json](https://npmjs.org/doc/json.html#dependencies) files
 rather than using [Tilde-Version-Ranges](https://npmjs.org/doc/json.html#Tilde-Version-Ranges)
-or [X-Version-Ranges](https://npmjs.org/doc/json.html#X-Version-Ranges). If specifying specific
+or [X-Version-Ranges](https://npmjs.org/doc/json.html#X-Version-Ranges). When specifying specific
 version numbers, running `npm update` will not update those packages.
 
 There's not an easy way to compare the versions you specified in your package.json file
