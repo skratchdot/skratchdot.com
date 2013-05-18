@@ -41,5 +41,5 @@ You can check out the project page here:
 
 You can bookmark, and use the application here:  
 
-[List Tool](http://skratchdot.github.com/list-tool/)
+[List Tool](http://skratchdot.github.io/list-tool/)
 
