@@ -43,6 +43,9 @@ hide_comments: true
 
 ### Github User Scripts ###
 
+- [The Github Enhancement Suite](/projects/github-enhancement-suite/) - A collection of userscripts
+  to add functionality when browsing github.com.
+
 - [GitHub: Code Search](/projects/github-code-search.user.js/) - A user script that adds a search box 
   to repository pages which allows you to search the code in that repository.
 

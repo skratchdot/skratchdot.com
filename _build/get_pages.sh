@@ -28,6 +28,7 @@ function get_page {
 # Start grabbing pages
 get_page "./projects/open-electribe-editor" "index.md" "https://raw.github.com/skratchdot/open-electribe-editor/master/README.md" "page" "Open Electribe Editor" false
 
+get_page "./projects/github-enhancement-suite" "index.md" "https://raw.github.com/skratchdot/github-enhancement-suite/master/README.md" "page" "The Github Enhancement Suite" false
 get_page "./projects/github-code-search.user.js" "index.md" "https://raw.github.com/skratchdot/github-code-search.user.js/master/README.md" "page" "Github: Code Search" false
 get_page "./projects/github-editor-theme.user.js" "index.md" "https://raw.github.com/skratchdot/github-editor-theme.user.js/master/README.md" "page" "Github: Editor Theme" false
 get_page "./projects/github-fork-count.user.js" "index.md" "https://raw.github.com/skratchdot/github-fork-count.user.js/master/README.md" "page" "Github: Fork Count" false
