@@ -39,6 +39,7 @@ get_page "./projects/github-pull-request-links.user.js" "index.md" "https://raw.
 get_page "./projects/github-twitter-link.user.js" "index.md" "https://raw.github.com/skratchdot/github-twitter-link.user.js/master/README.md" "page" "Github: Twitter Link" false
 get_page "./projects/github-gh-pages-link.user.js" "index.md" "https://raw.github.com/skratchdot/github-gh-pages-link.user.js/master/README.md" "page" "Github: gh-pages Link" false
 
+get_page "./projects/audio-sort" "index.md" "https://raw.github.com/skratchdot/audio-sort/gh-pages/README.md" "page" "Audio Sort" false
 get_page "./projects/list-tool" "index.md" "https://raw.github.com/skratchdot/list-tool/gh-pages/README.md" "page" "List Tool" false
 get_page "./projects/domFormat" "index.md" "https://raw.github.com/skratchdot/domFormat/gh-pages/README.md" "page" "domFormat" false
 get_page "./projects/framecapture" "index.md" "https://raw.github.com/skratchdot/framecapture/master/README.md" "page" "framecapture" false

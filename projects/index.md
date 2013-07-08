@@ -78,6 +78,9 @@ hide_comments: true
 
 ### Miscellaneous Libraries / Utilities ###
 
+- [Audio Sort](/projects/audio-sort/) - A webpage to visualize and audibilize sorting algorithms
+  using javascript.
+
 - [List Tool](/projects/list-tool/) - A simple web application to compare lists.
 
 - [domFormat](/projects/domFormat/) - A simple javascript library to get DOM nodes as formatted/pretty strings. 

@@ -16,9 +16,9 @@ randomly generate all the parameters for you (a random pattern, bpm, effects, et
 
 ## Features: ##
 
-- Send midi messages to you ES-1 to create unique sounds for resampling and live playing
+- Send midi messages to your ES-1 to create unique sounds for resampling and live playing
 
-- Use the random generater to configure your key settings
+- Use the random generator to configure your key settings
 
 - You can change Midi In and Midi Out devices at any time while running the program.
 

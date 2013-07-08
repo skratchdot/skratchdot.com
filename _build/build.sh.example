@@ -36,7 +36,7 @@ fi
 
 # Always run jekyll with the default settings
 echo "Running: jekyll"
-jekyll
+jekyll build
 
 # FTP the site we just built
 if [ "$isFtpEnabled" = "y" ]; then
