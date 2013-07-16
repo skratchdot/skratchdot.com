@@ -9,6 +9,11 @@ action, visit:
 
 - [List Tool](http://skratchdot.github.io/list-tool/)
 
+[![List Tool][2]][1]
+
+  [1]: http://skratchdot.github.io/list-tool/index.html
+  [2]: http://skratchdot.github.io/list-tool/img/preview.jpg (List Tool)
+
 
 ## List/Set Operations
 

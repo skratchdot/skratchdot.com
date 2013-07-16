@@ -10,6 +10,7 @@ tags:
 - Javascript
 - Git
 - Github
+- Projects
 ---
 
 I've created quite a few [Github](https://github.com) userscripts to help enhance my experience

@@ -11,6 +11,7 @@ tags:
 - Javascript
 - Bookmarklet
 - Github
+- Projects
 ---
 
 Earlier today I was updating one of my

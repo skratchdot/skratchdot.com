@@ -6,7 +6,10 @@ title: "Audio Sort"
 
 A webpage to visualize and audibilize sorting algorithms using javascript.
 
-This app is still being developed, and there's a long [TODO List](TODO.md).
+[![Audio Sort][2]][1]
+
+  [1]: http://skratchdot.github.io/audio-sort/index.html
+  [2]: http://skratchdot.github.io/audio-sort/img/preview.jpg (Audio Sort)
 
 
 ## Audio Sort Links
@@ -17,6 +20,7 @@ This app is still being developed, and there's a long [TODO List](TODO.md).
 
 - [Source Code](https://github.com/skratchdot/audio-sort/)
 
+- [TODO List](https://github.com/skratchdot/audio-sort/blob/gh-pages/TODO.md)
 
 ## Built With
 
@@ -34,6 +38,8 @@ This app is still being developed, and there's a long [TODO List](TODO.md).
 
 - [chosen](http://harvesthq.github.io/chosen/)
 
+- [JS Beautifier](http://jsbeautifier.org/)
+
 
 ## See Also / Credits
 
@@ -49,7 +55,7 @@ This app is still being developed, and there's a long [TODO List](TODO.md).
 
 - [sorting-algorithms.com](http://www.sorting-algorithms.com/)
 
-- [sortvis.org](http://sortvis.org/index.html/)
+- [sortvis.org](http://sortvis.org/index.html)
 
 - [corte.si](http://corte.si/posts/code/visualisingsorting/index.html)
 

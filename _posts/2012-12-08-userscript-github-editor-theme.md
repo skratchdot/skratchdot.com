@@ -9,6 +9,7 @@ tags:
 - Javascript
 - Git
 - Github
+- Projects
 ---
 Yesterday I saw the following post on [HackerNews](http://news.ycombinator.com/):
 

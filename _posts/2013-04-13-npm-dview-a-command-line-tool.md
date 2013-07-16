@@ -11,6 +11,7 @@ tags:
 - Javascript
 - Node
 - Github
+- Projects
 ---
 
 I've been working on a few node apps lately, and have sometimes been specifying specific

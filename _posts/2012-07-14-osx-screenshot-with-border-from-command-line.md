@@ -15,6 +15,7 @@ tags:
 - Shell
 - screencapture
 - framecapture
+- Projects
 ---
 
 There are a few ways you can take [screenshots in OSX](http://guides.macrumors.com/Taking_Screenshots_in_Mac_OS_X),

@@ -10,6 +10,7 @@ tags:
 - Git
 - Github
 - Twitter
+- Projects
 ---
 
 While browsing [Github](https://github.com) profiles, I notice I'll frequently

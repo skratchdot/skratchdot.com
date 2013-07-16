@@ -8,6 +8,7 @@ tags:
 - Lists
 - Sets
 - Bootstrap
+- Projects
 ---
 
 This week at work I was comparing 2 lists from 2 different sources.  I frequently

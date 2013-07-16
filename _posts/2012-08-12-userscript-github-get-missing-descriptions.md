@@ -9,6 +9,7 @@ tags:
 - Javascript
 - Git
 - Github
+- Projects
 ---
 
 On [Github](https://github.com) profiles, not all the repositories
