@@ -22,6 +22,7 @@ A webpage to visualize and audibilize sorting algorithms using javascript.
 
 - [TODO List](https://github.com/skratchdot/audio-sort/blob/gh-pages/TODO.md)
 
+
 ## Built With
 
 - [timbre.js](http://mohayonao.github.io/timbre.js/)
@@ -36,9 +37,13 @@ A webpage to visualize and audibilize sorting algorithms using javascript.
 
 - [bootstrap-slider](http://www.eyecon.ro/bootstrap-slider/)
 
-- [chosen](http://harvesthq.github.io/chosen/)
-
 - [JS Beautifier](http://jsbeautifier.org/)
+
+- [JsMidGen](https://github.com/dingram/jsmidgen)
+
+- [Blob.js](https://github.com/eligrey/Blob.js)
+
+- [FileSaver.js](https://github.com/eligrey/FileSaver.js)
 
 
 ## See Also / Credits
@@ -67,11 +72,17 @@ A webpage to visualize and audibilize sorting algorithms using javascript.
 
 ### Audio
 
+- [Sound Of Sorting: Downloadable App](http://panthema.net/2013/sound-of-sorting/)
+
+- [Youtube: 15 Sorting Algorithms in 6 Minutes](https://www.youtube.com/watch?v=kPRA0W1kECg)
+
 - [Youtube: What different sorting algorithms sound like](http://www.youtube.com/watch?v=t8g-iYGHpEA)
 
 - [Youtube: Heapsort audibilization](http://www.youtube.com/watch?v=iXAjiDQbPSw)
 
 - [Youtube: The Sound of Quicksort](http://www.youtube.com/watch?v=m1PS8IR6Td0)
+
+- [Youtube: SORTDEMO.BAS](https://www.youtube.com/watch?v=leNaS9eJWqo)
 
 ### Sorting Out Sorting
 
@@ -84,6 +95,8 @@ A webpage to visualize and audibilize sorting algorithms using javascript.
 - [Sorting Out Sorting - Part 4](http://www.youtube.com/watch?v=wdcoRfS8edM)
 
 ### Implementations
+
+- [Sound Of Sorting](https://github.com/bingmann/sound-of-sorting)
 
 - [wikibooks.org](http://en.wikibooks.org/wiki/Algorithm_Implementation/Sorting)
 

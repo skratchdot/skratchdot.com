@@ -28,6 +28,13 @@ function get_page {
 # Start grabbing pages
 get_page "./projects/open-electribe-editor" "index.md" "https://raw.github.com/skratchdot/open-electribe-editor/master/README.md" "page" "Open Electribe Editor" false
 
+get_page "./projects/audio-sort" "index.md" "https://raw.github.com/skratchdot/audio-sort/gh-pages/README.md" "page" "Audio Sort" false
+get_page "./projects/audio-grid" "index.md" "https://raw.github.com/skratchdot/audio-grid/gh-pages/README.md" "page" "Audio Grid" false
+get_page "./projects/soundfont2mp3" "index.md" "https://raw.github.com/skratchdot/soundfont2mp3/master/README.md" "page" "soundfont2mp3" false
+get_page "./projects/timbre.soundfont.js" "index.md" "https://raw.github.com/skratchdot/timbre.soundfont.js/master/README.md" "page" "timbre.soundfont.js" false
+get_page "./projects/timbre.mp3_decode.js" "index.md" "https://raw.github.com/skratchdot/timbre.mp3_decode.js/gh-pages/README.md" "page" "timbre.mp3_decode.js" false
+get_page "./projects/riff-wav-for-java" "index.md" "https://raw.github.com/skratchdot/riff-wav-for-java/master/README.md" "page" "RIFF Wav for Java" false
+
 get_page "./projects/github-enhancement-suite" "index.md" "https://raw.github.com/skratchdot/github-enhancement-suite/master/README.md" "page" "The Github Enhancement Suite" false
 get_page "./projects/github-code-search.user.js" "index.md" "https://raw.github.com/skratchdot/github-code-search.user.js/master/README.md" "page" "Github: Code Search" false
 get_page "./projects/github-editor-theme.user.js" "index.md" "https://raw.github.com/skratchdot/github-editor-theme.user.js/master/README.md" "page" "Github: Editor Theme" false
@@ -39,12 +46,10 @@ get_page "./projects/github-pull-request-links.user.js" "index.md" "https://raw.
 get_page "./projects/github-twitter-link.user.js" "index.md" "https://raw.github.com/skratchdot/github-twitter-link.user.js/master/README.md" "page" "Github: Twitter Link" false
 get_page "./projects/github-gh-pages-link.user.js" "index.md" "https://raw.github.com/skratchdot/github-gh-pages-link.user.js/master/README.md" "page" "Github: gh-pages Link" false
 
-get_page "./projects/audio-sort" "index.md" "https://raw.github.com/skratchdot/audio-sort/gh-pages/README.md" "page" "Audio Sort" false
 get_page "./projects/list-tool" "index.md" "https://raw.github.com/skratchdot/list-tool/gh-pages/README.md" "page" "List Tool" false
 get_page "./projects/domFormat" "index.md" "https://raw.github.com/skratchdot/domFormat/gh-pages/README.md" "page" "domFormat" false
 get_page "./projects/framecapture" "index.md" "https://raw.github.com/skratchdot/framecapture/master/README.md" "page" "framecapture" false
 get_page "./projects/npm-dview" "index.md" "https://raw.github.com/skratchdot/npm-dview/master/README.md" "page" "npm-dview" false
-get_page "./projects/riff-wav-for-java" "index.md" "https://raw.github.com/skratchdot/riff-wav-for-java/master/README.md" "page" "RIFF Wav for Java" false
 get_page "./projects/tojs" "index.md" "https://raw.github.com/skratchdot/tojs/master/README.md" "page" "tojs" false
 
 get_page "./projects/mesh" "index.md" "https://raw.github.com/skratchdot/mesh/master/README.md" "page" "mesh: MongoDB Extended Shell" false
