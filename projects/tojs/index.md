@@ -62,6 +62,11 @@ check out the **Usage** and **Options** sections below.
 
 ## Version History ##
 
+### v1.2.2 (Released October 3, 2013)
+
+- fixed "main" declaration in package.json so library can be used from node
+  apps (patch submitted by [ryanramage](https://github.com/ryanramage))
+
 ### v1.2.1 (Released January 2, 2012)
 
 - adding man page
