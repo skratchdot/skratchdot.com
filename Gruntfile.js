@@ -46,10 +46,10 @@ module.exports = function (grunt) {
 		if (settings.remote) {
 			grunt.task.run('curl', 'fix-remote');
 		}
-		if (settings.javadocs) {
-			grunt.task.run('exec:javadocs');
-		}
 		grunt.task.run('jekyll');
+		if (settings.javadocs) {
+			grunt.task.run('clean:javadocs', 'exec:javadocs', 'copy:javadocs');
+		}
 		if (settings.private) {
 			grunt.task.run('copy:private');
 		}
@@ -61,7 +61,8 @@ module.exports = function (grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		clean: {
-			ftp: '_ftp'
+			ftp: '_ftp',
+			javadocs: '_javadocs'
 		},
 		connect: {
 			server: {
@@ -77,6 +78,12 @@ module.exports = function (grunt) {
 				cwd: '_site',
 				src: '**',
 				dest: '_ftp',
+				expand: true
+			},
+			javadocs: {
+				cwd: '_javadocs',
+				src: '**',
+				dest: '_site',
 				expand: true
 			},
 			private: {
