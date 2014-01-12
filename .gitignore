@@ -2,8 +2,11 @@ _build/build.sh
 _drafts/
 _ftp/
 _import/
+_private/
 _site/
+node_modules/
 .DS_Store
 *.swp
+.ftppass
 .project
 build.sh

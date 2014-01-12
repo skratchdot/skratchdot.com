@@ -1,11 +1,12 @@
-auto: false
-server: false
 lsi: false
 #markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:title
 paginate: 10
-exclude: ["README.md"]
+exclude:
+  - node_modules
+  - package.json
+  - README.md
 title: skratchdot.com
 url: http://skratchdot.com
 devmode: false

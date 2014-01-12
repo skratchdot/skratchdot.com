@@ -1,0 +1,149 @@
+exports.remoteUrls = [{
+	dest: "./projects/open-electribe-editor/index.md",
+	src: "https://raw.github.com/skratchdot/open-electribe-editor/master/README.md",
+	layout: "page",
+	title: "Open Electribe Editor"
+},
+
+{
+	dest: "./projects/audio-sort/index.md",
+	src: "https://raw.github.com/skratchdot/audio-sort/gh-pages/README.md",
+	layout: "page",
+	title: "Audio Sort"
+}, {
+	dest: "./projects/audio-grid/index.md",
+	src: "https://raw.github.com/skratchdot/audio-grid/gh-pages/README.md",
+	layout: "page",
+	title: "Audio Grid"
+}, {
+	dest: "./projects/soundfont2mp3/index.md",
+	src: "https://raw.github.com/skratchdot/soundfont2mp3/master/README.md",
+	layout: "page",
+	title: "soundfont2mp3"
+}, {
+	dest: "./projects/timbre.soundfont.js/index.md",
+	src: "https://raw.github.com/skratchdot/timbre.soundfont.js/master/README.md",
+	layout: "page",
+	title: "timbre.soundfont.js"
+}, {
+	dest: "./projects/timbre.mp3_decode.js/index.md",
+	src: "https://raw.github.com/skratchdot/timbre.mp3_decode.js/gh-pages/README.md",
+	layout: "page",
+	title: "timbre.mp3_decode.js"
+}, {
+	dest: "./projects/riff-wav-for-java/index.md",
+	src: "https://raw.github.com/skratchdot/riff-wav-for-java/master/README.md",
+	layout: "page",
+	title: "RIFF Wav for Java"
+},
+
+{
+	dest: "./projects/github-enhancement-suite/index.md",
+	src: "https://raw.github.com/skratchdot/github-enhancement-suite/master/README.md",
+	layout: "page",
+	title: "The Github Enhancement Suite"
+}, {
+	dest: "./projects/github-code-search.user.js/index.md",
+	src: "https://raw.github.com/skratchdot/github-code-search.user.js/master/README.md",
+	layout: "page",
+	title: "Github: Code Search"
+}, {
+	dest: "./projects/github-editor-theme.user.js/index.md",
+	src: "https://raw.github.com/skratchdot/github-editor-theme.user.js/master/README.md",
+	layout: "page",
+	title: "Github: Editor Theme"
+}, {
+	dest: "./projects/github-fork-count.user.js/index.md",
+	src: "https://raw.github.com/skratchdot/github-fork-count.user.js/master/README.md",
+	layout: "page",
+	title: "Github: Fork Count"
+}, {
+	dest: "./projects/github-get-missing-descriptions.user.js/index.md",
+	src: "https://raw.github.com/skratchdot/github-get-missing-descriptions.user.js/master/README.md",
+	layout: "page",
+	title: "Github: Get Missing Descriptions"
+}, {
+	dest: "./projects/github-repo-counts.user.js/index.md",
+	src: "https://raw.github.com/skratchdot/github-repo-counts.user.js/master/README.md",
+	layout: "page",
+	title: "Github: Repo Counts"
+}, {
+	dest: "./projects/github-repo-filter-info.user.js/index.md",
+	src: "https://raw.github.com/skratchdot/github-repo-filter-info.user.js/master/README.md",
+	layout: "page",
+	title: "Github: Repo Filter Info"
+}, {
+	dest: "./projects/github-pull-request-links.user.js/index.md",
+	src: "https://raw.github.com/skratchdot/github-pull-request-links.user.js/master/README.md",
+	layout: "page",
+	title: "Github: Pull Request Links"
+}, {
+	dest: "./projects/github-twitter-link.user.js/index.md",
+	src: "https://raw.github.com/skratchdot/github-twitter-link.user.js/master/README.md",
+	layout: "page",
+	title: "Github: Twitter Link"
+}, {
+	dest: "./projects/github-gh-pages-link.user.js/index.md",
+	src: "https://raw.github.com/skratchdot/github-gh-pages-link.user.js/master/README.md",
+	layout: "page",
+	title: "Github: gh-pages Link"
+},
+
+{
+	dest: "./projects/list-tool/index.md",
+	src: "https://raw.github.com/skratchdot/list-tool/gh-pages/README.md",
+	layout: "page",
+	title: "List Tool"
+}, {
+	dest: "./projects/domFormat/index.md",
+	src: "https://raw.github.com/skratchdot/domFormat/gh-pages/README.md",
+	layout: "page",
+	title: "domFormat"
+}, {
+	dest: "./projects/framecapture/index.md",
+	src: "https://raw.github.com/skratchdot/framecapture/master/README.md",
+	layout: "page",
+	title: "framecapture"
+}, {
+	dest: "./projects/npm-dview/index.md",
+	src: "https://raw.github.com/skratchdot/npm-dview/master/README.md",
+	layout: "page",
+	title: "npm-dview"
+}, {
+	dest: "./projects/tojs/index.md",
+	src: "https://raw.github.com/skratchdot/tojs/master/README.md",
+	layout: "page",
+	title: "tojs"
+},
+
+{
+	dest: "./projects/mesh/index.md",
+	src: "https://raw.github.com/skratchdot/mesh/master/README.md",
+	layout: "page",
+	title: "mesh: MongoDB Extended Shell"
+}, {
+	dest: "./projects/mongodb-distinct2/index.md",
+	src: "https://raw.github.com/skratchdot/mongodb-distinct2/master/README.md",
+	layout: "page",
+	title: "MongoDB - distinct2.js"
+}, {
+	dest: "./projects/mongodb-distinct-types/index.md",
+	src: "https://raw.github.com/skratchdot/mongodb-distinct-types/master/README.md",
+	layout: "page",
+	title: "MongoDB - distinct-types.js"
+}, {
+	dest: "./projects/mongodb-flatten/index.md",
+	src: "https://raw.github.com/skratchdot/mongodb-flatten/master/README.md",
+	layout: "page",
+	title: "MongoDB - flatten.js"
+}, {
+	dest: "./projects/mongodb-schema/index.md",
+	src: "https://raw.github.com/skratchdot/mongodb-schema/master/README.md",
+	layout: "page",
+	title: "MongoDB - schema.js"
+}, {
+	dest: "./projects/mongodb-wild/index.md",
+	src: "https://raw.github.com/skratchdot/mongodb-wild/master/README.md",
+	layout: "page",
+	title: "MongoDB - wild.js"
+}]

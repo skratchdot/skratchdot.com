@@ -11,29 +11,17 @@
 
 1. Clone the repo
 
-        git clone https://github.com/skratchdot/skratchdot.github.com.git
+    git clone https://github.com/skratchdot/skratchdot.github.com.git
 
 2. Checkout the "jekyll" branch
 
-        git checkout jekyll
+    git checkout jekyll
 
-3. Grab latest README.md files
+3. Update modules
 
-        sh ./_build/get_pages.sh
+    npm install
 
-4. Build site by running:
+4. Build site by running grunt:
 
-        jekyll
-
-5. Copy the generated _site folder to server.
-
-_Alternatively_:
-
-You can combine steps 3-5 by running:
-
-    sh ./_build/build.sh
-
-For **build.sh** to work, you will need **ncftp** to be installed:
-
-    brew home ncftp
+    grunt
 
