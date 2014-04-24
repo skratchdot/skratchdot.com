@@ -5,9 +5,8 @@ title: "timbre.mp3_decode.js"
 # timbre.mp3_decode.js
 
 Currently you can only decode mp3s with timbre.js in Node.  This plugin
-allows you to decode mp3s in the browser using [jsmad]().
-
-I've included source and minified versions of jsmad in this repo.
+allows you to decode mp3s in the browser using
+[jsmad](https://github.com/audiocogs/jsmad) and web workers.
 
 
 ## Demo
@@ -18,8 +17,6 @@ I've included source and minified versions of jsmad in this repo.
 ## Dependencies
 
 - [timbre.js](https://github.com/mohayonao/timbre.js/)
-
-- [jsmad](https://github.com/audiocogs/jsmad/)
 
 
 ## Usage
@@ -36,4 +33,10 @@ I've included source and minified versions of jsmad in this repo.
 		});
 	</script>
 {% endhighlight %}
+
+## Developers
+
+    npm install
+    grunt build
+
 
