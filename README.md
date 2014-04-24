@@ -2,7 +2,7 @@
 
 - Main Site: [http://skratchdot.com](http://skratchdot.com)
 
-- Jekyll Sources: [https://github.com/skratchdot/skratchdot.github.com/tree/jekyll/](https://github.com/skratchdot/skratchdot.github.com/tree/jekyll/)
+- Jekyll Sources: [https://github.com/skratchdot/skratchdot.com/](https://github.com/skratchdot/skratchdot.com/)
 
 - Github Page: [https://github.com/skratchdot](https://github.com/skratchdot)
 
@@ -11,17 +11,13 @@
 
 1. Clone the repo
 
-        git clone https://github.com/skratchdot/skratchdot.github.com.git
+        git clone https://github.com/skratchdot/skratchdot.com.git
 
-2. Checkout the "jekyll" branch
-
-        git checkout jekyll
-
-3. Update modules
+2. Update modules
 
         npm install
 
-4. Build site by running grunt:
+3. Build site by running grunt:
 
         grunt
 
