@@ -28,8 +28,8 @@ DOM parsing to create a "prettified" string.
 ### Links ###
 
 [Source Code / Download](https://github.com/skratchdot/domFormat/)  
-[Examples](http://skratchdot.github.io/domFormat/examples/index-html5.html)  
-[Bookmarklet](http://skratchdot.github.io/domFormat/bookmarklet/index.html)
+[Examples](http://projects.skratchdot.com/domFormat/examples/index-html5.html)  
+[Bookmarklet](http://projects.skratchdot.com/domFormat/bookmarklet/index.html)
 
 ### Libraries Used / Included ###
 
@@ -64,6 +64,10 @@ IE Quirks/Bugs:
 
 ### Version History ###
 
+#### v1.4 - Released April 25, 2014
+
+* Changing links from skratchdot.github.io -> projects.skratchdot.com
+
 #### v1.3 - Released October 5, 2013
 
 * Changing links from skratchdot.github.com -> skratchdot.github.io
@@ -74,7 +78,7 @@ IE Quirks/Bugs:
 
 * Updating [JS Beautifier](https://github.com/einars/js-beautify)
 
-* Updating [Bookmarklet](http://skratchdot.github.io/domFormat/bookmarklet/index.html)
+* Updating [Bookmarklet](http://projects.skratchdot.com/domFormat/bookmarklet/index.html)
 
 #### v1.1 - Released November 6, 2012 ####
 

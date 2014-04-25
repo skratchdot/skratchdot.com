@@ -7,12 +7,12 @@ title: "List Tool"
 List Tool is a simple web application to compare lists. To see it in
 action, visit:
 
-- [List Tool](http://skratchdot.github.io/list-tool/)
+- [List Tool](http://projects.skratchdot.com/list-tool/)
 
 [![List Tool][2]][1]
 
-  [1]: http://skratchdot.github.io/list-tool/index.html
-  [2]: http://skratchdot.github.io/list-tool/img/preview.jpg (List Tool)
+  [1]: http://projects.skratchdot.com/list-tool/index.html
+  [2]: http://projects.skratchdot.com/list-tool/img/preview.jpg (List Tool)
 
 
 ## List/Set Operations

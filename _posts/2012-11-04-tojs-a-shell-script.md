@@ -15,7 +15,7 @@ tags:
 ---
 
 Earlier today I was updating one of my
-[bookmarklets](http://skratchdot.github.com/domFormat/bookmarklet/index.html)
+[bookmarklets](http://projects.skratchdot.com/domFormat/bookmarklet/index.html)
 when I ran into the need to convert a html string to a javascript variable.
 
 I was going to create a quick webpage to do it for me, but that would have still required me

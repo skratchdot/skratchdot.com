@@ -25,15 +25,15 @@ I also wanted to attempt to make the audio "sound good".
 I came up with something fairly quickly, but then started researching websites that provided
 similar functionality.  The more I researched, the more features I wanted to add.  Check
 the [long list of links](https://github.com/skratchdot/audio-sort/#see-also--credits)
-I researched while working on [Audio Sort](http://skratchdot.github.io/audio-sort/index.html).
+I researched while working on [Audio Sort](http://projects.skratchdot.com/audio-sort/index.html).
 
 I plan to [add more features](https://github.com/skratchdot/audio-sort/blob/gh-pages/TODO.md)
-depending on how bored I get.  Check out [Audio Sort](http://skratchdot.github.io/audio-sort/index.html)
+depending on how bored I get.  Check out [Audio Sort](http://projects.skratchdot.com/audio-sort/index.html)
 below:
 
 [![Audio Sort][2]][1]
 
-  [1]: http://skratchdot.github.io/audio-sort/index.html
-  [2]: http://skratchdot.github.io/audio-sort/img/preview.jpg (Audio Sort)
+  [1]: http://projects.skratchdot.com/audio-sort/index.html
+  [2]: http://projects.skratchdot.com/audio-sort/img/preview.jpg (Audio Sort)
 
   

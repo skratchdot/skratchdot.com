@@ -3,14 +3,14 @@
   "description": "skratchdot.com source code",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/skratchdot/skratchdot.github.com",
+  "homepage": "https://github.com/skratchdot/skratchdot.com",
   "author": "skratchdot",
   "repository": {
     "type": "git",
-    "url": "git://github.com/skratchdot/skratchdot.github.com.git"
+    "url": "git://github.com/skratchdot/skratchdot.com.git"
   },
   "bugs": {
-    "url": "https://github.com/skratchdot/skratchdot.github.com/issues"
+    "url": "https://github.com/skratchdot/skratchdot.com/issues"
   },
   "engines": {
     "node": ">= 0.6.0"

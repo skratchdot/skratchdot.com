@@ -19,7 +19,7 @@ let's you highlight items in a matrix to create music.
 
 With newer browsers, you are finally able to implement some of the things you could do in
 flash years ago, without requiring browser plugins.  I created
-[Audio Grid](http://skratchdot.github.io/audio-grid/index.html) as an experiment to explore
+[Audio Grid](http://projects.skratchdot.com/audio-grid/index.html) as an experiment to explore
 this fact.
 
 It's using [timbre.js](http://mohayonao.github.io/timbre.js/) for it's core functionality, but
@@ -43,6 +43,6 @@ You can see a demo of [Audio Grid]() by clicking on the image below:
 
 [![Audio Grid][2]][1]
 
-  [1]: http://skratchdot.github.io/audio-grid/index.html
-  [2]: http://skratchdot.github.io/audio-grid/img/preview.jpg (Audio Grid)
+  [1]: http://projects.skratchdot.com/audio-grid/index.html
+  [2]: http://projects.skratchdot.com/audio-grid/img/preview.jpg (Audio Grid)
 

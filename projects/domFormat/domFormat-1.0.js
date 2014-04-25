@@ -4,7 +4,7 @@
  * Release Date: July 25, 2011 [2011-07-25 21:33:34]
  *      Version: 1.0
  *  Source Code: https://github.com/skratchdot/domFormat  
- *     Examples: https://skratchdot.github.com/domFormat/examples/index-html5.html  
+ *     Examples: https://projects.skratchdot.com/domFormat/examples/index-html5.html  
  * 
  * Copyright (c) 2011 SKRATCHDOT.COM
  * Dual licensed under the MIT and GPL licenses:
@@ -606,12 +606,12 @@ domFormat.cssBeautify = function (style, opt) {
     domFormat.jsBeautify(js_source_text, options);
 
   The options are:
-    indent_size (default 4)          — indentation size,
-    indent_char (default space)      — character to indent with,
-    preserve_newlines (default true) — whether existing line breaks should be preserved,
+    indent_size (default 4)          ï¿½ indentation size,
+    indent_char (default space)      ï¿½ character to indent with,
+    preserve_newlines (default true) ï¿½ whether existing line breaks should be preserved,
     preserve_max_newlines (default unlimited) - maximum number of line breaks to be preserved in one chunk,
 
-    jslint_happy (default false) — if true, then jslint-stricter mode is enforced.
+    jslint_happy (default false) ï¿½ if true, then jslint-stricter mode is enforced.
 
             jslint_happy   !jslint_happy
             ---------------------------------
