@@ -80,7 +80,7 @@ header a:hover span { color: #000 }
 /* MAIN NAVIGATION               */
 /* ----------------------------- */
 nav#mainNav { border-top: #999 double 5px; border-bottom: #999 double 5px; padding: 5px 0; text-align: center; text-transform: lowercase; }
-nav#mainNav ul { display: block; margin: 0; }
+nav#mainNav ul { display: block; margin: 0; padding: 0; }
 nav#mainNav ul li { display: inline; padding: 0; }
 nav#mainNav ul li:before { content: "\0020 \2022 \0020" }
 nav#mainNav ul li:first-child:before { content: "" }
