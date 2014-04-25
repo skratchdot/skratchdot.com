@@ -22,7 +22,7 @@ exports.remoteUrls = [{
 	title: "soundfont2mp3"
 }, {
 	dest: "./projects/timbre.soundfont.js/index.md",
-	src: "https://raw.github.com/skratchdot/timbre.soundfont.js/master/README.md",
+	src: "https://raw.github.com/skratchdot/timbre.soundfont.js/gh-pages/README.md",
 	layout: "page",
 	title: "timbre.soundfont.js"
 }, {
