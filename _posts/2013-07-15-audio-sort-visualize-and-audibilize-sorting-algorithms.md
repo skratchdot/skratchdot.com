@@ -34,6 +34,6 @@ below:
 [![Audio Sort][2]][1]
 
   [1]: http://projects.skratchdot.com/audio-sort/index.html
-  [2]: http://projects.skratchdot.com/audio-sort/img/preview.jpg (Audio Sort)
+  [2]: http://projects.skratchdot.com/audio-sort/img/preview.jpg
 
   

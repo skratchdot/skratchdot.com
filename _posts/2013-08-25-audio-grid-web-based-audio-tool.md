@@ -44,5 +44,5 @@ You can see a demo of [Audio Grid]() by clicking on the image below:
 [![Audio Grid][2]][1]
 
   [1]: http://projects.skratchdot.com/audio-grid/index.html
-  [2]: http://projects.skratchdot.com/audio-grid/img/preview.jpg (Audio Grid)
+  [2]: http://projects.skratchdot.com/audio-grid/img/preview.jpg
 
