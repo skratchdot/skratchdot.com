@@ -38,6 +38,48 @@ exports.remoteUrls = [{
 },
 
 {
+	dest: "./projects/colorify/index.md",
+	src: "https://raw.github.com/skratchdot/colorify/master/README.md",
+	layout: "page",
+	title: "Colorify"
+}, {
+	dest: "./projects/infinite-gradients/index.md",
+	src: "https://raw.github.com/skratchdot/infinite-gradients/master/README.md",
+	layout: "page",
+	title: "Inifinte Gradients"
+}, {
+	dest: "./projects/color-blind/index.md",
+	src: "https://raw.github.com/skratchdot/color-blind/master/README.md",
+	layout: "page",
+	title: "color-blind"
+}, {
+	dest: "./projects/color-harmony/index.md",
+	src: "https://raw.github.com/skratchdot/color-harmony/master/README.md",
+	layout: "page",
+	title: "color-harmony"
+}, {
+	dest: "./projects/color-matrix/index.md",
+	src: "https://raw.github.com/skratchdot/color-matrix/master/README.md",
+	layout: "page",
+	title: "color-matrix"
+}, {
+	dest: "./projects/color-palette/index.md",
+	src: "https://raw.github.com/skratchdot/color-palette/master/README.md",
+	layout: "page",
+	title: "color-palette"
+}, {
+	dest: "./projects/color-quantize/index.md",
+	src: "https://raw.github.com/skratchdot/color-quantize/master/README.md",
+	layout: "page",
+	title: "color-quantize"
+}, {
+	dest: "./projects/color-stats/index.md",
+	src: "https://raw.github.com/skratchdot/color-stats/master/README.md",
+	layout: "page",
+	title: "color-stats"
+},
+
+{
 	dest: "./projects/github-enhancement-suite/index.md",
 	src: "https://raw.github.com/skratchdot/github-enhancement-suite/master/README.md",
 	layout: "page",
