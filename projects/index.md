@@ -32,16 +32,28 @@ hide_comments: true
   reading/manipulating those chunks. 
 
 
-### Color Libraries ###
+### Color Tools / Libraries ###
 
 - [colorify](/projects/colorify) - a collection of color tools
-- [infinite-gradients](/projects/infinite-gradients) - An HTML experiment for generating randomly created CSS3 gradients (both linear and radial)
-- [color-blind](/projects/color-blind) - Simulate color blindness by converting RGB hex codes
+
+- [infinite-gradients](/projects/infinite-gradients) - An HTML experiment for generating
+randomly created CSS3 gradients (both linear and radial)
+
+- [color-blind](/projects/color-blind) - Simulate color blindness by converting RGB hex
+codes
+
 - [color-harmony](/projects/color-harmony) - Create color scales by rotating hue
-- [color-matrix](/projects/color-matrix) - Apply filters to colors to simulate things like color blindness and night vision
-- [color-palette](/projects/color-palette) - Get a color palette from a uri using phantomjs and color-thief
+
+- [color-matrix](/projects/color-matrix) - Apply filters to colors to simulate things
+like color blindness and night vision
+
+- [color-palette](/projects/color-palette) - Get a color palette from a uri using phantomjs 
+and color-thief
+
 - [color-quantize](/projects/color-quantize) - Convert colors to websafe / websmart values
-- [color-stats](/projects/color-stats) - Generate color information based off of the hash of any object (or a valid color string)
+
+- [color-stats](/projects/color-stats) - Generate color information based off of the hash
+of any object (or a valid color string)
 
 
 
