@@ -35,14 +35,14 @@ on OSX, but Window users can check out tools like
 or [loopMIDI](http://www.tobias-erichsen.de/software/loopmidi.html)
 and Linux users can try
 [ALSA](http://www.alsa-project.org/main/index.php/Main_Page)
-or [http://qjackctl.sourceforge.net/](QJackCtl).
+or [QJackCtl](http://qjackctl.sourceforge.net/).
 
 
 ## Creating Virtual MIDI Ports On OSX
 
 #### Step 1: Open **Audio MIDI Setup**
 
-You can open **Audio MIDI Setup** by typing that in Spotlight, by looking in
+You can open **Audio MIDI Setup** by searching Spotlight, by looking in
 **/Applications/Utilities/**, or by using Launchpad:
 
 ![Launchpad](http://skratchdot.com/images/posts/2016/01/27/launchpad.png)
@@ -91,9 +91,9 @@ Since I use [homebrew](http://brew.sh/) with [cask](http://caskroom.io/),
 I'm going to install midikeys. You can do this by opening your command line,
 and running:
 
-```bash
+{% highlight bash %}
 brew cask install midikeys
-```
+{% endhighlight %}
 
 ![MidiKeys - Install](http://skratchdot.com/images/posts/2016/01/27/midikeys-install.png)
 
@@ -111,8 +111,13 @@ WebMidi virtual port you created earlier.
 
 There are other options for virtual keyboards / software, but this is a quick way
 to get up and running.  More advanced users can try out programs like
-[Pure Data](https://puredata.info/) by running `brew cask install pd` and
-creating their own virtual midi keyboard / instrument for usage with WebMidi.
+[Pure Data](https://puredata.info/) by running
+
+{% highlight bash %}
+brew cask install pd
+{% endhighlight %}
+
+and creating their own virtual midi keyboard / instrument for usage with WebMidi.
 
 Better yet, create your own WebMidi instrument that sends output to other
 WebMidi enabled devices!
