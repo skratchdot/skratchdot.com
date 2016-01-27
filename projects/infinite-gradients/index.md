@@ -127,7 +127,7 @@ gradients, and a few helper functions that may or may not be useful to you.
 The **API** is described below:
 
 
-### infiniteGradients.toDegrees(radians) 
+### infiniteGradients.toDegrees(radians)
 
 Converts from radians to degrees
 
@@ -144,7 +144,7 @@ infiniteGradients.toDegrees(0); // returns: 0
 {% endhighlight %}
 
 
-### infiniteGradients.getAngle(x1, y1, x2, y2) 
+### infiniteGradients.getAngle(x1, y1, x2, y2)
 
 Get the angle between 2 points with x/y coordinates
 
@@ -167,7 +167,7 @@ infiniteGradients.getAngle(0,0,10,10); // returns 45
 {% endhighlight %}
 
 
-### infiniteGradients.getDistance(x1, y1, x2, y2) 
+### infiniteGradients.getDistance(x1, y1, x2, y2)
 
 Get the distance between 2 points with x/y coordinates
 
@@ -190,7 +190,7 @@ infiniteGradients.getDistance(0,0,0,5); // returns: 5
 {% endhighlight %}
 
 
-### infiniteGradients.toHex(num) 
+### infiniteGradients.toHex(num)
 
 Convert a decimal to hexidecimal format. pads to at least 2 digits.
 
@@ -207,7 +207,7 @@ infiniteGradients.toHex(11); // returns: '0b'
 {% endhighlight %}
 
 
-### infiniteGradients.floatBetween(min, max) 
+### infiniteGradients.floatBetween(min, max)
 
 Returns a random float between min (inclusive) and max (exclusive)
 
@@ -226,7 +226,7 @@ infiniteGradients.floatBetween(0,100); // returned: 77.16259211301804
 {% endhighlight %}
 
 
-### infiniteGradients.intBetween(min, max) 
+### infiniteGradients.intBetween(min, max)
 
 Returns a random integer between min (inclusive) and max (inclusive)
 
@@ -245,7 +245,7 @@ infiniteGradients.intBetween(0,100); // returned: 86
 {% endhighlight %}
 
 
-### infiniteGradients.randomColor() 
+### infiniteGradients.randomColor()
 
 Return a random RGB color in hex format
 
@@ -258,7 +258,7 @@ infiniteGradients.randomColor(); // returned: '#5bb023'
 {% endhighlight %}
 
 
-### infiniteGradients.getRadialGradient(colors, offset, x, y) 
+### infiniteGradients.getRadialGradient(colors, offset, x, y)
 
 Gets a radial gradient CSS function as a string
 
@@ -281,7 +281,7 @@ infiniteGradients.getRadialGradient(['red','#286554','blue','#9619e2'], 25, .021
 {% endhighlight %}
 
 
-### infiniteGradients.getLinearGradient(colors, offset, angle) 
+### infiniteGradients.getLinearGradient(colors, offset, angle)
 
 Gets a linear gradient CSS function as a string
 
@@ -331,8 +331,17 @@ gulp
 Now browse to the app at [http://localhost:8080/infinite-gradients](http://localhost:8080/infinite-gradients)
 
 
+## Other Background Generators
+
+- [Unique Gradient Generator](https://github.com/tiborsaas/unique-gradient-generator)
+- [Randomized Gradient Generator](http://paintbycode.github.io/gradient-generator/)
+- [Colorzilla Gradient Editor](http://www.colorzilla.com/gradient-editor/)
+- [AngryTools.com Gradient Editor](http://angrytools.com/gradient/)
+
+**...more to come. please submit a PR if you know what's missing**
+
+
 ## License
 
 Copyright (c) 2015 [skratchdot](http://skratchdot.com/)  
 Licensed under the MIT license.
-

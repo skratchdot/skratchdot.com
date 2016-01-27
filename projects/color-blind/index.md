@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: "Color Blind"
+title: "color-blind"
 ---
 # color-blind
 
