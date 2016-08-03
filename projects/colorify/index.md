@@ -74,10 +74,10 @@ Options:
 
 {% highlight bash %}
 $ colorify random
+#E13954
 {% endhighlight %}
 
 {% highlight bash %}
-#E13954
 $ colorify random
 #A8A3E5
 {% endhighlight %}

@@ -38,6 +38,13 @@ action, visit:
 
 - Trim
 
+## See Also (similar apps / demos / sites)
+
+- [A Visual Explanation Of SQL Joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+
+- [SQL Joins Visualizer](https://github.com/le0pard/sql-joins-app)
+
+
 ## Built with
 
 - [Ace Editor](https://github.com/ajaxorg/ace/)

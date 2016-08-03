@@ -9,29 +9,28 @@ title: "npm-dview"
 [![Dependency Status](https://david-dm.org/skratchdot/npm-dview.svg)](https://david-dm.org/skratchdot/npm-dview)
 [![devDependency Status](https://david-dm.org/skratchdot/npm-dview/dev-status.svg)](https://david-dm.org/skratchdot/npm-dview#info=devDependencies)
 
+
 ## Description ##
 
 npm-dview is a command line tool for comparing a package.json file's dependency version
 numbers with the latest remote version number.  
-  
+
 It compares both "dependencies" and/or "devDependencies".  
-  
+
 It accomplishes this by calling "npm view MODULE_NAME version" for each dependency listed
 in your package.json file.
-
-For a webservice version of this, visit https://david-dm.org/
 
 
 ## Installation ##
 
 Install the command line tool globally by running:
 
-	npm install -g npm-dview
+    npm install -g npm-dview
 
 
 ## Usage ##
 
-	Usage: npm-dview [options]
+    Usage: npm-dview [options]
 
 
 ## Options ##
@@ -42,6 +41,8 @@ Install the command line tool globally by running:
     --dev                Show development dependencies
     --peer               Show peer dependencies
     --update             Update the package.json file with remote version numbers
+    --hideLocal          Hide dependencies which local copy same as requestedVersion
+    --excludeCurrent     Exclude up-to-date packages from the output
     --output [type]      Specify the output type [table,json]
     --outputFile <file>  the file to write data to
     --file <file>        The location of the package.json file
@@ -65,11 +66,24 @@ Install the command line tool globally by running:
 ## Contributing ##
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
-Add unit tests for any new or changed functionality. Lint and test your code 
+Add unit tests for any new or changed functionality. Lint and test your code
 using [Grunt](http://gruntjs.com/).
 
 
 ## Release History ##
+
+- Version 2.0.3 - Released Apr 11, 2016
+  - fixed undefined when using --hideLocal
+
+- Version 2.0.2 - Released Apr 10, 2016
+  - add --hideLocal cli option (thanks [@syarul](https://github.com/syarul))
+
+- Version 2.0.1 - Released Apr 9, 2016
+  - updating README
+  - updating package dependencies
+
+- Version 2.0.0 - Released Aug 25, 2015
+  - adding --excludeCurrent command line option.
 
 - Version 1.3.0 - Released Aug 16, 2015
   - adding an --outputFile argument
@@ -125,8 +139,14 @@ using [Grunt](http://gruntjs.com/).
   to use this via require('npm-dview').
 
 
+## See Also ##
+
+- [David DM](https://david-dm.org/)
+- [updtr](https://github.com/peerigon/updtr)
+- [GreenKeeper.io](http://greenkeeper.io/)
+
+
 ## License ##
 
 Copyright (c) 2013 skratchdot  
 Licensed under the MIT license.
-

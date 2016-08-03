@@ -70,6 +70,16 @@ A webpage to visualize and audibilize sorting algorithms using javascript.
 
 - [Youtube: Visualization Of QuickSort](http://www.youtube.com/watch?v=aXXWXz5rF64)
 
+- [Visualizing Algorithms by Mike Bostock](https://bost.ocks.org/mike/algorithms/)
+
+- [Algorithm Visualizer](https://github.com/parkjs814/AlgorithmVisualizer)
+
+- [Algorithm Playground](https://github.com/awalGarg/alpg)
+
+- [Data Structure Visualizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+
+- [VisuAlgo](http://visualgo.net/)
+
 ### Other Web Apps
 
 - [Assortment - webcloud.se](http://webcloud.se/Assortment/)
