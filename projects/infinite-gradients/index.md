@@ -9,7 +9,7 @@ for generating randomly created CSS3 gradients (both linear and radial).
 
 [Infinite Gradients](https://github.com/skratchdot/infinite-gradients)
 comes in 3 forms (
-a [website](http://projects.skratchdot.com/infinite-gradients/),
+a [website](https://projects.skratchdot.com/infinite-gradients/),
 a [command line utility](#command-line-utility),
 and a [node.js library](#node-js-library)
 ).
@@ -17,7 +17,7 @@ and a [node.js library](#node-js-library)
 
 ## Website
 
-The [website](http://projects.skratchdot.com/infinite-gradients/) is built
+The [website](https://projects.skratchdot.com/infinite-gradients/) is built
 on [React](http://facebook.github.io/react/), and allows you to pause and start an
 infinite stream of gradients.  You can toggle features on and off by clicking on
 items in the header.  You can lock features such as:
@@ -28,7 +28,7 @@ items in the header.  You can lock features such as:
 You can toggle the random generation on and off by clicking either the mouse button,
 or by hitting your spacebar.
 
-- [View the website](http://projects.skratchdot.com/infinite-gradients/)
+- [View the website](https://projects.skratchdot.com/infinite-gradients/)
 
 ### Website Keyboard Controls
 
@@ -344,5 +344,5 @@ Now browse to the app at [http://localhost:8080/infinite-gradients](http://local
 
 ## License
 
-Copyright (c) 2015 [skratchdot](http://skratchdot.com/)  
+Copyright (c) 2015 [skratchdot](https://www.skratchdot.com/)  
 Licensed under the MIT license.

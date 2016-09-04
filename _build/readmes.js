@@ -26,6 +26,15 @@ var fixRemote = function () {
       return '\n{% endhighlight %}';
     });
 
+    // fix links
+    [
+      ['http://skratchdot.com', 'https://www.skratchdot.com'],
+      ['http://www.skratchdot.com', 'https://www.skratchdot.com'],
+      ['http://projects.skratchdot.com', 'https://projects.skratchdot.com'],
+    ].forEach(function (arr) {
+      content = content.split(arr[0]).join(arr[1]);
+    });
+
     // write file
     console.log(item.dest);
     fs.writeFileSync(item.dest, content, 'utf-8');

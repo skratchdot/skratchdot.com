@@ -5,7 +5,7 @@ title: "Colorify"
 # colorify
 
 Colorify is a collection of color tools that comes in three forms:
-a [website](http://projects.skratchdot.com/colorify),
+a [website](https://projects.skratchdot.com/colorify),
 a [command line tool](#2-command-line-tool), and
 a [node.js library](#3-node-js-library):
 
@@ -14,11 +14,11 @@ a [node.js library](#3-node-js-library):
 The website is built on [react](http://facebook.github.io/react/), and contains
 a few **toy apps** that can manipulate and display colors.
 
-- [Colorify: Page: Home](http://projects.skratchdot.com/colorify/)
-- [Colorify: Page: About](http://projects.skratchdot.com/colorify/about)
-- [Colorify: App: Stats](http://projects.skratchdot.com/colorify/stats)
-- [Colorify: App: Mixer](http://projects.skratchdot.com/colorify/mixer)
-- [Colorify: App: Math](http://projects.skratchdot.com/colorify/math)
+- [Colorify: Page: Home](https://projects.skratchdot.com/colorify/)
+- [Colorify: Page: About](https://projects.skratchdot.com/colorify/about)
+- [Colorify: App: Stats](https://projects.skratchdot.com/colorify/stats)
+- [Colorify: App: Mixer](https://projects.skratchdot.com/colorify/mixer)
+- [Colorify: App: Math](https://projects.skratchdot.com/colorify/math)
 
 ### 2. Command Line Tool
 
@@ -571,5 +571,5 @@ Now browse to the app at [http://localhost:8080/colorify](http://localhost:8080/
 
 ## License
 
-Copyright (c) 2014 [skratchdot](http://skratchdot.com/)  
+Copyright (c) 2014 [skratchdot](https://www.skratchdot.com/)  
 Licensed under the MIT license.

@@ -41,7 +41,7 @@ riffWave.write(file);
 
 ### Links: ###
 
-- [Javadocs](http://skratchdot.com/projects/riff-wav-for-java/javadocs/)
+- [Javadocs](https://www.skratchdot.com/projects/riff-wav-for-java/javadocs/)
 
 - [Wikipedia: WAV](http://en.wikipedia.org/wiki/WAV)  
 

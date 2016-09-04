@@ -11,7 +11,7 @@ allows you to decode mp3s in the browser using
 
 ## Demo
 
-[Timbre.js MP3 Online Decoding Demo](http://projects.skratchdot.com/timbre.mp3_decode.js/)
+[Timbre.js MP3 Online Decoding Demo](https://projects.skratchdot.com/timbre.mp3_decode.js/)
 
 
 ## Dependencies

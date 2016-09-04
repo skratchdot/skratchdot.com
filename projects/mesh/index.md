@@ -51,18 +51,18 @@ Start the shell after executing this script
 - [science.js](https://github.com/jasondavies/science.js) - Scientific and statistical computing
   in JavaScript.
 
-- [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/) - Similar to the built-in distinct()
+- [distinct2()](https://www.skratchdot.com/projects/mongodb-distinct2/) - Similar to the built-in distinct()
   function, but with more capabilities.
 
-- [distinctTypes()](http://skratchdot.com/projects/mongodb-distinct-types/) - Similar to the 
+- [distinctTypes()](https://www.skratchdot.com/projects/mongodb-distinct-types/) - Similar to the 
   db.myCollection.distinct() function, distinctTypes() will return "types" rather than "values".
 
-- [flatten()](http://skratchdot.com/projects/mongodb-flatten/) - The flatten() function is a 
+- [flatten()](https://www.skratchdot.com/projects/mongodb-flatten/) - The flatten() function is a 
   mapReduce that flattens documents into key/value pairs.
 
-- [schema()](http://skratchdot.com/projects/mongodb-schema/) - A schema analysis tool for MongoDB.
+- [schema()](https://www.skratchdot.com/projects/mongodb-schema/) - A schema analysis tool for MongoDB.
 
-- [wild()](http://skratchdot.com/projects/mongodb-wild/) - Adds a wildcard search to the mongodb shell.
+- [wild()](https://www.skratchdot.com/projects/mongodb-wild/) - Adds a wildcard search to the mongodb shell.
 
 - A console wrapper so calls like console.log() and console.dir() don't error out
 
@@ -157,8 +157,8 @@ coming soon
   * adding mesh.ops which prints all operations.
   * no longer printing version when tabbing.
   * updating the following libraries: [JSON-js](https://github.com/douglascrockford/JSON-js),
-  [moment](http://momentjs.com/), [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/),
-  [schema()](http://skratchdot.com/projects/mongodb-schema/), and
+  [moment](http://momentjs.com/), [distinct2()](https://www.skratchdot.com/projects/mongodb-distinct2/),
+  [schema()](https://www.skratchdot.com/projects/mongodb-schema/), and
   [underscore.js](http://documentcloud.github.com/underscore/)
 
 #### v1.4.2 - Released February 7, 2013
@@ -170,12 +170,12 @@ coming soon
 #### v1.4.1 - Released December 10, 2012
   * adding [DBCollection.insertArray()](https://github.com/skratchdot/mesh/blob/master/src/mongodb.insertArray.js)
   * adding [JSON-js](https://github.com/douglascrockford/JSON-js) - json2.js and cycle.js
-  * updating [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/),
+  * updating [distinct2()](https://www.skratchdot.com/projects/mongodb-distinct2/),
   [underscore.js](http://documentcloud.github.com/underscore/), and
   [moment.js](http://momentjs.com/)
 
 #### v1.4.0 - Released December 9, 2012
-  * updating [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/)
+  * updating [distinct2()](https://www.skratchdot.com/projects/mongodb-distinct2/)
   * adding some [underscore.js mixins](https://github.com/skratchdot/snippets/tree/master/underscore.js/)
     - [underscore.aggregate.js](https://github.com/skratchdot/snippets/tree/master/underscore.js/underscore.aggregate.js)
     - [underscore.avg.js](https://github.com/skratchdot/snippets/tree/master/underscore.js/underscore.avg.js)
@@ -197,7 +197,7 @@ coming soon
 
 #### v1.3.0 - Released November 13, 2012
   * updating libraries: [moment.js](http://momentjs.com/),
-  [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/),
+  [distinct2()](https://www.skratchdot.com/projects/mongodb-distinct2/),
   [underscore.js](http://documentcloud.github.com/underscore/), and
   [underscore.string.js](http://epeli.github.com/underscore.string/)
   * adding mesh.oid() - a wrapper for ObjectId()
@@ -205,23 +205,23 @@ coming soon
   * config values to change mesh.tid() to t() or mesh.oid() to o()
 
 #### v1.2.4 - Released October 22, 2012
-  * updating libraries: [flatten()](http://skratchdot.com/projects/mongodb-flatten/)
+  * updating libraries: [flatten()](https://www.skratchdot.com/projects/mongodb-flatten/)
   and [underscore.js](http://documentcloud.github.com/underscore/)
 
 #### v1.2.3 - Released October 21, 2012
-  * updating libraries: [flatten()](http://skratchdot.com/projects/mongodb-flatten/)
+  * updating libraries: [flatten()](https://www.skratchdot.com/projects/mongodb-flatten/)
 
 #### v1.2.2 - Released October 20, 2012
-  * updating libraries: [flatten()](http://skratchdot.com/projects/mongodb-flatten/),
+  * updating libraries: [flatten()](https://www.skratchdot.com/projects/mongodb-flatten/),
   [underscore.js](http://documentcloud.github.com/underscore/), and
   [underscore.string.js](http://epeli.github.com/underscore.string/)
 
 #### v1.2.1 - Released October 7, 2012
   * updating libraries: [moment.js](http://momentjs.com/),
-  [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/), and
+  [distinct2()](https://www.skratchdot.com/projects/mongodb-distinct2/), and
   [underscore.js](http://documentcloud.github.com/underscore/)
   * [json2.js](https://github.com/douglascrockford/JSON-js) is now included due 
-    to the [distinct2()](http://skratchdot.com/projects/mongodb-distinct2/) upgrade
+    to the [distinct2()](https://www.skratchdot.com/projects/mongodb-distinct2/) upgrade
 
 #### v1.2.0 - Released September 24, 2012
   * mesh.setPrompt() is now mesh.prompt()
@@ -244,10 +244,10 @@ coming soon
   * Updating submodules
   * Updating README.md with "What's Included?" descriptions
   * Updating README.md with "For Deveopers" section
-  * Small fix to [distinct2.js](http://skratchdot.com/projects/mongodb-distinct2/)
+  * Small fix to [distinct2.js](https://www.skratchdot.com/projects/mongodb-distinct2/)
 
 #### v1.1.0 - Released August 15, 2012 ####
-  * Adding [distinct2.js](http://skratchdot.com/projects/mongodb-distinct2/)
+  * Adding [distinct2.js](https://www.skratchdot.com/projects/mongodb-distinct2/)
   * implementing mesh.toString() so the console prints help info
 
 #### v1.0.0 - Released July 17, 2012 ####

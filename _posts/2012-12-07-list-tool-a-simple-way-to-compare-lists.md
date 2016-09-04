@@ -38,7 +38,7 @@ As of now, the app has the following features:
 
 You can check out the project page here:  
 
-[Project Page](http://skratchdot.com/projects/list-tool/)
+[Project Page](https://www.skratchdot.com/projects/list-tool/)
 
 You can bookmark, and use the application here:  
 

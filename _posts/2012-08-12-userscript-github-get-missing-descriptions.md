@@ -32,7 +32,7 @@ descriptions, you will have to click the button multiple times.
 
 **You can check it out here:**
 
-- [Project Page](http://skratchdot.com/projects/github-get-missing-descriptions.user.js/)
+- [Project Page](https://www.skratchdot.com/projects/github-get-missing-descriptions.user.js/)
 
 - [Github Page](https://github.com/skratchdot/github-get-missing-descriptions.user.js/)
 

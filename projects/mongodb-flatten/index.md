@@ -4,7 +4,7 @@ title: "MongoDB - flatten.js"
 ---
 # MongoDB - flatten.js #
 
-[Project Page](http://skratchdot.com/projects/mongodb-flatten/)  
+[Project Page](https://www.skratchdot.com/projects/mongodb-flatten/)  
 [Source Code](https://github.com/skratchdot/mongodb-flatten/)  
 [Issues](https://github.com/skratchdot/mongodb-flatten/issues/)  
 

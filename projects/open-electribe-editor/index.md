@@ -19,13 +19,13 @@ is available on Windows, Linux, and Mac for free download
 
 - [Downloads](http://code.google.com/p/open-electribe-editor/downloads/list) 
 
-- [Homepage](http://skratchdot.com/projects/open-electribe-editor/) 
+- [Homepage](https://www.skratchdot.com/projects/open-electribe-editor/) 
 
 - [Discussion Group / Forum](http://groups.google.com/group/open-electribe-editor) 
 
 - [Bug Reports / Feature Requests](https://github.com/skratchdot/open-electribe-editor/issues) 
 
-- [Javadocs](http://skratchdot.com/projects/open-electribe-editor/javadocs/)
+- [Javadocs](https://www.skratchdot.com/projects/open-electribe-editor/javadocs/)
 
 - [Wiki](https://github.com/skratchdot/open-electribe-editor/wiki)
 
@@ -68,7 +68,7 @@ _The following 2 hex editors helped me reverse engineer the .esx file format:_
 
 _More about the Esx File Format:_
 
-- [Esx File Format](http://skratchdot.com/projects/open-electribe-editor/javadocs/index.html?com/skratchdot/electribe/model/esx/EsxFile.html)
+- [Esx File Format](https://www.skratchdot.com/projects/open-electribe-editor/javadocs/index.html?com/skratchdot/electribe/model/esx/EsxFile.html)
 
 
 ### Version History ###

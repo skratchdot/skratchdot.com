@@ -4,7 +4,7 @@ title: "MongoDB - schema.js"
 ---
 # MongoDB - schema.js #
 
-[Project Page](http://skratchdot.com/projects/mongodb-schema/)  
+[Project Page](https://www.skratchdot.com/projects/mongodb-schema/)  
 [Source Code](https://github.com/skratchdot/mongodb-schema/)  
 [Issues](https://github.com/skratchdot/mongodb-schema/issues/)  
 

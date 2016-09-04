@@ -4,7 +4,7 @@ title: "MongoDB - distinct2.js"
 ---
 # MongoDB - distinct2.js #
 
-[Project Page](http://skratchdot.com/projects/mongodb-distinct2/)  
+[Project Page](https://www.skratchdot.com/projects/mongodb-distinct2/)  
 [Source Code](https://github.com/skratchdot/mongodb-distinct2/)  
 [Issues](https://github.com/skratchdot/mongodb-distinct2/issues/)  
 

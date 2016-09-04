@@ -10,15 +10,15 @@ tool by [Andre Michelle](http://andre-michelle.com/).
 
 [![Audio Grid][2]][1]
 
-  [1]: http://projects.skratchdot.com/audio-grid/index.html
-  [2]: http://projects.skratchdot.com/audio-grid/img/preview.jpg
+  [1]: https://projects.skratchdot.com/audio-grid/index.html
+  [2]: https://projects.skratchdot.com/audio-grid/img/preview.jpg
 
 
 ## Audio Grid Links
 
-- [Live Demo](http://projects.skratchdot.com/audio-grid/index.html)
+- [Live Demo](https://projects.skratchdot.com/audio-grid/index.html)
 
-- [Project Page / Comments](http://skratchdot.com/projects/audio-grid/)
+- [Project Page / Comments](https://www.skratchdot.com/projects/audio-grid/)
 
 - [Source Code](https://github.com/skratchdot/audio-grid/)
 

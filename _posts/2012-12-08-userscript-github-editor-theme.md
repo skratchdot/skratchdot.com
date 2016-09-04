@@ -24,7 +24,7 @@ to work on a userscript that let's you switch themes on Github.
 
 **You can check it out here:**
 
-- [Project Page](http://skratchdot.com/projects/github-editor-theme.user.js/)
+- [Project Page](https://www.skratchdot.com/projects/github-editor-theme.user.js/)
 
 - [Github Page](https://github.com/skratchdot/github-editor-theme.user.js/)
 

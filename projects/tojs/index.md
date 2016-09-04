@@ -55,7 +55,7 @@ check out the **Usage** and **Options** sections below.
 
 ## Links ##
 
-[Project Page](http://skratchdot.com/projects/tojs/)
+[Project Page](https://www.skratchdot.com/projects/tojs/)
 
 [Github Page](https://github.com/skratchdot/tojs/)
 

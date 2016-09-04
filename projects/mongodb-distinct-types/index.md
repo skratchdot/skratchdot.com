@@ -4,7 +4,7 @@ title: "MongoDB - distinct-types.js"
 ---
 # MongoDB - distinct-types.js #
 
-[Project Page](http://skratchdot.com/projects/mongodb-distinct-types/)  
+[Project Page](https://www.skratchdot.com/projects/mongodb-distinct-types/)  
 [Source Code](https://github.com/skratchdot/mongodb-distinct-types/)  
 [Issues](https://github.com/skratchdot/mongodb-distinct-types/issues/)  
 

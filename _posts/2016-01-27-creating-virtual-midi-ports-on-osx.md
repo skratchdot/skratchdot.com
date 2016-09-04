@@ -45,24 +45,24 @@ or [QJackCtl](http://qjackctl.sourceforge.net/).
 You can open **Audio MIDI Setup** by searching Spotlight, by looking in
 **/Applications/Utilities/**, or by using Launchpad:
 
-![Launchpad](http://skratchdot.com/images/posts/2016/01/27/launchpad.png)
+![Launchpad](https://www.skratchdot.com/images/posts/2016/01/27/launchpad.png)
 
 #### Step 2: Show **MIDI Studio**
 
 Once **Audio MIDI Setup** is open, you can open the **Midi Studio** window:
 
-![Midi Studio](http://skratchdot.com/images/posts/2016/01/27/midi-studio.png)
+![Midi Studio](https://www.skratchdot.com/images/posts/2016/01/27/midi-studio.png)
 
 #### Step 3: Open **IAC Driver**
 
 Now you can open **IAC Driver (Inter Application Communications Driver)** by
 double clicking on the icon:
 
-![IAC Driver](http://skratchdot.com/images/posts/2016/01/27/iac-driver.png)
+![IAC Driver](https://www.skratchdot.com/images/posts/2016/01/27/iac-driver.png)
 
 Which opens this window:
 
-![IAC Driver Window](http://skratchdot.com/images/posts/2016/01/27/iac-driver-window.png)
+![IAC Driver Window](https://www.skratchdot.com/images/posts/2016/01/27/iac-driver-window.png)
 
 #### Step 4: Add Virtual Port
 
@@ -73,7 +73,7 @@ Which opens this window:
 
 After making the following changes you should see:
 
-![IAC Driver Finished](http://skratchdot.com/images/posts/2016/01/27/iac-driver-finished.png)
+![IAC Driver Finished](https://www.skratchdot.com/images/posts/2016/01/27/iac-driver-finished.png)
 
 Now that you have your virtual driver / port setup, you can install / use a
 virtual MIDI keyboard on your favorite WebMidi enabled website.  For
@@ -95,16 +95,16 @@ and running:
 brew cask install midikeys
 {% endhighlight %}
 
-![MidiKeys - Install](http://skratchdot.com/images/posts/2016/01/27/midikeys-install.png)
+![MidiKeys - Install](https://www.skratchdot.com/images/posts/2016/01/27/midikeys-install.png)
 
 Now that MidiKeys is installed, you can open it via Launchpad:
 
-![MidiKeys - Launchpad](http://skratchdot.com/images/posts/2016/01/27/midikeys-launchpad.png)
+![MidiKeys - Launchpad](https://www.skratchdot.com/images/posts/2016/01/27/midikeys-launchpad.png)
 
 Once the program is opened, make sure to choose "IAC Drive: WebMidi" from the
 "Destination" dropdown:
 
-![MidiKeys - Usage](http://skratchdot.com/images/posts/2016/01/27/midikeys-usage.png)
+![MidiKeys - Usage](https://www.skratchdot.com/images/posts/2016/01/27/midikeys-usage.png)
 
 You can now click on keys from that virtual keyboard to send MIDI events to the
 WebMidi virtual port you created earlier.

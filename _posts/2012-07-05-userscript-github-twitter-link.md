@@ -23,7 +23,7 @@ To save on some of that manual activity, I created a new userscript today:
 
 **You can check it out here:**
 
-- [Project Page](http://skratchdot.com/projects/github-twitter-link.user.js/)
+- [Project Page](https://www.skratchdot.com/projects/github-twitter-link.user.js/)
 
 - [Github Page](https://github.com/skratchdot/github-twitter-link.user.js/)
 

@@ -4,7 +4,7 @@ title: "MongoDB - wild.js"
 ---
 # MongoDB - wild.js #
 
-[Project Page](http://skratchdot.com/projects/mongodb-wild/)  
+[Project Page](https://www.skratchdot.com/projects/mongodb-wild/)  
 [Source Code](https://github.com/skratchdot/mongodb-wild/)  
 [Issues](https://github.com/skratchdot/mongodb-wild/issues/)  
 

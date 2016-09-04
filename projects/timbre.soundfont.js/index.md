@@ -16,7 +16,7 @@ default, or you can set a different url template, and pull sounds from your own 
 
 ## Demo
 
-[Timbre.js Soundfont Demo](http://projects.skratchdot.com/timbre.soundfont.js/)
+[Timbre.js Soundfont Demo](https://projects.skratchdot.com/timbre.soundfont.js/)
 
 
 ## Dependencies

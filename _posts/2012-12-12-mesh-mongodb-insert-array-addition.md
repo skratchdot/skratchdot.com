@@ -13,7 +13,7 @@ tags:
 - Update
 ---
 
-I just updated [mesh - MongoDB Extended Shell](http://skratchdot.com/projects/mesh/)
+I just updated [mesh - MongoDB Extended Shell](https://www.skratchdot.com/projects/mesh/)
 again by adding a function that you can call on [MongoDB](http://www.mongodb.org/) collections.
 
 The new function is called **insertArray()**.
@@ -43,7 +43,7 @@ db.collection2.insertArray(db.collection1.find().limit(10).toArray());
 Below is the function definition.  Rather than using
 [polyfills](http://en.wikipedia.org/wiki/Polyfill), it relies
 [underscore.js](http://underscorejs.org/) (which is included in
-[mesh.js](http://skratchdot.com/projects/mesh/)).
+[mesh.js](https://www.skratchdot.com/projects/mesh/)).
 
 {% highlight js %}
 /*jslint nomen: true, plusplus: true */
