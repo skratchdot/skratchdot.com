@@ -1,4 +1,4 @@
-{% unless page.hide_doctype %}<!doctype html>{% endunless %}
+{% unless page.is_xml %}<!doctype html>{% endunless %}
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -57,13 +57,7 @@
 			<li><a title="Contact" href="/contact/"><span>&#91;</span>Contact<span>&#93;</span></a></li>
 		</ul>
 	</nav>
-	<!-- AddThis -->
-	<div id="addthis_container_skratchdot">
-		<div id="addthis_toolbox_skratchdot" class="addthis_toolbox addthis_default_style">
-			<a class="addthis_button_facebook_like"></a>
-			<a class="addthis_button_tweet"></a>
-			<a class="addthis_button_google_plusone" data-g-plusone-size="medium"></a>
-			<a class="addthis_button_pinterest_pinit"></a>
-			<a class="addthis_counter addthis_pill_style"></a>
-		</div>
+	<!-- Social Buttons -->
+	<div id="share-buttons-container">
+		{% include share-buttons.html %}
 	</div>

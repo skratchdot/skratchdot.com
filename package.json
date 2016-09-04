@@ -13,13 +13,13 @@
     "url": "https://github.com/skratchdot/skratchdot.com/issues"
   },
   "scripts": {
-    "build": "npm-run-all build:readmes build:site",
+    "build": "npm-run-all clean build:readmes build:site",
     "build:site": "jekyll build",
     "build:javadocs": "sh ./_build/javadocs.sh",
     "build:readmes": "node ./_build/readmes.js",
     "clean": "rimraf _site/*",
     "deploy": "aws s3 sync ./_site/ s3://www.skratchdot.com/",
-    "server": "jekyll server"
+    "start": "jekyll serve"
   },
   "engines": {
     "node": ">= 0.6.0"

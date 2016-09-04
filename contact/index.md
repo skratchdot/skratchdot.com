@@ -10,7 +10,7 @@ title: Contact
 	<br /><br />
 	Or you can follow me:
 	<br /><br />
-	<a href="https://twitter.com/skratchdot" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @skratchdot</a>
+	{% include twitter-follow.html %}
 	<br /><br />
 	You can also comment publicly below:
 </div>

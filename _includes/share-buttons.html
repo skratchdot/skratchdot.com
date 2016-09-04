@@ -1,0 +1,40 @@
+{% comment %}
+
+This html was generated via:
+- https://simplesharingbuttons.com/
+
+Small tweaks were made to get it to work with jekyll
+
+{% endcomment %}
+
+{% assign share_url = site.url | append: page.url | uri_escape %}
+{% assign share_title = '' | append: page.title | uri_escape %}
+{% assign share_desc = '' | append: post_list_desc | strip_html | truncatewords: 50 | uri_escape %}
+
+{% if share_url == '' %}
+  {% assign share_url = site.url | uri_escape %}
+{% endif %}
+
+{% if share_title == '' %}
+  {% assign share_title = '[skratchdot.]' | default: post_list_title | uri_escape %}
+{% endif %}
+
+{% if share_desc == '' %}
+  {% assign share_desc = '' | append: content | strip_html | truncatewords: 50 | uri_escape %}
+{% endif %}
+
+{% if share_desc == '' %}
+  {% assign share_desc = 'a website by @skratchdot' | uri_escape %}
+{% endif %}
+
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}&t={{ share_title }}" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/images/social/Facebook.png" /></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source={{ share_url }}&text={{ share_title }}:%20{{ share_url }}&via=skratchdot" target="_blank" title="Tweet"><img alt="Tweet" src="/images/social/Twitter.png" /></a></li>
+  <li><a href="https://plus.google.com/share?url={{ share_url }}" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/images/social/Google+.png" /></a></li>
+  <li><a href="https://www.tumblr.com/share?v=3&u={{ share_url }}&t={{ share_title }}&s=" target="_blank" title="Post to Tumblr"><img alt="Post to Tumblr" src="/images/social/Tumblr.png" /></a></li>
+  <li><a href="https://pinterest.com/pin/create/button/?url={{ share_url }}&description={{ share_desc }}" target="_blank" title="Pin it"><img alt="Pin it" src="/images/social/Pinterest.png" /></a></li>
+  <li><a href="https://getpocket.com/save?url={{ share_url }}&title={{ share_title }}" target="_blank" title="Add to Pocket"><img alt="Add to Pocket" src="/images/social/Pocket.png" /></a></li>
+  <li><a href="https://www.reddit.com/submit?url={{ share_url }}&title={{ share_title }}" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/images/social/Reddit.png" /></a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ share_title }}&summary={{ share_desc }}&source={{ share_url }}" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/images/social/LinkedIn.png" /></a></li>
+  <li><a href="mailto:?subject={{ share_title }}&body={{ share_desc }}:%20{{ share_url }}" title="Send email"><img alt="Send email" src="/images/social/Email.png" /></a></li>
+</ul>

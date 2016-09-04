@@ -1,6 +1,6 @@
 ---
-layout: nil
-hide_doctype: true
+layout: default
+is_xml: true
 ---
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet  version="1.0"
@@ -17,7 +17,7 @@ hide_doctype: true
 				<h2 class="title">
 					<a>
 						<xsl:attribute name="href">
-							<xsl:value-of select="a:id" />					
+							<xsl:value-of select="a:id" />
 						</xsl:attribute>
 						<xsl:value-of select="a:title" />
 					</a>
@@ -32,4 +32,4 @@ hide_doctype: true
 </xsl:for-each>
 {% include footer.html %}
 </xsl:template>
-</xsl:stylesheet> 
+</xsl:stylesheet>

@@ -8,7 +8,7 @@ exclude:
   - package.json
   - README.md
 title: skratchdot.com
-url: http://skratchdot.com
+url: https://www.skratchdot.com
 devmode: false
 
 source:      .

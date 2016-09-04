@@ -1,6 +1,6 @@
 ## Links ##
 
-- Main Site: [http://skratchdot.com](http://skratchdot.com)
+- Main Site: [https://www.skratchdot.com](https://www.skratchdot.com)
 
 - Jekyll Sources: [https://github.com/skratchdot/skratchdot.com/](https://github.com/skratchdot/skratchdot.com/)
 
@@ -17,7 +17,6 @@
 
         npm install
 
-3. Build site by running grunt:
+3. Build site by running:
 
-        grunt
-
+        npm run build
