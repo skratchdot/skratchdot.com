@@ -13,7 +13,8 @@ devmode: false
 
 source:      .
 destination: ./_site
-plugins:     ./_plugins
+plugins:     [jekyll-paginate]
+plugins_dir: ./_plugins
 
 # Plugin Settings
 category_dir: category
