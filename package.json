@@ -21,9 +21,6 @@
     "deploy": "aws s3 sync ./_site/ s3://www.skratchdot.com/",
     "start": "jekyll serve"
   },
-  "engines": {
-    "node": ">= 0.6.0"
-  },
   "devDependencies": {
     "async": "^2.0.1",
     "npm-run-all": "^2.3.0",
