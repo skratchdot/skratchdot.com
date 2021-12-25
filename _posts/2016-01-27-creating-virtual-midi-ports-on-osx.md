@@ -3,14 +3,14 @@ layout: post
 title: Creating Virtual MIDI Ports On OSX for WebMidi
 published: true
 categories:
-- Javascript
-- MIDI
+  - Javascript
+  - MIDI
 tags:
-- Javascript
-- Audio
-- MIDI
-- Web
-- Tutorial
+  - Javascript
+  - Audio
+  - MIDI
+  - Web
+  - Tutorial
 ---
 
 ## Introduction
@@ -27,7 +27,7 @@ devices setup, and will not be able to get the full experience on websites that
 are starting to enable midi features.
 
 Fear not, you can setup virtual midi devices that can be used on these websites.
-There are ways to do this on all operating systems.  This tutorial is focused
+There are ways to do this on all operating systems. This tutorial is focused
 on OSX, but Window users can check out tools like
 [Midi Yoke](http://www.midiox.com/myoke.htm),
 [LoopBe1](http://www.nerds.de/en/loopbe1.html),
@@ -36,7 +36,6 @@ or [loopMIDI](http://www.tobias-erichsen.de/software/loopmidi.html)
 and Linux users can try
 [ALSA](http://www.alsa-project.org/main/index.php/Main_Page)
 or [QJackCtl](http://qjackctl.sourceforge.net/).
-
 
 ## Creating Virtual MIDI Ports On OSX
 
@@ -76,9 +75,8 @@ After making the following changes you should see:
 ![IAC Driver Finished](https://www.skratchdot.com/images/posts/2016/01/27/iac-driver-finished.png)
 
 Now that you have your virtual driver / port setup, you can install / use a
-virtual MIDI keyboard on your favorite WebMidi enabled website.  For
+virtual MIDI keyboard on your favorite WebMidi enabled website. For
 instructions on installing a Virtual MIDI Keyboard, continue reading below.
-
 
 ## Install / Use a Virtual MIDI Keyboard
 
@@ -91,9 +89,9 @@ Since I use [homebrew](http://brew.sh/) with [cask](http://caskroom.io/),
 I'm going to install midikeys. You can do this by opening your command line,
 and running:
 
-{% highlight bash %}
+```bash
 brew cask install midikeys
-{% endhighlight %}
+```
 
 ![MidiKeys - Install](https://www.skratchdot.com/images/posts/2016/01/27/midikeys-install.png)
 
@@ -110,12 +108,12 @@ You can now click on keys from that virtual keyboard to send MIDI events to the
 WebMidi virtual port you created earlier.
 
 There are other options for virtual keyboards / software, but this is a quick way
-to get up and running.  More advanced users can try out programs like
+to get up and running. More advanced users can try out programs like
 [Pure Data](https://puredata.info/) by running
 
-{% highlight bash %}
+```bash
 brew cask install pd
-{% endhighlight %}
+```
 
 and creating their own virtual midi keyboard / instrument for usage with WebMidi.
 

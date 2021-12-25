@@ -1,11 +1,11 @@
---- 
+---
 layout: post
-title: "Coldfusion: Convert String To Struct"
+title: 'Coldfusion: Convert String To Struct'
 published: true
 categories:
-- ColdFusion
-tags: 
-- ColdFusion
+  - ColdFusion
+tags:
+  - ColdFusion
 ---
 
 The other day I had the need to create a nested structure
@@ -13,7 +13,7 @@ based off of a key using dot notation.
 
 Below is the function I came up with:
 
-{% highlight cfm %}
+```cfm
 <cfscript>
 
 private struct function convertStringToStruct(required string key, required any value, string delimiter = ".") {
@@ -31,28 +31,28 @@ private struct function convertStringToStruct(required string key, required any 
 }
 
 </cfscript>
-{% endhighlight %}
+```
 
 Here's a quick example usage:
 
-{% highlight cfm %}
+```cfm
 <cfscript>
 
 	// Declare a struct. We will later append to this
 	obj = StructNew();
-	
+
 	// Create a few top level keys
 	obj["ab"] = "foo";
 	obj["b"] = "bar";
-	
+
 	// Append a dynamically created structure
 	StructAppend(obj, convertStringToStruct("a.b.c", "baz"), false);
-	
+
 	// Show our output
 	WriteDump(obj);
 
 </cfscript>
-{% endhighlight %}
+```
 
 The output from the above example:
 
@@ -61,4 +61,3 @@ The output from the above example:
 Here is a gist containing the code:
 
 [https://gist.github.com/3118727](https://gist.github.com/3118727)
-

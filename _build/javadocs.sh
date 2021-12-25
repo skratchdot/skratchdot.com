@@ -61,7 +61,7 @@ RIFFWAV_FOOTER='
 #
 javadoc \
 -d \
-./projects/open-electribe-editor/javadocs \
+./public/projects/open-electribe-editor/javadocs \
 -sourcepath \
 ../open-electribe-editor/com.skratchdot.electribe.audioplayer/src:\
 ../open-electribe-editor/com.skratchdot.electribe.fileexplorer/src:\
@@ -82,7 +82,7 @@ javadoc \
 #
 javadoc \
 -d \
-./projects/riff-wav-for-java/javadocs \
+./public/projects/riff-wav-for-java/javadocs \
 -sourcepath \
 ../open-electribe-editor/com.skratchdot.riff.wav/src \
 -subpackages com.skratchdot \

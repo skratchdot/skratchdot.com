@@ -1,12 +1,12 @@
---- 
+---
 layout: post
 title: "Can't Install Userscripts in Chrome 21+"
 published: true
 categories:
-- Userscript
-tags: 
-- Userscript
-- Chrome
+  - Userscript
+tags:
+  - Userscript
+  - Chrome
 ---
 
 Today I was updating one of my [userscripts](https://github.com/skratchdot/github-repo-filter-info.user.js/),
@@ -36,7 +36,7 @@ After reading through this bug:
 
 [http://code.google.com/p/chromium/issues/detail?id=138054](http://code.google.com/p/chromium/issues/detail?id=138054)
 
-I found the **--enable-easy-off-store-extension-install** switch.  By using that, I was able to start
+I found the **--enable-easy-off-store-extension-install** switch. By using that, I was able to start
 Chrome from the command line to install my userscript.
 
 _Chrome:_
@@ -48,14 +48,13 @@ _Chrome Canary:_
     /Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --enable-easy-off-store-extension-install
 
 It would be nice if the **"Tools"->"Extensions"** page (aka **chrome://chrome/extensions/**)
-had a list of whitelist/blacklist URLs that you could edit.  That page allows you to enter
+had a list of whitelist/blacklist URLs that you could edit. That page allows you to enter
 "Developer Mode", so it makes sense to have a few more options there.
 
-***EDIT:***
+**_EDIT:_**
 
 This workaround exists as well:
 
 1. Download the user script.
 2. Open **chrome://chrome/extensions/**.
 3. Drag and drop the user script file on the page you opened in step 2.
-

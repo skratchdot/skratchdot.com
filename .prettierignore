@@ -1,0 +1,7 @@
+_ignore
+_private
+.next
+node_modules
+old
+out
+public

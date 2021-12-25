@@ -1,14 +1,14 @@
---- 
+---
 layout: post
 title: ES-1(step) - Version 1.0.0 Released
 categories:
-- Electribe
-tags: 
-- Electribe
-- ES-1
-- Korg
-- Projects
-- Update
+  - Electribe
+tags:
+  - Electribe
+  - ES-1
+  - Korg
+  - Projects
+  - Update
 type: post
 status: publish
 ---
@@ -27,7 +27,7 @@ status: publish
 
 - You can select which Note Numbers control the different parts on the ES-1.
 
-- New Random Generator Features -- You can give an upper and lower bound for 17 different parameters, 
+- New Random Generator Features -- You can give an upper and lower bound for 17 different parameters,
   and select which effects and parts are allowed to be assigned.
 
 - Key Settings Dialog -- You can now edit patterns and all their parameters on screen.
@@ -37,4 +37,3 @@ status: publish
 - Panic button which automatically turns off all the keys when it is hit.
 
 - New GUI
-

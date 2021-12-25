@@ -1,17 +1,17 @@
---- 
+---
 layout: post
-title: "tojs - (a shell script)"
+title: 'tojs - (a shell script)'
 categories:
-- Bash
-- Shell
-- Node.js
-tags: 
-- Bash
-- Shell
-- Javascript
-- Bookmarklet
-- Github
-- Projects
+  - Bash
+  - Shell
+  - Node.js
+tags:
+  - Bash
+  - Shell
+  - Javascript
+  - Bookmarklet
+  - Github
+  - Projects
 ---
 
 Earlier today I was updating one of my
@@ -24,7 +24,7 @@ result into a new file).
 
 What I really wanted was a one liner that I could use in my terminal.
 
-I ended up using a combination of **cat** and **sed** to get my desired output.  The combined result
+I ended up using a combination of **cat** and **sed** to get my desired output. The combined result
 is a shell script called: [tojs](https://github.com/skratchdot/tojs/).
 
 You can install it by running the following commands:
@@ -32,10 +32,10 @@ You can install it by running the following commands:
 **NOTE:  
 THE FOLLOWING INSTALLATION INSTRUCTIONS ARE OUTDATED. SEE THE UPDATED SECTION BELOW.**
 
-{% highlight bash %}
+```bash
 sudo curl https://raw.github.com/skratchdot/tojs/1.1.0/tojs.sh -o /usr/local/bin/tojs
 sudo chmod +x /usr/local/bin/tojs
-{% endhighlight %}
+```
 
 **UPDATED (12/27/2012):**
 
@@ -43,7 +43,6 @@ sudo chmod +x /usr/local/bin/tojs
 on December 27th, 2012. Due to this fact, the installation instructions have changed. This project
 now requires [npm](https://npmjs.org/) and can be installed by running:
 
-{% highlight bash %}
+```bash
 npm install -g tojs
-{% endhighlight %}
-
+```

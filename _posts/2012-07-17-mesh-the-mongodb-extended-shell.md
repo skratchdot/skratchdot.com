@@ -1,16 +1,16 @@
---- 
+---
 layout: post
-title: "mesh: the MongoDB Extended Shell"
+title: 'mesh: the MongoDB Extended Shell'
 published: true
 categories:
-- MongoDB
-- Shell
-tags: 
-- MongoDB
-- Shell
-- Shell Extensions
-- Projects
-- Update
+  - MongoDB
+  - Shell
+tags:
+  - MongoDB
+  - Shell
+  - Shell Extensions
+  - Projects
+  - Update
 ---
 
 I saw a blog post today called:
@@ -26,11 +26,11 @@ So far, I've included a few utility libraries: [underscore.js](http://underscore
 [underscore.string.js](http://epeli.github.com/underscore.string/), and
 [moment.js](http://momentjs.com/).
 
-I've also included some of the extensions that I've created in the past.  Additionally, there's
-some code so that **"console"** calls end up wrapping the built in **print()** function.  The idea
+I've also included some of the extensions that I've created in the past. Additionally, there's
+some code so that **"console"** calls end up wrapping the built in **print()** function. The idea
 is that eventually I'll add some logic to the console calls so they behave in a more "standard" way.
 
-Another feature is the **mesh.setPrompt()** function.  You can pass in a function, or a number 0-4.  There
+Another feature is the **mesh.setPrompt()** function. You can pass in a function, or a number 0-4. There
 are a few different types of prompts you can use:
 
 - 0: '>' reset to default prompt

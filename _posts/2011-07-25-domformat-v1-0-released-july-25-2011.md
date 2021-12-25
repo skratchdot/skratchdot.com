@@ -1,14 +1,14 @@
---- 
+---
 layout: post
 title: domFormat - v1.0 (Released July 25, 2011)
 categories:
-- Javascript
-- Bookmarklet
-tags: 
-- Bookmarklet
-- DOM
-- Javascript
-- Projects
+  - Javascript
+  - Bookmarklet
+tags:
+  - Bookmarklet
+  - DOM
+  - Javascript
+  - Projects
 ---
 
 domFormat is a simple javascript library to get DOM nodes as formatted/pretty strings.
