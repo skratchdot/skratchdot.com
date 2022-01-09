@@ -1,39 +1,39 @@
---- 
+---
 layout: post
 title: Verify All ColdFusion DataSources
 categories:
-- ColdFusion
-tags: 
-- adminapi
-- ColdFusion
-- datasources
+  - ColdFusion
+tags:
+  - adminapi
+  - ColdFusion
+  - datasources
 ---
 
 Recently I was asked how to programmatically verify ColdFusion DataSources.
-I came up with a few methods of doing so.  Each have their pros and cons.
+I came up with a few methods of doing so. Each have their pros and cons.
 
-### Method #1 : Try/Catch using cfquery ###
+### Method #1 : Try/Catch using cfquery
 
-**PROS:**  
+**PROS:**
 
-- Can test for "datasource" specific behavior by using a custom 
+- Can test for "datasource" specific behavior by using a custom
   cfquery (ie. **"SELECT 1"** vs. **"SELECT name FROM Customers"**).
-  If you do this, the query may not work for other datasources, thereby not 
+  If you do this, the query may not work for other datasources, thereby not
   actually testing the validity of the datasource (a CON).
 
-**CONS:**  
+**CONS:**
 
 - Uses try/catch.
-- Does not work with all datasources.  I don't know of a cfquery that will work for all datasources / DBs / etc
+- Does not work with all datasources. I don't know of a cfquery that will work for all datasources / DBs / etc
 
-**NOTES:**  
+**NOTES:**
 
 This is my least favorite, because I couldn't come up with a cfquery to
-test *all* datasources.  It will work for some datasources, but not all.
+test _all_ datasources. It will work for some datasources, but not all.
 
-**SOURCE:**  
+**SOURCE:**
 
-{% highlight cfm linenos %}
+```cfm linenos
 <cffunction name="verifyDsnList1" output="true" returntype="void">
 	<cfargument name="list" type="string" required="true" />
 	<cfargument name="delimiter" type="string" required="false" default="," />
@@ -60,23 +60,22 @@ test *all* datasources.  It will work for some datasources, but not all.
 		<hr />
 	</cfoutput>
 </cffunction>
-{% endhighlight %}
+```
 
+### Method #2: Try/Catch using the DataSourceService verifyDatasource() method.
 
-### Method #2: Try/Catch using the DataSourceService verifyDatasource() method. ###
-
-**PROS:**  
+**PROS:**
 
 - Will work for all datasources.
 - Shows "error" specific messaging that might help debug why a datasource isn't working.
 
-**CONS:**  
+**CONS:**
 
-- Uses try/catch.  
+- Uses try/catch.
 
-**SOURCE:**  
+**SOURCE:**
 
-{% highlight cfm linenos %}
+```cfm linenos
 <cffunction name="verifyDsnList2" output="true" returntype="void">
 	<cfargument name="list" type="string" required="true" />
 	<cfargument name="delimiter" type="string" required="false" default="," />
@@ -101,23 +100,23 @@ test *all* datasources.  It will work for some datasources, but not all.
 		<hr />
 	</cfoutput>
 </cffunction>
-{% endhighlight %}
+```
 
-### Method #3: Admin API verifyDSN() call ###
+### Method #3: Admin API verifyDSN() call
 
-**PROS:**  
+**PROS:**
 
 - Will work for all datasources.
 - Doesn't use try/catch.
 
-**CONS:**  
+**CONS:**
 
-- Need to pass in cfide password.  This should never be hardcoded, or kept in plain text.
+- Need to pass in cfide password. This should never be hardcoded, or kept in plain text.
 - Will never output "error" specific text (only ever displays true or false).
 
-**SOURCE:**  
+**SOURCE:**
 
-{% highlight cfm linenos %}
+```cfm linenos
 <cffunction name="verifyDsnList3" output="true" returntype="void">
 	<cfargument name="cfide_password" type="string" required="true" />
 	<cfargument name="list" type="string" required="true" />
@@ -135,14 +134,13 @@ test *all* datasources.  It will work for some datasources, but not all.
 		<hr />
 	</cfoutput>
 </cffunction>
-{% endhighlight %}
+```
 
-
-### Helper Function: ###
+### Helper Function:
 
 Here's a helper function that will return a sorted list of all configured datasource names:
 
-{% highlight cfm linenos %}
+```cfm linenos
 <cffunction name="getDatasourceList" output="false" returntype="string">
 	<cfargument name="sort_type" type="string" required="false" default="textnocase" hint="Optional. See livedocs for ListSort()." />
 	<cfargument name="sort_order" type="string" required="false" default="asc" hint="Optional. See livedocs for ListSort()." />
@@ -152,15 +150,14 @@ Here's a helper function that will return a sorted list of all configured dataso
 	<cfset var dsList = StructKeyList(sDatasources, arguments.delimiter) />
 	<cfreturn ListSort(dsList, arguments.sort_type, arguments.sort_order, arguments.delimiter) />
 </cffunction>
-{% endhighlight %}
+```
 
-
-### Testing all 3 methods: ###
+### Testing all 3 methods:
 
 Here's a small script to test all the functions from this post.
 For this to work correctly, you'll need to set the correct CFIDE password.
 
-{% highlight cfm linenos %}
+```cfm linenos
 <cfset my_cfide_password = "admin" />
 <cfset my_datasource_list = getDatasourceList() />
 
@@ -172,4 +169,4 @@ For this to work correctly, you'll need to set the correct CFIDE password.
 	#verifyDsnList3(my_cfide_password, my_datasource_list)#
 	<br />
 </cfoutput>
-{% endhighlight %}
+```

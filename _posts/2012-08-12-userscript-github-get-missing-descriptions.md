@@ -1,15 +1,15 @@
---- 
+---
 layout: post
-title: "Userscript - Github: Get Missing Descriptions"
+title: 'Userscript - Github: Get Missing Descriptions'
 categories:
-- Userscript
-- Javascript
-tags: 
-- Userscript
-- Javascript
-- Git
-- Github
-- Projects
+  - Userscript
+  - Javascript
+tags:
+  - Userscript
+  - Javascript
+  - Git
+  - Github
+  - Projects
 ---
 
 On [Github](https://github.com) profiles, not all the repositories
@@ -26,7 +26,7 @@ To help out with this manual process, I've created:
 [Github: Get Missing Descriptions](https://github.com/skratchdot/github-get-missing-descriptions.user.js/).
 
 This script adds a button that will update "simple" repo listings with the
-project's description, as well as the last time it was updated.  Each button
+project's description, as well as the last time it was updated. Each button
 click will make a max of 50 ajax requests. If there are more than 50 repos without
 descriptions, you will have to click the button multiple times.
 
@@ -38,25 +38,24 @@ descriptions, you will have to click the button multiple times.
 
 - [Install](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/github-get-missing-descriptions.user.js)
 
-
 Here is the current description from [README.md](https://raw.github.com/skratchdot/github-get-missing-descriptions.user.js/master/README.md):
 
-### Description ###
-If there are missing descriptions on a Github profile page, 
-a button will be added. When clicked, ajax requests will be made 
+### Description
+
+If there are missing descriptions on a Github profile page,
+a button will be added. When clicked, ajax requests will be made
 to grab the descriptions.
 
-### Screenshots ###
+### Screenshots
 
-#### Before installing the user script: ####
-  
+#### Before installing the user script:
+
 ![Before Installation](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/before.png)
-  
-#### After installing the user script: ####
-  
+
+#### After installing the user script:
+
 **Before clicking the button:**  
 ![After Installation (before clicking the button)](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/after1.png)
-  
+
 **After clicking the button:**  
 ![After Installation (after clicking the button)](https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/after2.png)
-  

@@ -1,19 +1,20 @@
---- 
+---
 layout: post
-title: "Links: Javascript"
+title: 'Links: Javascript'
 categories:
-- Javascript
-tags: 
-- Javascript
-- "Links: Javascript"
+  - Javascript
+tags:
+  - Javascript
+  - 'Links: Javascript'
 ---
 
-## Books: ##
+## Books:
+
 - [Javascript: The Good Parts](http://oreilly.com/catalog/9780596517748/)
 - [Javascript: The Definitive Guide](http://oreilly.com/catalog/9780596101992/)
 
+## TOOLS/BLOGS:
 
-## TOOLS/BLOGS: ##
 - [jQuery: The Write Less, Do More, Javascript Library](http://jquery.com/)
 - [JSLint: The JavaScript Code Quality Tool](http://www.jslint.com/)
 - [Mozilla: Javascript Guide](https://developer.mozilla.org/en/JavaScript/Guide)
@@ -21,30 +22,29 @@ tags:
 - [Ajaxian](http://ajaxian.com/)
 - [QuirksMode](http://www.quirksmode.org/)
 
+## VIDEOS:
 
-## VIDEOS: ##
+### The JavaScript Programming Language
 
-
-### The JavaScript Programming Language ###
 - [Douglas Crockford: "The JavaScript Programming Language"/1 of 4](http://video.yahoo.com/watch/111593/1710507)
 - [Douglas Crockford: "The JavaScript Programming Language"/2 of 4](http://video.yahoo.com/watch/111594/1710553)
 - [Douglas Crockford: "The JavaScript Programming Language"/3 of 4](http://video.yahoo.com/watch/111595/1710607)
 - [Douglas Crockford: "The JavaScript Programming Language"/4 of 4](http://video.yahoo.com/watch/111596/1710658)
 
+### An Inconvenient API: The Theory of the DOM
 
-### An Inconvenient API: The Theory of the DOM ###
 - [Douglas Crockford: "Theory of the DOM" (1 of 3)](http://video.yahoo.com/watch/111582/992708)
 - [Douglas Crockford: "Theory of the DOM" (2 of 3)](http://video.yahoo.com/watch/111583/996002)
 - [Douglas Crockford: "Theory of the DOM" (3 of 3)](http://video.yahoo.com/watch/111584/996008)
 
+### Advanced JavaScript
 
-### Advanced JavaScript ###
 - [Douglas Crockford: "Advanced JavaScript" (1 of 3)](http://video.yahoo.com/watch/111585/1027823)
 - [Douglas Crockford: "Advanced JavaScript" (2 of 3)](http://video.yahoo.com/watch/111586/1027832)
 - [Douglas Crockford: "Advanced JavaScript" (3 of 3)](http://video.yahoo.com/watch/111587/1027854)
 
+### Crockford on JavaScript [(link)](http://www.yuiblog.com/crockford/)
 
-### Crockford on JavaScript [(link)](http://www.yuiblog.com/crockford/) ###
 - [Volume One: The Early Years](http://developer.yahoo.com/yui/theater/video.php?v=crockonjs-1)
 - [Chapter 2: And Then There Was JavaScript](http://developer.yahoo.com/yui/theater/video.php?v=crockonjs-2)
 - [Act III: Function the Ultimate](http://developer.yahoo.com/yui/theater/video.php?v=crockonjs-3)
@@ -52,13 +52,13 @@ tags:
 - [Part V: The End of All Things](http://developer.yahoo.com/yui/theater/video.php?v=crockonjs-5)
 - [Scene 6: Loopage](http://developer.yahoo.com/yui/theater/video.php?v=crockford-loopage)
 
+### John Resig: "Advancing JavaScript with Libraries
 
-### John Resig: "Advancing JavaScript with Libraries ###
 - [John Resig: "Advancing JavaScript with Libraries"/1 of 2](http://video.yahoo.com/watch/410472/2391234)
 - [John Resig: "Advancing JavaScript with Libraries"/2 of 2](http://video.yahoo.com/watch/412541/2395771)
 
+### JSConf.eu [(link)](http://jsconfeu.blip.tv/)
 
-### JSConf.eu [(link)](http://jsconfeu.blip.tv/) ###
 - [Steve Souders: Fast by Default](http://jsconfeu.blip.tv/file/3060565/)
 - [Ryan Dahl: Node.js](http://jsconfeu.blip.tv/file/2899135/)
 - [Douglas Crockford: The State and Future of JavaScript](http://jsconfeu.blip.tv/file/2997761/)

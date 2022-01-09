@@ -1,0 +1,224 @@
+[
+  {
+    "dest": "_pages/projects/open-electribe-editor/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/open-electribe-editor/master/README.md",
+    "layout": "page",
+    "title": "Open Electribe Editor"
+  },
+  {
+    "dest": "_pages/projects/audio-sort/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/audio-sort/gh-pages/README.md",
+    "layout": "page",
+    "title": "Audio Sort"
+  },
+  {
+    "dest": "_pages/projects/audio-grid/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/audio-grid/gh-pages/README.md",
+    "layout": "page",
+    "title": "Audio Grid"
+  },
+  {
+    "dest": "_pages/projects/soundfont2mp3/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/soundfont2mp3/master/README.md",
+    "layout": "page",
+    "title": "soundfont2mp3"
+  },
+  {
+    "dest": "_pages/projects/timbre.soundfont.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/timbre.soundfont.js/gh-pages/README.md",
+    "layout": "page",
+    "title": "timbre.soundfont.js"
+  },
+  {
+    "dest": "_pages/projects/timbre.mp3_decode.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/timbre.mp3_decode.js/gh-pages/README.md",
+    "layout": "page",
+    "title": "timbre.mp3_decode.js"
+  },
+  {
+    "dest": "_pages/projects/free-midi/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/free-midi/master/README.md",
+    "layout": "page",
+    "title": "free-midi"
+  },
+  {
+    "dest": "_pages/projects/riff-wav-for-java/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/riff-wav-for-java/master/README.md",
+    "layout": "page",
+    "title": "RIFF Wav for Java"
+  },
+  {
+    "dest": "_pages/projects/colorify/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/colorify/master/README.md",
+    "layout": "page",
+    "title": "Colorify"
+  },
+  {
+    "dest": "_pages/projects/infinite-gradients/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/infinite-gradients/master/README.md",
+    "layout": "page",
+    "title": "Inifinte Gradients"
+  },
+  {
+    "dest": "_pages/projects/color-blind/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/color-blind/master/README.md",
+    "layout": "page",
+    "title": "color-blind"
+  },
+  {
+    "dest": "_pages/projects/color-harmony/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/color-harmony/master/README.md",
+    "layout": "page",
+    "title": "color-harmony"
+  },
+  {
+    "dest": "_pages/projects/color-matrix/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/color-matrix/master/README.md",
+    "layout": "page",
+    "title": "color-matrix"
+  },
+  {
+    "dest": "_pages/projects/color-palette/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/color-palette/master/README.md",
+    "layout": "page",
+    "title": "color-palette"
+  },
+  {
+    "dest": "_pages/projects/color-quantize/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/color-quantize/master/README.md",
+    "layout": "page",
+    "title": "color-quantize"
+  },
+  {
+    "dest": "_pages/projects/color-stats/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/color-stats/master/README.md",
+    "layout": "page",
+    "title": "color-stats"
+  },
+  {
+    "dest": "_pages/projects/github-enhancement-suite/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-enhancement-suite/master/README.md",
+    "layout": "page",
+    "title": "The Github Enhancement Suite"
+  },
+  {
+    "dest": "_pages/projects/github-code-search.user.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-code-search.user.js/master/README.md",
+    "layout": "page",
+    "title": "Github: Code Search"
+  },
+  {
+    "dest": "_pages/projects/github-editor-theme.user.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-editor-theme.user.js/master/README.md",
+    "layout": "page",
+    "title": "Github: Editor Theme"
+  },
+  {
+    "dest": "_pages/projects/github-fork-count.user.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-fork-count.user.js/master/README.md",
+    "layout": "page",
+    "title": "Github: Fork Count"
+  },
+  {
+    "dest": "_pages/projects/github-get-missing-descriptions.user.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-get-missing-descriptions.user.js/master/README.md",
+    "layout": "page",
+    "title": "Github: Get Missing Descriptions"
+  },
+  {
+    "dest": "_pages/projects/github-repo-counts.user.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-repo-counts.user.js/master/README.md",
+    "layout": "page",
+    "title": "Github: Repo Counts"
+  },
+  {
+    "dest": "_pages/projects/github-repo-filter-info.user.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-repo-filter-info.user.js/master/README.md",
+    "layout": "page",
+    "title": "Github: Repo Filter Info"
+  },
+  {
+    "dest": "_pages/projects/github-pull-request-links.user.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-pull-request-links.user.js/master/README.md",
+    "layout": "page",
+    "title": "Github: Pull Request Links"
+  },
+  {
+    "dest": "_pages/projects/github-twitter-link.user.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-twitter-link.user.js/master/README.md",
+    "layout": "page",
+    "title": "Github: Twitter Link"
+  },
+  {
+    "dest": "_pages/projects/github-gh-pages-link.user.js/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/github-gh-pages-link.user.js/master/README.md",
+    "layout": "page",
+    "title": "Github: gh-pages Link"
+  },
+  {
+    "dest": "_pages/projects/list-tool/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/list-tool/gh-pages/README.md",
+    "layout": "page",
+    "title": "List Tool"
+  },
+  {
+    "dest": "_pages/projects/domFormat/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/domFormat/gh-pages/README.md",
+    "layout": "page",
+    "title": "domFormat"
+  },
+  {
+    "dest": "_pages/projects/framecapture/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/framecapture/master/README.md",
+    "layout": "page",
+    "title": "framecapture"
+  },
+  {
+    "dest": "_pages/projects/npm-dview/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/npm-dview/master/README.md",
+    "layout": "page",
+    "title": "npm-dview"
+  },
+  {
+    "dest": "_pages/projects/tojs/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/tojs/master/README.md",
+    "layout": "page",
+    "title": "tojs"
+  },
+  {
+    "dest": "_pages/projects/mesh/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/mesh/master/README.md",
+    "layout": "page",
+    "title": "mesh: MongoDB Extended Shell"
+  },
+  {
+    "dest": "_pages/projects/mongodb-distinct2/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/mongodb-distinct2/master/README.md",
+    "layout": "page",
+    "title": "MongoDB - distinct2.js"
+  },
+  {
+    "dest": "_pages/projects/mongodb-distinct-types/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/mongodb-distinct-types/master/README.md",
+    "layout": "page",
+    "title": "MongoDB - distinct-types.js"
+  },
+  {
+    "dest": "_pages/projects/mongodb-flatten/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/mongodb-flatten/master/README.md",
+    "layout": "page",
+    "title": "MongoDB - flatten.js"
+  },
+  {
+    "dest": "_pages/projects/mongodb-schema/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/mongodb-schema/master/README.md",
+    "layout": "page",
+    "title": "MongoDB - schema.js"
+  },
+  {
+    "dest": "_pages/projects/mongodb-wild/index.md",
+    "src": "https://raw.githubusercontent.com/skratchdot/mongodb-wild/master/README.md",
+    "layout": "page",
+    "title": "MongoDB - wild.js"
+  }
+]

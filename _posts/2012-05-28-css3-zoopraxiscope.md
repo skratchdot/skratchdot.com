@@ -1,16 +1,17 @@
---- 
+---
 layout: post
 title: CSS3 Zoopraxiscope
 categories:
-- CSS3
-tags: 
-- CSS3
-- Zoopraxiscope
-- CSS Transforms
-- CSS Animations
+  - CSS3
+tags:
+  - CSS3
+  - Zoopraxiscope
+  - CSS Transforms
+  - CSS Animations
 ---
+
 I was going through some old files on my laptop, and found this snippet of code I created back in
-April.  On April 9th, there was a google doodle for
+April. On April 9th, there was a google doodle for
 [Eadweard J. Muybridge's 182nd Birthday](http://www.google.com/doodles/eadweard-j-muybridges-182nd-birthday).
 
 I saw a post on [HackerNews](http://news.ycombinator.com/item?id=3816692)
@@ -21,7 +22,7 @@ I created a [JSFiddle](http://jsfiddle.net/F5Uf5/) snippet that day, but never p
 Anyways, I've cleaned the example up a bit, and posted it below. It now contains pure CSS3 controls
 to turn the demo on/off or change the speed of the animation.
 
-## Demo ##
+## Demo
 
 <style type="text/css">
 	img#zoopraxiscope {
@@ -75,12 +76,13 @@ to turn the demo on/off or change the speed of the animation.
 	<img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
 </form>
 
-## CSS: ##
-{% highlight css %}
+## CSS:
+
+```css
 <style type="text/css">
 	img#zoopraxiscope {
 		width:230px;
-		height:230px;		
+		height:230px;
 	}
 	@-webkit-keyframes spin {
 		from { -webkit-transform: rotate(0deg); }
@@ -95,46 +97,46 @@ to turn the demo on/off or change the speed of the animation.
 		to { -ms-transform: rotate(-360deg); }
 	}
 	a#animation-on:target~input[value=fast]:checked~img#zoopraxiscope {
-		-webkit-animation: spin 230ms infinite linear; 
-		-moz-animation: spin 230ms infinite linear; 
-		-ms-animation: spin 230ms infinite linear; 
+		-webkit-animation: spin 230ms infinite linear;
+		-moz-animation: spin 230ms infinite linear;
+		-ms-animation: spin 230ms infinite linear;
 	}
 	a#animation-on:target~input[value=medium]:checked~img#zoopraxiscope {
-		-webkit-animation: spin 920ms infinite linear; 
-		-moz-animation: spin 920ms infinite linear; 
-		-ms-animation: spin 920ms infinite linear; 
+		-webkit-animation: spin 920ms infinite linear;
+		-moz-animation: spin 920ms infinite linear;
+		-ms-animation: spin 920ms infinite linear;
 	}
 	a#animation-on:target~input[value=slow]:checked~img#zoopraxiscope {
-		-webkit-animation: spin 2000ms infinite linear; 
-		-moz-animation: spin 2000ms infinite linear; 
-		-ms-animation: spin 2000ms infinite linear; 
+		-webkit-animation: spin 2000ms infinite linear;
+		-moz-animation: spin 2000ms infinite linear;
+		-ms-animation: spin 2000ms infinite linear;
 	}
 </style>
-{% endhighlight %}
+```
 
-## HTML: ##
-{% highlight html %}
+## HTML:
+
+```html
 <form style="text-align:center">
-	<h3>Turn Animation</h3>
-	<a id="animation-off" href="#animation-off">Off</a>
-	<a id="animation-on" href="#animation-on">On</a>
-	<br />
-	<h3>Speed:</h3>
-	<label for="fast">Fast:</label>
-	<input type="radio" name="speed" id="fast" value="fast" checked="checked" />
-	<br />
-	<label for="medium">Medium:</label>
-	<input type="radio" name="speed" id="medium" value="medium" />
-	<br />
-	<label for="slow">Slow:</label>
-	<input type="radio" name="speed" id="slow" value="slow" />
-	<div style="height:50px">&nbsp;</div>
-	<img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
+  <h3>Turn Animation</h3>
+  <a id="animation-off" href="#animation-off">Off</a>
+  <a id="animation-on" href="#animation-on">On</a>
+  <br />
+  <h3>Speed:</h3>
+  <label for="fast">Fast:</label>
+  <input type="radio" name="speed" id="fast" value="fast" checked="checked" />
+  <br />
+  <label for="medium">Medium:</label>
+  <input type="radio" name="speed" id="medium" value="medium" />
+  <br />
+  <label for="slow">Slow:</label>
+  <input type="radio" name="speed" id="slow" value="slow" />
+  <div style="height:50px">&nbsp;</div>
+  <img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
 </form>
-{% endhighlight %}
+```
 
-
-## Links ##
+## Links
 
 Inspired by the [Google Doodle](http://www.google.com/doodles/eadweard-j-muybridges-182nd-birthday)
 on April 9th, 2012 celebrating Eadweard J. Muybridge

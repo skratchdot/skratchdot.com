@@ -1,23 +1,23 @@
---- 
+---
 layout: post
 title: Github Enhancement Suite
 published: true
 categories:
-- Userscript
-- Javascript
-tags: 
-- Userscript
-- Javascript
-- Git
-- Github
-- Projects
+  - Userscript
+  - Javascript
+tags:
+  - Userscript
+  - Javascript
+  - Git
+  - Github
+  - Projects
 ---
 
 I've created quite a few [Github](https://github.com) userscripts to help enhance my experience
-when checking out code online.  The scripts either add functionality I wish existed, functionality
+when checking out code online. The scripts either add functionality I wish existed, functionality
 I've seen other people request, or functionality that once existed but was removed.
 
-With the recent [CSP Headers](/2013/05/userscripts-and-content-security-policy/) that were added 
+With the recent [CSP Headers](/2013/05/userscripts-and-content-security-policy/) that were added
 to the site, I had to make changes to all my scripts. Since it is starting to be a pain to manage
 so many scripts, and it's even a bigger pain for people if they want to install all of them,
 I've consolidated them all into one script:
@@ -25,7 +25,7 @@ I've consolidated them all into one script:
 [The Github Enhancement Suite](https://github.com/skratchdot/github-enhancement-suite).
 
 Eventually, I might make this a legitimate browser extension, and add functionality for turning
-features on and off.  I'll also probably clean up the code, and decommission the "one off" scripts.
+features on and off. I'll also probably clean up the code, and decommission the "one off" scripts.
 
 At the time of this writing, here are the scripts that are included:
 
@@ -38,4 +38,3 @@ At the time of this writing, here are the scripts that are included:
 - [Github: Repo Counts](https://github.com/skratchdot/github-repo-counts.user.js)
 - [Github: Repo Filter Info](https://github.com/skratchdot/github-repo-filter-info.user.js)
 - [Github: Twitter Link](https://github.com/skratchdot/github-twitter-link.user.js)
-

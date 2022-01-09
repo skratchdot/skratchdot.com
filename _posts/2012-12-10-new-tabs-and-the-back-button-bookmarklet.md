@@ -1,20 +1,20 @@
---- 
+---
 layout: post
-title: "New Tabs and the Back Button - Bookmarklet"
+title: 'New Tabs and the Back Button - Bookmarklet'
 categories:
-- Javascript
-- Bookmarklet
-tags: 
-- Javascript
-- Bookmarklet
+  - Javascript
+  - Bookmarklet
+tags:
+  - Javascript
+  - Bookmarklet
 ---
 
-If you're anything like me, then you open new links in tabs.  Sometimes,
+If you're anything like me, then you open new links in tabs. Sometimes,
 if the link has been open for a while, you forget what page you were on when you clicked
-the link.  The back button is disabled since you are in a new tab.
+the link. The back button is disabled since you are in a new tab.
 
 To get around this issue, I use a simple bookmarklet that takes me back to the document
-referrer.  I place the bookmarklet underneath my back button, so I have easy access to it.
+referrer. I place the bookmarklet underneath my back button, so I have easy access to it.
 
 Here's a screenshot of a disabled back button (in a new tab):
 
@@ -30,6 +30,6 @@ To install the bookmarklet, drag this link to your bookmark toolbar:
 
 All the bookmarklet does is:
 
-{% highlight js %}
-document.location=document.referrer;
-{% endhighlight %}
+```js
+document.location = document.referrer;
+```

@@ -1,18 +1,18 @@
---- 
+---
 layout: post
 title: Open Electribe Editor - v1.1.0 Released
 published: true
 categories:
-- Electribe
-tags: 
-- Electribe
-- ESX-1
-- Korg
-- Projects
-- Update
+  - Electribe
+tags:
+  - Electribe
+  - ESX-1
+  - Korg
+  - Projects
+  - Update
 ---
 
-### v1.1.0 - Released January 6, 2013 ###
+### v1.1.0 - Released January 6, 2013
 
 Download here\: [http://code.google.com/p/open-electribe-editor/downloads/list](http://code.google.com/p/open-electribe-editor/downloads/list)
 
