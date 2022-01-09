@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Colorify &raquo; skratchdot.com</title>
+    <!--
+	  _                 _              _       _         _       _                 _
+	 | |               | |            | |     | |       | |     | |               | |
+	/ __)           ___| | ___ __ __ _| |_ ___| |__   __| | ___ | |_             / __)
+	\__ \          / __| |/ / '__/ _` | __/ __| '_ \ / _` |/ _ \| __|            \__ \
+	(   /          \__ \   <| | | (_| | || (__| | | | (_| | (_) | |_ _           (   /
+	 |_|           |___/_|\_\_|  \__,_|\__\___|_| |_|\__,_|\___/ \__(_)           |_|
+
+	                   wasting bytes with ascii art since [random date]
+	-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/images/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/images/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/images/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/images/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/images/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/images/favicons/apple-touch-icon-76x76.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="skratchdot" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="application-name" content="skratchdot" />
+    <meta name="generator" content="Jekyll" />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Skratchdot (Atom 0.3)"
+      href="/atom.xml"
+    />
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/css/html5reset-1.6.1.css?201804141145"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/style.css?201804141145"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/pygments.css?201804141145"
+    />
+    <!--[if lt IE 9]>
+      <script
+        type="text/javascript"
+        src="//html5shiv.googlecode.com/svn/trunk/html5.js"
+      ></script>
+    <![endif]-->
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+    ></script>
+    <!-- Allow $.getScript() calls to be cached -->
+    <script type="text/javascript">
+      $.ajaxSetup({
+        cache: true,
+      });
+    </script>
+  </head>
+  <body>
+    <div class="hrRed"></div>
+    <div class="hrBlack"></div>
+    <header class="oneColumn">
+      <h1><a href="/">&#91;skratchdot<span>.</span>&#93;</a></h1>
+    </header>
+    <nav id="mainNav" class="oneColumn">
+      <ul>
+        <li>
+          <a title="Home" href="/"><span>&#91;</span>Home<span>&#93;</span></a>
+        </li>
+        <!--<li><a title="Browse" href="/browse/"><span>&#91;</span>Browse<span>&#93;</span></a></li>-->
+        <li>
+          <a title="Projects" href="/projects/"
+            ><span>&#91;</span>Projects<span>&#93;</span></a
+          >
+        </li>
+        <li>
+          <a title="Contact" href="/contact/"
+            ><span>&#91;</span>Contact<span>&#93;</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Social Buttons -->
+    <div id="share-buttons-container">
+      <ul class="share-buttons">
+        <li>
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https://www.skratchdot.com/projects/colorify/&t=Colorify"
+            title="Share on Facebook"
+            target="_blank"
+            ><img alt="Share on Facebook" src="/images/social/Facebook.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/intent/tweet?source=https://www.skratchdot.com/projects/colorify/&text=Colorify:%20https://www.skratchdot.com/projects/colorify/&via=skratchdot"
+            target="_blank"
+            title="Tweet"
+            ><img alt="Tweet" src="/images/social/Twitter.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://plus.google.com/share?url=https://www.skratchdot.com/projects/colorify/"
+            target="_blank"
+            title="Share on Google+"
+            ><img alt="Share on Google+" src="/images/social/Google+.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.tumblr.com/share?v=3&u=https://www.skratchdot.com/projects/colorify/&t=Colorify&s="
+            target="_blank"
+            title="Post to Tumblr"
+            ><img alt="Post to Tumblr" src="/images/social/Tumblr.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://pinterest.com/pin/create/button/?url=https://www.skratchdot.com/projects/colorify/&description=colorify%20Colorify%20is%20a%20collection%20of%20color%20tools%20that%20comes%20in%20three%20forms:%20a%20website,%20a%20command%20line%20tool,%20and%20a%20node.js%20library:%201.%20Website%20The%20website%20is%20built%20on%20react,%20and%20contains%20a%20few%20toy%20apps%20that%20can%20manipulate%20and%20display%20colors.%20Colorify:%20Page:%20Home%20Colorify:%20Page:%20About%20Colorify:..."
+            target="_blank"
+            title="Pin it"
+            ><img alt="Pin it" src="/images/social/Pinterest.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://getpocket.com/save?url=https://www.skratchdot.com/projects/colorify/&title=Colorify"
+            target="_blank"
+            title="Add to Pocket"
+            ><img alt="Add to Pocket" src="/images/social/Pocket.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.reddit.com/submit?url=https://www.skratchdot.com/projects/colorify/&title=Colorify"
+            target="_blank"
+            title="Submit to Reddit"
+            ><img alt="Submit to Reddit" src="/images/social/Reddit.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.skratchdot.com/projects/colorify/&title=Colorify&summary=colorify%20Colorify%20is%20a%20collection%20of%20color%20tools%20that%20comes%20in%20three%20forms:%20a%20website,%20a%20command%20line%20tool,%20and%20a%20node.js%20library:%201.%20Website%20The%20website%20is%20built%20on%20react,%20and%20contains%20a%20few%20toy%20apps%20that%20can%20manipulate%20and%20display%20colors.%20Colorify:%20Page:%20Home%20Colorify:%20Page:%20About%20Colorify:...&source=https://www.skratchdot.com/projects/colorify/"
+            target="_blank"
+            title="Share on LinkedIn"
+            ><img alt="Share on LinkedIn" src="/images/social/LinkedIn.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="mailto:?subject=Colorify&body=colorify%20Colorify%20is%20a%20collection%20of%20color%20tools%20that%20comes%20in%20three%20forms:%20a%20website,%20a%20command%20line%20tool,%20and%20a%20node.js%20library:%201.%20Website%20The%20website%20is%20built%20on%20react,%20and%20contains%20a%20few%20toy%20apps%20that%20can%20manipulate%20and%20display%20colors.%20Colorify:%20Page:%20Home%20Colorify:%20Page:%20About%20Colorify:...:%20https://www.skratchdot.com/projects/colorify/"
+            title="Send email"
+            ><img alt="Send email" src="/images/social/Email.png"
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="oneColumn">
+      <article>
+        <div class="entry">
+          <h1 id="colorify">colorify</h1>
+
+          <p>
+            Colorify is a collection of color tools that comes in three forms: a
+            <a href="https://projects.skratchdot.com/colorify">website</a>, a
+            <a href="#2-command-line-tool">command line tool</a>, and a
+            <a href="#3-node-js-library">node.js library</a>:
+          </p>
+
+          <h3 id="1-website">1. Website</h3>
+
+          <p>
+            The website is built on
+            <a href="http://facebook.github.io/react/">react</a>, and contains a
+            few <strong>toy apps</strong> that can manipulate and display
+            colors.
+          </p>
+
+          <ul>
+            <li>
+              <a href="https://projects.skratchdot.com/colorify/"
+                >Colorify: Page: Home</a
+              >
+            </li>
+            <li>
+              <a href="https://projects.skratchdot.com/colorify/about"
+                >Colorify: Page: About</a
+              >
+            </li>
+            <li>
+              <a href="https://projects.skratchdot.com/colorify/stats"
+                >Colorify: App: Stats</a
+              >
+            </li>
+            <li>
+              <a href="https://projects.skratchdot.com/colorify/mixer"
+                >Colorify: App: Mixer</a
+              >
+            </li>
+            <li>
+              <a href="https://projects.skratchdot.com/colorify/math"
+                >Colorify: App: Math</a
+              >
+            </li>
+          </ul>
+
+          <h3 id="2-command-line-tool">2. Command Line Tool</h3>
+
+          <p>
+            The cli can be installed by running
+            <code>npm install -g colorify</code>. This will add
+            <code>colorify</code> to your PATH. For the command line options,
+            you can run <code>colorify --help</code>:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>&gt; colorify --help
+
+Usage: colorify <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>command<span class="o">]</span>
+
+
+Commands:
+
+  <span class="nb">help</span>                     print <span class="nb">help</span> information <span class="o">(</span><span class="nb">alias</span> <span class="k">for</span> using -h or --help<span class="o">)</span>
+  random <span class="o">[</span>options<span class="o">]</span>         get a random color
+  stats <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>color<span class="o">]</span>  get color stats about an input string
+
+Options:
+
+  -h, --help     output usage information
+  -v, --version  output the version number</code></pre>
+          </figure>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>&gt; colorify random --help
+
+  Usage: random <span class="o">[</span>options<span class="o">]</span>
+
+  get a random color
+
+  Options:
+
+    -h, --help             output usage information
+    -f, --format &lt;format&gt;  css format types: hex, rgb, percent, hsl, hwb</code></pre>
+          </figure>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>&gt; colorify stats --help
+
+  Usage: stats <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>color<span class="o">]</span>
+
+  get color stats about an input string
+
+  Options:
+
+    -h, --help         output usage information
+    -p, --path &lt;path&gt;  only show the specified path <span class="o">(</span>i.e. schemes.tetradic.2<span class="o">)</span></code></pre>
+          </figure>
+
+          <h4 id="examples">Examples</h4>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>$ colorify random
+<span class="c1">#E13954</span></code></pre>
+          </figure>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>$ colorify random
+<span class="c1">#A8A3E5</span></code></pre>
+          </figure>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>$ colorify random -f rgb
+rgba<span class="o">(</span><span class="m">137</span>, <span class="m">102</span>, <span class="m">186</span>, <span class="m">0</span>.64<span class="o">)</span></code></pre>
+          </figure>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>$ colorify stats --path <span class="s2">&quot;hex&quot;</span> <span class="s2">&quot;orange&quot;</span>
+<span class="c1">#ffa500</span></code></pre>
+          </figure>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>$ colorify stats --path <span class="s2">&quot;websafe&quot;</span> <span class="s2">&quot;orange&quot;</span>
+<span class="c1">#ff9900</span></code></pre>
+          </figure>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>$ colorify stats red
+  <span class="s2">&quot;lib&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;onecolor&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;red&quot;</span>: <span class="m">1</span>,
+      <span class="s2">&quot;green&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;blue&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;alpha&quot;</span>: <span class="m">1</span>,
+      <span class="s2">&quot;hue&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;saturation&quot;</span>: <span class="m">1</span>,
+      <span class="s2">&quot;value&quot;</span>: <span class="m">1</span>,
+      <span class="s2">&quot;lightness&quot;</span>: <span class="m">0</span>.5,
+      <span class="s2">&quot;cyan&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;magenta&quot;</span>: <span class="m">1</span>,
+      <span class="s2">&quot;yellow&quot;</span>: <span class="m">1</span>,
+      <span class="s2">&quot;black&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;x&quot;</span>: <span class="m">0</span>.4124564,
+      <span class="s2">&quot;y&quot;</span>: <span class="m">0</span>.2126729,
+      <span class="s2">&quot;z&quot;</span>: <span class="m">0</span>.0193339,
+      <span class="s2">&quot;l&quot;</span>: <span class="m">1</span>,
+      <span class="s2">&quot;a&quot;</span>: <span class="m">1</span>,
+      <span class="s2">&quot;b&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;hex&quot;</span>: <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;hexa&quot;</span>: <span class="s2">&quot;#ffff0000&quot;</span>,
+      <span class="s2">&quot;css&quot;</span>: <span class="s2">&quot;rgb(255,0,0)&quot;</span>,
+      <span class="s2">&quot;cssa&quot;</span>: <span class="s2">&quot;rgba(255,0,0,1)&quot;</span>,
+      <span class="s2">&quot;cmyk&quot;</span>: <span class="o">[</span>
+        <span class="s2">&quot;CMYK&quot;</span>,
+        <span class="m">0</span>,
+        <span class="m">1</span>,
+        <span class="m">1</span>,
+        <span class="m">0</span>,
+        <span class="m">1</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;hsl&quot;</span>: <span class="o">[</span>
+        <span class="s2">&quot;HSL&quot;</span>,
+        <span class="m">0</span>,
+        <span class="m">1</span>,
+        <span class="m">0</span>.5,
+        <span class="m">1</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;hsv&quot;</span>: <span class="o">[</span>
+        <span class="s2">&quot;HSV&quot;</span>,
+        <span class="m">0</span>,
+        <span class="m">1</span>,
+        <span class="m">1</span>,
+        <span class="m">1</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;lab&quot;</span>: <span class="o">[</span>
+        <span class="s2">&quot;LAB&quot;</span>,
+        <span class="m">1</span>,
+        <span class="m">1</span>,
+        <span class="m">1</span>,
+        <span class="m">1</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;rgb&quot;</span>: <span class="o">[</span>
+        <span class="s2">&quot;RGB&quot;</span>,
+        <span class="m">1</span>,
+        <span class="m">0</span>,
+        <span class="m">0</span>,
+        <span class="m">1</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;xyz&quot;</span>: <span class="o">[</span>
+        <span class="s2">&quot;XYZ&quot;</span>,
+        <span class="m">0</span>.4124564,
+        <span class="m">0</span>.2126729,
+        <span class="m">0</span>.0193339,
+        <span class="m">1</span>
+      <span class="o">]</span>
+    <span class="o">}</span>,
+    <span class="s2">&quot;color&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;rgb&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;r&quot;</span>: <span class="m">255</span>,
+        <span class="s2">&quot;g&quot;</span>: <span class="m">0</span>,
+        <span class="s2">&quot;b&quot;</span>: <span class="m">0</span>
+      <span class="o">}</span>,
+      <span class="s2">&quot;hsl&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;h&quot;</span>: <span class="m">0</span>,
+        <span class="s2">&quot;s&quot;</span>: <span class="m">100</span>,
+        <span class="s2">&quot;l&quot;</span>: <span class="m">50</span>
+      <span class="o">}</span>,
+      <span class="s2">&quot;hsv&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;h&quot;</span>: <span class="m">0</span>,
+        <span class="s2">&quot;s&quot;</span>: <span class="m">100</span>,
+        <span class="s2">&quot;v&quot;</span>: <span class="m">100</span>
+      <span class="o">}</span>,
+      <span class="s2">&quot;cmyk&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;c&quot;</span>: <span class="m">0</span>,
+        <span class="s2">&quot;m&quot;</span>: <span class="m">100</span>,
+        <span class="s2">&quot;y&quot;</span>: <span class="m">100</span>,
+        <span class="s2">&quot;k&quot;</span>: <span class="m">0</span>
+      <span class="o">}</span>,
+      <span class="s2">&quot;rgbArray&quot;</span>: <span class="o">[</span>
+        <span class="m">255</span>,
+        <span class="m">0</span>,
+        <span class="m">0</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;hslArray&quot;</span>: <span class="o">[</span>
+        <span class="m">0</span>,
+        <span class="m">100</span>,
+        <span class="m">50</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;hsvArray&quot;</span>: <span class="o">[</span>
+        <span class="m">0</span>,
+        <span class="m">100</span>,
+        <span class="m">100</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;cmykArray&quot;</span>: <span class="o">[</span>
+        <span class="m">0</span>,
+        <span class="m">100</span>,
+        <span class="m">100</span>,
+        <span class="m">0</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;rgbaArray&quot;</span>: <span class="o">[</span>
+        <span class="m">255</span>,
+        <span class="m">0</span>,
+        <span class="m">0</span>,
+        <span class="m">1</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;hslaArray&quot;</span>: <span class="o">[</span>
+        <span class="m">0</span>,
+        <span class="m">100</span>,
+        <span class="m">50</span>,
+        <span class="m">1</span>
+      <span class="o">]</span>,
+      <span class="s2">&quot;alpha&quot;</span>: <span class="m">1</span>,
+      <span class="s2">&quot;red&quot;</span>: <span class="m">255</span>,
+      <span class="s2">&quot;green&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;blue&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;hue&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;saturation&quot;</span>: <span class="m">100</span>,
+      <span class="s2">&quot;lightness&quot;</span>: <span class="m">50</span>,
+      <span class="s2">&quot;saturationv&quot;</span>: <span class="m">100</span>,
+      <span class="s2">&quot;value&quot;</span>: <span class="m">100</span>,
+      <span class="s2">&quot;cyan&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;magenta&quot;</span>: <span class="m">100</span>,
+      <span class="s2">&quot;yellow&quot;</span>: <span class="m">100</span>,
+      <span class="s2">&quot;black&quot;</span>: <span class="m">0</span>,
+      <span class="s2">&quot;hexString&quot;</span>: <span class="s2">&quot;#FF0000&quot;</span>,
+      <span class="s2">&quot;rgbString&quot;</span>: <span class="s2">&quot;rgb(255, 0, 0)&quot;</span>,
+      <span class="s2">&quot;rgbaString&quot;</span>: <span class="s2">&quot;rgba(255, 0, 0, 1)&quot;</span>,
+      <span class="s2">&quot;percentString&quot;</span>: <span class="s2">&quot;rgb(100%, 0%, 0%)&quot;</span>,
+      <span class="s2">&quot;hslString&quot;</span>: <span class="s2">&quot;hsl(0, 100%, 50%)&quot;</span>,
+      <span class="s2">&quot;hslaString&quot;</span>: <span class="s2">&quot;hsla(0, 100%, 50%, 1)&quot;</span>,
+      <span class="s2">&quot;keyword&quot;</span>: <span class="s2">&quot;red&quot;</span>,
+      <span class="s2">&quot;luminosity&quot;</span>: <span class="m">0</span>.2126,
+      <span class="s2">&quot;dark&quot;</span>: true,
+      <span class="s2">&quot;light&quot;</span>: <span class="nb">false</span>
+    <span class="o">}</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;alpha&quot;</span>: <span class="m">1</span>,
+  <span class="s2">&quot;cmyk&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;c&quot;</span>: <span class="m">0</span>,
+    <span class="s2">&quot;m&quot;</span>: <span class="m">100</span>,
+    <span class="s2">&quot;y&quot;</span>: <span class="m">100</span>,
+    <span class="s2">&quot;k&quot;</span>: <span class="m">0</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;hsl&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;h&quot;</span>: <span class="m">0</span>,
+    <span class="s2">&quot;s&quot;</span>: <span class="m">100</span>,
+    <span class="s2">&quot;l&quot;</span>: <span class="m">50</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;hsv&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;h&quot;</span>: <span class="m">0</span>,
+    <span class="s2">&quot;s&quot;</span>: <span class="m">100</span>,
+    <span class="s2">&quot;v&quot;</span>: <span class="m">100</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;rgb&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;r&quot;</span>: <span class="m">255</span>,
+    <span class="s2">&quot;g&quot;</span>: <span class="m">0</span>,
+    <span class="s2">&quot;b&quot;</span>: <span class="m">0</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;rgbPercent&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;r&quot;</span>: <span class="m">100</span>,
+    <span class="s2">&quot;g&quot;</span>: <span class="m">0</span>,
+    <span class="s2">&quot;b&quot;</span>: <span class="m">0</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;hex&quot;</span>: <span class="s2">&quot;#ff0000&quot;</span>,
+  <span class="s2">&quot;hexTriplet&quot;</span>: <span class="s2">&quot;ff0000&quot;</span>,
+  <span class="s2">&quot;isRandom&quot;</span>: false,
+  <span class="s2">&quot;parseSuccessful&quot;</span>: true,
+  <span class="s2">&quot;closest&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;Red&quot;</span>,
+    <span class="s2">&quot;rgb&quot;</span>: <span class="o">[</span>
+      <span class="m">255</span>,
+      <span class="m">0</span>,
+      <span class="m">0</span>
+    <span class="o">]</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;websafe&quot;</span>: <span class="s2">&quot;#ff0000&quot;</span>,
+  <span class="s2">&quot;websmart&quot;</span>: <span class="s2">&quot;#ff0000&quot;</span>,
+  <span class="s2">&quot;isWebsafe&quot;</span>: true,
+  <span class="s2">&quot;isWebsmart&quot;</span>: true,
+  <span class="s2">&quot;schemes&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;complementary&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#00ffff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;splitComplementary&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#00ff80&quot;</span>,
+      <span class="s2">&quot;#ff00aa&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;splitComplementaryCW&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#00ff80&quot;</span>,
+      <span class="s2">&quot;#ff00ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;splitComplementaryCCW&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#ffff00&quot;</span>,
+      <span class="s2">&quot;#0080ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;triadic&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#00ff00&quot;</span>,
+      <span class="s2">&quot;#0000ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;clash&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#80ff00&quot;</span>,
+      <span class="s2">&quot;#8000ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;tetradic&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#80ff00&quot;</span>,
+      <span class="s2">&quot;#00ffff&quot;</span>,
+      <span class="s2">&quot;#8000ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;fourToneCW&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#ffff00&quot;</span>,
+      <span class="s2">&quot;#00ffff&quot;</span>,
+      <span class="s2">&quot;#0000ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;fourToneCCW&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#00ff00&quot;</span>,
+      <span class="s2">&quot;#00ffff&quot;</span>,
+      <span class="s2">&quot;#ff00ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;fiveToneA&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#15ff00&quot;</span>,
+      <span class="s2">&quot;#00ff95&quot;</span>,
+      <span class="s2">&quot;#0095ff&quot;</span>,
+      <span class="s2">&quot;#1500ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;fiveToneB&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#ffaa00&quot;</span>,
+      <span class="s2">&quot;#80ff00&quot;</span>,
+      <span class="s2">&quot;#00ff2a&quot;</span>,
+      <span class="s2">&quot;#1500ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;fiveToneC&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#ffd500&quot;</span>,
+      <span class="s2">&quot;#80ff00&quot;</span>,
+      <span class="s2">&quot;#0095ff&quot;</span>,
+      <span class="s2">&quot;#ff00aa&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;fiveToneD&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#ffaa00&quot;</span>,
+      <span class="s2">&quot;#00ff95&quot;</span>,
+      <span class="s2">&quot;#8000ff&quot;</span>,
+      <span class="s2">&quot;#ff00d4&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;fiveToneE&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#15ff00&quot;</span>,
+      <span class="s2">&quot;#002aff&quot;</span>,
+      <span class="s2">&quot;#8000ff&quot;</span>,
+      <span class="s2">&quot;#ff00aa&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;sixToneCW&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#ff8000&quot;</span>,
+      <span class="s2">&quot;#00ff00&quot;</span>,
+      <span class="s2">&quot;#00ff80&quot;</span>,
+      <span class="s2">&quot;#0000ff&quot;</span>,
+      <span class="s2">&quot;#8000ff&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;sixToneCCW&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#80ff00&quot;</span>,
+      <span class="s2">&quot;#00ff00&quot;</span>,
+      <span class="s2">&quot;#0080ff&quot;</span>,
+      <span class="s2">&quot;#0000ff&quot;</span>,
+      <span class="s2">&quot;#ff0080&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;neutral&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#ff4000&quot;</span>,
+      <span class="s2">&quot;#ff8000&quot;</span>,
+      <span class="s2">&quot;#ffbf00&quot;</span>,
+      <span class="s2">&quot;#ffff00&quot;</span>,
+      <span class="s2">&quot;#bfff00&quot;</span>
+    <span class="o">]</span>,
+    <span class="s2">&quot;analogous&quot;</span>: <span class="o">[</span>
+      <span class="s2">&quot;#ff0000&quot;</span>,
+      <span class="s2">&quot;#ff8000&quot;</span>,
+      <span class="s2">&quot;#ffff00&quot;</span>,
+      <span class="s2">&quot;#80ff00&quot;</span>,
+      <span class="s2">&quot;#00ff00&quot;</span>,
+      <span class="s2">&quot;#00ff80&quot;</span>
+    <span class="o">]</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;shades&quot;</span>: <span class="o">[</span>
+    <span class="s2">&quot;#ff0000&quot;</span>,
+    <span class="s2">&quot;#e60000&quot;</span>,
+    <span class="s2">&quot;#cc0000&quot;</span>,
+    <span class="s2">&quot;#b30000&quot;</span>,
+    <span class="s2">&quot;#990000&quot;</span>,
+    <span class="s2">&quot;#800000&quot;</span>,
+    <span class="s2">&quot;#660000&quot;</span>,
+    <span class="s2">&quot;#4d0000&quot;</span>,
+    <span class="s2">&quot;#330000&quot;</span>,
+    <span class="s2">&quot;#1a0000&quot;</span>
+  <span class="o">]</span>,
+  <span class="s2">&quot;tints&quot;</span>: <span class="o">[</span>
+    <span class="s2">&quot;#ff0000&quot;</span>,
+    <span class="s2">&quot;#ff1a1a&quot;</span>,
+    <span class="s2">&quot;#ff3333&quot;</span>,
+    <span class="s2">&quot;#ff4d4d&quot;</span>,
+    <span class="s2">&quot;#ff6666&quot;</span>,
+    <span class="s2">&quot;#ff8080&quot;</span>,
+    <span class="s2">&quot;#ff9999&quot;</span>,
+    <span class="s2">&quot;#ffb3b3&quot;</span>,
+    <span class="s2">&quot;#ffcccc&quot;</span>,
+    <span class="s2">&quot;#ffe5e5&quot;</span>
+  <span class="o">]</span>,
+  <span class="s2">&quot;tones&quot;</span>: <span class="o">[</span>
+    <span class="s2">&quot;#ff0000&quot;</span>,
+    <span class="s2">&quot;#f20d0d&quot;</span>,
+    <span class="s2">&quot;#e51a1a&quot;</span>,
+    <span class="s2">&quot;#d92626&quot;</span>,
+    <span class="s2">&quot;#cc3333&quot;</span>,
+    <span class="s2">&quot;#bf4040&quot;</span>,
+    <span class="s2">&quot;#b24d4d&quot;</span>,
+    <span class="s2">&quot;#a65959&quot;</span>,
+    <span class="s2">&quot;#996666&quot;</span>,
+    <span class="s2">&quot;#8c7373&quot;</span>
+  <span class="o">]</span>,
+  <span class="s2">&quot;blind&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;protanomaly&quot;</span>: <span class="s2">&quot;#b75013&quot;</span>,
+    <span class="s2">&quot;protanopia&quot;</span>: <span class="s2">&quot;#8f7e1e&quot;</span>,
+    <span class="s2">&quot;deuteranomaly&quot;</span>: <span class="s2">&quot;#c34c00&quot;</span>,
+    <span class="s2">&quot;deuteranopia&quot;</span>: <span class="s2">&quot;#a17800&quot;</span>,
+    <span class="s2">&quot;tritanomaly&quot;</span>: <span class="s2">&quot;#fe0f00&quot;</span>,
+    <span class="s2">&quot;tritanopia&quot;</span>: <span class="s2">&quot;#fd1700&quot;</span>,
+    <span class="s2">&quot;achromatomaly&quot;</span>: <span class="s2">&quot;#7f2323&quot;</span>,
+    <span class="s2">&quot;achromatopsia&quot;</span>: <span class="s2">&quot;#363636&quot;</span>
+  <span class="o">}</span>
+<span class="o">}</span></code></pre>
+          </figure>
+
+          <h3 id="3-nodejs-library">3. Node.js Library</h3>
+
+          <p>
+            In it’s current state, this is a pretty lame node.js library. All it
+            does is expose access to some other helpful color libraries and
+            includes a few helper functions that were needed for the colorify
+            website. The libraries that are included are:
+          </p>
+
+          <ul>
+            <li><a href="https://github.com/harthur/color">color</a></li>
+            <li>
+              <a href="https://github.com/skratchdot/color-blind"
+                >color-blind</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/skratchdot/color-harmony"
+                >color-harmony</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/skratchdot/color-quantize"
+                >color-quantize</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/c0bra/color-scheme-js"
+                >color-scheme</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/skratchdot/color-stats"
+                >color-stats</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/SimonWaldherr/ColorConverter.js"
+                >colorconverter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.npmjs.org/package/colorname">colorname</a>
+            </li>
+            <li><a href="https://github.com/One-com/one-color">onecolor</a></li>
+          </ul>
+
+          <p>
+            You can install the library by running
+            <code>npm install colorify</code> and use it:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-javascript" data-lang="javascript"><span></span><span class="kd">var</span> <span class="nx">colorify</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;colorify&#39;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">colorify</span><span class="p">.</span><span class="nx">lib</span><span class="p">));</span> <span class="c1">// outputs:</span>
+                                        <span class="c1">// [</span>
+                                        <span class="c1">//   &#39;color&#39;,</span>
+                                        <span class="c1">//   &#39;colorBlind&#39;,</span>
+                                        <span class="c1">//   &#39;colorHarmony&#39;,</span>
+                                        <span class="c1">//   &#39;colorQuantize&#39;,</span>
+                                        <span class="c1">//   &#39;colorScheme&#39;,</span>
+                                        <span class="c1">//   &#39;colorStats&#39;,</span>
+                                        <span class="c1">//   &#39;colorConverter&#39;,</span>
+                                        <span class="c1">//   &#39;colorName&#39;,</span>
+                                        <span class="c1">//   &#39;onecolor&#39;</span>
+                                        <span class="c1">// ]</span></code></pre>
+          </figure>
+
+          <h4 id="other-js-libs-to-check-out">Other js libs to check out</h4>
+
+          <ul>
+            <li><a href="https://github.com/jrus/chromatist">chromatist</a></li>
+            <li><a href="https://github.com/gka/chroma.js">chroma.js</a></li>
+            <li>
+              …more to add? submit a
+              <a href="https://github.com/skratchdot/colorify/pulls"
+                >pull request</a
+              >
+            </li>
+          </ul>
+
+          <h4 id="source-code">Source Code</h4>
+
+          <ul>
+            <li>
+              <a href="https://github.com/skratchdot/colorify"
+                >Source Code on Github</a
+              >
+            </li>
+          </ul>
+
+          <h2 id="for-developers">For Developers</h2>
+
+          <h3 id="clone-the-project">Clone the Project</h3>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>git clone https://github.com/skratchdot/colorify.git
+<span class="nb">cd</span> colorify</code></pre>
+          </figure>
+
+          <h3 id="install-the-dependencies">Install the Dependencies</h3>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>npm install</code></pre>
+          </figure>
+
+          <h3 id="run-the-application-and-watch-for-changes">
+            Run the Application (and watch for changes)
+          </h3>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>gulp</code></pre>
+          </figure>
+
+          <p>
+            Now browse to the app at
+            <a href="http://localhost:8080/colorify"
+              >http://localhost:8080/colorify</a
+            >
+          </p>
+
+          <h2 id="other-links--tools">Other Links / Tools</h2>
+
+          <ul>
+            <li>
+              <a href="http://en.wikipedia.org/wiki/Color_theory"
+                >Color Theory on Wikipedia</a
+              >
+            </li>
+            <li>
+              <a href="http://www.handprint.com/HP/WCL/wcolor.html"
+                >Color Theory on HandPrint.com</a
+              >
+            </li>
+            <li><a href="https://kuler.adobe.com/">Adobe Kuler</a></li>
+            <li><a href="http://mudcu.be/sphere/">Color Sphere</a></li>
+            <li><a href="http://www.colorhexa.com/">Color Hexa</a></li>
+            <li><a href="http://colrd.com/">Colrd.com</a></li>
+            <li><a href="http://paletton.com/">Paletton.com</a></li>
+            <li>
+              <a href="http://bahamas10.github.io/ryb/">RYB Color Wheel</a>
+            </li>
+            <li><a href="http://colorblendy.com">ColorBlendy</a></li>
+            <li><a href="http://colourco.de/">ColourCo.de</a></li>
+            <li>
+              <a href="http://color.hailpixel.com/">Color @ hailpixel.com</a>
+            </li>
+            <li><a href="http://hslpicker.com">hslpicker</a></li>
+            <li><a href="http://colorblender.com">ColorBlender</a></li>
+            <li>
+              <a href="http://www.colorschemer.com/online.html">ColorSchemer</a>
+            </li>
+            <li><a href="http://coolors.co">Coolors</a></li>
+            <li><a href="http://www.checkman.io/please/">Please.js</a></li>
+            <li><a href="http://lovelypalettes.com/">Lovely Palettes</a></li>
+            <li><a href="http://www.color-hex.com/">Color-Hex</a></li>
+            <li><a href="http://www.colorshare.co/">Color Share</a></li>
+            <li><a href="http://uigradients.com">UI Gradients</a></li>
+            <li>
+              <a href="http://paintbycode.github.io/gradient-generator/"
+                >Random CSS Gradient Generator</a
+              >
+            </li>
+            <li>
+              <a href="http://elrumordelaluz.github.io/draGGradients/"
+                >draGGradients</a
+              >
+            </li>
+            <li><a href="http://bada55.io/">bada55.io</a></li>
+            <li>
+              <a href="http://www.ficml.org/jemimap/style/color/wheel.html"
+                >4096 Color Wheel</a
+              >
+            </li>
+            <li>
+              <a href="http://allprofitallfree.com/color-wheel2.html"
+                >AllProfitAllFree - Color Wheel</a
+              >
+            </li>
+            <li>
+              <a href="http://design.geckotribe.com/colorwheel/"
+                >Color Wheel &amp; Color Scheme Generator</a
+              >
+            </li>
+            <li><a href="http://colorotate.org/">ColoRotate</a></li>
+            <li><a href="http://colorsontheweb.com/">Colors On The Web</a></li>
+            <li><a href="http://www.colourlovers.com/">Colour Lovers</a></li>
+            <li><a href="http://colr.org/">Colr</a></li>
+            <li>
+              <a href="http://www.gpeters.com/color/color-schemes.php"
+                >Instant Color Schemes</a
+              >
+            </li>
+            <li><a href="http://colorcodehex.com">Color Code Hex</a></li>
+            <li>
+              <a href="http://penguingeorge.com/products/colordrop/"
+                >Colordrop</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://thesiteslinger.com/blog/making-color-contrast-checks-a-part-of-your-web-workflow/"
+                >Color Contrast Links</a
+              >
+            </li>
+            <li><a href="http://jxnblk.com/colorable/">Colorable</a></li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=LKnqECcg6Gw"
+                >Computer Color Is Broken</a
+              >
+            </li>
+            <li>
+              <a href="http://colours.neilorangepeel.com/">CSS Colours</a>
+            </li>
+            <li><a href="http://htmlcolorcodes.com/">HTML Color Codes</a></li>
+            <li><a href="http://www.colormatters.com/">Color Matters</a></li>
+            <li>
+              <a href="http://tools.medialab.sciences-po.fr/iwanthue/"
+                >I Want HUE</a
+              >
+            </li>
+          </ul>
+
+          <p>
+            <strong
+              ><em
+                >Have a link to share? Submit a
+                <a href="https://github.com/skratchdot/colorify/pulls"
+                  >pull request</a
+                >
+                to add to this list.</em
+              ></strong
+            >
+          </p>
+
+          <h2 id="license">License</h2>
+
+          <p>
+            Copyright (c) 2014
+            <a href="https://www.skratchdot.com/">skratchdot</a><br />
+            Licensed under the MIT license.
+          </p>
+        </div>
+
+        <div>
+          <br />
+          <div style="border-bottom: 1px dotted"></div>
+          <br />
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_shortname = 'skratchdot';
+          var disqus_identifier = '/projects/colorify/';
+          var disqus_url = 'https://www.skratchdot.com/projects/colorify/';
+
+          $.getScript('//' + disqus_shortname + '.disqus.com/embed.js');
+        </script>
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          ></noscript
+        >
+        <a href="https://disqus.com" class="dsq-brlink"
+          >blog comments powered by <span class="logo-disqus">Disqus</span></a
+        >
+      </article>
+      <nav id="articlesNav">
+        <div>
+          <div class="newEntries"></div>
+          <div class="oldEntries"></div>
+        </div>
+        <div class="homeEntries"><a href="/">HOME</a></div>
+      </nav>
+    </section>
+    <div class="footerSpacer"><br /></div>
+    <footer class="oneColumn">
+      <div>
+        Copyright &#169; 2018 <a href="/">skratchdot</a>
+        <span class="hspace">&#x2022;</span>
+        Validate:&#160;&#160;
+        <a href="https://validator.w3.org/check/referer">HTML5</a>
+        <span class="hspace">&#x2022;</span>
+        <a class="noBorder" href="/atom.xml"
+          ><img
+            src="/images/feed-icon-14x14.png"
+            alt="RSS/Atom Feed"
+            style="top: 2px"
+        /></a>
+        <span class="hspace">&#x2022;</span>
+        <div class="twitter-button">
+          <a
+            class="twitter-button-link"
+            href="https://twitter.com/intent/user?screen_name=skratchdot"
+            target="_blank"
+            aria-label="Follow @skratchdot on Twitter"
+            title="Follow @skratchdot on Twitter"
+          >
+            <i></i>
+            <span> Follow <b>@skratchdot</b> </span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <a href="https://github.com/skratchdot" class="github-corner">
+      <svg
+        width="80"
+        height="80"
+        viewBox="0 0 250 250"
+        style="
+          fill: #c80000;
+          color: #000;
+          position: absolute;
+          top: 0;
+          border: 0;
+          right: 0;
+        "
+      >
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+          fill="currentColor"
+          style="transform-origin: 130px 106px"
+          class="octo-arm"
+        ></path>
+        <path
+          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+          fill="currentColor"
+          class="octo-body"
+        ></path>
+        <path d="M10,10 L115,115 L250,250 Z" stroke="black" stroke-width="6" />
+      </svg>
+    </a>
+    <div id="homepage_link">
+      <a href="/" style="border: 0"
+        ><img src="/favicon.ico" alt="skratchdot" width="16" height="16"
+      /></a>
+    </div>
+    <!-- Javascript -->
+    <script
+      type="text/javascript"
+      src="/js/skratchdot.js?201804141145"
+    ></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-10768188-1', 'skratchdot.com');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

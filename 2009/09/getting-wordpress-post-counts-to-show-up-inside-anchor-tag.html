@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Getting Wordpress Post Counts to show up inside anchor tag &raquo;
+      skratchdot.com
+    </title>
+    <!--
+	  _                 _              _       _         _       _                 _
+	 | |               | |            | |     | |       | |     | |               | |
+	/ __)           ___| | ___ __ __ _| |_ ___| |__   __| | ___ | |_             / __)
+	\__ \          / __| |/ / '__/ _` | __/ __| '_ \ / _` |/ _ \| __|            \__ \
+	(   /          \__ \   <| | | (_| | || (__| | | | (_| | (_) | |_ _           (   /
+	 |_|           |___/_|\_\_|  \__,_|\__\___|_| |_|\__,_|\___/ \__(_)           |_|
+
+	                   wasting bytes with ascii art since [random date]
+	-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/images/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/images/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/images/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/images/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/images/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/images/favicons/apple-touch-icon-76x76.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="skratchdot" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="application-name" content="skratchdot" />
+    <meta name="generator" content="Jekyll" />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Skratchdot (Atom 0.3)"
+      href="/atom.xml"
+    />
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/css/html5reset-1.6.1.css?201804141145"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/style.css?201804141145"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/pygments.css?201804141145"
+    />
+    <!--[if lt IE 9]>
+      <script
+        type="text/javascript"
+        src="//html5shiv.googlecode.com/svn/trunk/html5.js"
+      ></script>
+    <![endif]-->
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+    ></script>
+    <!-- Allow $.getScript() calls to be cached -->
+    <script type="text/javascript">
+      $.ajaxSetup({
+        cache: true,
+      });
+    </script>
+  </head>
+  <body>
+    <div class="hrRed"></div>
+    <div class="hrBlack"></div>
+    <header class="oneColumn">
+      <h1><a href="/">&#91;skratchdot<span>.</span>&#93;</a></h1>
+    </header>
+    <nav id="mainNav" class="oneColumn">
+      <ul>
+        <li>
+          <a title="Home" href="/"><span>&#91;</span>Home<span>&#93;</span></a>
+        </li>
+        <!--<li><a title="Browse" href="/browse/"><span>&#91;</span>Browse<span>&#93;</span></a></li>-->
+        <li>
+          <a title="Projects" href="/projects/"
+            ><span>&#91;</span>Projects<span>&#93;</span></a
+          >
+        </li>
+        <li>
+          <a title="Contact" href="/contact/"
+            ><span>&#91;</span>Contact<span>&#93;</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Social Buttons -->
+    <div id="share-buttons-container">
+      <ul class="share-buttons">
+        <li>
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag&t=Getting%20Wordpress%20Post%20Counts%20to%20show%20up%20inside%20anchor%20tag"
+            title="Share on Facebook"
+            target="_blank"
+            ><img alt="Share on Facebook" src="/images/social/Facebook.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/intent/tweet?source=https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag&text=Getting%20Wordpress%20Post%20Counts%20to%20show%20up%20inside%20anchor%20tag:%20https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag&via=skratchdot"
+            target="_blank"
+            title="Tweet"
+            ><img alt="Tweet" src="/images/social/Twitter.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://plus.google.com/share?url=https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag"
+            target="_blank"
+            title="Share on Google+"
+            ><img alt="Share on Google+" src="/images/social/Google+.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.tumblr.com/share?v=3&u=https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag&t=Getting%20Wordpress%20Post%20Counts%20to%20show%20up%20inside%20anchor%20tag&s="
+            target="_blank"
+            title="Post to Tumblr"
+            ><img alt="Post to Tumblr" src="/images/social/Tumblr.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://pinterest.com/pin/create/button/?url=https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag&description=NOTE:%20This%20post%20is%20referring%20to%20my%20old%20Wordpress%20blog.%20The%20theme%20has%20since%20changed.%20When%20creating%20this%20blog%E2%80%99s%20theme,%20I%20decided%20I%20wanted%20the%20links%20in%20the%20side%20navigation%20to%20take%20up%20the%20full%20width%20of%20the%20navigation.%20Also,%20when%20hovering,%20I%20wanted%20to%20highlight%20the%20whole%20link/line.%20This..."
+            target="_blank"
+            title="Pin it"
+            ><img alt="Pin it" src="/images/social/Pinterest.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://getpocket.com/save?url=https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag&title=Getting%20Wordpress%20Post%20Counts%20to%20show%20up%20inside%20anchor%20tag"
+            target="_blank"
+            title="Add to Pocket"
+            ><img alt="Add to Pocket" src="/images/social/Pocket.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.reddit.com/submit?url=https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag&title=Getting%20Wordpress%20Post%20Counts%20to%20show%20up%20inside%20anchor%20tag"
+            target="_blank"
+            title="Submit to Reddit"
+            ><img alt="Submit to Reddit" src="/images/social/Reddit.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag&title=Getting%20Wordpress%20Post%20Counts%20to%20show%20up%20inside%20anchor%20tag&summary=NOTE:%20This%20post%20is%20referring%20to%20my%20old%20Wordpress%20blog.%20The%20theme%20has%20since%20changed.%20When%20creating%20this%20blog%E2%80%99s%20theme,%20I%20decided%20I%20wanted%20the%20links%20in%20the%20side%20navigation%20to%20take%20up%20the%20full%20width%20of%20the%20navigation.%20Also,%20when%20hovering,%20I%20wanted%20to%20highlight%20the%20whole%20link/line.%20This...&source=https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag"
+            target="_blank"
+            title="Share on LinkedIn"
+            ><img alt="Share on LinkedIn" src="/images/social/LinkedIn.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="mailto:?subject=Getting%20Wordpress%20Post%20Counts%20to%20show%20up%20inside%20anchor%20tag&body=NOTE:%20This%20post%20is%20referring%20to%20my%20old%20Wordpress%20blog.%20The%20theme%20has%20since%20changed.%20When%20creating%20this%20blog%E2%80%99s%20theme,%20I%20decided%20I%20wanted%20the%20links%20in%20the%20side%20navigation%20to%20take%20up%20the%20full%20width%20of%20the%20navigation.%20Also,%20when%20hovering,%20I%20wanted%20to%20highlight%20the%20whole%20link/line.%20This...:%20https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag"
+            title="Send email"
+            ><img alt="Send email" src="/images/social/Email.png"
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="oneColumn">
+      <article>
+        <div class="title">
+          <div class="date">
+            <div>
+              <span>Sep</span>
+              <span>22</span>
+            </div>
+            <div>
+              <span>2009</span>
+            </div>
+          </div>
+          <h2 class="title">
+            <a
+              href="/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag"
+              rel="bookmark"
+              title="Permanent Link to Getting Wordpress Post Counts to show up inside anchor tag"
+              >Getting Wordpress Post Counts to show up inside anchor tag</a
+            >
+          </h2>
+          <div class="info">
+            <div class="category">
+              <a href="/category/Wordpress" title="View all posts in Wordpress"
+                >Wordpress</a
+              >
+
+              &nbsp;
+            </div>
+
+            <div class="pl-comments comments">
+              <a
+                href="#disqus_thread"
+                data-disqus-identifier="/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag"
+              ></a>
+            </div>
+          </div>
+          <div class="clearfix">&nbsp;</div>
+        </div>
+        <div class="entry">
+          <p>
+            <em
+              >NOTE: This post is referring to my old Wordpress blog. The theme
+              has since changed.</em
+            >
+          </p>
+
+          <p>
+            When creating this blog’s theme, I decided I wanted the links in the
+            side navigation to take up the full width of the navigation. Also,
+            when hovering, I wanted to highlight the whole link/line. This seems
+            like a very simple thing to do with CSS, but by default, a few of
+            the Wordpress widgets do not allow for easy customization of the
+            placement of the post count. This makes it hard to create sidebar
+            entries in which the whole line is a link.
+          </p>
+
+          <p>
+            For example, by default, I could only get the Archive Widget to
+            print out links in the following format:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-html" data-lang="html"><span></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/2009/09/&quot;</span><span class="p">&gt;</span>September 2009<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="ni">&amp;nbsp;</span>(1)<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span></code></pre>
+          </figure>
+
+          <p>
+            I wanted the links to be in this format (note the (1) is inside the
+            anchor tag):
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-html" data-lang="html"><span></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/2009/09/&quot;</span><span class="p">&gt;</span>September 2009<span class="ni">&amp;nbsp;</span>(1)<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span></code></pre>
+          </figure>
+
+          <p>
+            Below are the steps I took to override the default behavior of the
+            Archive Widget. For this tutorial, I’m going to modify the “classic”
+            theme that is provided with Wordpress 2.8. You can download both the
+            original “classic” theme as well as my modified version
+            “classic-modified”
+            <a href="/downloads/theme-tutorial-classic-modified.zip">here</a>.
+          </p>
+
+          <div class="info-section-note">
+            NOTE: For detailed instructions on creating a Wordpress theme, there
+            are many tutorials online. Also, the
+            <a href="http://codex.wordpress.org/Theme_Development"
+              >Wordpress.org</a
+            >
+            site has fairly detailed documentation. The first tutorial I found
+            via a google search was for entry level Wordpress developers, yet it
+            was very helpful:
+            <a
+              href="http://www.wpdesigner.com/2007/02/19/so-you-want-to-create-wordpress-themes-huh/"
+              >www.wpdesigner.com</a
+            >.
+          </div>
+
+          <div>&nbsp;</div>
+
+          <p>
+            For this tutorial, the first step to take is to copy the “classic”
+            theme. Rename the copy “classic-modified” and place it in your
+            themes folder.
+          </p>
+
+          <p>
+            Now we’re going to modify the <b>functions.php</b> file by adding
+            lines 17-18 below:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno"> 1 </span><span class="cp">&lt;?php</span>
+<span class="lineno"> 2 </span><span class="sd">/**</span>
+<span class="lineno"> 3 </span><span class="sd"> * @package WordPress</span>
+<span class="lineno"> 4 </span><span class="sd"> * @subpackage Classic_Theme</span>
+<span class="lineno"> 5 </span><span class="sd"> */</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="nx">automatic_feed_links</span><span class="p">();</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span><span class="k">if</span> <span class="p">(</span> <span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;register_sidebar&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="lineno">10 </span>	<span class="nx">register_sidebar</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+<span class="lineno">11 </span>		<span class="s1">&#39;before_widget&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&lt;li id=&quot;%1$s&quot; class=&quot;widget %2$s&quot;&gt;&#39;</span><span class="p">,</span>
+<span class="lineno">12 </span>		<span class="s1">&#39;after_widget&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&lt;/li&gt;&#39;</span><span class="p">,</span>
+<span class="lineno">13 </span>		<span class="s1">&#39;before_title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="lineno">14 </span>		<span class="s1">&#39;after_title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="lineno">15 </span>	<span class="p">));</span>
+<span class="lineno">16 </span>
+<span class="lineno">17 </span><span class="c1">// Include the script that replaces the default archive widget</span>
+<span class="lineno">18 </span><span class="k">require_once</span><span class="p">(</span><span class="s1">&#39;functions-widgets.php&#39;</span><span class="p">);</span>
+<span class="lineno">19 </span>
+<span class="lineno">20 </span><span class="cp">?&gt;</span><span class="x"></span></code></pre>
+          </figure>
+
+          <p>
+            Now create a blank file called <b>functions-widgets.php</b> and
+            place it in your themes folder. Next, open the file
+            <b>“/wp-includes/default-widgets.php”</b> and copy lines 210-271.
+            Paste these lines in <b>functions-widgets.php</b> so it looks like
+            the code below (Note I’ve added the opening and closing php tags):
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno"> 1 </span><span class="cp">&lt;?php</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="sd">/**</span>
+<span class="lineno"> 4 </span><span class="sd"> * Archives widget class</span>
+<span class="lineno"> 5 </span><span class="sd"> *</span>
+<span class="lineno"> 6 </span><span class="sd"> * @since 2.8.0</span>
+<span class="lineno"> 7 </span><span class="sd"> */</span>
+<span class="lineno"> 8 </span><span class="k">class</span> <span class="nc">WP_Widget_Archives</span> <span class="k">extends</span> <span class="nx">WP_Widget</span> <span class="p">{</span>
+<span class="lineno"> 9 </span>
+<span class="lineno">10 </span>	<span class="k">function</span> <span class="nf">WP_Widget_Archives</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">11 </span>		<span class="nv">$widget_ops</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;classname&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;widget_archive&#39;</span><span class="p">,</span> <span class="s1">&#39;description&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span> <span class="s1">&#39;A monthly archive of your blog&amp;#8217;s posts&#39;</span><span class="p">)</span> <span class="p">);</span>
+<span class="lineno">12 </span>		<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">WP_Widget</span><span class="p">(</span><span class="s1">&#39;archives&#39;</span><span class="p">,</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Archives&#39;</span><span class="p">),</span> <span class="nv">$widget_ops</span><span class="p">);</span>
+<span class="lineno">13 </span>	<span class="p">}</span>
+<span class="lineno">14 </span>
+<span class="lineno">15 </span>	<span class="k">function</span> <span class="nf">widget</span><span class="p">(</span> <span class="nv">$args</span><span class="p">,</span> <span class="nv">$instance</span> <span class="p">)</span> <span class="p">{</span>
+<span class="lineno">16 </span>		<span class="nb">extract</span><span class="p">(</span><span class="nv">$args</span><span class="p">);</span>
+<span class="lineno">17 </span>		<span class="nv">$c</span> <span class="o">=</span> <span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="s1">&#39;1&#39;</span> <span class="o">:</span> <span class="s1">&#39;0&#39;</span><span class="p">;</span>
+<span class="lineno">18 </span>		<span class="nv">$d</span> <span class="o">=</span> <span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;dropdown&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="s1">&#39;1&#39;</span> <span class="o">:</span> <span class="s1">&#39;0&#39;</span><span class="p">;</span>
+<span class="lineno">19 </span>		<span class="nv">$title</span> <span class="o">=</span> <span class="nx">apply_filters</span><span class="p">(</span><span class="s1">&#39;widget_title&#39;</span><span class="p">,</span> <span class="k">empty</span><span class="p">(</span><span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">])</span> <span class="o">?</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Archives&#39;</span><span class="p">)</span> <span class="o">:</span> <span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]);</span>
+<span class="lineno">20 </span>
+<span class="lineno">21 </span>		<span class="k">echo</span> <span class="nv">$before_widget</span><span class="p">;</span>
+<span class="lineno">22 </span>		<span class="k">if</span> <span class="p">(</span> <span class="nv">$title</span> <span class="p">)</span>
+<span class="lineno">23 </span>			<span class="k">echo</span> <span class="nv">$before_title</span> <span class="o">.</span> <span class="nv">$title</span> <span class="o">.</span> <span class="nv">$after_title</span><span class="p">;</span>
+<span class="lineno">24 </span>
+<span class="lineno">25 </span>		<span class="k">if</span> <span class="p">(</span> <span class="nv">$d</span> <span class="p">)</span> <span class="p">{</span>
+<span class="lineno">26 </span><span class="cp">?&gt;</span><span class="x"></span>
+<span class="lineno">27 </span><span class="x">		&lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">esc_attr</span><span class="p">(</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Select Month&#39;</span><span class="p">));</span> <span class="cp">?&gt;</span><span class="x">&lt;/option&gt; </span><span class="cp">&lt;?php</span> <span class="nx">wp_get_archives</span><span class="p">(</span><span class="nx">apply_filters</span><span class="p">(</span><span class="s1">&#39;widget_archives_dropdown_args&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;monthly&#39;</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;option&#39;</span><span class="p">,</span> <span class="s1">&#39;show_post_count&#39;</span> <span class="o">=&gt;</span> <span class="nv">$c</span><span class="p">)));</span> <span class="cp">?&gt;</span><span class="x"> &lt;/select&gt;</span>
+<span class="lineno">28 </span><span class="cp">&lt;?php</span>
+<span class="lineno">29 </span>		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="lineno">30 </span><span class="cp">?&gt;</span><span class="x"></span>
+<span class="lineno">31 </span><span class="x">		&lt;ul&gt;</span>
+<span class="lineno">32 </span><span class="x">		</span><span class="cp">&lt;?php</span> <span class="nx">wp_get_archives</span><span class="p">(</span><span class="nx">apply_filters</span><span class="p">(</span><span class="s1">&#39;widget_archives_args&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;monthly&#39;</span><span class="p">,</span> <span class="s1">&#39;show_post_count&#39;</span> <span class="o">=&gt;</span> <span class="nv">$c</span><span class="p">)));</span> <span class="cp">?&gt;</span><span class="x"></span>
+<span class="lineno">33 </span><span class="x">		&lt;/ul&gt;</span>
+<span class="lineno">34 </span><span class="cp">&lt;?php</span>
+<span class="lineno">35 </span>		<span class="p">}</span>
+<span class="lineno">36 </span>
+<span class="lineno">37 </span>		<span class="k">echo</span> <span class="nv">$after_widget</span><span class="p">;</span>
+<span class="lineno">38 </span>	<span class="p">}</span>
+<span class="lineno">39 </span>
+<span class="lineno">40 </span>	<span class="k">function</span> <span class="nf">update</span><span class="p">(</span> <span class="nv">$new_instance</span><span class="p">,</span> <span class="nv">$old_instance</span> <span class="p">)</span> <span class="p">{</span>
+<span class="lineno">41 </span>		<span class="nv">$instance</span> <span class="o">=</span> <span class="nv">$old_instance</span><span class="p">;</span>
+<span class="lineno">42 </span>		<span class="nv">$new_instance</span> <span class="o">=</span> <span class="nx">wp_parse_args</span><span class="p">(</span> <span class="p">(</span><span class="k">array</span><span class="p">)</span> <span class="nv">$new_instance</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span> <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;dropdown&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">);</span>
+<span class="lineno">43 </span>		<span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">strip_tags</span><span class="p">(</span><span class="nv">$new_instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]);</span>
+<span class="lineno">44 </span>		<span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$new_instance</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno">45 </span>		<span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;dropdown&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$new_instance</span><span class="p">[</span><span class="s1">&#39;dropdown&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno">46 </span>
+<span class="lineno">47 </span>		<span class="k">return</span> <span class="nv">$instance</span><span class="p">;</span>
+<span class="lineno">48 </span>	<span class="p">}</span>
+<span class="lineno">49 </span>
+<span class="lineno">50 </span>	<span class="k">function</span> <span class="nf">form</span><span class="p">(</span> <span class="nv">$instance</span> <span class="p">)</span> <span class="p">{</span>
+<span class="lineno">51 </span>		<span class="nv">$instance</span> <span class="o">=</span> <span class="nx">wp_parse_args</span><span class="p">(</span> <span class="p">(</span><span class="k">array</span><span class="p">)</span> <span class="nv">$instance</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span> <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;dropdown&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">);</span>
+<span class="lineno">52 </span>		<span class="nv">$title</span> <span class="o">=</span> <span class="nb">strip_tags</span><span class="p">(</span><span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]);</span>
+<span class="lineno">53 </span>		<span class="nv">$count</span> <span class="o">=</span> <span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="s1">&#39;checked=&quot;checked&quot;&#39;</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="lineno">54 </span>		<span class="nv">$dropdown</span> <span class="o">=</span> <span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;dropdown&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="s1">&#39;checked=&quot;checked&quot;&#39;</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="lineno">55 </span><span class="cp">?&gt;</span><span class="x"></span>
+<span class="lineno">56 </span><span class="x">		&lt;p&gt;&lt;label for=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span><span class="cp">&lt;?php</span> <span class="nx">_e</span><span class="p">(</span><span class="s1">&#39;Title:&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; name=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_name</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; type=&quot;text&quot; value=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">esc_attr</span><span class="p">(</span><span class="nv">$title</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; /&gt;&lt;/p&gt;</span>
+<span class="lineno">57 </span><span class="x">		&lt;p&gt;</span>
+<span class="lineno">58 </span><span class="x">			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$count</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"> id=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; name=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_name</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; /&gt; &lt;label for=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span><span class="cp">&lt;?php</span> <span class="nx">_e</span><span class="p">(</span><span class="s1">&#39;Show post counts&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&lt;/label&gt;</span>
+<span class="lineno">59 </span><span class="x">			&lt;br /&gt;</span>
+<span class="lineno">60 </span><span class="x">			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$dropdown</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"> id=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;dropdown&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; name=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_name</span><span class="p">(</span><span class="s1">&#39;dropdown&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; /&gt; &lt;label for=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;dropdown&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span><span class="cp">&lt;?php</span> <span class="nx">_e</span><span class="p">(</span><span class="s1">&#39;Display as a drop down&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&lt;/label&gt;</span>
+<span class="lineno">61 </span><span class="x">		&lt;/p&gt;</span>
+<span class="lineno">62 </span><span class="cp">&lt;?php</span>
+<span class="lineno">63 </span>	<span class="p">}</span>
+<span class="lineno">64 </span><span class="p">}</span>
+<span class="lineno">65 </span>
+<span class="lineno">66 </span><span class="cp">?&gt;</span><span class="x"></span></code></pre>
+          </figure>
+
+          <p>Now rename:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">9 </span><span class="x">class WP_Widget_Archives extends WP_Widget {</span></code></pre>
+          </figure>
+
+          <p>to:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">9 </span><span class="x">class MyTheme_Widget_Archives extends WP_Widget {</span></code></pre>
+          </figure>
+
+          <p>
+            We did this because we are effectively creating a new widget, so if
+            we want to use the old “Archives” widget, we can.
+          </p>
+
+          <p>Now change the following function from:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">11 </span><span class="x">	function WP_Widget_Archives() {</span>
+<span class="lineno">12 </span><span class="x">		$widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );</span>
+<span class="lineno">13 </span><span class="x">		$this-&gt;WP_Widget(&#39;archives&#39;, __(&#39;Archives&#39;), $widget_ops);</span>
+<span class="lineno">14 </span><span class="x">	}</span></code></pre>
+          </figure>
+
+          <p>to:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">11 </span><span class="x">	function MyTheme_Widget_Archives() {</span>
+<span class="lineno">12 </span><span class="x">		$widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );</span>
+<span class="lineno">13 </span><span class="x">		$this-&gt;WP_Widget(&#39;mytheme_archives&#39;, __(&#39;MyTheme Archives&#39;), $widget_ops);</span>
+<span class="lineno">14 </span><span class="x">	}</span></code></pre>
+          </figure>
+
+          <p>
+            Notice that we not only changed the function name, but we changed
+            the parameters to the WP_Widget call. We did this for the same
+            reason explained above (this is a “new” widget, and we want to be
+            able to switch back to the old version).
+          </p>
+
+          <div>&nbsp;</div>
+
+          <p>
+            For this next step, we are going to modify the <i>widget()</i>,
+            <i>form()</i>, and <i>update()</i> calls. These are the functions
+            that display the actual widget in the sidebar, and also display the
+            widget details in the WordPress admin console. For this new widget,
+            I am always going to display the post count, and I’m never going to
+            display the archive results as a dropdown, so I can remove a few of
+            the variables that are in the default archive widget ($c, $count,
+            $d, $dropdown). To achieve this, you can modify
+            <b>functions-widgets.php</b> like so:
+          </p>
+
+          <p>Before changes:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">15 </span><span class="x">	function widget( $args, $instance ) {</span>
+<span class="lineno">16 </span><span class="x">		extract($args);</span>
+<span class="lineno">17 </span><span class="x">		$c = $instance[&#39;count&#39;] ? &#39;1&#39; : &#39;0&#39;;</span>
+<span class="lineno">18 </span><span class="x">		$d = $instance[&#39;dropdown&#39;] ? &#39;1&#39; : &#39;0&#39;;</span>
+<span class="lineno">19 </span><span class="x">		$title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);</span>
+<span class="lineno">20 </span><span class="x"> </span>
+<span class="lineno">21 </span><span class="x">		echo $before_widget;</span>
+<span class="lineno">22 </span><span class="x">		if ( $title )</span>
+<span class="lineno">23 </span><span class="x">			echo $before_title . $title . $after_title;</span>
+<span class="lineno">24 </span><span class="x"> </span>
+<span class="lineno">25 </span><span class="x">		if ( $d ) {</span>
+<span class="lineno">26 </span><span class="x">?&gt;</span>
+<span class="lineno">27 </span><span class="x">		&lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">esc_attr</span><span class="p">(</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Select Month&#39;</span><span class="p">));</span> <span class="cp">?&gt;</span><span class="x">&lt;/option&gt; </span><span class="cp">&lt;?php</span> <span class="nx">wp_get_archives</span><span class="p">(</span><span class="nx">apply_filters</span><span class="p">(</span><span class="s1">&#39;widget_archives_dropdown_args&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;monthly&#39;</span><span class="p">,</span> <span class="s1">&#39;format&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;option&#39;</span><span class="p">,</span> <span class="s1">&#39;show_post_count&#39;</span> <span class="o">=&gt;</span> <span class="nv">$c</span><span class="p">)));</span> <span class="cp">?&gt;</span><span class="x"> &lt;/select&gt;</span>
+<span class="lineno">28 </span><span class="cp">&lt;?php</span>
+<span class="lineno">29 </span>		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="lineno">30 </span><span class="cp">?&gt;</span><span class="x"></span>
+<span class="lineno">31 </span><span class="x">		&lt;ul&gt;</span>
+<span class="lineno">32 </span><span class="x">		</span><span class="cp">&lt;?php</span> <span class="nx">wp_get_archives</span><span class="p">(</span><span class="nx">apply_filters</span><span class="p">(</span><span class="s1">&#39;widget_archives_args&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;monthly&#39;</span><span class="p">,</span> <span class="s1">&#39;show_post_count&#39;</span> <span class="o">=&gt;</span> <span class="nv">$c</span><span class="p">)));</span> <span class="cp">?&gt;</span><span class="x"></span>
+<span class="lineno">33 </span><span class="x">		&lt;/ul&gt;</span>
+<span class="lineno">34 </span><span class="cp">&lt;?php</span>
+<span class="lineno">35 </span>		<span class="p">}</span>
+<span class="lineno">36 </span> 
+<span class="lineno">37 </span>		<span class="k">echo</span> <span class="nv">$after_widget</span><span class="p">;</span>
+<span class="lineno">38 </span>	<span class="p">}</span>
+<span class="lineno">39 </span> 
+<span class="lineno">40 </span>	<span class="k">function</span> <span class="nf">update</span><span class="p">(</span> <span class="nv">$new_instance</span><span class="p">,</span> <span class="nv">$old_instance</span> <span class="p">)</span> <span class="p">{</span>
+<span class="lineno">41 </span>		<span class="nv">$instance</span> <span class="o">=</span> <span class="nv">$old_instance</span><span class="p">;</span>
+<span class="lineno">42 </span>		<span class="nv">$new_instance</span> <span class="o">=</span> <span class="nx">wp_parse_args</span><span class="p">(</span> <span class="p">(</span><span class="k">array</span><span class="p">)</span> <span class="nv">$new_instance</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span> <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;dropdown&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">);</span>
+<span class="lineno">43 </span>		<span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">strip_tags</span><span class="p">(</span><span class="nv">$new_instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]);</span>
+<span class="lineno">44 </span>		<span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$new_instance</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno">45 </span>		<span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;dropdown&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$new_instance</span><span class="p">[</span><span class="s1">&#39;dropdown&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="lineno">46 </span> 
+<span class="lineno">47 </span>		<span class="k">return</span> <span class="nv">$instance</span><span class="p">;</span>
+<span class="lineno">48 </span>	<span class="p">}</span>
+<span class="lineno">49 </span> 
+<span class="lineno">50 </span>	<span class="k">function</span> <span class="nf">form</span><span class="p">(</span> <span class="nv">$instance</span> <span class="p">)</span> <span class="p">{</span>
+<span class="lineno">51 </span>		<span class="nv">$instance</span> <span class="o">=</span> <span class="nx">wp_parse_args</span><span class="p">(</span> <span class="p">(</span><span class="k">array</span><span class="p">)</span> <span class="nv">$instance</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span> <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;dropdown&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">);</span>
+<span class="lineno">52 </span>		<span class="nv">$title</span> <span class="o">=</span> <span class="nb">strip_tags</span><span class="p">(</span><span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]);</span>
+<span class="lineno">53 </span>		<span class="nv">$count</span> <span class="o">=</span> <span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="s1">&#39;checked=&quot;checked&quot;&#39;</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="lineno">54 </span>		<span class="nv">$dropdown</span> <span class="o">=</span> <span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;dropdown&#39;</span><span class="p">]</span> <span class="o">?</span> <span class="s1">&#39;checked=&quot;checked&quot;&#39;</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="lineno">55 </span><span class="cp">?&gt;</span><span class="x"></span>
+<span class="lineno">56 </span><span class="x">		&lt;p&gt;&lt;label for=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span><span class="cp">&lt;?php</span> <span class="nx">_e</span><span class="p">(</span><span class="s1">&#39;Title:&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; name=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_name</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; type=&quot;text&quot; value=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">esc_attr</span><span class="p">(</span><span class="nv">$title</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; /&gt;&lt;/p&gt;</span>
+<span class="lineno">57 </span><span class="x">		&lt;p&gt;</span>
+<span class="lineno">58 </span><span class="x">			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$count</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"> id=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; name=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_name</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; /&gt; &lt;label for=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span><span class="cp">&lt;?php</span> <span class="nx">_e</span><span class="p">(</span><span class="s1">&#39;Show post counts&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&lt;/label&gt;</span>
+<span class="lineno">59 </span><span class="x">			&lt;br /&gt;</span>
+<span class="lineno">60 </span><span class="x">			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$dropdown</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x"> id=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;dropdown&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; name=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_name</span><span class="p">(</span><span class="s1">&#39;dropdown&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; /&gt; &lt;label for=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;dropdown&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span><span class="cp">&lt;?php</span> <span class="nx">_e</span><span class="p">(</span><span class="s1">&#39;Display as a drop down&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&lt;/label&gt;</span>
+<span class="lineno">61 </span><span class="x">		&lt;/p&gt;</span>
+<span class="lineno">62 </span><span class="cp">&lt;?php</span>
+<span class="lineno">63 </span>	<span class="p">}</span>
+<span class="lineno">64 </span><span class="p">}</span>
+<span class="lineno">65 </span> 
+<span class="lineno">66 </span><span class="cp">?&gt;</span><span class="x"></span></code></pre>
+          </figure>
+
+          <p>After changes:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">15 </span><span class="x">	function widget( $args, $instance ) {</span>
+<span class="lineno">16 </span><span class="x">		extract($args);</span>
+<span class="lineno">17 </span><span class="x">		$title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);</span>
+<span class="lineno">18 </span><span class="x"> </span>
+<span class="lineno">19 </span><span class="x">		echo $before_widget;</span>
+<span class="lineno">20 </span><span class="x">		if ( $title )</span>
+<span class="lineno">21 </span><span class="x">			echo $before_title . $title . $after_title;</span>
+<span class="lineno">22 </span><span class="x"> ?&gt;</span>
+<span class="lineno">23 </span><span class="x">		&lt;ul&gt;</span>
+<span class="lineno">24 </span><span class="x">			// We will complete this in the next step</span>
+<span class="lineno">25 </span><span class="x">		&lt;/ul&gt;</span>
+<span class="lineno">26 </span><span class="cp">&lt;?php</span>
+<span class="lineno">27 </span>		<span class="p">}</span>
+<span class="lineno">28 </span> 
+<span class="lineno">29 </span>		<span class="k">echo</span> <span class="nv">$after_widget</span><span class="p">;</span>
+<span class="lineno">30 </span>	<span class="p">}</span>
+<span class="lineno">31 </span> 
+<span class="lineno">32 </span>	<span class="k">function</span> <span class="nf">update</span><span class="p">(</span> <span class="nv">$new_instance</span><span class="p">,</span> <span class="nv">$old_instance</span> <span class="p">)</span> <span class="p">{</span>
+<span class="lineno">33 </span>		<span class="nv">$instance</span> <span class="o">=</span> <span class="nv">$old_instance</span><span class="p">;</span>
+<span class="lineno">34 </span>		<span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">strip_tags</span><span class="p">(</span><span class="nv">$new_instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]);</span>
+<span class="lineno">35 </span>
+<span class="lineno">36 </span>		<span class="k">return</span> <span class="nv">$instance</span><span class="p">;</span>
+<span class="lineno">37 </span>	<span class="p">}</span>
+<span class="lineno">38 </span> 
+<span class="lineno">39 </span>	<span class="k">function</span> <span class="nf">form</span><span class="p">(</span> <span class="nv">$instance</span> <span class="p">)</span> <span class="p">{</span>
+<span class="lineno">40 </span>		<span class="c1">//Defaults</span>
+<span class="lineno">41 </span>		<span class="nv">$instance</span> <span class="o">=</span> <span class="nx">wp_parse_args</span><span class="p">(</span> <span class="p">(</span><span class="k">array</span><span class="p">)</span> <span class="nv">$instance</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span> <span class="s1">&#39;title&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">);</span>
+<span class="lineno">42 </span>		<span class="nv">$title</span> <span class="o">=</span> <span class="nx">esc_attr</span><span class="p">(</span> <span class="nv">$instance</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="p">);</span>
+<span class="lineno">43 </span><span class="cp">?&gt;</span><span class="x"></span>
+<span class="lineno">44 </span><span class="x">		&lt;p&gt;</span>
+<span class="lineno">45 </span><span class="x">			&lt;label for=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot;&gt;</span><span class="cp">&lt;?php</span> <span class="nx">_e</span><span class="p">(</span> <span class="s1">&#39;Title:&#39;</span> <span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&lt;/label&gt;</span>
+<span class="lineno">46 </span><span class="x">			&lt;input class=&quot;widefat&quot; id=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_id</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; name=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_field_name</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; type=&quot;text&quot; value=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$title</span><span class="p">;</span> <span class="cp">?&gt;</span><span class="x">&quot; /&gt;</span>
+<span class="lineno">47 </span><span class="x">		&lt;/p&gt;</span>
+<span class="lineno">48 </span><span class="cp">&lt;?php</span>
+<span class="lineno">49 </span>	<span class="p">}</span>
+<span class="lineno">50 </span><span class="p">}</span>
+<span class="lineno">51 </span> 
+<span class="lineno">52 </span><span class="cp">?&gt;</span><span class="x"></span></code></pre>
+          </figure>
+
+          <p>
+            Now there’s one final step. We need to actually display the
+            archives. To do that, we need to modify the
+            <i>widget()</i> function. In the last step, we were left with the
+            following line:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">23 </span><span class="x">		&lt;ul&gt;</span>
+<span class="lineno">24 </span><span class="x">			// We will complete this in the next step</span>
+<span class="lineno">25 </span><span class="x">		&lt;/ul&gt;</span></code></pre>
+          </figure>
+
+          <p>
+            We are now going to complete this block of code. Open up
+            <b>“/wp-includes/general-template.php”</b> and copy lines 799-825.
+            Paste them into line 24 of <b>functions-widgets.php</b> which will
+            give you:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">23 </span><span class="x">		&lt;ul&gt;</span>
+<span class="lineno">24 </span><span class="x">		if ( &#39;monthly&#39; == $type ) {</span>
+<span class="lineno">25 </span><span class="x">			$query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;</span>
+<span class="lineno">26 </span><span class="x">			$key = md5($query);</span>
+<span class="lineno">27 </span><span class="x">			$cache = wp_cache_get( &#39;wp_get_archives&#39; , &#39;general&#39;);</span>
+<span class="lineno">28 </span><span class="x">			if ( !isset( $cache[ $key ] ) ) {</span>
+<span class="lineno">29 </span><span class="x">				$arcresults = $wpdb-&gt;get_results($query);</span>
+<span class="lineno">30 </span><span class="x">				$cache[ $key ] = $arcresults;</span>
+<span class="lineno">31 </span><span class="x">				wp_cache_add( &#39;wp_get_archives&#39;, $cache, &#39;general&#39; );</span>
+<span class="lineno">32 </span><span class="x">			} else {</span>
+<span class="lineno">33 </span><span class="x">				$arcresults = $cache[ $key ];</span>
+<span class="lineno">34 </span><span class="x">			}</span>
+<span class="lineno">35 </span><span class="x">			if ( $arcresults ) {</span>
+<span class="lineno">36 </span><span class="x">				$afterafter = $after;</span>
+<span class="lineno">37 </span><span class="x">				foreach ( (array) $arcresults as $arcresult ) {</span>
+<span class="lineno">38 </span><span class="x">					$url = get_month_link( $arcresult-&gt;year, $arcresult-&gt;month );</span>
+<span class="lineno">39 </span><span class="x">					$text = sprintf(__(&#39;%1$s %2$d&#39;), $wp_locale-&gt;get_month($arcresult-&gt;month), $arcresult-&gt;year);</span>
+<span class="lineno">40 </span><span class="x">					if ( $show_post_count )</span>
+<span class="lineno">41 </span><span class="x">						$after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;</span>
+<span class="lineno">42 </span><span class="x">					$output .= get_archives_link($url, $text, $format, $before, $after);</span>
+<span class="lineno">43 </span><span class="x">				}</span>
+<span class="lineno">44 </span><span class="x">			}</span>
+<span class="lineno">45 </span><span class="x">		&lt;/ul&gt;</span></code></pre>
+          </figure>
+
+          <p>
+            The first thing you’ll notice is the
+            <b>if ( ‘monthly’ == $type )</b> statement. We can remove this
+            clause, because the “custom archive plugin” will only show archives
+            by month (I wanted to keep it simple- no need for other display
+            types). Also, this code is using a few global variables ($wpdb,
+            $wp_locale) that aren’t yet being used properly in our version of
+            the <i>widget()</i> function. We need to modify
+            <b>functions-widgets.php</b> again to have the following line which
+            will declare our global variables for use inside the function:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="x">	function widget( $args, $instance ) {</span>
+<span class="x">		global $wpdb, $wp_locale;</span>
+<span class="x">		extract($args);</span></code></pre>
+          </figure>
+
+          <p>
+            Also, when we copied code the first time, we didn’t copy a few of
+            the variables being used ($where and $join). Modify
+            <b>functions-widgets.php</b> like so (adding lines 25-27):
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">24 </span><span class="x">		&lt;ul&gt;</span>
+<span class="lineno">25 </span><span class="x">		//filters</span>
+<span class="lineno">26 </span><span class="x">		$where = apply_filters(&#39;getarchives_where&#39;, &quot;WHERE post_type = &#39;post&#39; AND post_status = &#39;publish&#39;&quot;, $r );</span>
+<span class="lineno">27 </span><span class="x">		$join = apply_filters(&#39;getarchives_join&#39;, &quot;&quot;, $r);</span>
+<span class="lineno">28 </span>
+<span class="lineno">29 </span><span class="x">		$query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;</span></code></pre>
+          </figure>
+
+          <p>
+            Another thing about the code we copied: we can ignore the
+            $post_count variable (since we are <em>always</em> showing post
+            counts). We also want to make sure the post count shows up inside
+            our anchor tag. To accomplish that, we can change:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="x">$url = get_month_link( $arcresult-&gt;year, $arcresult-&gt;month );</span>
+<span class="x">$text = sprintf(__(&#39;%1$s %2$d&#39;), $wp_locale-&gt;get_month($arcresult-&gt;month), $arcresult-&gt;year);</span>
+<span class="x">if ( $show_post_count )</span>
+<span class="x">	$after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;</span>
+<span class="x">$output .= get_archives_link($url, $text, $format, $before, $after);</span></code></pre>
+          </figure>
+
+          <p>to:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="x">$url = get_month_link( $arcresult-&gt;year, $arcresult-&gt;month );</span>
+<span class="x">$text = sprintf(__(&#39;%1$s %2$d&#39;), $wp_locale-&gt;get_month($arcresult-&gt;month), $arcresult-&gt;year);</span>
+<span class="x">$text .= &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;</span>
+<span class="x">$output .= get_archives_link($url, $text, $format, &#39;&lt;li&gt;&#39;, &#39;&lt;/li&gt;&#39;);</span></code></pre>
+          </figure>
+
+          <p>
+            Also add the correct output line before the <i>widget()</i> function
+            ends:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="x">		echo &#39;&lt;ul&gt;&#39; . $output . &#39;&lt;/ul&gt;&#39;;</span>
+<span class="x">		echo $after_widget;</span></code></pre>
+          </figure>
+
+          <p>
+            Our hacked/modified version is almost complete. The last thing I’m
+            going to do is register the new archive widget (and unregister the
+            default version). Do so by adding the following
+            <i>mytheme_widget_init()</i> function to
+            <b>functions-widgets.php</b>, then calling it:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-php" data-lang="php"><span></span><span class="lineno">80 </span><span class="x">/**</span>
+<span class="lineno">81 </span><span class="x"> * Registering MyTheme Widgets</span>
+<span class="lineno">82 </span><span class="x"> * Removing a few default WordPress Widgets</span>
+<span class="lineno">83 </span><span class="x"> *</span>
+<span class="lineno">84 </span><span class="x"> * @since 1.0</span>
+<span class="lineno">85 </span><span class="x"> */</span>
+<span class="lineno">86 </span><span class="x">function mytheme_widget_init() {</span>
+<span class="lineno">87 </span><span class="x">	// unregister some default widgets</span>
+<span class="lineno">88 </span><span class="x">	unregister_widget(&#39;WP_Widget_Archives&#39;);</span>
+<span class="lineno">89 </span>
+<span class="lineno">90 </span><span class="x">	// register my own widgets</span>
+<span class="lineno">91 </span><span class="x">	register_widget(&#39;MyTheme_Widget_Archives&#39;);</span>
+<span class="lineno">92 </span><span class="x">}</span>
+<span class="lineno">93 </span>
+<span class="lineno">94 </span><span class="x">add_action(&#39;widgets_init&#39;, &#39;mytheme_widget_init&#39;);</span></code></pre>
+          </figure>
+
+          <p>
+            After completing the above steps, your post count will show up
+            inside the anchor tag. One final (optional) step is modifying the
+            <b>style.css</b> file so archive links are highlighted when
+            hovering. For the “classic-modified” theme, I’m going to add:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-css" data-lang="css"><span></span><span class="lineno">371 </span><span class="c">/* Custom styles for archive widget */</span>
+<span class="lineno">372 </span><span class="p">.</span><span class="nc">widget_archive</span><span class="o">,</span>
+<span class="lineno">373 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span><span class="o">,</span>
+<span class="lineno">374 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span><span class="o">,</span>
+<span class="lineno">375 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">ul</span><span class="o">,</span>
+<span class="lineno">376 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span><span class="mi">0</span><span class="kt">px</span><span class="p">;</span> <span class="k">margin</span><span class="p">:</span><span class="mi">0</span><span class="kt">px</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span><span class="mi">0</span><span class="kt">px</span><span class="p">;</span> <span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="k">display</span><span class="p">:</span><span class="kc">block</span><span class="p">;</span> <span class="p">}</span>
+<span class="lineno">377 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="o">,</span>
+<span class="lineno">378 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span> <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">dotted</span> <span class="mh">#666</span><span class="p">;</span> <span class="k">margin</span><span class="p">:</span><span class="mi">0</span><span class="kt">px</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span><span class="mi">0</span><span class="kt">px</span><span class="p">;</span> <span class="p">}</span>
+<span class="lineno">379 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="o">,</span>
+<span class="lineno">380 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">:</span><span class="nd">link</span><span class="o">,</span>
+<span class="lineno">381 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">:</span><span class="nd">visited</span><span class="o">,</span>
+<span class="lineno">382 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="o">,</span>
+<span class="lineno">383 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">:</span><span class="nd">active</span> <span class="p">{</span> <span class="k">text-decoration</span><span class="p">:</span><span class="kc">none</span><span class="p">;</span> <span class="p">}</span>
+<span class="lineno">384 </span><span class="p">.</span><span class="nc">widget_archive</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">background</span><span class="p">:</span><span class="mh">#eee</span><span class="p">;</span> <span class="p">}</span></code></pre>
+          </figure>
+
+          <h4 style="text-decoration: underline">
+            Comparison of default archive widget behavior vs. modified version
+          </h4>
+
+          <div class="clearfix" style="width: 600px; margin: 0 auto">
+            <div class="left">
+              <p><b>BEFORE (default archive widget):</b></p>
+              <img
+                src="/images/posts/2009/09/22/classic-screen.gif"
+                alt="BEFORE (default archive widget)"
+                title="Classic Theme Screenshot"
+                width="212"
+                height="102"
+              />
+            </div>
+            <div class="right">
+              <p><b>AFTER (modified archive widget):</b></p>
+              <img
+                src="/images/posts/2009/09/22/classic-modified-screen.gif"
+                alt="AFTER (modified archive widget)"
+                title="Classic-Modified Theme Screenshot"
+                width="212"
+                height="102"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="tagList">
+          Tagged with:
+
+          <a href="/tag/PHP" title="View all posts in PHP">PHP</a> &bull;
+
+          <a href="/tag/Wordpress" title="View all posts in Wordpress"
+            >Wordpress</a
+          >
+        </div>
+
+        <div>
+          <br />
+          <div style="border-bottom: 1px dotted"></div>
+          <br />
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_shortname = 'skratchdot';
+          var disqus_identifier =
+            '/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag';
+          var disqus_url =
+            'https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag';
+
+          $.getScript('//' + disqus_shortname + '.disqus.com/embed.js');
+        </script>
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          ></noscript
+        >
+        <a href="https://disqus.com" class="dsq-brlink"
+          >blog comments powered by <span class="logo-disqus">Disqus</span></a
+        >
+      </article>
+      <nav id="articlesNav">
+        <div>
+          <div class="newEntries">
+            <a
+              href="/2009/09/cannot-insert-duplicate-key-row-in-object-xxx-with-unique-index-yyy"
+              >&laquo; Cannot insert duplicate key row in object 'xxx' with
+              unique index 'yyy'</a
+            >
+          </div>
+          <div class="oldEntries">
+            <a href="/2009/09/about-this-blog">About &raquo;</a>
+          </div>
+        </div>
+        <div class="homeEntries"><a href="/">HOME</a></div>
+      </nav>
+    </section>
+    <div class="footerSpacer"><br /></div>
+    <footer class="oneColumn">
+      <div>
+        Copyright &#169; 2018 <a href="/">skratchdot</a>
+        <span class="hspace">&#x2022;</span>
+        Validate:&#160;&#160;
+        <a href="https://validator.w3.org/check/referer">HTML5</a>
+        <span class="hspace">&#x2022;</span>
+        <a class="noBorder" href="/atom.xml"
+          ><img
+            src="/images/feed-icon-14x14.png"
+            alt="RSS/Atom Feed"
+            style="top: 2px"
+        /></a>
+        <span class="hspace">&#x2022;</span>
+        <div class="twitter-button">
+          <a
+            class="twitter-button-link"
+            href="https://twitter.com/intent/user?screen_name=skratchdot"
+            target="_blank"
+            aria-label="Follow @skratchdot on Twitter"
+            title="Follow @skratchdot on Twitter"
+          >
+            <i></i>
+            <span> Follow <b>@skratchdot</b> </span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <a href="https://github.com/skratchdot" class="github-corner">
+      <svg
+        width="80"
+        height="80"
+        viewBox="0 0 250 250"
+        style="
+          fill: #c80000;
+          color: #000;
+          position: absolute;
+          top: 0;
+          border: 0;
+          right: 0;
+        "
+      >
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+          fill="currentColor"
+          style="transform-origin: 130px 106px"
+          class="octo-arm"
+        ></path>
+        <path
+          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+          fill="currentColor"
+          class="octo-body"
+        ></path>
+        <path d="M10,10 L115,115 L250,250 Z" stroke="black" stroke-width="6" />
+      </svg>
+    </a>
+    <div id="homepage_link">
+      <a href="/" style="border: 0"
+        ><img src="/favicon.ico" alt="skratchdot" width="16" height="16"
+      /></a>
+    </div>
+    <!-- Javascript -->
+    <script
+      type="text/javascript"
+      src="/js/skratchdot.js?201804141145"
+    ></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-10768188-1', 'skratchdot.com');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript">
+      var disqus_shortname = 'skratchdot';
+      $.getScript('//' + disqus_shortname + '.disqus.com/count.js');
+    </script>
+  </body>
+</html>

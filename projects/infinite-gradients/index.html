@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Inifinte Gradients &raquo; skratchdot.com</title>
+    <!--
+	  _                 _              _       _         _       _                 _
+	 | |               | |            | |     | |       | |     | |               | |
+	/ __)           ___| | ___ __ __ _| |_ ___| |__   __| | ___ | |_             / __)
+	\__ \          / __| |/ / '__/ _` | __/ __| '_ \ / _` |/ _ \| __|            \__ \
+	(   /          \__ \   <| | | (_| | || (__| | | | (_| | (_) | |_ _           (   /
+	 |_|           |___/_|\_\_|  \__,_|\__\___|_| |_|\__,_|\___/ \__(_)           |_|
+
+	                   wasting bytes with ascii art since [random date]
+	-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/images/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/images/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/images/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/images/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/images/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/images/favicons/apple-touch-icon-76x76.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="skratchdot" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="application-name" content="skratchdot" />
+    <meta name="generator" content="Jekyll" />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Skratchdot (Atom 0.3)"
+      href="/atom.xml"
+    />
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/css/html5reset-1.6.1.css?201804141145"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/style.css?201804141145"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/pygments.css?201804141145"
+    />
+    <!--[if lt IE 9]>
+      <script
+        type="text/javascript"
+        src="//html5shiv.googlecode.com/svn/trunk/html5.js"
+      ></script>
+    <![endif]-->
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+    ></script>
+    <!-- Allow $.getScript() calls to be cached -->
+    <script type="text/javascript">
+      $.ajaxSetup({
+        cache: true,
+      });
+    </script>
+  </head>
+  <body>
+    <div class="hrRed"></div>
+    <div class="hrBlack"></div>
+    <header class="oneColumn">
+      <h1><a href="/">&#91;skratchdot<span>.</span>&#93;</a></h1>
+    </header>
+    <nav id="mainNav" class="oneColumn">
+      <ul>
+        <li>
+          <a title="Home" href="/"><span>&#91;</span>Home<span>&#93;</span></a>
+        </li>
+        <!--<li><a title="Browse" href="/browse/"><span>&#91;</span>Browse<span>&#93;</span></a></li>-->
+        <li>
+          <a title="Projects" href="/projects/"
+            ><span>&#91;</span>Projects<span>&#93;</span></a
+          >
+        </li>
+        <li>
+          <a title="Contact" href="/contact/"
+            ><span>&#91;</span>Contact<span>&#93;</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Social Buttons -->
+    <div id="share-buttons-container">
+      <ul class="share-buttons">
+        <li>
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https://www.skratchdot.com/projects/infinite-gradients/&t=Inifinte%20Gradients"
+            title="Share on Facebook"
+            target="_blank"
+            ><img alt="Share on Facebook" src="/images/social/Facebook.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/intent/tweet?source=https://www.skratchdot.com/projects/infinite-gradients/&text=Inifinte%20Gradients:%20https://www.skratchdot.com/projects/infinite-gradients/&via=skratchdot"
+            target="_blank"
+            title="Tweet"
+            ><img alt="Tweet" src="/images/social/Twitter.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://plus.google.com/share?url=https://www.skratchdot.com/projects/infinite-gradients/"
+            target="_blank"
+            title="Share on Google+"
+            ><img alt="Share on Google+" src="/images/social/Google+.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.tumblr.com/share?v=3&u=https://www.skratchdot.com/projects/infinite-gradients/&t=Inifinte%20Gradients&s="
+            target="_blank"
+            title="Post to Tumblr"
+            ><img alt="Post to Tumblr" src="/images/social/Tumblr.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://pinterest.com/pin/create/button/?url=https://www.skratchdot.com/projects/infinite-gradients/&description=Infinite%20Gradients%20An%20HTML%20experiment%20built%20on%20React%20for%20generating%20randomly%20created%20CSS3%20gradients%20(both%20linear%20and%20radial).%20Infinite%20Gradients%20comes%20in%203%20forms%20(%20a%20website,%20a%20command%20line%20utility,%20and%20a%20node.js%20library%20).%20Website%20The%20website%20is%20built%20on%20React,%20and%20allows%20you%20to%20pause%20and%20start..."
+            target="_blank"
+            title="Pin it"
+            ><img alt="Pin it" src="/images/social/Pinterest.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://getpocket.com/save?url=https://www.skratchdot.com/projects/infinite-gradients/&title=Inifinte%20Gradients"
+            target="_blank"
+            title="Add to Pocket"
+            ><img alt="Add to Pocket" src="/images/social/Pocket.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.reddit.com/submit?url=https://www.skratchdot.com/projects/infinite-gradients/&title=Inifinte%20Gradients"
+            target="_blank"
+            title="Submit to Reddit"
+            ><img alt="Submit to Reddit" src="/images/social/Reddit.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.skratchdot.com/projects/infinite-gradients/&title=Inifinte%20Gradients&summary=Infinite%20Gradients%20An%20HTML%20experiment%20built%20on%20React%20for%20generating%20randomly%20created%20CSS3%20gradients%20(both%20linear%20and%20radial).%20Infinite%20Gradients%20comes%20in%203%20forms%20(%20a%20website,%20a%20command%20line%20utility,%20and%20a%20node.js%20library%20).%20Website%20The%20website%20is%20built%20on%20React,%20and%20allows%20you%20to%20pause%20and%20start...&source=https://www.skratchdot.com/projects/infinite-gradients/"
+            target="_blank"
+            title="Share on LinkedIn"
+            ><img alt="Share on LinkedIn" src="/images/social/LinkedIn.png"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="mailto:?subject=Inifinte%20Gradients&body=Infinite%20Gradients%20An%20HTML%20experiment%20built%20on%20React%20for%20generating%20randomly%20created%20CSS3%20gradients%20(both%20linear%20and%20radial).%20Infinite%20Gradients%20comes%20in%203%20forms%20(%20a%20website,%20a%20command%20line%20utility,%20and%20a%20node.js%20library%20).%20Website%20The%20website%20is%20built%20on%20React,%20and%20allows%20you%20to%20pause%20and%20start...:%20https://www.skratchdot.com/projects/infinite-gradients/"
+            title="Send email"
+            ><img alt="Send email" src="/images/social/Email.png"
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="oneColumn">
+      <article>
+        <div class="entry">
+          <h1 id="infinite-gradients">Infinite Gradients</h1>
+
+          <p>
+            An HTML experiment built on
+            <a href="https://facebook.github.io/react/">React</a> for generating
+            randomly created CSS3 gradients (both linear and radial).
+          </p>
+
+          <p>
+            <a href="https://github.com/skratchdot/infinite-gradients"
+              >Infinite Gradients</a
+            >
+            comes in 3 forms ( a
+            <a href="https://projects.skratchdot.com/infinite-gradients/"
+              >website</a
+            >, a <a href="#command-line-utility">command line utility</a>, and a
+            <a href="#node-js-library">node.js library</a> ).
+          </p>
+
+          <h2 id="website">Website</h2>
+
+          <p>
+            The
+            <a href="https://projects.skratchdot.com/infinite-gradients/"
+              >website</a
+            >
+            is built on <a href="http://facebook.github.io/react/">React</a>,
+            and allows you to pause and start an infinite stream of gradients.
+            You can toggle features on and off by clicking on items in the
+            header. You can lock features such as:
+          </p>
+
+          <ul>
+            <li>
+              <strong>linear gradients</strong>: angle, speed, offset, colors
+              1-4
+            </li>
+            <li>
+              <strong>radial gradients</strong>: position X &amp; Y, speed,
+              offset, colors 1-4
+            </li>
+          </ul>
+
+          <p>
+            You can toggle the random generation on and off by clicking either
+            the mouse button, or by hitting your spacebar.
+          </p>
+
+          <ul>
+            <li>
+              <a href="https://projects.skratchdot.com/infinite-gradients/"
+                >View the website</a
+              >
+            </li>
+          </ul>
+
+          <h3 id="website-keyboard-controls">Website Keyboard Controls</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align: center">Feature</th>
+                <th style="text-align: center">Toggle Key</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: center">Status</td>
+                <td style="text-align: center">Space Bar</td>
+                <td>Pauses all features so you can look at the gradient</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Type</td>
+                <td style="text-align: center">T</td>
+                <td>Toggles between ‘linear’ and ‘radial’ gradients</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Offset</td>
+                <td style="text-align: center">O</td>
+                <td>Moves the offset of the gradient</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Speed</td>
+                <td style="text-align: center">S or 0-9</td>
+                <td>Determines how fast the offset changes</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Angle</td>
+                <td style="text-align: center">A</td>
+                <td>
+                  Determines the angle (in degrees) of the linear gradient
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center">X Position</td>
+                <td style="text-align: center">X</td>
+                <td>Determines the x-origin of the radial gradient</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Y Position</td>
+                <td style="text-align: center">Y</td>
+                <td>Determines the y-origin of the radial gradient</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Color 1</td>
+                <td style="text-align: center">V</td>
+                <td>Locks/Unlocks Color 1 from being randomly generated</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Color 2</td>
+                <td style="text-align: center">B</td>
+                <td>Locks/Unlocks Color 1 from being randomly generated</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Color 3</td>
+                <td style="text-align: center">N</td>
+                <td>Locks/Unlocks Color 1 from being randomly generated</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Color 4</td>
+                <td style="text-align: center">M</td>
+                <td>Locks/Unlocks Color 1 from being randomly generated</td>
+              </tr>
+              <tr>
+                <td style="text-align: center">Randomize</td>
+                <td style="text-align: center">R</td>
+                <td>Randomizes the current settings</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="command-line-utility">Command Line Utility</h2>
+
+          <p>
+            Infinite Gradients is available as a command line tool that outputs
+            random (or specific) CSS gradient functions. You can install it by
+            running:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>npm install -g infinite-gradients</code></pre>
+          </figure>
+
+          <p>
+            After installation, you will have a global executable called
+            <code>infinite-gradients</code>.
+          </p>
+
+          <h3 id="help">Help</h3>
+
+          <p>
+            To print help information, run:
+            <code>infinite-gradients --help</code>
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>  Usage: infinite-gradients <span class="o">[</span>options<span class="o">]</span>
+
+  Options:
+
+    -h, --help             output usage information
+    -v, --version          output the version number
+    -t, --type &lt;type&gt;      <span class="nb">type</span> of gradient: linear or radial
+    -a, --angle &lt;angle&gt;    angle of linear gradient in degrees <span class="o">(</span><span class="m">0</span>-360<span class="o">)</span>
+    -x, --x &lt;x&gt;            x coordinate of radial gradient center <span class="o">(</span>% between <span class="m">0</span>-1<span class="o">)</span>
+    -y, --y &lt;y&gt;            y coordinate of radial gradient center <span class="o">(</span>% between <span class="m">0</span>-1<span class="o">)</span>
+    -o, --offset &lt;offset&gt;  the offset of the gradient <span class="o">(</span>between <span class="m">0</span>-100<span class="o">)</span>
+    -c, --colors &lt;colors&gt;  a list of <span class="m">4</span> css colors</code></pre>
+          </figure>
+
+          <h3 id="example">Example</h3>
+
+          <p>Generate a random gradient:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>$ infinite-gradients
+linear-gradient<span class="o">(</span><span class="m">303</span>.6deg, <span class="c1">#c621e9 -26.73%, #1ab128 73.27%, #3366ae 173.27%, #0eac81 273.27%)</span></code></pre>
+          </figure>
+
+          <p>Do it again and it’s different:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>$ infinite-gradients
+radial-gradient<span class="o">(</span>circle at <span class="m">52</span>.7% <span class="m">59</span>.0%, <span class="c1">#debe11 -60.07%, #fcf501 39.93%, #ecae8f 139.93%, #23f5d1 239.93%)</span></code></pre>
+          </figure>
+
+          <p>Now you can make sure that it’s a linear gradient:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span><span class="nv">$infinite</span>-gradients --type linear
+linear-gradient<span class="o">(</span><span class="m">239</span>.2deg, <span class="c1">#35cdca -13.53%, #2bc3bf 86.47%, #8146cb 186.47%, #ae06f9 286.47%)</span></code></pre>
+          </figure>
+
+          <p>Now you can specify the colors and angle:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>$ infinite-gradients --type linear --angle <span class="m">55</span>.4 --colors <span class="m">123123</span>,ff00ff,9911f5,a36b3f
+linear-gradient<span class="o">(</span><span class="m">55</span>.4deg, <span class="c1">#123123 -39.68%, #ff00ff 60.32%, #9911f5 160.32%, #a36b3f 260.32%)</span></code></pre>
+          </figure>
+
+          <h2 id="node-js-library">Node JS Library</h2>
+
+          <p>
+            You can use the infinite-gradients functions within node by running:
+          </p>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>npm install --save infinite-gradients</code></pre>
+          </figure>
+
+          <p>and including the library in your code:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-javascript" data-lang="javascript"><span></span><span class="kd">var</span> <span class="nx">infiniteGradients</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;infinite-gradients&#39;</span><span class="p">);</span></code></pre>
+          </figure>
+
+          <p>
+            The Infinite Gradients library contains a few functions for
+            generating gradients, and a few helper functions that may or may not
+            be useful to you.
+          </p>
+
+          <p>The <strong>API</strong> is described below:</p>
+
+          <h3 id="infinitegradientstodegreesradians">
+            infiniteGradients.toDegrees(radians)
+          </h3>
+
+          <p>Converts from radians to degrees</p>
+
+          <p><strong>Parameters</strong></p>
+
+          <p><strong>radians</strong>: , the value in radians</p>
+
+          <p><strong>Returns</strong>: , the value in degrees</p>
+
+          <p><strong>Example</strong>:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js"><span></span><span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">toDegrees</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">);</span> <span class="c1">// returns: 180</span>
+<span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">toDegrees</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="c1">// returns: 0</span></code></pre>
+          </figure>
+
+          <h3 id="infinitegradientsgetanglex1-y1-x2-y2">
+            infiniteGradients.getAngle(x1, y1, x2, y2)
+          </h3>
+
+          <p>Get the angle between 2 points with x/y coordinates</p>
+
+          <p><strong>Parameters</strong></p>
+
+          <p><strong>x1</strong>: , the x coordinate of point 1</p>
+
+          <p><strong>y1</strong>: , the y coordinate of point 1</p>
+
+          <p><strong>x2</strong>: , the x coordinate of point 2</p>
+
+          <p><strong>y2</strong>: , the y coordinate of point 2</p>
+
+          <p><strong>Returns</strong>: , the angle in degrees</p>
+
+          <p><strong>Example</strong>:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js"><span></span><span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">getAngle</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span> <span class="c1">// returns: 90</span>
+<span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">getAngle</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span> <span class="c1">// returns 45</span></code></pre>
+          </figure>
+
+          <h3 id="infinitegradientsgetdistancex1-y1-x2-y2">
+            infiniteGradients.getDistance(x1, y1, x2, y2)
+          </h3>
+
+          <p>Get the distance between 2 points with x/y coordinates</p>
+
+          <p><strong>Parameters</strong></p>
+
+          <p><strong>x1</strong>: , the x coordinate of point 1</p>
+
+          <p><strong>y1</strong>: , the y coordinate of point 1</p>
+
+          <p><strong>x2</strong>: , the x coordinate of point 2</p>
+
+          <p><strong>y2</strong>: , the y coordinate of point 2</p>
+
+          <p><strong>Returns</strong>: , the distance between the 2 points</p>
+
+          <p><strong>Example</strong>:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js"><span></span><span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">getDistance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span> <span class="c1">// returns: 14.142135623730951</span>
+<span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">getDistance</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span> <span class="c1">// returns: 5</span></code></pre>
+          </figure>
+
+          <h3 id="infinitegradientstohexnum">infiniteGradients.toHex(num)</h3>
+
+          <p>
+            Convert a decimal to hexidecimal format. pads to at least 2 digits.
+          </p>
+
+          <p><strong>Parameters</strong></p>
+
+          <p><strong>num</strong>: , The number in decimal format</p>
+
+          <p>
+            <strong>Returns</strong>: , the number converted to hexidecimal
+            format
+          </p>
+
+          <p><strong>Example</strong>:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js"><span></span><span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">toHex</span><span class="p">(</span><span class="mi">255</span><span class="p">);</span> <span class="c1">// returns: &#39;ff&#39;</span>
+<span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">toHex</span><span class="p">(</span><span class="mi">11</span><span class="p">);</span> <span class="c1">// returns: &#39;0b&#39;</span></code></pre>
+          </figure>
+
+          <h3 id="infinitegradientsfloatbetweenmin-max">
+            infiniteGradients.floatBetween(min, max)
+          </h3>
+
+          <p>
+            Returns a random float between min (inclusive) and max (exclusive)
+          </p>
+
+          <p><strong>Parameters</strong></p>
+
+          <p><strong>min</strong>: , the minimum number (inclusive)</p>
+
+          <p><strong>max</strong>: , the maximum number (exclusive)</p>
+
+          <p><strong>Returns</strong>: , a random float between min and max</p>
+
+          <p><strong>Example</strong>:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js"><span></span><span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">floatBetween</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">21</span><span class="p">);</span> <span class="c1">// returned: 20.045959329465404</span>
+<span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">floatBetween</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span> <span class="c1">// returned: 77.16259211301804</span></code></pre>
+          </figure>
+
+          <h3 id="infinitegradientsintbetweenmin-max">
+            infiniteGradients.intBetween(min, max)
+          </h3>
+
+          <p>
+            Returns a random integer between min (inclusive) and max (inclusive)
+          </p>
+
+          <p><strong>Parameters</strong></p>
+
+          <p><strong>min</strong>: , the minimum number (inclusive)</p>
+
+          <p><strong>max</strong>: , the maximum number (inclusive)</p>
+
+          <p>
+            <strong>Returns</strong>: , a random integer between min and max
+          </p>
+
+          <p><strong>Example</strong>:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js"><span></span><span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">intBetween</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="mi">55</span><span class="p">);</span> <span class="c1">// returned: 52</span>
+<span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">intBetween</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span> <span class="c1">// returned: 86</span></code></pre>
+          </figure>
+
+          <h3 id="infinitegradientsrandomcolor">
+            infiniteGradients.randomColor()
+          </h3>
+
+          <p>Return a random RGB color in hex format</p>
+
+          <p>
+            <strong>Returns</strong>: , a random RGB color in hex string format
+          </p>
+
+          <p><strong>Example</strong>:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js"><span></span><span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">randomColor</span><span class="p">();</span> <span class="c1">// returned: &#39;#97b0ee&#39;</span>
+<span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">randomColor</span><span class="p">();</span> <span class="c1">// returned: &#39;#5bb023&#39;</span></code></pre>
+          </figure>
+
+          <h3 id="infinitegradientsgetradialgradientcolors-offset-x-y">
+            infiniteGradients.getRadialGradient(colors, offset, x, y)
+          </h3>
+
+          <p>Gets a radial gradient CSS function as a string</p>
+
+          <p><strong>Parameters</strong></p>
+
+          <p>
+            <strong>colors</strong>: , Gets a radial gradient CSS function as a
+            string
+          </p>
+
+          <p>
+            <strong>offset</strong>: , Gets a radial gradient CSS function as a
+            string
+          </p>
+
+          <p>
+            <strong>x</strong>: , Gets a radial gradient CSS function as a
+            string
+          </p>
+
+          <p>
+            <strong>y</strong>: , Gets a radial gradient CSS function as a
+            string
+          </p>
+
+          <p>
+            <strong>Returns</strong>: , a radial gradient CSS function as a
+            string
+          </p>
+
+          <p><strong>Example</strong>:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js"><span></span><span class="c1">// returns: &#39;radial-gradient(circle at 2.1% 33.5%, #ff0000 -75.00%, #286554 25.00%, #0000ff 125.00%, #9619e2 225.00%)&#39;</span>
+<span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">getRadialGradient</span><span class="p">([</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="s1">&#39;#286554&#39;</span><span class="p">,</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="s1">&#39;#9619e2&#39;</span><span class="p">],</span> <span class="mi">25</span><span class="p">,</span> <span class="mf">.021</span><span class="p">,</span> <span class="mf">.335</span><span class="p">);</span></code></pre>
+          </figure>
+
+          <h3 id="infinitegradientsgetlineargradientcolors-offset-angle">
+            infiniteGradients.getLinearGradient(colors, offset, angle)
+          </h3>
+
+          <p>Gets a linear gradient CSS function as a string</p>
+
+          <p><strong>Parameters</strong></p>
+
+          <p>
+            <strong>colors</strong>: , Gets a linear gradient CSS function as a
+            string
+          </p>
+
+          <p>
+            <strong>offset</strong>: , Gets a linear gradient CSS function as a
+            string
+          </p>
+
+          <p>
+            <strong>angle</strong>: , Gets a linear gradient CSS function as a
+            string
+          </p>
+
+          <p>
+            <strong>Returns</strong>: , a linear gradient CSS function as a
+            string
+          </p>
+
+          <p><strong>Example</strong>:</p>
+
+          <figure class="highlight">
+            <pre><code class="language-js" data-lang="js"><span></span><span class="c1">// returns: &#39;linear-gradient(142.3deg, #ff0000 -75.00%, #286554 25.00%, #0000ff 125.00%, #9619e2 225.00%)&#39;</span>
+<span class="nx">infiniteGradients</span><span class="p">.</span><span class="nx">getLinearGradient</span><span class="p">([</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="s1">&#39;#286554&#39;</span><span class="p">,</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="s1">&#39;#9619e2&#39;</span><span class="p">],</span> <span class="mi">25</span><span class="p">,</span> <span class="mf">142.3</span><span class="p">);</span></code></pre>
+          </figure>
+
+          <h2 id="source-code">Source Code</h2>
+
+          <ul>
+            <li>
+              <a href="https://github.com/skratchdot/infinite-gradients"
+                >Source Code on Github</a
+              >
+            </li>
+          </ul>
+
+          <h2 id="for-developers">For Developers</h2>
+
+          <h3 id="clone-the-project">Clone the Project</h3>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>git clone https://github.com/skratchdot/infinite-gradients.git
+<span class="nb">cd</span> infinite-gradients</code></pre>
+          </figure>
+
+          <h3 id="install-the-dependencies">Install the Dependencies</h3>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>npm install</code></pre>
+          </figure>
+
+          <h3 id="run-the-application-and-watch-for-changes">
+            Run the Application (and watch for changes)
+          </h3>
+
+          <figure class="highlight">
+            <pre><code class="language-bash" data-lang="bash"><span></span>gulp</code></pre>
+          </figure>
+
+          <p>
+            Now browse to the app at
+            <a href="http://localhost:8080/infinite-gradients"
+              >http://localhost:8080/infinite-gradients</a
+            >
+          </p>
+
+          <h2 id="other-background-generators">Other Background Generators</h2>
+
+          <ul>
+            <li>
+              <a href="https://github.com/tiborsaas/unique-gradient-generator"
+                >Unique Gradient Generator</a
+              >
+            </li>
+            <li>
+              <a href="http://paintbycode.github.io/gradient-generator/"
+                >Randomized Gradient Generator</a
+              >
+            </li>
+            <li>
+              <a href="http://www.colorzilla.com/gradient-editor/"
+                >Colorzilla Gradient Editor</a
+              >
+            </li>
+            <li>
+              <a href="http://angrytools.com/gradient/"
+                >AngryTools.com Gradient Editor</a
+              >
+            </li>
+            <li>
+              <a href="https://www.css-gradient.com/">CSS Gradient Generator</a>
+            </li>
+          </ul>
+
+          <p>
+            <strong
+              >…more to come. please submit a PR if you know what’s
+              missing</strong
+            >
+          </p>
+
+          <h2 id="license">License</h2>
+
+          <p>
+            Copyright (c) 2015
+            <a href="https://www.skratchdot.com/">skratchdot</a><br />
+            Licensed under the MIT license.
+          </p>
+        </div>
+
+        <div>
+          <br />
+          <div style="border-bottom: 1px dotted"></div>
+          <br />
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_shortname = 'skratchdot';
+          var disqus_identifier = '/projects/infinite-gradients/';
+          var disqus_url =
+            'https://www.skratchdot.com/projects/infinite-gradients/';
+
+          $.getScript('//' + disqus_shortname + '.disqus.com/embed.js');
+        </script>
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          ></noscript
+        >
+        <a href="https://disqus.com" class="dsq-brlink"
+          >blog comments powered by <span class="logo-disqus">Disqus</span></a
+        >
+      </article>
+      <nav id="articlesNav">
+        <div>
+          <div class="newEntries"></div>
+          <div class="oldEntries"></div>
+        </div>
+        <div class="homeEntries"><a href="/">HOME</a></div>
+      </nav>
+    </section>
+    <div class="footerSpacer"><br /></div>
+    <footer class="oneColumn">
+      <div>
+        Copyright &#169; 2018 <a href="/">skratchdot</a>
+        <span class="hspace">&#x2022;</span>
+        Validate:&#160;&#160;
+        <a href="https://validator.w3.org/check/referer">HTML5</a>
+        <span class="hspace">&#x2022;</span>
+        <a class="noBorder" href="/atom.xml"
+          ><img
+            src="/images/feed-icon-14x14.png"
+            alt="RSS/Atom Feed"
+            style="top: 2px"
+        /></a>
+        <span class="hspace">&#x2022;</span>
+        <div class="twitter-button">
+          <a
+            class="twitter-button-link"
+            href="https://twitter.com/intent/user?screen_name=skratchdot"
+            target="_blank"
+            aria-label="Follow @skratchdot on Twitter"
+            title="Follow @skratchdot on Twitter"
+          >
+            <i></i>
+            <span> Follow <b>@skratchdot</b> </span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <a href="https://github.com/skratchdot" class="github-corner">
+      <svg
+        width="80"
+        height="80"
+        viewBox="0 0 250 250"
+        style="
+          fill: #c80000;
+          color: #000;
+          position: absolute;
+          top: 0;
+          border: 0;
+          right: 0;
+        "
+      >
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+          fill="currentColor"
+          style="transform-origin: 130px 106px"
+          class="octo-arm"
+        ></path>
+        <path
+          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+          fill="currentColor"
+          class="octo-body"
+        ></path>
+        <path d="M10,10 L115,115 L250,250 Z" stroke="black" stroke-width="6" />
+      </svg>
+    </a>
+    <div id="homepage_link">
+      <a href="/" style="border: 0"
+        ><img src="/favicon.ico" alt="skratchdot" width="16" height="16"
+      /></a>
+    </div>
+    <!-- Javascript -->
+    <script
+      type="text/javascript"
+      src="/js/skratchdot.js?201804141145"
+    ></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-10768188-1', 'skratchdot.com');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
