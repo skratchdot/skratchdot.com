@@ -1,0 +1,476 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><title>color-stats » skratchdot.com</title><link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png"/><link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png"/><link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png"/><link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png"/><meta name="apple-mobile-web-app-title" content="skratchdot"/><link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96"/><link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16"/><link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="msapplication-TileColor" content="#da532c"/><meta name="application-name" content="skratchdot"/><meta name="generator" content="NextJS"/><link rel="alternate" type="application/atom+xml" title="Atom Feed for skratchdot.com" href="/atom.xml"/><link rel="alternate" type="application/rss+xml" title="RSS Feed for skratchdot.com" href="/feed.xml"/><link rel="alternate" type="application/feed+json" title="JSON Feed for skratchdot.com" href="/feed.json"/><meta name="next-head-count" content="19"/><link rel="preload" href="/_next/static/css/9f6844b18498e4a4.css" as="style"/><link rel="stylesheet" href="/_next/static/css/9f6844b18498e4a4.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/_next/static/chunks/webpack-514908bffb652963.js" defer=""></script><script src="/_next/static/chunks/framework-91d7f78b5b4003c8.js" defer=""></script><script src="/_next/static/chunks/main-682b8586cd82cc4e.js" defer=""></script><script src="/_next/static/chunks/pages/_app-4d21e19fd58c130c.js" defer=""></script><script src="/_next/static/chunks/31-c97ffeae2ceece59.js" defer=""></script><script src="/_next/static/chunks/257-c9cf42cec14b9e06.js" defer=""></script><script src="/_next/static/chunks/pages/%5B...path%5D-173d38962422cd6f.js" defer=""></script><script src="/_next/static/ietM0aLwFW5OlUSya73Vr/_buildManifest.js" defer=""></script><script src="/_next/static/ietM0aLwFW5OlUSya73Vr/_ssgManifest.js" defer=""></script><script src="/_next/static/ietM0aLwFW5OlUSya73Vr/_middlewareManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><div><div class="hrRed"></div><div class="hrBlack"></div><header class="oneColumn"><h1><a href="/">[skratchdot<span>.</span>]</a></h1></header><nav id="mainNav" class="oneColumn"><ul><li><a title="Home" href="/"><span>[</span>Home<span>]</span></a></li><li><a title="Projects" href="/projects/"><span>[</span>Projects<span>]</span></a></li><li><a title="Contact" href="/contact/"><span>[</span>Contact<span>]</span></a></li></ul></nav><br/><section class="oneColumn"><article><div class="entry"><div><h1 id="color-stats">color-stats</h1>
+<p><a href="http://badge.fury.io/js/color-stats" class="noBackground noBorder"><img src="https://badge.fury.io/js/color-stats.svg" alt="NPM version"></a>
+<a href="https://travis-ci.org/skratchdot/color-stats" class="noBackground noBorder"><img src="https://travis-ci.org/skratchdot/color-stats.png?branch=master" alt="Build Status"></a>
+<a href="https://codeclimate.com/github/skratchdot/color-stats" class="noBackground noBorder"><img src="https://codeclimate.com/github/skratchdot/color-stats.png" alt="Code Climate"></a>
+<a href="https://coveralls.io/r/skratchdot/color-stats" class="noBackground noBorder"><img src="https://coveralls.io/repos/skratchdot/color-stats/badge.png" alt="Coverage Status"></a>
+<a href="https://david-dm.org/skratchdot/color-stats" class="noBackground noBorder"><img src="https://david-dm.org/skratchdot/color-stats.svg" alt="Dependency Status"></a>
+<a href="https://david-dm.org/skratchdot/color-stats#info=devDependencies" class="noBackground noBorder"><img src="https://david-dm.org/skratchdot/color-stats/dev-status.svg" alt="devDependency Status"></a></p>
+<p><a href="https://npmjs.org/package/color-stats" class="noBackground noBorder"><img src="https://nodei.co/npm/color-stats.png" alt="NPM"></a></p>
+<h2 id="description">Description</h2>
+<p>Generate color information based off of the hash of any object. If you pass in a valid
+color name or css value, the information for that color will be returned.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>Install the module with: <code>npm install color-stats</code></p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">var</span> colorStats = <span class="hljs-built_in">require</span>(<span class="hljs-string">'color-stats'</span>);
+<span class="hljs-title function_">colorStats</span>(<span class="hljs-string">'red'</span>); <span class="hljs-comment">// get a bunch of stats about the color red</span>
+<span class="hljs-title function_">colorStats</span>(<span class="hljs-string">'#ff0000'</span>); <span class="hljs-comment">// get a bunch of stats about the color red</span>
+<span class="hljs-title function_">colorStats</span>({ <span class="hljs-attr">info</span>: <span class="hljs-string">'Based On Hash - always the same color'</span> }); <span class="hljs-comment">// get a color based on some object.</span>
+colorStats.<span class="hljs-title function_">random</span>(); <span class="hljs-comment">// get the stats for a random color</span>
+</code></pre>
+<h2 id="documentation">Documentation</h2>
+<h4 id="colorstatscolorobject">colorStats(colorObject)</h4>
+<p>Pass in a color string (or any object), and get the stats for that object.</p>
+<h4 id="colorstatsparsecolorobject">colorStats.parse(colorObject)</h4>
+<p>This is the same as calling colorStats(colorObject). It's just a proxy for
+people that like explicit function names.</p>
+<h4 id="colorstatsrandom">colorStats.random()</h4>
+<p>Returns the stats for a random color.</p>
+<h2 id="example">Example</h2>
+<h4 id="get-stats-function-call">Get Stats function call:</h4>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">var</span> colorStats = <span class="hljs-built_in">require</span>(<span class="hljs-string">'color-stats'</span>);
+<span class="hljs-keyword">var</span> result = <span class="hljs-title function_">colorStats</span>(<span class="hljs-string">'#4682b4'</span>); <span class="hljs-comment">// see result output below</span>
+</code></pre>
+<h4 id="get-stats-result">Get Stats Result:</h4>
+<pre><code class="hljs language-javascript">{
+  <span class="hljs-string">"lib"</span>: {
+    <span class="hljs-string">"onecolor"</span>: {
+      <span class="hljs-string">"red"</span>: <span class="hljs-number">0.27450980392156865</span>,
+      <span class="hljs-string">"green"</span>: <span class="hljs-number">0.5098039215686274</span>,
+      <span class="hljs-string">"blue"</span>: <span class="hljs-number">0.7058823529411765</span>,
+      <span class="hljs-string">"alpha"</span>: <span class="hljs-number">1</span>,
+      <span class="hljs-string">"hue"</span>: <span class="hljs-number">0.5757575757575757</span>,
+      <span class="hljs-string">"saturation"</span>: <span class="hljs-number">0.611111111111111</span>,
+      <span class="hljs-string">"value"</span>: <span class="hljs-number">0.7058823529411765</span>,
+      <span class="hljs-string">"lightness"</span>: <span class="hljs-number">0.4901960784313726</span>,
+      <span class="hljs-string">"cyan"</span>: <span class="hljs-number">0.611111111111111</span>,
+      <span class="hljs-string">"magenta"</span>: <span class="hljs-number">0.2777777777777779</span>,
+      <span class="hljs-string">"yellow"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-string">"black"</span>: <span class="hljs-number">0.2941176470588235</span>,
+      <span class="hljs-string">"x"</span>: <span class="hljs-number">0.18743597342600288</span>,
+      <span class="hljs-string">"y"</span>: <span class="hljs-number">0.2056088063416628</span>,
+      <span class="hljs-string">"z"</span>: <span class="hljs-number">0.46152037838994725</span>,
+      <span class="hljs-string">"l"</span>: <span class="hljs-number">1</span>,
+      <span class="hljs-string">"a"</span>: <span class="hljs-number">1</span>,
+      <span class="hljs-string">"b"</span>: <span class="hljs-number">0.7058823529411765</span>,
+      <span class="hljs-string">"hex"</span>: <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"hexa"</span>: <span class="hljs-string">"#ff4682b4"</span>,
+      <span class="hljs-string">"css"</span>: <span class="hljs-string">"rgb(70,130,180)"</span>,
+      <span class="hljs-string">"cssa"</span>: <span class="hljs-string">"rgba(70,130,180,1)"</span>,
+      <span class="hljs-string">"cmyk"</span>: [
+        <span class="hljs-string">"CMYK"</span>,
+        <span class="hljs-number">0.611111111111111</span>,
+        <span class="hljs-number">0.2777777777777779</span>,
+        <span class="hljs-number">0</span>,
+        <span class="hljs-number">0.2941176470588235</span>,
+        <span class="hljs-number">1</span>
+      ],
+      <span class="hljs-string">"hsl"</span>: [
+        <span class="hljs-string">"HSL"</span>,
+        <span class="hljs-number">0.5757575757575757</span>,
+        <span class="hljs-number">0.43999999999999995</span>,
+        <span class="hljs-number">0.4901960784313726</span>,
+        <span class="hljs-number">1</span>
+      ],
+      <span class="hljs-string">"hsv"</span>: [
+        <span class="hljs-string">"HSV"</span>,
+        <span class="hljs-number">0.5757575757575757</span>,
+        <span class="hljs-number">0.611111111111111</span>,
+        <span class="hljs-number">0.7058823529411765</span>,
+        <span class="hljs-number">1</span>
+      ],
+      <span class="hljs-string">"lab"</span>: [
+        <span class="hljs-string">"LAB"</span>,
+        <span class="hljs-number">1</span>,
+        <span class="hljs-number">0</span>,
+        <span class="hljs-number">0</span>,
+        <span class="hljs-number">1</span>
+      ],
+      <span class="hljs-string">"rgb"</span>: [
+        <span class="hljs-string">"RGB"</span>,
+        <span class="hljs-number">0.27450980392156865</span>,
+        <span class="hljs-number">0.5098039215686274</span>,
+        <span class="hljs-number">0.7058823529411765</span>,
+        <span class="hljs-number">1</span>
+      ],
+      <span class="hljs-string">"xyz"</span>: [
+        <span class="hljs-string">"XYZ"</span>,
+        <span class="hljs-number">0.18743597342600288</span>,
+        <span class="hljs-number">0.2056088063416628</span>,
+        <span class="hljs-number">0.46152037838994725</span>,
+        <span class="hljs-number">1</span>
+      ]
+    },
+    <span class="hljs-string">"color"</span>: {
+      <span class="hljs-string">"rgb"</span>: {
+        <span class="hljs-string">"r"</span>: <span class="hljs-number">70</span>,
+        <span class="hljs-string">"g"</span>: <span class="hljs-number">130</span>,
+        <span class="hljs-string">"b"</span>: <span class="hljs-number">180</span>
+      },
+      <span class="hljs-string">"hsl"</span>: {
+        <span class="hljs-string">"h"</span>: <span class="hljs-number">207</span>,
+        <span class="hljs-string">"s"</span>: <span class="hljs-number">44</span>,
+        <span class="hljs-string">"l"</span>: <span class="hljs-number">49</span>
+      },
+      <span class="hljs-string">"hsv"</span>: {
+        <span class="hljs-string">"h"</span>: <span class="hljs-number">207</span>,
+        <span class="hljs-string">"s"</span>: <span class="hljs-number">61</span>,
+        <span class="hljs-string">"v"</span>: <span class="hljs-number">71</span>
+      },
+      <span class="hljs-string">"cmyk"</span>: {
+        <span class="hljs-string">"c"</span>: <span class="hljs-number">61</span>,
+        <span class="hljs-string">"m"</span>: <span class="hljs-number">28</span>,
+        <span class="hljs-string">"y"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"k"</span>: <span class="hljs-number">29</span>
+      },
+      <span class="hljs-string">"rgbArray"</span>: [
+        <span class="hljs-number">70</span>,
+        <span class="hljs-number">130</span>,
+        <span class="hljs-number">180</span>
+      ],
+      <span class="hljs-string">"hslArray"</span>: [
+        <span class="hljs-number">207</span>,
+        <span class="hljs-number">44</span>,
+        <span class="hljs-number">49</span>
+      ],
+      <span class="hljs-string">"hsvArray"</span>: [
+        <span class="hljs-number">207</span>,
+        <span class="hljs-number">61</span>,
+        <span class="hljs-number">71</span>
+      ],
+      <span class="hljs-string">"cmykArray"</span>: [
+        <span class="hljs-number">61</span>,
+        <span class="hljs-number">28</span>,
+        <span class="hljs-number">0</span>,
+        <span class="hljs-number">29</span>
+      ],
+      <span class="hljs-string">"rgbaArray"</span>: [
+        <span class="hljs-number">70</span>,
+        <span class="hljs-number">130</span>,
+        <span class="hljs-number">180</span>,
+        <span class="hljs-number">1</span>
+      ],
+      <span class="hljs-string">"hslaArray"</span>: [
+        <span class="hljs-number">207</span>,
+        <span class="hljs-number">44</span>,
+        <span class="hljs-number">49</span>,
+        <span class="hljs-number">1</span>
+      ],
+      <span class="hljs-string">"alpha"</span>: <span class="hljs-number">1</span>,
+      <span class="hljs-string">"red"</span>: <span class="hljs-number">70</span>,
+      <span class="hljs-string">"green"</span>: <span class="hljs-number">130</span>,
+      <span class="hljs-string">"blue"</span>: <span class="hljs-number">180</span>,
+      <span class="hljs-string">"hue"</span>: <span class="hljs-number">207</span>,
+      <span class="hljs-string">"saturation"</span>: <span class="hljs-number">44</span>,
+      <span class="hljs-string">"lightness"</span>: <span class="hljs-number">49</span>,
+      <span class="hljs-string">"saturationv"</span>: <span class="hljs-number">61</span>,
+      <span class="hljs-string">"value"</span>: <span class="hljs-number">71</span>,
+      <span class="hljs-string">"cyan"</span>: <span class="hljs-number">61</span>,
+      <span class="hljs-string">"magenta"</span>: <span class="hljs-number">28</span>,
+      <span class="hljs-string">"yellow"</span>: <span class="hljs-number">0</span>,
+      <span class="hljs-string">"black"</span>: <span class="hljs-number">29</span>,
+      <span class="hljs-string">"hexString"</span>: <span class="hljs-string">"#4682B4"</span>,
+      <span class="hljs-string">"rgbString"</span>: <span class="hljs-string">"rgb(70, 130, 180)"</span>,
+      <span class="hljs-string">"rgbaString"</span>: <span class="hljs-string">"rgba(70, 130, 180, 1)"</span>,
+      <span class="hljs-string">"percentString"</span>: <span class="hljs-string">"rgb(27%, 51%, 71%)"</span>,
+      <span class="hljs-string">"hslString"</span>: <span class="hljs-string">"hsl(207, 44%, 49%)"</span>,
+      <span class="hljs-string">"hslaString"</span>: <span class="hljs-string">"hsla(207, 44%, 49%, 1)"</span>,
+      <span class="hljs-string">"keyword"</span>: <span class="hljs-string">"steelblue"</span>,
+      <span class="hljs-string">"luminosity"</span>: <span class="hljs-number">0.20562642207624857</span>,
+      <span class="hljs-string">"dark"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">"light"</span>: <span class="hljs-literal">false</span>
+    },
+    <span class="hljs-string">"colorConvert"</span>: {
+      <span class="hljs-string">"rgb"</span>: [
+        <span class="hljs-number">70</span>,
+        <span class="hljs-number">130</span>,
+        <span class="hljs-number">180</span>
+      ],
+      <span class="hljs-string">"hsl"</span>: [
+        <span class="hljs-number">207</span>,
+        <span class="hljs-number">44</span>,
+        <span class="hljs-number">49</span>
+      ],
+      <span class="hljs-string">"hsv"</span>: [
+        <span class="hljs-number">207</span>,
+        <span class="hljs-number">61</span>,
+        <span class="hljs-number">71</span>
+      ],
+      <span class="hljs-string">"hwb"</span>: [
+        <span class="hljs-number">207</span>,
+        <span class="hljs-number">27</span>,
+        <span class="hljs-number">29</span>
+      ],
+      <span class="hljs-string">"cmyk"</span>: [
+        <span class="hljs-number">61</span>,
+        <span class="hljs-number">28</span>,
+        <span class="hljs-number">0</span>,
+        <span class="hljs-number">29</span>
+      ],
+      <span class="hljs-string">"keyword"</span>: <span class="hljs-string">"steelblue"</span>,
+      <span class="hljs-string">"xyz"</span>: [
+        <span class="hljs-number">19</span>,
+        <span class="hljs-number">21</span>,
+        <span class="hljs-number">46</span>
+      ],
+      <span class="hljs-string">"lab"</span>: [
+        <span class="hljs-number">52</span>,
+        -<span class="hljs-number">4</span>,
+        -<span class="hljs-number">32</span>
+      ],
+      <span class="hljs-string">"lch"</span>: [
+        <span class="hljs-number">52</span>,
+        <span class="hljs-number">32</span>,
+        <span class="hljs-number">263</span>
+      ],
+      <span class="hljs-string">"ansi16"</span>: <span class="hljs-number">36</span>,
+      <span class="hljs-string">"ansi"</span>: <span class="hljs-number">74</span>
+    }
+  },
+  <span class="hljs-string">"alpha"</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-string">"cmyk"</span>: {
+    <span class="hljs-string">"c"</span>: <span class="hljs-number">61.11</span>,
+    <span class="hljs-string">"m"</span>: <span class="hljs-number">27.78</span>,
+    <span class="hljs-string">"y"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">"k"</span>: <span class="hljs-number">29.41</span>
+  },
+  <span class="hljs-string">"hsl"</span>: {
+    <span class="hljs-string">"h"</span>: <span class="hljs-number">207.27</span>,
+    <span class="hljs-string">"s"</span>: <span class="hljs-number">44</span>,
+    <span class="hljs-string">"l"</span>: <span class="hljs-number">49.02</span>
+  },
+  <span class="hljs-string">"hsv"</span>: {
+    <span class="hljs-string">"h"</span>: <span class="hljs-number">207.27</span>,
+    <span class="hljs-string">"s"</span>: <span class="hljs-number">61.11</span>,
+    <span class="hljs-string">"v"</span>: <span class="hljs-number">70.59</span>
+  },
+  <span class="hljs-string">"rgb"</span>: {
+    <span class="hljs-string">"r"</span>: <span class="hljs-number">70</span>,
+    <span class="hljs-string">"g"</span>: <span class="hljs-number">130</span>,
+    <span class="hljs-string">"b"</span>: <span class="hljs-number">180</span>
+  },
+  <span class="hljs-string">"rgbPercent"</span>: {
+    <span class="hljs-string">"r"</span>: <span class="hljs-number">27.45</span>,
+    <span class="hljs-string">"g"</span>: <span class="hljs-number">50.98</span>,
+    <span class="hljs-string">"b"</span>: <span class="hljs-number">70.59</span>
+  },
+  <span class="hljs-string">"hex"</span>: <span class="hljs-string">"#4682b4"</span>,
+  <span class="hljs-string">"hexTriplet"</span>: <span class="hljs-string">"4682b4"</span>,
+  <span class="hljs-string">"isRandom"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">"parseSuccessful"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">"closest"</span>: {
+    <span class="hljs-string">"name"</span>: <span class="hljs-string">"Steel Blue"</span>,
+    <span class="hljs-string">"rgb"</span>: [
+      <span class="hljs-number">70</span>,
+      <span class="hljs-number">130</span>,
+      <span class="hljs-number">180</span>
+    ]
+  },
+  <span class="hljs-string">"websafe"</span>: <span class="hljs-string">"#3399cc"</span>,
+  <span class="hljs-string">"websmart"</span>: <span class="hljs-string">"#4488bb"</span>,
+  <span class="hljs-string">"isWebsafe"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">"isWebsmart"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">"schemes"</span>: {
+    <span class="hljs-string">"complementary"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#b47846"</span>
+    ],
+    <span class="hljs-string">"splitComplementary"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#b4464b"</span>,
+      <span class="hljs-string">"#46b49d"</span>
+    ],
+    <span class="hljs-string">"splitComplementaryCW"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#b4464b"</span>,
+      <span class="hljs-string">"#46b478"</span>
+    ],
+    <span class="hljs-string">"splitComplementaryCCW"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#7846b4"</span>,
+      <span class="hljs-string">"#b4af46"</span>
+    ],
+    <span class="hljs-string">"triadic"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#b44682"</span>,
+      <span class="hljs-string">"#82b446"</span>
+    ],
+    <span class="hljs-string">"clash"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#af46b4"</span>,
+      <span class="hljs-string">"#4bb446"</span>
+    ],
+    <span class="hljs-string">"tetradic"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#af46b4"</span>,
+      <span class="hljs-string">"#b47846"</span>,
+      <span class="hljs-string">"#4bb446"</span>
+    ],
+    <span class="hljs-string">"fourToneCW"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#7846b4"</span>,
+      <span class="hljs-string">"#b47846"</span>,
+      <span class="hljs-string">"#82b446"</span>
+    ],
+    <span class="hljs-string">"fourToneCCW"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#b44682"</span>,
+      <span class="hljs-string">"#b47846"</span>,
+      <span class="hljs-string">"#46b478"</span>
+    ],
+    <span class="hljs-string">"fiveToneA"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#b4468b"</span>,
+      <span class="hljs-string">"#b44a46"</span>,
+      <span class="hljs-string">"#b4a646"</span>,
+      <span class="hljs-string">"#79b446"</span>
+    ],
+    <span class="hljs-string">"fiveToneB"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#5346b4"</span>,
+      <span class="hljs-string">"#af46b4"</span>,
+      <span class="hljs-string">"#b44670"</span>,
+      <span class="hljs-string">"#79b446"</span>
+    ],
+    <span class="hljs-string">"fiveToneC"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#6646b4"</span>,
+      <span class="hljs-string">"#af46b4"</span>,
+      <span class="hljs-string">"#b4a646"</span>,
+      <span class="hljs-string">"#46b49d"</span>
+    ],
+    <span class="hljs-string">"fiveToneD"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#5346b4"</span>,
+      <span class="hljs-string">"#b44a46"</span>,
+      <span class="hljs-string">"#4bb446"</span>,
+      <span class="hljs-string">"#46b48a"</span>
+    ],
+    <span class="hljs-string">"fiveToneE"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#b4468b"</span>,
+      <span class="hljs-string">"#94b446"</span>,
+      <span class="hljs-string">"#4bb446"</span>,
+      <span class="hljs-string">"#46b49d"</span>
+    ],
+    <span class="hljs-string">"sixToneCW"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#464bb4"</span>,
+      <span class="hljs-string">"#b44682"</span>,
+      <span class="hljs-string">"#b4464b"</span>,
+      <span class="hljs-string">"#82b446"</span>,
+      <span class="hljs-string">"#4bb446"</span>
+    ],
+    <span class="hljs-string">"sixToneCCW"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#af46b4"</span>,
+      <span class="hljs-string">"#b44682"</span>,
+      <span class="hljs-string">"#b4af46"</span>,
+      <span class="hljs-string">"#82b446"</span>,
+      <span class="hljs-string">"#46b4af"</span>
+    ],
+    <span class="hljs-string">"neutral"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#4667b4"</span>,
+      <span class="hljs-string">"#464bb4"</span>,
+      <span class="hljs-string">"#5c46b4"</span>,
+      <span class="hljs-string">"#7846b4"</span>,
+      <span class="hljs-string">"#9346b4"</span>
+    ],
+    <span class="hljs-string">"analogous"</span>: [
+      <span class="hljs-string">"#4682b4"</span>,
+      <span class="hljs-string">"#464bb4"</span>,
+      <span class="hljs-string">"#7846b4"</span>,
+      <span class="hljs-string">"#af46b4"</span>,
+      <span class="hljs-string">"#b44682"</span>,
+      <span class="hljs-string">"#b4464b"</span>
+    ]
+  },
+  <span class="hljs-string">"shades"</span>: [
+    <span class="hljs-string">"#4682b4"</span>,
+    <span class="hljs-string">"#3f75a2"</span>,
+    <span class="hljs-string">"#386890"</span>,
+    <span class="hljs-string">"#315b7e"</span>,
+    <span class="hljs-string">"#2a4e6c"</span>,
+    <span class="hljs-string">"#23415a"</span>,
+    <span class="hljs-string">"#1c3448"</span>,
+    <span class="hljs-string">"#152736"</span>,
+    <span class="hljs-string">"#0e1a24"</span>,
+    <span class="hljs-string">"#070d12"</span>
+  ],
+  <span class="hljs-string">"tints"</span>: [
+    <span class="hljs-string">"#4682b4"</span>,
+    <span class="hljs-string">"#598fbc"</span>,
+    <span class="hljs-string">"#6b9bc3"</span>,
+    <span class="hljs-string">"#7da8cb"</span>,
+    <span class="hljs-string">"#90b4d2"</span>,
+    <span class="hljs-string">"#a2c1da"</span>,
+    <span class="hljs-string">"#b5cde1"</span>,
+    <span class="hljs-string">"#c7dae9"</span>,
+    <span class="hljs-string">"#dae6f0"</span>,
+    <span class="hljs-string">"#ecf3f8"</span>
+  ],
+  <span class="hljs-string">"tones"</span>: [
+    <span class="hljs-string">"#4682b4"</span>,
+    <span class="hljs-string">"#4c82af"</span>,
+    <span class="hljs-string">"#5282aa"</span>,
+    <span class="hljs-string">"#5781a4"</span>,
+    <span class="hljs-string">"#5d819f"</span>,
+    <span class="hljs-string">"#63819a"</span>,
+    <span class="hljs-string">"#688194"</span>,
+    <span class="hljs-string">"#6e808f"</span>,
+    <span class="hljs-string">"#74808a"</span>,
+    <span class="hljs-string">"#7a8085"</span>
+  ],
+  <span class="hljs-string">"blind"</span>: {
+    <span class="hljs-string">"protanomaly"</span>: <span class="hljs-string">"#5e7db0"</span>,
+    <span class="hljs-string">"protanopia"</span>: <span class="hljs-string">"#6c7bae"</span>,
+    <span class="hljs-string">"deuteranomaly"</span>: <span class="hljs-string">"#597eb5"</span>,
+    <span class="hljs-string">"deuteranopia"</span>: <span class="hljs-string">"#647bb5"</span>,
+    <span class="hljs-string">"tritanomaly"</span>: <span class="hljs-string">"#3c859e"</span>,
+    <span class="hljs-string">"tritanopia"</span>: <span class="hljs-string">"#368792"</span>,
+    <span class="hljs-string">"achromatomaly"</span>: <span class="hljs-string">"#667c8e"</span>,
+    <span class="hljs-string">"achromatopsia"</span>: <span class="hljs-string">"#797979"</span>
+  }
+}
+</code></pre>
+<h2 id="credits">Credits</h2>
+<p>Below are some of the libraries that are being used, and what they are used for:</p>
+<ul>
+<li><a href="https://www.npmjs.org/package/onecolor">onecolor</a> - parses color, and gets normalized data</li>
+<li><a href="https://www.npmjs.org/package/color">color</a> - gets un-normalized data and user friendly display</li>
+<li><a href="https://www.npmjs.org/package/color-blind">color-blind</a> - simulates color blindness</li>
+<li><a href="https://www.npmjs.org/package/color-harmony">color-harmony</a> - creates color scales/harmonies by rotating the hue of the given color</li>
+<li><a href="https://www.npmjs.org/package/color-quantize">color-quantize</a> - convert colors to websafe / websmart values</li>
+<li><a href="https://www.npmjs.org/package/colorname">colorname</a> - gets the closest color name</li>
+<li><a href="https://www.npmjs.org/package/cycle">cycle</a> - encodes cyclical structures in json</li>
+<li><a href="https://www.npmjs.org/package/jsonfn">jsonfn</a> - stringify non-json compatible objects</li>
+<li><a href="https://www.npmjs.org/package/random-seed">random-seed</a> - make sure our non-color objects always return the same information</li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<h4 id="is-it-slow-in-a-loop">Is it slow in a loop?</h4>
+<p>Yes</p>
+<h4 id="why">Why?</h4>
+<p>Because I'm trying to return "all the things" and depend on a lot of libraries (which
+do some duplicate re-parsing, etc).</p>
+<h2 id="release-history">Release History</h2>
+<h4 id="v030---released-june-28-2014">v0.3.0 - Released June 28, 2014</h4>
+<ul>
+<li>modifying return format so "lib" data is more explicit</li>
+<li>adding optional "rgbOnly" argument to random()</li>
+<li>don't allow an alpha channel of 0 when returning random colors</li>
+</ul>
+<h4 id="v021---released-june-22-2014">v0.2.1 - Released June 22, 2014</h4>
+<ul>
+<li>colorStats.random() should return alpha channel sometimes</li>
+</ul>
+<h4 id="v020---released-june-22-2014">v0.2.0 - Released June 22, 2014</h4>
+<ul>
+<li>fixing a bug with the harmonies/scales that were being generated</li>
+</ul>
+<h4 id="v010---released-june-21-2014">v0.1.0 - Released June 21, 2014</h4>
+<ul>
+<li>initial release</li>
+</ul>
+<h2 id="license">License</h2>
+<p>Copyright (c) 2014 skratchdot<br>Licensed under the MIT license.</p>
+</div></div><div><br/><div style="border-bottom:1px dotted"></div><br/></div><div id="disqus_thread"></div><div id="disqus_thread"></div></article><nav id="articlesNav"><div><div class="newEntries"></div><div class="oldEntries"></div></div><div class="homeEntries"><a href="/">HOME</a></div></nav></section><div class="footerSpacer"><br/></div><footer class="oneColumn"><div>Copyright © <!-- -->2022<!-- --> <a href="/">skratchdot</a><span class="hspace">•</span>Validate:  <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.skratchdot.com%2Fprojects%2Fcolor-stats%2F">HTML5</a><span class="hspace">•</span><a class="noBorder" href="/atom.xml"><img src="/images/feed-icon-14x14.png" alt="RSS/Atom Feed" width="14" height="14" style="top:2px"/></a><span class="hspace">•</span><div class="twitter-button"><a class="twitter-button-link" target="_blank" aria-label="Follow @skratchdot on Twitter" title="Follow @skratchdot on Twitter" href="https://twitter.com/intent/user?screen_name=skratchdot"><i></i><span>Follow <b>@skratchdot</b></span></a></div></div></footer><a href="https://github.com/skratchdot" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#c80000;color:#000;position:absolute;top:0;border:0;right:0"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path><path d="M10,10 L115,115 L250,250 Z" stroke="black" stroke-width="6"></path></svg></a><div id="homepage_link"><a style="border:0" href="/"><img src="/favicon.ico" alt="skratchdot" width="16" height="16"/></a></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"slug":"/projects/color-stats","filename":"_pages/projects/color-stats/index.md","html":"\u003ch1 id=\"color-stats\"\u003ecolor-stats\u003c/h1\u003e\n\u003cp\u003e\u003ca href=\"http://badge.fury.io/js/color-stats\" class=\"noBackground noBorder\"\u003e\u003cimg src=\"https://badge.fury.io/js/color-stats.svg\" alt=\"NPM version\"\u003e\u003c/a\u003e\n\u003ca href=\"https://travis-ci.org/skratchdot/color-stats\" class=\"noBackground noBorder\"\u003e\u003cimg src=\"https://travis-ci.org/skratchdot/color-stats.png?branch=master\" alt=\"Build Status\"\u003e\u003c/a\u003e\n\u003ca href=\"https://codeclimate.com/github/skratchdot/color-stats\" class=\"noBackground noBorder\"\u003e\u003cimg src=\"https://codeclimate.com/github/skratchdot/color-stats.png\" alt=\"Code Climate\"\u003e\u003c/a\u003e\n\u003ca href=\"https://coveralls.io/r/skratchdot/color-stats\" class=\"noBackground noBorder\"\u003e\u003cimg src=\"https://coveralls.io/repos/skratchdot/color-stats/badge.png\" alt=\"Coverage Status\"\u003e\u003c/a\u003e\n\u003ca href=\"https://david-dm.org/skratchdot/color-stats\" class=\"noBackground noBorder\"\u003e\u003cimg src=\"https://david-dm.org/skratchdot/color-stats.svg\" alt=\"Dependency Status\"\u003e\u003c/a\u003e\n\u003ca href=\"https://david-dm.org/skratchdot/color-stats#info=devDependencies\" class=\"noBackground noBorder\"\u003e\u003cimg src=\"https://david-dm.org/skratchdot/color-stats/dev-status.svg\" alt=\"devDependency Status\"\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://npmjs.org/package/color-stats\" class=\"noBackground noBorder\"\u003e\u003cimg src=\"https://nodei.co/npm/color-stats.png\" alt=\"NPM\"\u003e\u003c/a\u003e\u003c/p\u003e\n\u003ch2 id=\"description\"\u003eDescription\u003c/h2\u003e\n\u003cp\u003eGenerate color information based off of the hash of any object. If you pass in a valid\ncolor name or css value, the information for that color will be returned.\u003c/p\u003e\n\u003ch2 id=\"getting-started\"\u003eGetting Started\u003c/h2\u003e\n\u003cp\u003eInstall the module with: \u003ccode\u003enpm install color-stats\u003c/code\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e colorStats = \u003cspan class=\"hljs-built_in\"\u003erequire\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'color-stats'\u003c/span\u003e);\n\u003cspan class=\"hljs-title function_\"\u003ecolorStats\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'red'\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// get a bunch of stats about the color red\u003c/span\u003e\n\u003cspan class=\"hljs-title function_\"\u003ecolorStats\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'#ff0000'\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// get a bunch of stats about the color red\u003c/span\u003e\n\u003cspan class=\"hljs-title function_\"\u003ecolorStats\u003c/span\u003e({ \u003cspan class=\"hljs-attr\"\u003einfo\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e'Based On Hash - always the same color'\u003c/span\u003e }); \u003cspan class=\"hljs-comment\"\u003e// get a color based on some object.\u003c/span\u003e\ncolorStats.\u003cspan class=\"hljs-title function_\"\u003erandom\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// get the stats for a random color\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2 id=\"documentation\"\u003eDocumentation\u003c/h2\u003e\n\u003ch4 id=\"colorstatscolorobject\"\u003ecolorStats(colorObject)\u003c/h4\u003e\n\u003cp\u003ePass in a color string (or any object), and get the stats for that object.\u003c/p\u003e\n\u003ch4 id=\"colorstatsparsecolorobject\"\u003ecolorStats.parse(colorObject)\u003c/h4\u003e\n\u003cp\u003eThis is the same as calling colorStats(colorObject). It's just a proxy for\npeople that like explicit function names.\u003c/p\u003e\n\u003ch4 id=\"colorstatsrandom\"\u003ecolorStats.random()\u003c/h4\u003e\n\u003cp\u003eReturns the stats for a random color.\u003c/p\u003e\n\u003ch2 id=\"example\"\u003eExample\u003c/h2\u003e\n\u003ch4 id=\"get-stats-function-call\"\u003eGet Stats function call:\u003c/h4\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e colorStats = \u003cspan class=\"hljs-built_in\"\u003erequire\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'color-stats'\u003c/span\u003e);\n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e result = \u003cspan class=\"hljs-title function_\"\u003ecolorStats\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'#4682b4'\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// see result output below\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch4 id=\"get-stats-result\"\u003eGet Stats Result:\u003c/h4\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e{\n  \u003cspan class=\"hljs-string\"\u003e\"lib\"\u003c/span\u003e: {\n    \u003cspan class=\"hljs-string\"\u003e\"onecolor\"\u003c/span\u003e: {\n      \u003cspan class=\"hljs-string\"\u003e\"red\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.27450980392156865\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"green\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.5098039215686274\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"blue\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.7058823529411765\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"alpha\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"hue\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.5757575757575757\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"saturation\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.611111111111111\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"value\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.7058823529411765\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"lightness\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.4901960784313726\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"cyan\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.611111111111111\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"magenta\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.2777777777777779\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"yellow\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"black\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.2941176470588235\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"x\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.18743597342600288\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"y\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.2056088063416628\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"z\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.46152037838994725\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"l\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"a\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"b\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.7058823529411765\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"hex\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"hexa\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#ff4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"css\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"rgb(70,130,180)\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"cssa\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"rgba(70,130,180,1)\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"cmyk\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-string\"\u003e\"CMYK\"\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.611111111111111\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.2777777777777779\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.2941176470588235\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"hsl\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-string\"\u003e\"HSL\"\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.5757575757575757\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.43999999999999995\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.4901960784313726\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"hsv\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-string\"\u003e\"HSV\"\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.5757575757575757\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.611111111111111\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.7058823529411765\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"lab\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-string\"\u003e\"LAB\"\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"rgb\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-string\"\u003e\"RGB\"\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.27450980392156865\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.5098039215686274\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.7058823529411765\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"xyz\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-string\"\u003e\"XYZ\"\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.18743597342600288\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.2056088063416628\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0.46152037838994725\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e\n      ]\n    },\n    \u003cspan class=\"hljs-string\"\u003e\"color\"\u003c/span\u003e: {\n      \u003cspan class=\"hljs-string\"\u003e\"rgb\"\u003c/span\u003e: {\n        \u003cspan class=\"hljs-string\"\u003e\"r\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e70\u003c/span\u003e,\n        \u003cspan class=\"hljs-string\"\u003e\"g\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e130\u003c/span\u003e,\n        \u003cspan class=\"hljs-string\"\u003e\"b\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e180\u003c/span\u003e\n      },\n      \u003cspan class=\"hljs-string\"\u003e\"hsl\"\u003c/span\u003e: {\n        \u003cspan class=\"hljs-string\"\u003e\"h\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e207\u003c/span\u003e,\n        \u003cspan class=\"hljs-string\"\u003e\"s\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e44\u003c/span\u003e,\n        \u003cspan class=\"hljs-string\"\u003e\"l\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e49\u003c/span\u003e\n      },\n      \u003cspan class=\"hljs-string\"\u003e\"hsv\"\u003c/span\u003e: {\n        \u003cspan class=\"hljs-string\"\u003e\"h\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e207\u003c/span\u003e,\n        \u003cspan class=\"hljs-string\"\u003e\"s\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e61\u003c/span\u003e,\n        \u003cspan class=\"hljs-string\"\u003e\"v\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e71\u003c/span\u003e\n      },\n      \u003cspan class=\"hljs-string\"\u003e\"cmyk\"\u003c/span\u003e: {\n        \u003cspan class=\"hljs-string\"\u003e\"c\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e61\u003c/span\u003e,\n        \u003cspan class=\"hljs-string\"\u003e\"m\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e28\u003c/span\u003e,\n        \u003cspan class=\"hljs-string\"\u003e\"y\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e,\n        \u003cspan class=\"hljs-string\"\u003e\"k\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e29\u003c/span\u003e\n      },\n      \u003cspan class=\"hljs-string\"\u003e\"rgbArray\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e70\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e130\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e180\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"hslArray\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e207\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e44\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e49\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"hsvArray\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e207\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e61\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e71\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"cmykArray\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e61\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e28\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e29\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"rgbaArray\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e70\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e130\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e180\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"hslaArray\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e207\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e44\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e49\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"alpha\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"red\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e70\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"green\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e130\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"blue\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e180\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"hue\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e207\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"saturation\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e44\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"lightness\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e49\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"saturationv\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e61\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"value\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e71\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"cyan\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e61\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"magenta\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e28\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"yellow\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"black\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e29\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"hexString\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#4682B4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"rgbString\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"rgb(70, 130, 180)\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"rgbaString\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"rgba(70, 130, 180, 1)\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"percentString\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"rgb(27%, 51%, 71%)\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"hslString\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"hsl(207, 44%, 49%)\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"hslaString\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"hsla(207, 44%, 49%, 1)\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"keyword\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"steelblue\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"luminosity\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0.20562642207624857\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"dark\"\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"light\"\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003efalse\u003c/span\u003e\n    },\n    \u003cspan class=\"hljs-string\"\u003e\"colorConvert\"\u003c/span\u003e: {\n      \u003cspan class=\"hljs-string\"\u003e\"rgb\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e70\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e130\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e180\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"hsl\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e207\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e44\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e49\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"hsv\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e207\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e61\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e71\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"hwb\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e207\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e27\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e29\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"cmyk\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e61\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e28\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e29\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"keyword\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"steelblue\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"xyz\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e19\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e21\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e46\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"lab\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e52\u003c/span\u003e,\n        -\u003cspan class=\"hljs-number\"\u003e4\u003c/span\u003e,\n        -\u003cspan class=\"hljs-number\"\u003e32\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"lch\"\u003c/span\u003e: [\n        \u003cspan class=\"hljs-number\"\u003e52\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e32\u003c/span\u003e,\n        \u003cspan class=\"hljs-number\"\u003e263\u003c/span\u003e\n      ],\n      \u003cspan class=\"hljs-string\"\u003e\"ansi16\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e36\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"ansi\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e74\u003c/span\u003e\n    }\n  },\n  \u003cspan class=\"hljs-string\"\u003e\"alpha\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e,\n  \u003cspan class=\"hljs-string\"\u003e\"cmyk\"\u003c/span\u003e: {\n    \u003cspan class=\"hljs-string\"\u003e\"c\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e61.11\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"m\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e27.78\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"y\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"k\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e29.41\u003c/span\u003e\n  },\n  \u003cspan class=\"hljs-string\"\u003e\"hsl\"\u003c/span\u003e: {\n    \u003cspan class=\"hljs-string\"\u003e\"h\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e207.27\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"s\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e44\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"l\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e49.02\u003c/span\u003e\n  },\n  \u003cspan class=\"hljs-string\"\u003e\"hsv\"\u003c/span\u003e: {\n    \u003cspan class=\"hljs-string\"\u003e\"h\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e207.27\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"s\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e61.11\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"v\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e70.59\u003c/span\u003e\n  },\n  \u003cspan class=\"hljs-string\"\u003e\"rgb\"\u003c/span\u003e: {\n    \u003cspan class=\"hljs-string\"\u003e\"r\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e70\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"g\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e130\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"b\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e180\u003c/span\u003e\n  },\n  \u003cspan class=\"hljs-string\"\u003e\"rgbPercent\"\u003c/span\u003e: {\n    \u003cspan class=\"hljs-string\"\u003e\"r\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e27.45\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"g\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e50.98\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"b\"\u003c/span\u003e: \u003cspan class=\"hljs-number\"\u003e70.59\u003c/span\u003e\n  },\n  \u003cspan class=\"hljs-string\"\u003e\"hex\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n  \u003cspan class=\"hljs-string\"\u003e\"hexTriplet\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"4682b4\"\u003c/span\u003e,\n  \u003cspan class=\"hljs-string\"\u003e\"isRandom\"\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003efalse\u003c/span\u003e,\n  \u003cspan class=\"hljs-string\"\u003e\"parseSuccessful\"\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e,\n  \u003cspan class=\"hljs-string\"\u003e\"closest\"\u003c/span\u003e: {\n    \u003cspan class=\"hljs-string\"\u003e\"name\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"Steel Blue\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"rgb\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-number\"\u003e70\u003c/span\u003e,\n      \u003cspan class=\"hljs-number\"\u003e130\u003c/span\u003e,\n      \u003cspan class=\"hljs-number\"\u003e180\u003c/span\u003e\n    ]\n  },\n  \u003cspan class=\"hljs-string\"\u003e\"websafe\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#3399cc\"\u003c/span\u003e,\n  \u003cspan class=\"hljs-string\"\u003e\"websmart\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#4488bb\"\u003c/span\u003e,\n  \u003cspan class=\"hljs-string\"\u003e\"isWebsafe\"\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003efalse\u003c/span\u003e,\n  \u003cspan class=\"hljs-string\"\u003e\"isWebsmart\"\u003c/span\u003e: \u003cspan class=\"hljs-literal\"\u003efalse\u003c/span\u003e,\n  \u003cspan class=\"hljs-string\"\u003e\"schemes\"\u003c/span\u003e: {\n    \u003cspan class=\"hljs-string\"\u003e\"complementary\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b47846\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"splitComplementary\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4464b\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#46b49d\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"splitComplementaryCW\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4464b\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#46b478\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"splitComplementaryCCW\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#7846b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4af46\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"triadic\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b44682\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#82b446\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"clash\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#af46b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#4bb446\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"tetradic\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#af46b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b47846\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#4bb446\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"fourToneCW\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#7846b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b47846\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#82b446\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"fourToneCCW\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b44682\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b47846\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#46b478\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"fiveToneA\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4468b\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b44a46\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4a646\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#79b446\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"fiveToneB\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#5346b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#af46b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b44670\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#79b446\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"fiveToneC\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#6646b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#af46b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4a646\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#46b49d\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"fiveToneD\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#5346b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b44a46\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#4bb446\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#46b48a\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"fiveToneE\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4468b\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#94b446\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#4bb446\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#46b49d\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"sixToneCW\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#464bb4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b44682\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4464b\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#82b446\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#4bb446\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"sixToneCCW\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#af46b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b44682\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4af46\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#82b446\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#46b4af\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"neutral\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#4667b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#464bb4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#5c46b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#7846b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#9346b4\"\u003c/span\u003e\n    ],\n    \u003cspan class=\"hljs-string\"\u003e\"analogous\"\u003c/span\u003e: [\n      \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#464bb4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#7846b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#af46b4\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b44682\"\u003c/span\u003e,\n      \u003cspan class=\"hljs-string\"\u003e\"#b4464b\"\u003c/span\u003e\n    ]\n  },\n  \u003cspan class=\"hljs-string\"\u003e\"shades\"\u003c/span\u003e: [\n    \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#3f75a2\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#386890\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#315b7e\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#2a4e6c\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#23415a\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#1c3448\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#152736\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#0e1a24\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#070d12\"\u003c/span\u003e\n  ],\n  \u003cspan class=\"hljs-string\"\u003e\"tints\"\u003c/span\u003e: [\n    \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#598fbc\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#6b9bc3\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#7da8cb\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#90b4d2\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#a2c1da\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#b5cde1\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#c7dae9\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#dae6f0\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#ecf3f8\"\u003c/span\u003e\n  ],\n  \u003cspan class=\"hljs-string\"\u003e\"tones\"\u003c/span\u003e: [\n    \u003cspan class=\"hljs-string\"\u003e\"#4682b4\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#4c82af\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#5282aa\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#5781a4\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#5d819f\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#63819a\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#688194\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#6e808f\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#74808a\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"#7a8085\"\u003c/span\u003e\n  ],\n  \u003cspan class=\"hljs-string\"\u003e\"blind\"\u003c/span\u003e: {\n    \u003cspan class=\"hljs-string\"\u003e\"protanomaly\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#5e7db0\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"protanopia\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#6c7bae\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"deuteranomaly\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#597eb5\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"deuteranopia\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#647bb5\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"tritanomaly\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#3c859e\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"tritanopia\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#368792\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"achromatomaly\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#667c8e\"\u003c/span\u003e,\n    \u003cspan class=\"hljs-string\"\u003e\"achromatopsia\"\u003c/span\u003e: \u003cspan class=\"hljs-string\"\u003e\"#797979\"\u003c/span\u003e\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2 id=\"credits\"\u003eCredits\u003c/h2\u003e\n\u003cp\u003eBelow are some of the libraries that are being used, and what they are used for:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://www.npmjs.org/package/onecolor\"\u003eonecolor\u003c/a\u003e - parses color, and gets normalized data\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.npmjs.org/package/color\"\u003ecolor\u003c/a\u003e - gets un-normalized data and user friendly display\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.npmjs.org/package/color-blind\"\u003ecolor-blind\u003c/a\u003e - simulates color blindness\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.npmjs.org/package/color-harmony\"\u003ecolor-harmony\u003c/a\u003e - creates color scales/harmonies by rotating the hue of the given color\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.npmjs.org/package/color-quantize\"\u003ecolor-quantize\u003c/a\u003e - convert colors to websafe / websmart values\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.npmjs.org/package/colorname\"\u003ecolorname\u003c/a\u003e - gets the closest color name\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.npmjs.org/package/cycle\"\u003ecycle\u003c/a\u003e - encodes cyclical structures in json\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.npmjs.org/package/jsonfn\"\u003ejsonfn\u003c/a\u003e - stringify non-json compatible objects\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://www.npmjs.org/package/random-seed\"\u003erandom-seed\u003c/a\u003e - make sure our non-color objects always return the same information\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"faq\"\u003eFAQ\u003c/h2\u003e\n\u003ch4 id=\"is-it-slow-in-a-loop\"\u003eIs it slow in a loop?\u003c/h4\u003e\n\u003cp\u003eYes\u003c/p\u003e\n\u003ch4 id=\"why\"\u003eWhy?\u003c/h4\u003e\n\u003cp\u003eBecause I'm trying to return \"all the things\" and depend on a lot of libraries (which\ndo some duplicate re-parsing, etc).\u003c/p\u003e\n\u003ch2 id=\"release-history\"\u003eRelease History\u003c/h2\u003e\n\u003ch4 id=\"v030---released-june-28-2014\"\u003ev0.3.0 - Released June 28, 2014\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003emodifying return format so \"lib\" data is more explicit\u003c/li\u003e\n\u003cli\u003eadding optional \"rgbOnly\" argument to random()\u003c/li\u003e\n\u003cli\u003edon't allow an alpha channel of 0 when returning random colors\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4 id=\"v021---released-june-22-2014\"\u003ev0.2.1 - Released June 22, 2014\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003ecolorStats.random() should return alpha channel sometimes\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4 id=\"v020---released-june-22-2014\"\u003ev0.2.0 - Released June 22, 2014\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003efixing a bug with the harmonies/scales that were being generated\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4 id=\"v010---released-june-21-2014\"\u003ev0.1.0 - Released June 21, 2014\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003einitial release\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2 id=\"license\"\u003eLicense\u003c/h2\u003e\n\u003cp\u003eCopyright (c) 2014 skratchdot\u003cbr\u003eLicensed under the MIT license.\u003c/p\u003e\n","frontmatter":{"layout":"page","title":"color-stats"}},"__N_SSG":true},"page":"/[...path]","query":{"path":["projects","color-stats"]},"buildId":"ietM0aLwFW5OlUSya73Vr","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
