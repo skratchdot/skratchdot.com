@@ -1,11 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React from 'react';
+import { SITE_URL } from '../constants/site';
 import Script from 'next/script';
 import TwitterFollow from './TwitterFollow';
+import { useRouter } from 'next/router';
 
 const Footer = () => {
+  const router = useRouter();
   const year = new Date().getFullYear();
+  const pageUrl = SITE_URL + router.asPath;
+  const validateUrl =
+    'https://validator.w3.org/nu/?doc=' + encodeURIComponent(pageUrl);
   return (
     <>
       <div className="footerSpacer">
@@ -19,7 +25,7 @@ const Footer = () => {
           </Link>
           <span className="hspace">&#x2022;</span>
           Validate:&#160;&#160;
-          <a href="https://validator.w3.org/check/referer">HTML5</a>
+          <a href={validateUrl}>HTML5</a>
           <span className="hspace">&#x2022;</span>
           <a className="noBorder" href="/atom.xml">
             <img
