@@ -1,3 +1,4 @@
+import { DISQUS_SHORTNAME } from '../constants/site';
 import { DiscussionEmbed } from 'disqus-react';
 
 export interface DisqusConfig {
@@ -20,7 +21,7 @@ const PageComments: React.FC<PageCommentsProps> = ({ config }) => {
           <br />
         </div>
         <div></div>
-        <DiscussionEmbed shortname="skratchdot" config={config} />
+        <DiscussionEmbed shortname={DISQUS_SHORTNAME} config={config} />
       </>
     );
   } else {

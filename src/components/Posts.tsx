@@ -1,6 +1,7 @@
 import PageNav, { PageNavProps } from './PageNav';
 
 import { CommentCount } from 'disqus-react';
+import { DISQUS_SHORTNAME } from '../constants/site';
 import Footer from './Footer';
 import Header from './Header';
 import ItemList from './ItemList';
@@ -63,7 +64,7 @@ const Posts: React.FC<PostListProps> = ({
                       <Link href={`${postUrl}#disqus_thread`}>
                         <a>
                           <CommentCount
-                            shortname="skratchdot"
+                            shortname={DISQUS_SHORTNAME}
                             config={{
                               url: postUrl,
                               identifier: postUrl,

@@ -1,4 +1,5 @@
 import { CommentCount } from 'disqus-react';
+import { DISQUS_SHORTNAME } from '../constants/site';
 import Link from 'next/link';
 import React from 'react';
 
@@ -70,7 +71,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
           <Link href="#disqus_thread">
             <a>
               <CommentCount
-                shortname="skratchdot"
+                shortname={DISQUS_SHORTNAME}
                 config={{
                   url: postUrl,
                   identifier: postUrl,
