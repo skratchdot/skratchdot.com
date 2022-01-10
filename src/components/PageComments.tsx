@@ -19,7 +19,7 @@ const PageComments: React.FC<PageCommentsProps> = ({ config }) => {
           <div style={{ borderBottom: '1px dotted' }}></div>
           <br />
         </div>
-        <div id="disqus_thread"></div>
+        <div></div>
         <DiscussionEmbed shortname="skratchdot" config={config} />
       </>
     );
