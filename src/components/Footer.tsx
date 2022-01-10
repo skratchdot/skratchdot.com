@@ -1,7 +1,8 @@
+import { GA_TRACKING_ID, SITE_URL } from '../constants/site';
+
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React from 'react';
-import { SITE_URL } from '../constants/site';
 import Script from 'next/script';
 import TwitterFollow from './TwitterFollow';
 import { useRouter } from 'next/router';
@@ -84,7 +85,7 @@ const Footer = () => {
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-10768188-1', 'skratchdot.com');
+            ga('create', '${GA_TRACKING_ID}', 'auto');
             ga('require', 'displayfeatures');
             ga('send', 'pageview');
           `,
