@@ -21,6 +21,26 @@ npm install
 npm run dev
 ```
 
+## Deploy
+
+Currently, I'm using firebase for hosting.
+
+The firebase hosting docs are here:
+
+- https://firebase.google.com/docs/hosting
+
+For deployment to work, you need to install `firebase-tools` via:
+
+```bash
+npm install -g firebase-tools
+```
+
+To perform a deployment, run:
+
+```bash
+npm run deploy
+```
+
 ## Links
 
 - Main Site: [https://www.skratchdot.com](https://www.skratchdot.com)

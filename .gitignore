@@ -8,12 +8,18 @@
 # testing
 /coverage
 
+# firebase
+firebase-debug.log*
+firebase-debug.*.log*
+.firebase/
+.firebaserc
+
 # next.js
 /.next/
-/out/
 
 # production
 /build
+/out
 
 # misc
 .DS_Store
