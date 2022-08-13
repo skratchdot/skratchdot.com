@@ -29,12 +29,6 @@ The firebase hosting docs are here:
 
 - https://firebase.google.com/docs/hosting
 
-For deployment to work, you need to install `firebase-tools` via:
-
-```bash
-npm install -g firebase-tools
-```
-
 To perform a deployment, run:
 
 ```bash

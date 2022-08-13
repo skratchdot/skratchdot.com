@@ -39,6 +39,7 @@
     "eslint": "^8.21.0",
     "eslint-config-next": "^12.2.5",
     "feed": "^4.2.2",
+    "firebase-tools": "^11.6.0",
     "fs-extra": "^10.1.0",
     "glob": "^8.0.3",
     "gray-matter": "^4.0.3",
