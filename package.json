@@ -22,7 +22,7 @@
     "build:readmes": "node ./_build/readmes.js && npm run format",
     "build:private": "cp -R _private/ out/ || :",
     "deploy": "firebase deploy --only hosting",
-    "format": "prettier --write .",
+    "format": "prettier --check --write .",
     "predeploy": "npm run clean && npm run build",
     "postbuild": "next export && npm run build:private && npm run build:404",
     "start": "next start",
