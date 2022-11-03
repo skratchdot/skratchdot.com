@@ -19,9 +19,7 @@ const ItemList: React.FC<ItemListProps> = ({ items, linkPrefix, title }) => {
         <div>
           {items.map((item, number) => (
             <React.Fragment key={item}>
-              <Link href={`${linkPrefix}${item}`}>
-                <a>{item}</a>
-              </Link>
+              <Link href={`${linkPrefix}${item}`}>{item}</Link>
               {number < items.length - 1 ? ', ' : ''}
             </React.Fragment>
           ))}

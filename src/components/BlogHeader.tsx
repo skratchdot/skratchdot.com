@@ -38,9 +38,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
   const categorySection = Array.isArray(categories)
     ? categories.map((category, index) => (
         <React.Fragment key={category}>
-          <Link href={`/category/${category}`}>
-            <a>{category}</a>
-          </Link>
+          <Link href={`/category/${category}`}>{category}</Link>
           {index < categories.length - 1 ? ', ' : ''}
         </React.Fragment>
       ))
@@ -69,18 +67,16 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
         </div>
         <div className="pl-comments comments">
           <Link href="#disqus_thread">
-            <a>
-              <CommentCount
-                shortname={DISQUS_SHORTNAME}
-                config={{
-                  url: postUrl,
-                  identifier: postUrl,
-                  title: title,
-                }}
-              >
-                Comments
-              </CommentCount>
-            </a>
+            <CommentCount
+              shortname={DISQUS_SHORTNAME}
+              config={{
+                url: postUrl,
+                identifier: postUrl,
+                title: title,
+              }}
+            >
+              Comments
+            </CommentCount>
           </Link>
         </div>
       </div>

@@ -11,9 +11,7 @@ const BlogFooter: React.FC<BlogFooterProps> = ({ tags }) => {
         Tagged with:&nbsp;
         {tags.map((tag, index) => (
           <React.Fragment key={tag}>
-            <Link href={`/tag/${tag}`}>
-              <a>{tag}</a>
-            </Link>
+            <Link href={`/tag/${tag}`}>{tag}</Link>
             {index < tags.length - 1 ? ' • ' : ''}
           </React.Fragment>
         ))}

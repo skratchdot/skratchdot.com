@@ -56,24 +56,20 @@ const Posts: React.FC<PostListProps> = ({
                       {post.year}-{post.month}-{post.day}
                     </div>
                     <div className="pl-title">
-                      <Link href={postUrl}>
-                        <a>{post.frontmatter.title}</a>
-                      </Link>
+                      <Link href={postUrl}>{post.frontmatter.title}</Link>
                     </div>
                     <div className="pl-comments">
                       <Link href={`${postUrl}#disqus_thread`}>
-                        <a>
-                          <CommentCount
-                            shortname={DISQUS_SHORTNAME}
-                            config={{
-                              url: postUrl,
-                              identifier: postUrl,
-                              title: post.frontmatter.title,
-                            }}
-                          >
-                            Comments
-                          </CommentCount>
-                        </a>
+                        <CommentCount
+                          shortname={DISQUS_SHORTNAME}
+                          config={{
+                            url: postUrl,
+                            identifier: postUrl,
+                            title: post.frontmatter.title,
+                          }}
+                        >
+                          Comments
+                        </CommentCount>
                       </Link>
                     </div>
                   </div>

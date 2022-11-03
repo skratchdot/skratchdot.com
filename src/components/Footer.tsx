@@ -20,10 +20,7 @@ const Footer = () => {
       </div>
       <footer className="oneColumn">
         <div>
-          Copyright &#169; {year}{' '}
-          <Link href="/">
-            <a>skratchdot</a>
-          </Link>
+          Copyright &#169; {year} <Link href="/">skratchdot</Link>
           <span className="hspace">&#x2022;</span>
           Validate:&#160;&#160;
           <a href={validateUrl}>HTML5</a>
@@ -71,24 +68,22 @@ const Footer = () => {
         </svg>
       </a>
       <div id="homepage_link">
-        <Link href="/">
-          <a style={{ border: 0 }}>
-            <img src="/favicon.ico" alt="skratchdot" width="16" height="16" />
-          </a>
+        <Link href="/" style={{ border: 0 }}>
+          <img src="/favicon.ico" alt="skratchdot" width="16" height="16" />
         </Link>
       </div>
       <Script
         id="google-analytics-script"
         dangerouslySetInnerHTML={{
           __html: `
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', '${GA_TRACKING_ID}', 'auto');
-            ga('require', 'displayfeatures');
-            ga('send', 'pageview');
-          `,
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', '${GA_TRACKING_ID}', 'auto');
+          ga('require', 'displayfeatures');
+          ga('send', 'pageview');
+        `,
         }}
       ></Script>
     </>

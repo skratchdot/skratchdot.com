@@ -15,14 +15,10 @@ const PageNav: React.FC<PageNavProps> = ({
   previousTitle,
 }) => {
   const next = nextUrl ? (
-    <Link href={nextUrl}>
-      <a>&laquo; {nextTitle || 'Next'}</a>
-    </Link>
+    <Link href={nextUrl}>«{nextTitle || 'Next'}</Link>
   ) : undefined;
   const previous = previousUrl ? (
-    <Link href={previousUrl}>
-      <a>{previousTitle || 'Previous'} &raquo;</a>
-    </Link>
+    <Link href={previousUrl}>{previousTitle || 'Previous'}»</Link>
   ) : undefined;
   return (
     <nav id="articlesNav">
@@ -31,9 +27,7 @@ const PageNav: React.FC<PageNavProps> = ({
         <div className="oldEntries">{previous}</div>
       </div>
       <div className="homeEntries">
-        <Link href="/">
-          <a>HOME</a>
-        </Link>
+        <Link href="/">HOME</Link>
       </div>
     </nav>
   );
