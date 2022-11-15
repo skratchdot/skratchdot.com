@@ -82,7 +82,23 @@ A webpage to visualize and audibilize sorting algorithms using javascript.
 
 - [Sorting Algorithms Visualised - Blog Post on http://macr.ae/](http://macr.ae/article/sorting-algorithms.html)
 
-### Other Web Apps
+- [Sorting Visualizations on imgur by FishyMcFishFace](https://imgur.com/gallery/RM3wl)
+
+- [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms/)
+
+- [Machine Learning visualizer](https://jeff3dx.github.io/mlearning)
+
+- [Python Algorithm Visualizations](https://pyalgoviz.appspot.com/)
+
+- [Morpheus - Visual Algorithm Simulator](https://rkarthick.github.io/morpheus-client/)
+
+- [Sorting Visualizer - Karim Elghamry](https://github.com/KarimElghamry/sorting-visualizer)
+
+- [SortDemon](https://github.com/copperhuh/SortDemon)
+
+- [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer)
+
+### Other Audio Web Apps
 
 - [Assortment - webcloud.se](http://webcloud.se/Assortment/)
 
@@ -93,6 +109,8 @@ A webpage to visualize and audibilize sorting algorithms using javascript.
 - [Sound Of Sorting: Downloadable App](http://panthema.net/2013/sound-of-sorting/)
 
 - [Youtube: 15 Sorting Algorithms in 6 Minutes](https://www.youtube.com/watch?v=kPRA0W1kECg)
+
+- [Youtube: 15 Sorting Algorithms charted for Guitar Hero/Clone Hero](https://www.youtube.com/watch?v=YyerMJlmtts)
 
 - [Youtube: What different sorting algorithms sound like](http://www.youtube.com/watch?v=t8g-iYGHpEA)
 
