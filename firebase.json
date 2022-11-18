@@ -2,6 +2,18 @@
   "hosting": {
     "public": "out",
     "cleanUrls": true,
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "source": "/esxwaveorganizer/home.php",
+        "destination": "/projects/esx-wave-organizer",
+        "type": 301
+      },
+      {
+        "source": "/esxwaveorganizer",
+        "destination": "/projects/esx-wave-organizer",
+        "type": 301
+      }
+    ]
   }
 }
