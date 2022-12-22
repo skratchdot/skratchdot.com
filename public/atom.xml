@@ -1062,7 +1062,7 @@ to turn the demo on/off or change the speed of the animation.</p>
 <style type="text/css">
     img#zoopraxiscope {
         width:230px;
-        height:230px;        
+        height:230px;		
     }
     @-webkit-keyframes spin {
         from { -webkit-transform: rotate(0deg); }
@@ -1326,9 +1326,9 @@ example <a href="https://github.com/mojombo/jekyll/wiki/sites">sites</a>.</p>
 <p><a href="http://projects.skratchdot.com/domFormat/examples/index-html5.html">http://projects.skratchdot.com/domFormat/examples/index-html5.html</a></p>
 <p>Here are 2 bookmarklets:</p>
 <ul>
-<li><p><a href="javascript:%28function%28%29%7Bvar%20doc%3Ddocument.cloneNode%28true%29%7C%7Cdocument%3Bvar%20script%3Ddocument.createElement%28&#39;script&#39;%29%3Bscript.setAttribute%28&#39;src&#39;%2C&#39;http%3A%2F%2Fprojects.skratchdot.com%2FdomFormat%2FdomFormat.min.js&#39;%29%3Bscript.addEventListener%28&#39;load&#39;%2Cfunction%28%29%7Bvar%20domString%3DdomFormat.getString%28doc%29%3Bdocument.write%28&#39;%3Ctextarea%20wrap%3D%22off%22%20id%3D%22showSource%22%20style%3D%22width%3A100%25%3Bheight%3A100%25%3Bborder%3A0%3Bmargin%3A0%3Bpadding%3A0%3Bwhitespace%3Anowrap%3B%22%3E%3C%2Ftextarea%3E&#39;%29%3Bdocument.getElementById%28&#39;showSource&#39;%29.value%3DdomString%3Bdocument.close%28%29%3B%7D%2Cfalse%29%3Bdocument.body.appendChild%28script%29%3B%7D%28%29%29;">-- Show Source --</a></p>
+<li><p><a href="javascript:%28function%28%29%7Bvar%20doc%3Ddocument.cloneNode%28true%29%7C%7Cdocument%3Bvar%20script%3Ddocument.createElement%28'script'%29%3Bscript.setAttribute%28'src'%2C'http%3A%2F%2Fprojects.skratchdot.com%2FdomFormat%2FdomFormat.min.js'%29%3Bscript.addEventListener%28'load'%2Cfunction%28%29%7Bvar%20domString%3DdomFormat.getString%28doc%29%3Bdocument.write%28'%3Ctextarea%20wrap%3D%22off%22%20id%3D%22showSource%22%20style%3D%22width%3A100%25%3Bheight%3A100%25%3Bborder%3A0%3Bmargin%3A0%3Bpadding%3A0%3Bwhitespace%3Anowrap%3B%22%3E%3C%2Ftextarea%3E'%29%3Bdocument.getElementById%28'showSource'%29.value%3DdomString%3Bdocument.close%28%29%3B%7D%2Cfalse%29%3Bdocument.body.appendChild%28script%29%3B%7D%28%29%29;">-- Show Source --</a></p>
 </li>
-<li><p><a href="javascript:%28function%28%29%7Bvar%20doc%3Ddocument.cloneNode%28true%29%7C%7Cdocument%3Bvar%20script%3Ddocument.createElement%28&#39;script&#39;%29%3Bscript.setAttribute%28&#39;src&#39;%2C&#39;http%3A%2F%2Fprojects.skratchdot.com%2FdomFormat%2FdomFormat.min.js&#39;%29%3Bscript.addEventListener%28&#39;load&#39;%2Cfunction%28%29%7Bvar%20domString%3DdomFormat.getString%28doc%29%3Bdocument.write%28domString%29%3Bdocument.close%28%29%3B%7D%2Cfalse%29%3Bdocument.body.appendChild%28script%29%3B%7D%28%29%29;">-- Reload Page With Formatted Source --</a></p>
+<li><p><a href="javascript:%28function%28%29%7Bvar%20doc%3Ddocument.cloneNode%28true%29%7C%7Cdocument%3Bvar%20script%3Ddocument.createElement%28'script'%29%3Bscript.setAttribute%28'src'%2C'http%3A%2F%2Fprojects.skratchdot.com%2FdomFormat%2FdomFormat.min.js'%29%3Bscript.addEventListener%28'load'%2Cfunction%28%29%7Bvar%20domString%3DdomFormat.getString%28doc%29%3Bdocument.write%28domString%29%3Bdocument.close%28%29%3B%7D%2Cfalse%29%3Bdocument.body.appendChild%28script%29%3B%7D%28%29%29;">-- Reload Page With Formatted Source --</a></p>
 </li>
 </ul>
 ]]></content>
