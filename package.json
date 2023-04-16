@@ -24,7 +24,7 @@
     "deploy": "firebase deploy --only hosting",
     "format": "prettier --check --write .",
     "predeploy": "npm run clean && npm run build",
-    "postbuild": "next export && npm run build:private && npm run build:404",
+    "postbuild": "npm run build:private && npm run build:404",
     "start": "next start",
     "lint": "next lint"
   },
