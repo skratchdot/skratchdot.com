@@ -25,7 +25,7 @@
     "format": "prettier --check --write .",
     "predeploy": "npm run clean && npm run build",
     "postbuild": "npm run build:private && npm run build:404",
-    "start": "next start",
+    "start": "npm run dev",
     "lint": "next lint"
   },
   "keywords": [],
