@@ -13,7 +13,7 @@ jobs:
       NEXT_PUBLIC_DISQUS_SHORTNAME: ${{ secrets.NEXT_PUBLIC_DISQUS_SHORTNAME }}
       NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.NEXT_PUBLIC_GA_TRACKING_ID }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: |
           npm ci
           npm run lint
