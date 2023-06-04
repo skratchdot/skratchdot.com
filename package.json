@@ -25,6 +25,7 @@
     "format": "prettier --check --write .",
     "predeploy": "npm run clean && npm run build",
     "postbuild": "npm run build:private && npm run build:404",
+    "serve": "npx serve@latest out",
     "start": "npm run dev",
     "lint": "next lint"
   },
