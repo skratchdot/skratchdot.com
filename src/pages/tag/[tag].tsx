@@ -3,6 +3,7 @@ import { PostList, getAllPostsWithTag, getAllTags } from '../../lib/posts';
 import type { NextPage } from 'next';
 import Posts from '../../components/Posts';
 import React from 'react';
+import { stripHtml } from '../../lib/strip-html';
 import { useRouter } from 'next/router';
 
 type TagListProps = {
@@ -34,7 +35,7 @@ export const getStaticProps = async ({ params }: any) => {
   const posts = await getAllPostsWithTag(tag);
   return {
     props: {
-      posts,
+      posts: stripHtml(posts),
     },
   };
 };
