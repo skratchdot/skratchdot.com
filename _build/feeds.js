@@ -25,7 +25,7 @@ const getAllPosts = async () => {
     const postDate = new Date(
       parseFloat(year),
       parseFloat(month) - 1,
-      parseFloat(day)
+      parseFloat(day),
     );
     const post = {
       postDate,
@@ -94,17 +94,17 @@ const generateFeeds = async () => {
   await fse.outputFile(
     path.resolve(__dirname, '../public/atom.xml'),
     atomFeed,
-    'utf-8'
+    'utf-8',
   );
   await fse.outputFile(
     path.resolve(__dirname, '../public/feed.json'),
     jsonFeed,
-    'utf-8'
+    'utf-8',
   );
   await fse.outputFile(
     path.resolve(__dirname, '../public/feed.xml'),
     rssFeed,
-    'utf-8'
+    'utf-8',
   );
 };
 

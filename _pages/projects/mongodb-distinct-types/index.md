@@ -20,7 +20,7 @@ DBCollection.prototype.distinctTypes = function (
   keyString,
   query,
   limit,
-  skip
+  skip,
 ) {};
 ```
 

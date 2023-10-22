@@ -72,7 +72,7 @@ export const getStaticProps = async ({ params }: any) => {
   const { year, month, slug } = params;
   const posts = await getAllPosts();
   const postIndex = posts.findIndex(
-    (post) => post.year === year && post.month === month && post.slug === slug
+    (post) => post.year === year && post.month === month && post.slug === slug,
   );
 
   const post = posts[postIndex];

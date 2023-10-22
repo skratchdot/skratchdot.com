@@ -33,7 +33,7 @@ const Posts: React.FC<PostListProps> = ({
           <ul className="postlist">
             {posts.map((post) => {
               const categories = Array.isArray(
-                post?.frontmatter?.categories
+                post?.frontmatter?.categories,
               ) ? (
                 <ItemList
                   items={post.frontmatter.categories}

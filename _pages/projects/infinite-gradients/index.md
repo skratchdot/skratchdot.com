@@ -281,7 +281,7 @@ infiniteGradients.getRadialGradient(
   ['red', '#286554', 'blue', '#9619e2'],
   25,
   0.021,
-  0.335
+  0.335,
 );
 ```
 
@@ -306,7 +306,7 @@ Gets a linear gradient CSS function as a string
 infiniteGradients.getLinearGradient(
   ['red', '#286554', 'blue', '#9619e2'],
   25,
-  142.3
+  142.3,
 );
 ```
 

@@ -82,8 +82,8 @@ export const getAllPostsWithTag = async (tag: string) => {
 
 export const getAllPostsWithCategory = async (category: string) => {
   const posts = await getAllPosts();
-  return posts.filter((post) =>
-    post?.frontmatter?.categories?.includes(category)
+  return posts.filter(
+    (post) => post?.frontmatter?.categories?.includes(category),
   );
 };
 
@@ -101,7 +101,7 @@ export const getAllCategories = async () => {
   const posts = await getAllPosts();
   posts.forEach((post) => {
     post?.frontmatter?.categories?.forEach((category) =>
-      categories.add(category)
+      categories.add(category),
     );
   });
   return Array.from(categories);

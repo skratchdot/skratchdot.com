@@ -13,13 +13,13 @@
             <url>https://www.skratchdot.com/images/logo.png</url>
             <link>https://www.skratchdot.com/</link>
         </image>
-        <copyright>Copyright © 2022 skratchdot</copyright>
+        <copyright>Copyright © 2023 skratchdot</copyright>
         <item>
             <title><![CDATA[Creating Virtual MIDI Ports On OSX for WebMidi]]></title>
             <link>https://www.skratchdot.com/2016/01/creating-virtual-midi-ports-on-osx</link>
             <guid>https://www.skratchdot.com/2016/01/creating-virtual-midi-ports-on-osx</guid>
             <pubDate>Wed, 27 Jan 2016 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
+            <content:encoded><![CDATA[<h2>Introduction</h2>
 <p><a href="http://webaudio.github.io/web-midi-api/">WebMidi</a> is a technology that has been
 emerging for a few years now, and it&#39;s finally supported in Chrome by default.
 Even browsers that don&#39;t support it can use the
@@ -39,21 +39,21 @@ or <a href="http://www.tobias-erichsen.de/software/loopmidi.html">loopMIDI</a>
 and Linux users can try
 <a href="http://www.alsa-project.org/main/index.php/Main_Page">ALSA</a>
 or <a href="http://qjackctl.sourceforge.net/">QJackCtl</a>.</p>
-<h2 id="creating-virtual-midi-ports-on-osx">Creating Virtual MIDI Ports On OSX</h2>
-<h4 id="step-1-open-audio-midi-setup">Step 1: Open <strong>Audio MIDI Setup</strong></h4>
+<h2>Creating Virtual MIDI Ports On OSX</h2>
+<h4>Step 1: Open <strong>Audio MIDI Setup</strong></h4>
 <p>You can open <strong>Audio MIDI Setup</strong> by searching Spotlight, by looking in
 <strong>/Applications/Utilities/</strong>, or by using Launchpad:</p>
 <p><img src="https://www.skratchdot.com/images/posts/2016/01/27/launchpad.png" alt="Launchpad"></p>
-<h4 id="step-2-show-midi-studio">Step 2: Show <strong>MIDI Studio</strong></h4>
+<h4>Step 2: Show <strong>MIDI Studio</strong></h4>
 <p>Once <strong>Audio MIDI Setup</strong> is open, you can open the <strong>Midi Studio</strong> window:</p>
 <p><img src="https://www.skratchdot.com/images/posts/2016/01/27/midi-studio.png" alt="Midi Studio"></p>
-<h4 id="step-3-open-iac-driver">Step 3: Open <strong>IAC Driver</strong></h4>
+<h4>Step 3: Open <strong>IAC Driver</strong></h4>
 <p>Now you can open <strong>IAC Driver (Inter Application Communications Driver)</strong> by
 double clicking on the icon:</p>
 <p><img src="https://www.skratchdot.com/images/posts/2016/01/27/iac-driver.png" alt="IAC Driver"></p>
 <p>Which opens this window:</p>
 <p><img src="https://www.skratchdot.com/images/posts/2016/01/27/iac-driver-window.png" alt="IAC Driver Window"></p>
-<h4 id="step-4-add-virtual-port">Step 4: Add Virtual Port</h4>
+<h4>Step 4: Add Virtual Port</h4>
 <ul>
 <li>Click the &quot;Add and Remove Ports Button&quot;</li>
 <li>A new port called &quot;IAC Bus 2&quot; will be added.</li>
@@ -65,7 +65,7 @@ double clicking on the icon:</p>
 <p>Now that you have your virtual driver / port setup, you can install / use a
 virtual MIDI keyboard on your favorite WebMidi enabled website. For
 instructions on installing a Virtual MIDI Keyboard, continue reading below.</p>
-<h2 id="install--use-a-virtual-midi-keyboard">Install / Use a Virtual MIDI Keyboard</h2>
+<h2>Install / Use a Virtual MIDI Keyboard</h2>
 <p>A few options:</p>
 <ul>
 <li><a href="http://vmpk.sourceforge.net/">Virtual MIDI Piano Keyboard</a></li>
@@ -283,9 +283,9 @@ features on and off. I&#39;ll also probably clean up the code, and decommission 
             <link>https://www.skratchdot.com/2013/04/open-electribe-editor-v1-2-0-released</link>
             <guid>https://www.skratchdot.com/2013/04/open-electribe-editor-v1-2-0-released</guid>
             <pubDate>Sat, 13 Apr 2013 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 id="v120---released-april-13-2013">v1.2.0 - Released April 13, 2013</h3>
+            <content:encoded><![CDATA[<h3>v1.2.0 - Released April 13, 2013</h3>
 <p>Download here: <a href="http://code.google.com/p/open-electribe-editor/downloads/list">http://code.google.com/p/open-electribe-editor/downloads/list</a></p>
-<h4 id="release-notes">Release Notes:</h4>
+<h4>Release Notes:</h4>
 <ul>
 <li>[<a href="https://github.com/skratchdot/open-electribe-editor/issues/27">BUG: #27</a>] Pattern Import not working when source pattern contains empty samples</li>
 </ul>
@@ -317,9 +317,9 @@ with the latest remotely published version.</p>
             <link>https://www.skratchdot.com/2013/01/open-electribe-editor-v1-1-0-released</link>
             <guid>https://www.skratchdot.com/2013/01/open-electribe-editor-v1-1-0-released</guid>
             <pubDate>Sun, 06 Jan 2013 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 id="v110---released-january-6-2013">v1.1.0 - Released January 6, 2013</h3>
+            <content:encoded><![CDATA[<h3>v1.1.0 - Released January 6, 2013</h3>
 <p>Download here: <a href="http://code.google.com/p/open-electribe-editor/downloads/list">http://code.google.com/p/open-electribe-editor/downloads/list</a></p>
-<h4 id="release-notes">Release Notes:</h4>
+<h4>Release Notes:</h4>
 <ul>
 <li><p>[<a href="https://github.com/skratchdot/open-electribe-editor/issues/11">BUG: #11</a>] Imports/Exports showing up twice in context menu</p>
 </li>
@@ -446,12 +446,12 @@ to work on a userscript that let&#39;s you switch themes on Github.</p>
 </li>
 </ul>
 <p>Here is the current description from <a href="https://raw.github.com/skratchdot/github-editor-theme.user.js/master/README.md">README.md</a>:</p>
-<h3 id="description">Description</h3>
+<h3>Description</h3>
 <p>Add a &quot;theme&quot; dropdown when editing files in the Github UI.</p>
-<h3 id="screenshots">Screenshots</h3>
-<h4 id="before-installing-the-user-script">Before installing the user script:</h4>
+<h3>Screenshots</h3>
+<h4>Before installing the user script:</h4>
 <p><img src="https://github.com/skratchdot/github-editor-theme.user.js/raw/master/images/before.png" alt="Before Installation"></p>
-<h4 id="after-installing-the-user-script">After installing the user script:</h4>
+<h4>After installing the user script:</h4>
 <p><img src="https://github.com/skratchdot/github-editor-theme.user.js/raw/master/images/after.png" alt="After Installation"></p>
 ]]></content:encoded>
             <author>jeff@skratchdot.com (skratchdot)</author>
@@ -548,14 +548,14 @@ descriptions, you will have to click the button multiple times.</p>
 </li>
 </ul>
 <p>Here is the current description from <a href="https://raw.github.com/skratchdot/github-get-missing-descriptions.user.js/master/README.md">README.md</a>:</p>
-<h3 id="description">Description</h3>
+<h3>Description</h3>
 <p>If there are missing descriptions on a Github profile page,
 a button will be added. When clicked, ajax requests will be made
 to grab the descriptions.</p>
-<h3 id="screenshots">Screenshots</h3>
-<h4 id="before-installing-the-user-script">Before installing the user script:</h4>
+<h3>Screenshots</h3>
+<h4>Before installing the user script:</h4>
 <p><img src="https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/before.png" alt="Before Installation"></p>
-<h4 id="after-installing-the-user-script">After installing the user script:</h4>
+<h4>After installing the user script:</h4>
 <p><strong>Before clicking the button:</strong><br><img src="https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/after1.png" alt="After Installation (before clicking the button)"></p>
 <p><strong>After clicking the button:</strong><br><img src="https://github.com/skratchdot/github-get-missing-descriptions.user.js/raw/master/images/after2.png" alt="After Installation (after clicking the button)"></p>
 ]]></content:encoded>
@@ -741,16 +741,16 @@ to see if that particular user has a <a href="https://twitter.com">Twitter</a> a
 </li>
 </ul>
 <p>Here is the current description from <a href="https://raw.github.com/skratchdot/github-twitter-link.user.js/master/README.md">README.md</a>:</p>
-<h3 id="description">Description</h3>
+<h3>Description</h3>
 <p>This is a user script that adds a twitter link on Github profile
 pages if a corresponding user name exists at Twitter. It utilizes
 local storage to minimize multiple Twitter API requests. If a corresponding
 user name is not found, then we will not check for it again. At some point I
 may add a &quot;time limit&quot; on when to check again.</p>
-<h3 id="screenshots">Screenshots</h3>
-<h4 id="before-installing-the-user-script">Before installing the user script:</h4>
+<h3>Screenshots</h3>
+<h4>Before installing the user script:</h4>
 <p><img src="https://github.com/skratchdot/github-twitter-link.user.js/raw/master/images/before.png" alt="Before Installation"></p>
-<h4 id="after-installing-the-user-script">After installing the user script:</h4>
+<h4>After installing the user script:</h4>
 <p><strong>Twitter account exists:</strong><br><img src="https://github.com/skratchdot/github-twitter-link.user.js/raw/master/images/after1.png" alt="After Installation - Account exists"></p>
 <p><strong>Twitter account doesn&#39;t exist:</strong><br><img src="https://github.com/skratchdot/github-twitter-link.user.js/raw/master/images/after2.png" alt="After Installation - Account doesn&#39;t exist"></p>
 ]]></content:encoded>
@@ -761,7 +761,7 @@ may add a &quot;time limit&quot; on when to check again.</p>
             <link>https://www.skratchdot.com/2012/06/open-electribe-editor-v1-0-4-released</link>
             <guid>https://www.skratchdot.com/2012/06/open-electribe-editor-v1-0-4-released</guid>
             <pubDate>Sun, 03 Jun 2012 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 id="v104---released-june-03-2012">v1.0.4 - Released June 03, 2012</h3>
+            <content:encoded><![CDATA[<h3>v1.0.4 - Released June 03, 2012</h3>
 <ul>
 <li>[<a href="https://github.com/skratchdot/open-electribe-editor/issues/15">BUG: #15</a>] Fixed a bug that prevented valid 16-bit PCM wave files from loading</li>
 </ul>
@@ -786,7 +786,7 @@ the <a href="http://getfirebug.com/wiki/index.php/Console_API">Firebug Console A
 exist in the <strong>window.console</strong> object. We default to an empty function so older browsers
 don&#39;t throw errors. If a given <strong>window.console</strong> function already exists, we will use the
 default browser behavior.</p>
-<h3 id="un-minified-version">Un-Minified Version:</h3>
+<h3>Un-Minified Version:</h3>
 <!-- prettier-ignore-start -->
 <pre><code class="language-js">/*jslint browser: true, plusplus: true */
 (function (window) {
@@ -813,7 +813,7 @@ default browser behavior.</p>
 </code></pre>
 <!-- prettier-ignore-end -->
 
-<h3 id="minified-version">Minified Version:</h3>
+<h3>Minified Version:</h3>
 <!-- prettier-ignore-start -->
 <pre><code class="language-js">/* https://www.skratchdot.com/2012/05/prevent-console-calls-from-throwing-errors/ */
 (function(b){var a=0,c=function(){},d=[&quot;assert&quot;,&quot;clear&quot;,&quot;count&quot;,&quot;debug&quot;,&quot;dir&quot;,&quot;dirxml&quot;,&quot;error&quot;,&quot;exception&quot;,&quot;group&quot;,&quot;groupCollapsed&quot;,&quot;groupEnd&quot;,&quot;info&quot;,&quot;log&quot;,&quot;profile&quot;,&quot;profileEnd&quot;,&quot;table&quot;,&quot;time&quot;,&quot;timeEnd&quot;,&quot;timeStamp&quot;,&quot;trace&quot;,&quot;warn&quot;];b.console=b.console||{};for(a=0;a&lt;d.length;a++){b.console[d[a]]=b.console[d[a]]||c}}(window));
@@ -840,7 +840,7 @@ default browser behavior.</p>
 <pre><code class="language-bash">sudo grub-mkconfig
 sudo update-grub
 </code></pre>
-<h3 id="links">Links</h3>
+<h3>Links</h3>
 <p>See the <a href="https://help.ubuntu.com/community/Grub2#Saved">Ubuntu Grub2 Help Page</a>
 or this <a href="http://superuser.com/questions/95828/making-default-saved-work-with-grub2/205360#205360">Stack Overflow Answer</a></p>
 ]]></content:encoded>
@@ -859,7 +859,7 @@ in which someone created a pure CSS version of the google doodle.</p>
 <p>I created a <a href="http://jsfiddle.net/F5Uf5/">JSFiddle</a> snippet that day, but never posted it anywhere.</p>
 <p>Anyways, I&#39;ve cleaned the example up a bit, and posted it below. It now contains pure CSS3 controls
 to turn the demo on/off or change the speed of the animation.</p>
-<h2 id="demo">Demo</h2>
+<h2>Demo</h2>
 <style type="text/css">
     img#zoopraxiscope {
         width:230px;
@@ -912,7 +912,7 @@ to turn the demo on/off or change the speed of the animation.</p>
     <img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
 </form>
 
-<h2 id="css">CSS:</h2>
+<h2>CSS:</h2>
 <pre><code class="language-css">&lt;style type=&quot;text/css&quot;&gt;
     img#zoopraxiscope {
         width:230px;
@@ -947,7 +947,7 @@ to turn the demo on/off or change the speed of the animation.</p>
     }
 &lt;/style&gt;
 </code></pre>
-<h2 id="html">HTML:</h2>
+<h2>HTML:</h2>
 <pre><code class="language-html">&lt;form style=&quot;text-align:center&quot;&gt;
   &lt;h3&gt;Turn Animation&lt;/h3&gt;
   &lt;a id=&quot;animation-off&quot; href=&quot;#animation-off&quot;&gt;Off&lt;/a&gt;
@@ -966,7 +966,7 @@ to turn the demo on/off or change the speed of the animation.</p>
   &lt;img id=&quot;zoopraxiscope&quot; src=&quot;/images/posts/2012/05/28/zoopraxiscope.jpg&quot; /&gt;
 &lt;/form&gt;
 </code></pre>
-<h2 id="links">Links</h2>
+<h2>Links</h2>
 <p>Inspired by the <a href="http://www.google.com/doodles/eadweard-j-muybridges-182nd-birthday">Google Doodle</a>
 on April 9th, 2012 celebrating Eadweard J. Muybridge</p>
 <p><em>See:</em></p>
@@ -1055,7 +1055,7 @@ example <a href="https://github.com/mojombo/jekyll/wiki/sites">sites</a>.</p>
             <link>https://www.skratchdot.com/2011/09/open-electribe-editor-v1-0-3-released</link>
             <guid>https://www.skratchdot.com/2011/09/open-electribe-editor-v1-0-3-released</guid>
             <pubDate>Sat, 10 Sep 2011 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 id="v103---released-september-10-2011">v1.0.3 - Released September 10, 2011</h3>
+            <content:encoded><![CDATA[<h3>v1.0.3 - Released September 10, 2011</h3>
 <ul>
 <li><p>[<a href="https://github.com/skratchdot/open-electribe-editor/issues/3">FEATURE REQUEST: #3</a>] Added the ability to import patterns from other .esx files</p>
 </li>
@@ -1149,7 +1149,7 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
             <link>https://www.skratchdot.com/2011/03/open-electribe-editor-v1-0-2-released</link>
             <guid>https://www.skratchdot.com/2011/03/open-electribe-editor-v1-0-2-released</guid>
             <pubDate>Mon, 21 Mar 2011 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 id="v102---released-march-21-2011">v1.0.2 - Released March 21, 2011</h3>
+            <content:encoded><![CDATA[<h3>v1.0.2 - Released March 21, 2011</h3>
 <ul>
 <li><p>Pattern Tab improvements:</p>
 <ul>
@@ -1196,12 +1196,12 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
             <link>https://www.skratchdot.com/2010/10/links-javascript</link>
             <guid>https://www.skratchdot.com/2010/10/links-javascript</guid>
             <pubDate>Sun, 10 Oct 2010 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2 id="books">Books:</h2>
+            <content:encoded><![CDATA[<h2>Books:</h2>
 <ul>
 <li><a href="http://oreilly.com/catalog/9780596517748/">Javascript: The Good Parts</a></li>
 <li><a href="http://oreilly.com/catalog/9780596101992/">Javascript: The Definitive Guide</a></li>
 </ul>
-<h2 id="toolsblogs">TOOLS/BLOGS:</h2>
+<h2>TOOLS/BLOGS:</h2>
 <ul>
 <li><a href="http://jquery.com/">jQuery: The Write Less, Do More, Javascript Library</a></li>
 <li><a href="http://www.jslint.com/">JSLint: The JavaScript Code Quality Tool</a></li>
@@ -1210,27 +1210,27 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
 <li><a href="http://ajaxian.com/">Ajaxian</a></li>
 <li><a href="http://www.quirksmode.org/">QuirksMode</a></li>
 </ul>
-<h2 id="videos">VIDEOS:</h2>
-<h3 id="the-javascript-programming-language">The JavaScript Programming Language</h3>
+<h2>VIDEOS:</h2>
+<h3>The JavaScript Programming Language</h3>
 <ul>
 <li><a href="http://video.yahoo.com/watch/111593/1710507">Douglas Crockford: &quot;The JavaScript Programming Language&quot;/1 of 4</a></li>
 <li><a href="http://video.yahoo.com/watch/111594/1710553">Douglas Crockford: &quot;The JavaScript Programming Language&quot;/2 of 4</a></li>
 <li><a href="http://video.yahoo.com/watch/111595/1710607">Douglas Crockford: &quot;The JavaScript Programming Language&quot;/3 of 4</a></li>
 <li><a href="http://video.yahoo.com/watch/111596/1710658">Douglas Crockford: &quot;The JavaScript Programming Language&quot;/4 of 4</a></li>
 </ul>
-<h3 id="an-inconvenient-api-the-theory-of-the-dom">An Inconvenient API: The Theory of the DOM</h3>
+<h3>An Inconvenient API: The Theory of the DOM</h3>
 <ul>
 <li><a href="http://video.yahoo.com/watch/111582/992708">Douglas Crockford: &quot;Theory of the DOM&quot; (1 of 3)</a></li>
 <li><a href="http://video.yahoo.com/watch/111583/996002">Douglas Crockford: &quot;Theory of the DOM&quot; (2 of 3)</a></li>
 <li><a href="http://video.yahoo.com/watch/111584/996008">Douglas Crockford: &quot;Theory of the DOM&quot; (3 of 3)</a></li>
 </ul>
-<h3 id="advanced-javascript">Advanced JavaScript</h3>
+<h3>Advanced JavaScript</h3>
 <ul>
 <li><a href="http://video.yahoo.com/watch/111585/1027823">Douglas Crockford: &quot;Advanced JavaScript&quot; (1 of 3)</a></li>
 <li><a href="http://video.yahoo.com/watch/111586/1027832">Douglas Crockford: &quot;Advanced JavaScript&quot; (2 of 3)</a></li>
 <li><a href="http://video.yahoo.com/watch/111587/1027854">Douglas Crockford: &quot;Advanced JavaScript&quot; (3 of 3)</a></li>
 </ul>
-<h3 id="crockford-on-javascript-link">Crockford on JavaScript <a href="http://www.yuiblog.com/crockford/">(link)</a></h3>
+<h3>Crockford on JavaScript <a href="http://www.yuiblog.com/crockford/">(link)</a></h3>
 <ul>
 <li><a href="http://developer.yahoo.com/yui/theater/video.php?v=crockonjs-1">Volume One: The Early Years</a></li>
 <li><a href="http://developer.yahoo.com/yui/theater/video.php?v=crockonjs-2">Chapter 2: And Then There Was JavaScript</a></li>
@@ -1239,12 +1239,12 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
 <li><a href="http://developer.yahoo.com/yui/theater/video.php?v=crockonjs-5">Part V: The End of All Things</a></li>
 <li><a href="http://developer.yahoo.com/yui/theater/video.php?v=crockford-loopage">Scene 6: Loopage</a></li>
 </ul>
-<h3 id="john-resig-advancing-javascript-with-libraries">John Resig: &quot;Advancing JavaScript with Libraries</h3>
+<h3>John Resig: &quot;Advancing JavaScript with Libraries</h3>
 <ul>
 <li><a href="http://video.yahoo.com/watch/410472/2391234">John Resig: &quot;Advancing JavaScript with Libraries&quot;/1 of 2</a></li>
 <li><a href="http://video.yahoo.com/watch/412541/2395771">John Resig: &quot;Advancing JavaScript with Libraries&quot;/2 of 2</a></li>
 </ul>
-<h3 id="jsconfeu-link">JSConf.eu <a href="http://jsconfeu.blip.tv/">(link)</a></h3>
+<h3>JSConf.eu <a href="http://jsconfeu.blip.tv/">(link)</a></h3>
 <ul>
 <li><a href="http://jsconfeu.blip.tv/file/3060565/">Steve Souders: Fast by Default</a></li>
 <li><a href="http://jsconfeu.blip.tv/file/2899135/">Ryan Dahl: Node.js</a></li>
@@ -1272,7 +1272,7 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
             <link>https://www.skratchdot.com/2010/04/open-electribe-editor-v1-0-1-beta-released</link>
             <guid>https://www.skratchdot.com/2010/04/open-electribe-editor-v1-0-1-beta-released</guid>
             <pubDate>Sun, 25 Apr 2010 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 id="v101-beta---released-april-25-2010">v1.0.1 Beta - Released April 25, 2010</h3>
+            <content:encoded><![CDATA[<h3>v1.0.1 Beta - Released April 25, 2010</h3>
 <ul>
 <li><p>Splash screen works</p>
 </li>
@@ -1290,7 +1290,7 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
             <link>https://www.skratchdot.com/2010/03/open-electribe-editor-v1-0-0-beta-released</link>
             <guid>https://www.skratchdot.com/2010/03/open-electribe-editor-v1-0-0-beta-released</guid>
             <pubDate>Tue, 09 Mar 2010 05:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3 id="v100beta---released-march-9-2010">v1.0.0.Beta - Released March 9, 2010</h3>
+            <content:encoded><![CDATA[<h3>v1.0.0.Beta - Released March 9, 2010</h3>
 <ul>
 <li><p>Initial Release</p>
 </li>
@@ -1310,7 +1310,7 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
             <pubDate>Sat, 12 Dec 2009 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>Recently I was asked how to programmatically verify ColdFusion DataSources.
 I came up with a few methods of doing so. Each have their pros and cons.</p>
-<h3 id="method-1--trycatch-using-cfquery">Method #1 : Try/Catch using cfquery</h3>
+<h3>Method #1 : Try/Catch using cfquery</h3>
 <p><strong>PROS:</strong></p>
 <ul>
 <li>Can test for &quot;datasource&quot; specific behavior by using a custom
@@ -1354,7 +1354,7 @@ test <em>all</em> datasources. It will work for some datasources, but not all.</
     &lt;/cfoutput&gt;
 &lt;/cffunction&gt;
 </code></pre>
-<h3 id="method-2-trycatch-using-the-datasourceservice-verifydatasource-method">Method #2: Try/Catch using the DataSourceService verifyDatasource() method.</h3>
+<h3>Method #2: Try/Catch using the DataSourceService verifyDatasource() method.</h3>
 <p><strong>PROS:</strong></p>
 <ul>
 <li>Will work for all datasources.</li>
@@ -1390,7 +1390,7 @@ test <em>all</em> datasources. It will work for some datasources, but not all.</
     &lt;/cfoutput&gt;
 &lt;/cffunction&gt;
 </code></pre>
-<h3 id="method-3-admin-api-verifydsn-call">Method #3: Admin API verifyDSN() call</h3>
+<h3>Method #3: Admin API verifyDSN() call</h3>
 <p><strong>PROS:</strong></p>
 <ul>
 <li>Will work for all datasources.</li>
@@ -1420,7 +1420,7 @@ test <em>all</em> datasources. It will work for some datasources, but not all.</
     &lt;/cfoutput&gt;
 &lt;/cffunction&gt;
 </code></pre>
-<h3 id="helper-function">Helper Function:</h3>
+<h3>Helper Function:</h3>
 <p>Here&#39;s a helper function that will return a sorted list of all configured datasource names:</p>
 <pre><code class="language-cfm">&lt;cffunction name=&quot;getDatasourceList&quot; output=&quot;false&quot; returntype=&quot;string&quot;&gt;
     &lt;cfargument name=&quot;sort_type&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;textnocase&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
@@ -1432,7 +1432,7 @@ test <em>all</em> datasources. It will work for some datasources, but not all.</
     &lt;cfreturn ListSort(dsList, arguments.sort_type, arguments.sort_order, arguments.delimiter) /&gt;
 &lt;/cffunction&gt;
 </code></pre>
-<h3 id="testing-all-3-methods">Testing all 3 methods:</h3>
+<h3>Testing all 3 methods:</h3>
 <p>Here&#39;s a small script to test all the functions from this post.
 For this to work correctly, you&#39;ll need to set the correct CFIDE password.</p>
 <pre><code class="language-cfm">&lt;cfset my_cfide_password = &quot;admin&quot; /&gt;

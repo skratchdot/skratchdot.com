@@ -24,7 +24,7 @@ marked.use(
       const html = hljs.highlight(code, { language }).value;
       return html;
     },
-  })
+  }),
 );
 
 export const markdownToHtml = (markdownContent: string): string => {
@@ -32,10 +32,6 @@ export const markdownToHtml = (markdownContent: string): string => {
     pedantic: false,
     gfm: true,
     breaks: false,
-    mangle: false,
-    sanitize: false,
-    smartypants: false,
-    xhtml: false,
   });
   return fixImages(html);
 };
