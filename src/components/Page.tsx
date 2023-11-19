@@ -4,13 +4,13 @@ import PageNav, { PageNavProps } from './PageNav';
 import Footer from './Footer';
 import Header from './Header';
 import PageHead from './PageHead';
-import React from 'react';
+import type { ReactNode } from 'react';
 
 type PageProps = {
-  children: React.ReactNode;
+  children: ReactNode;
   commentsConfig?: DisqusConfig;
-  footerSection?: React.ReactNode;
-  headerSection?: React.ReactNode;
+  footerSection?: ReactNode;
+  headerSection?: ReactNode;
   pageClassName?: string;
   title?: string;
 } & PageNavProps;

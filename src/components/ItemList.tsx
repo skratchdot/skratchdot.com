@@ -1,5 +1,5 @@
+import { Fragment } from 'react';
 import Link from 'next/link';
-import React from 'react';
 
 type ItemListProps = {
   items: Array<string>;
@@ -18,10 +18,10 @@ const ItemList = ({ items, linkPrefix, title }: ItemListProps) => {
         </div>
         <div>
           {items.map((item, number) => (
-            <React.Fragment key={item}>
+            <Fragment key={item}>
               <Link href={`${linkPrefix}${item}`}>{item}</Link>
               {number < items.length - 1 ? ', ' : ''}
-            </React.Fragment>
+            </Fragment>
           ))}
         </div>
       </div>

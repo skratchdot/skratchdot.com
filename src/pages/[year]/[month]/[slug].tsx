@@ -5,7 +5,6 @@ import BlogHeader from '../../../components/BlogHeader';
 import type { NextPage } from 'next';
 import Page from '../../../components/Page';
 import { PageNavProps } from '../../../components/PageNav';
-import React from 'react';
 import { useRouter } from 'next/router';
 
 type BlogPostProps = {

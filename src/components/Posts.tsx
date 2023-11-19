@@ -8,7 +8,6 @@ import ItemList from './ItemList';
 import Link from 'next/link';
 import PageHead from './PageHead';
 import { PostList } from '../lib/posts';
-import React from 'react';
 
 type PostListProps = {
   posts: PostList;

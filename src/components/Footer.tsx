@@ -2,7 +2,6 @@ import { GA_TRACKING_ID, SITE_URL } from '../constants/site';
 
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import React from 'react';
 import Script from 'next/script';
 import TwitterFollow from './TwitterFollow';
 import { useRouter } from 'next/router';

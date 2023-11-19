@@ -6,7 +6,6 @@ import {
 
 import type { NextPage } from 'next';
 import Posts from '../../components/Posts';
-import React from 'react';
 import { stripHtml } from '../../lib/strip-html';
 import { useRouter } from 'next/router';
 

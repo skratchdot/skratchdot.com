@@ -1,7 +1,7 @@
 import { CommentCount } from 'disqus-react';
 import { DISQUS_SHORTNAME } from '../constants/site';
+import { Fragment } from 'react';
 import Link from 'next/link';
-import React from 'react';
 
 type BlogHeaderProps = {
   year: string;
@@ -37,10 +37,10 @@ const BlogHeader = ({
 }: BlogHeaderProps) => {
   const categorySection = Array.isArray(categories)
     ? categories.map((category, index) => (
-        <React.Fragment key={category}>
+        <Fragment key={category}>
           <Link href={`/category/${category}`}>{category}</Link>
           {index < categories.length - 1 ? ', ' : ''}
-        </React.Fragment>
+        </Fragment>
       ))
     : null;
   return (

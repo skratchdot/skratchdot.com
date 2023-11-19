@@ -1,5 +1,5 @@
+import { Fragment } from 'react';
 import Link from 'next/link';
-import React from 'react';
 
 type BlogFooterProps = {
   tags?: Array<string>;
@@ -10,10 +10,10 @@ const BlogFooter = ({ tags }: BlogFooterProps) => {
       <div className="tagList">
         Tagged with:&nbsp;
         {tags.map((tag, index) => (
-          <React.Fragment key={tag}>
+          <Fragment key={tag}>
             <Link href={`/tag/${tag}`}>{tag}</Link>
             {index < tags.length - 1 ? ' • ' : ''}
-          </React.Fragment>
+          </Fragment>
         ))}
       </div>
     );
