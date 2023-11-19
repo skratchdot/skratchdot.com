@@ -5,7 +5,7 @@ type PageHeadProps = {
   title?: string;
 };
 
-const PageHead: React.FC<PageHeadProps> = ({ title }) => {
+const PageHead = ({ title }: PageHeadProps) => {
   let titleContent = title ? `${title} » ${SITE_TITLE}` : SITE_TITLE;
   return (
     <Head>

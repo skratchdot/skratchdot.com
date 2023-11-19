@@ -15,7 +15,7 @@ type PageProps = {
   title?: string;
 } & PageNavProps;
 
-const Page: React.FC<PageProps> = ({
+const Page = ({
   children,
   commentsConfig,
   footerSection,
@@ -26,7 +26,7 @@ const Page: React.FC<PageProps> = ({
   nextUrl,
   previousUrl,
   previousTitle,
-}) => {
+}: PageProps) => {
   return (
     <div className={pageClassName}>
       <PageHead title={title} />

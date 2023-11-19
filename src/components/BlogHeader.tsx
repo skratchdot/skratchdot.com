@@ -27,14 +27,14 @@ const MONTHS = [
   'Dec',
 ];
 
-const BlogHeader: React.FC<BlogHeaderProps> = ({
+const BlogHeader = ({
   year,
   month,
   day,
   postUrl,
   categories,
   title,
-}) => {
+}: BlogHeaderProps) => {
   const categorySection = Array.isArray(categories)
     ? categories.map((category, index) => (
         <React.Fragment key={category}>

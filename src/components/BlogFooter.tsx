@@ -4,7 +4,7 @@ import React from 'react';
 type BlogFooterProps = {
   tags?: Array<string>;
 };
-const BlogFooter: React.FC<BlogFooterProps> = ({ tags }) => {
+const BlogFooter = ({ tags }: BlogFooterProps) => {
   if (Array.isArray(tags)) {
     return (
       <div className="tagList">

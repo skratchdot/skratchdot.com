@@ -15,14 +15,14 @@ type PostListProps = {
   title: string;
 } & PageNavProps;
 
-const Posts: React.FC<PostListProps> = ({
+const Posts = ({
   posts,
   title,
   nextTitle,
   nextUrl,
   previousUrl,
   previousTitle,
-}) => {
+}: PostListProps) => {
   return (
     <>
       <PageHead title={title} />

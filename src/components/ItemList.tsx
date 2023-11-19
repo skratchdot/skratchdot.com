@@ -7,7 +7,7 @@ type ItemListProps = {
   title: string;
 };
 
-const ItemList: React.FC<ItemListProps> = ({ items, linkPrefix, title }) => {
+const ItemList = ({ items, linkPrefix, title }: ItemListProps) => {
   if (items.length) {
     return (
       <div className="clearfix sublist">

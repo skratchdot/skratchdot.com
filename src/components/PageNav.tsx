@@ -8,12 +8,12 @@ export type PageNavProps = {
   previousTitle?: string;
 };
 
-const PageNav: React.FC<PageNavProps> = ({
+const PageNav = ({
   nextUrl,
   nextTitle,
   previousUrl,
   previousTitle,
-}) => {
+}: PageNavProps) => {
   const next = nextUrl ? (
     <Link href={nextUrl}>«{nextTitle || 'Next'}</Link>
   ) : undefined;

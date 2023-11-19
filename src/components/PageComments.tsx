@@ -11,7 +11,7 @@ export type PageCommentsProps = {
   config?: DisqusConfig;
 };
 
-const PageComments: React.FC<PageCommentsProps> = ({ config }) => {
+const PageComments = ({ config }: PageCommentsProps) => {
   if (config) {
     return (
       <>
