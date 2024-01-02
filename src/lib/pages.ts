@@ -27,7 +27,7 @@ export const getAllPages = async (): Promise<PageDataList> => {
       excerpt,
       data: frontmatter,
     } = matter(fileContent, { excerpt: true });
-    const html = markdownToHtml(markdownContent);
+    const html = await markdownToHtml(markdownContent);
     const project: PageData = {
       slug,
       filename,

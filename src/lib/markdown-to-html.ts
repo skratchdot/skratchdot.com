@@ -27,8 +27,9 @@ marked.use(
   }),
 );
 
-export const markdownToHtml = (markdownContent: string): string => {
-  const html = marked.parse(markdownContent, {
+export const markdownToHtml = async (markdownContent: string) => {
+  const html = await marked.parse(markdownContent, {
+    async: false,
     pedantic: false,
     gfm: true,
     breaks: false,

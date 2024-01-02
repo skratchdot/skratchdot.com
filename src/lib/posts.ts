@@ -37,7 +37,7 @@ export const getAllPosts = async () => {
       excerpt,
       data: frontmatter,
     } = matter(fileContent, { excerpt: true });
-    const html = markdownToHtml(markdownContent);
+    const html = await markdownToHtml(markdownContent);
 
     const slugWithDate = path.parse(filename).name;
     const [year, month, day, ...rest] = slugWithDate.split('-');
