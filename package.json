@@ -15,18 +15,16 @@
   "scripts": {
     "clean": "rimraf out",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && pnpm run build:private && pnpm run build:404",
     "build:404": "cp out/404/index.html out/404.html",
     "build:feeds": "node ./_build/feeds.js",
     "build:javadocs": "sh ./_build/javadocs.sh",
-    "build:readmes": "node ./_build/readmes.js && npm run format",
+    "build:readmes": "node ./_build/readmes.js && pnpm run format",
     "build:private": "cp -R _private/ out/ || :",
-    "deploy": "firebase deploy --only hosting",
+    "deploy": "pnpm run clean && pnpm run build && firebase deploy --only hosting",
     "format": "prettier --check --write .",
-    "predeploy": "npm run clean && npm run build",
-    "postbuild": "npm run build:private && npm run build:404",
-    "serve": "npx serve@latest out",
-    "start": "npm run dev",
+    "serve": "pnpm dlx serve@latest out",
+    "start": "pnpm run dev",
     "lint": "next lint"
   },
   "keywords": [],
@@ -54,5 +52,6 @@
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
-  }
+  },
+  "packageManager": "pnpm@8.14.0"
 }

@@ -17,8 +17,8 @@ You can clone the repo, install the npm modules, and run the blog via the follow
 ```bash
 git clone https://github.com/skratchdot/skratchdot.com.git
 cd skratchdot.com
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```
 
 ## Deploy
@@ -32,7 +32,7 @@ The firebase hosting docs are here:
 To perform a deployment, run:
 
 ```bash
-npm run deploy
+pnpm run deploy
 ```
 
 ## Links
