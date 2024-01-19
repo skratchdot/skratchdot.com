@@ -82,8 +82,8 @@ export const getAllPostsWithTag = async (tag: string) => {
 
 export const getAllPostsWithCategory = async (category: string) => {
   const posts = await getAllPosts();
-  return posts.filter(
-    (post) => post?.frontmatter?.categories?.includes(category),
+  return posts.filter((post) =>
+    post?.frontmatter?.categories?.includes(category),
   );
 };
 
