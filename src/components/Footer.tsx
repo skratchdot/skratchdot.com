@@ -3,7 +3,7 @@ import { GA_TRACKING_ID, SITE_URL } from '../constants/site';
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import Script from 'next/script';
-import TwitterFollow from './TwitterFollow';
+import { SocialLinks } from './SocialLinks';
 import { useRouter } from 'next/router';
 
 const Footer = () => {
@@ -18,24 +18,17 @@ const Footer = () => {
         <br />
       </div>
       <footer className="oneColumn">
-        <div>
-          Copyright &#169; {year} <Link href="/">skratchdot</Link>
-          <span className="hspace">&#x2022;</span>
-          Validate:&#160;&#160;
-          <a href={validateUrl}>HTML5</a>
-          <span className="hspace">&#x2022;</span>
-          <a className="noBorder" href="/atom.xml">
-            <img
-              src="/images/feed-icon-14x14.png"
-              alt="RSS/Atom Feed"
-              width="14"
-              height="14"
-              style={{ top: 2 }}
-            />
-          </a>
-          <span className="hspace">&#x2022;</span>
-          <TwitterFollow />
-        </div>
+        <ul className="horizontal">
+          <li>
+            Copyright &#169; 2005-{year} <Link href="/">skratchdot</Link>
+          </li>
+          <li>
+            <a href={validateUrl}>validate HTML5</a>
+          </li>
+          <li>
+            <SocialLinks />
+          </li>
+        </ul>
       </footer>
       <a
         href="https://github.com/skratchdot"

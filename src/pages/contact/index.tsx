@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 import Page from '../../components/Page';
-import TwitterFollow from '../../components/TwitterFollow';
+import { SocialLinks } from '../../components/SocialLinks';
 
 const ContactPage: NextPage = () => {
   return (
@@ -32,7 +32,9 @@ const ContactPage: NextPage = () => {
         Or you can follow me:
         <br />
         <br />
-        <TwitterFollow />
+        <div>
+          <SocialLinks />
+        </div>
         <br />
         <br />
         You can also comment publicly below:

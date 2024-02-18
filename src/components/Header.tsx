@@ -13,7 +13,7 @@ const Header = () => {
         </h1>
       </header>
       <nav id="mainNav" className="oneColumn">
-        <ul>
+        <ul className="horizontal">
           <li>
             <Link href="/" title="Home">
               <span>&#91;</span>Home<span>&#93;</span>

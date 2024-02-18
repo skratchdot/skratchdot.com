@@ -191,18 +191,6 @@ a:active {
   border: 1px solid transparent;
   text-decoration: none;
 }
-/* ie6 hacks for normal links */
-*html a:link,
-*html a:visited,
-*html a:hover,
-*html a:active {
-  border: 0;
-}
-*html a:hover {
-  background: #f5f5f5;
-  border: 1px solid #678;
-  text-decoration: none;
-}
 /* normal hover: blue border */
 a:hover {
   background: #f5f5f5;
@@ -269,6 +257,23 @@ header a:hover span {
 }
 
 /* ----------------------------- */
+/* HORIZONTAL LIST               */
+/* ----------------------------- */
+ul.horizontal {
+  display: flex;
+  margin: 0 1em;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+ul.horizontal li {
+  display: inline-block;
+  padding: 0;
+}
+
+/* ----------------------------- */
 /* MAIN NAVIGATION               */
 /* ----------------------------- */
 nav#mainNav {
@@ -277,21 +282,6 @@ nav#mainNav {
   padding: 5px 0;
   text-align: center;
   text-transform: lowercase;
-}
-nav#mainNav ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-nav#mainNav ul li {
-  display: inline;
-  padding: 0;
-}
-nav#mainNav ul li:before {
-  content: '\0020 \2022 \0020';
-}
-nav#mainNav ul li:first-child:before {
-  content: '';
 }
 /* links in normal state */
 nav#mainNav a,
