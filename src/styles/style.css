@@ -607,7 +607,7 @@ ul.postlist li:nth-child(even) {
   background: #eee;
 }
 ul.postlist li:hover {
-  background: #ddd;
+  background: #e1e1e1;
   box-shadow: 5px 5px 15px #666;
 }
 ul.postlist li div.pl-date {
