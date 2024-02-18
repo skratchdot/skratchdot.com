@@ -37,7 +37,11 @@ const Footer = () => {
           <TwitterFollow />
         </div>
       </footer>
-      <a href="https://github.com/skratchdot" className="github-corner">
+      <a
+        href="https://github.com/skratchdot"
+        className="github-corner"
+        aria-label="View source on GitHub"
+      >
         <svg
           width="80"
           height="80"
@@ -67,7 +71,11 @@ const Footer = () => {
         </svg>
       </a>
       <div id="homepage_link">
-        <Link href="/" style={{ border: 0 }}>
+        <Link
+          href="/"
+          style={{ border: 0 }}
+          aria-label="View the skratchdot.com homepage"
+        >
           <img src="/favicon.ico" alt="skratchdot" width="16" height="16" />
         </Link>
       </div>
