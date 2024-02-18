@@ -10,7 +10,16 @@ const PageHead = ({ title }: PageHeadProps) => {
   return (
     <Head>
       <meta charSet="utf-8" />
-      <title>{titleContent}</title>
+      <meta
+        name="description"
+        content="blog, projects, and social links by @skratchdot"
+      />
+      <meta name="theme-color" content="#c80000" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="apple-mobile-web-app-title" content="skratchdot" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="application-name" content="skratchdot" />
+      <meta name="generator" content="NextJS" />
       <link
         rel="apple-touch-icon"
         sizes="57x57"
@@ -41,7 +50,6 @@ const PageHead = ({ title }: PageHeadProps) => {
         sizes="76x76"
         href="/images/favicons/apple-touch-icon-76x76.png"
       />
-      <meta name="apple-mobile-web-app-title" content="skratchdot" />
       <link
         rel="icon"
         type="image/png"
@@ -60,10 +68,6 @@ const PageHead = ({ title }: PageHeadProps) => {
         href="/images/favicons/favicon-32x32.png"
         sizes="32x32"
       />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="application-name" content="skratchdot" />
-      <meta name="generator" content="NextJS" />
       <link
         rel="alternate"
         type="application/atom+xml"
@@ -82,6 +86,7 @@ const PageHead = ({ title }: PageHeadProps) => {
         title="JSON Feed for skratchdot.com"
         href="/feed.json"
       />
+      <title>{titleContent}</title>
     </Head>
   );
 };
