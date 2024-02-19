@@ -32,9 +32,7 @@ const ContactPage: NextPage = () => {
         Or you can follow me:
         <br />
         <br />
-        <div>
-          <SocialLinks />
-        </div>
+        <SocialLinks size={35} />
         <br />
         <br />
         You can also comment publicly below:
