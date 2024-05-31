@@ -30,16 +30,16 @@
   "keywords": [],
   "devDependencies": {
     "@types/glob": "^8.1.0",
-    "@types/node": "^20.12.7",
-    "@types/react": "^18.3.1",
+    "@types/node": "^20.12.13",
+    "@types/react": "^18.3.3",
     "cheerio": "^1.0.0-rc.10",
     "disqus-react": "^1.1.5",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.2.3",
     "feed": "^4.2.2",
-    "firebase-tools": "^13.7.5",
+    "firebase-tools": "^13.10.2",
     "fs-extra": "^11.2.0",
-    "glob": "^10.3.12",
+    "glob": "^10.4.1",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.9.0",
     "marked": "^12.0.2",
@@ -51,8 +51,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-social-icons": "^6.16.0",
-    "rimraf": "^5.0.5",
+    "rimraf": "^5.0.7",
     "typescript": "^5.4.5"
   },
-  "packageManager": "pnpm@9.0.6"
+  "packageManager": "pnpm@9.1.4+sha256.30a1801ac4e723779efed13a21f4c39f9eb6c9fbb4ced101bce06b422593d7c9"
 }
