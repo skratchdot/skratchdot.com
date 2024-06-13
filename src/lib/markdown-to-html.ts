@@ -1,15 +1,17 @@
+import { Tokens, marked } from 'marked';
+
 import { fixImages } from './fix-images';
 import { gfmHeadingId } from 'marked-gfm-heading-id';
 import hljs from 'highlight.js';
-import { marked } from 'marked';
 import { markedHighlight } from 'marked-highlight';
 
 class SkratchdotRenderer extends marked.Renderer {
-  code(code: string, infostring: string | undefined, escaped: boolean): string {
-    if (infostring === '' || !infostring) {
-      infostring = 'plaintext';
+  code(tokens: Tokens.Code): string {
+    let newLang = tokens.lang;
+    if (newLang === '' || !newLang) {
+      newLang = 'plaintext';
     }
-    return super.code(code, infostring, escaped);
+    return super.code({ ...tokens, lang: newLang });
   }
 }
 

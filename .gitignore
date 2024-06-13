@@ -42,6 +42,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# vscode
+.vscode
+
 # custom
 _drafts
 _private
