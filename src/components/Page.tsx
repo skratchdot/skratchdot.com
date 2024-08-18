@@ -13,6 +13,7 @@ type PageProps = {
   headerSection?: ReactNode;
   pageClassName?: string;
   title?: string;
+  canonical?: string;
 } & PageNavProps;
 
 const Page = ({
@@ -22,6 +23,7 @@ const Page = ({
   headerSection,
   pageClassName,
   title,
+  canonical,
   nextTitle,
   nextUrl,
   previousUrl,
@@ -29,7 +31,7 @@ const Page = ({
 }: PageProps) => {
   return (
     <div className={pageClassName}>
-      <PageHead title={title} />
+      <PageHead title={title} canonical={canonical} />
       <Header />
       <section className="oneColumn">
         <article>

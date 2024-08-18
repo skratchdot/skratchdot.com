@@ -6,6 +6,7 @@ import {
 
 import type { NextPage } from 'next';
 import Posts from '../../components/Posts';
+import { SITE_URL } from '../../constants/site';
 import { stripHtml } from '../../lib/strip-html';
 import { useRouter } from 'next/router';
 
@@ -16,7 +17,13 @@ type CategoryListProps = {
 const CategoryList: NextPage<CategoryListProps> = ({ posts }) => {
   const router = useRouter();
   const { category } = router.query;
-  return <Posts title={`Category "${category}"`} posts={posts} />;
+  return (
+    <Posts
+      title={`Category "${category}"`}
+      posts={posts}
+      canonical={`${SITE_URL}/category/${category}/`}
+    />
+  );
 };
 
 export const getStaticPaths = async () => {

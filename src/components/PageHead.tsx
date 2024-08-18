@@ -3,10 +3,14 @@ import { SITE_TITLE } from '../constants/site';
 
 type PageHeadProps = {
   title?: string;
+  canonical?: string;
 };
 
-const PageHead = ({ title }: PageHeadProps) => {
+const PageHead = ({ title, canonical }: PageHeadProps) => {
   let titleContent = title ? `${title} » ${SITE_TITLE}` : SITE_TITLE;
+  const canonicalContent = canonical ? (
+    <link rel="canonical" href={canonical} />
+  ) : undefined;
   return (
     <Head>
       <meta charSet="utf-8" />
@@ -86,6 +90,7 @@ const PageHead = ({ title }: PageHeadProps) => {
         title="JSON Feed for skratchdot.com"
         href="/feed.json"
       />
+      {canonicalContent}
       <title>{titleContent}</title>
     </Head>
   );

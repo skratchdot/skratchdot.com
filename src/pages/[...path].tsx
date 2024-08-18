@@ -2,6 +2,7 @@ import { PageData, getAllPages } from '../lib/pages';
 
 import { NextPage } from 'next';
 import Page from '../components/Page';
+import { SITE_URL } from '../constants/site';
 import { useRouter } from 'next/router';
 
 const getPageSlug = (path: string | string[] | undefined) => {
@@ -24,7 +25,11 @@ const MarkdownPage: NextPage<PageData> = (props) => {
           title: props.frontmatter.title,
         };
   return (
-    <Page title={props.frontmatter.title} commentsConfig={commentsConfig}>
+    <Page
+      title={props.frontmatter.title}
+      commentsConfig={commentsConfig}
+      canonical={`${SITE_URL}${slug}`}
+    >
       <div dangerouslySetInnerHTML={{ __html: props.html }} />
     </Page>
   );

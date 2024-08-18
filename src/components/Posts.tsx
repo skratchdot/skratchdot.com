@@ -12,11 +12,13 @@ import { PostList } from '../lib/posts';
 type PostListProps = {
   posts: PostList;
   title: string;
+  canonical?: string;
 } & PageNavProps;
 
 const Posts = ({
   posts,
   title,
+  canonical,
   nextTitle,
   nextUrl,
   previousUrl,
@@ -24,7 +26,7 @@ const Posts = ({
 }: PostListProps) => {
   return (
     <>
-      <PageHead title={title} />
+      <PageHead title={title} canonical={canonical} />
       <Header />
       <section id="mainSection" className="oneColumn">
         <article>

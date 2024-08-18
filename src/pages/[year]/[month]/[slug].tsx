@@ -5,6 +5,7 @@ import BlogHeader from '../../../components/BlogHeader';
 import type { NextPage } from 'next';
 import Page from '../../../components/Page';
 import { PageNavProps } from '../../../components/PageNav';
+import { SITE_URL } from '../../../constants/site';
 import { useRouter } from 'next/router';
 
 type BlogPostProps = {
@@ -40,6 +41,7 @@ const BlogPost: NextPage<BlogPostProps> = ({
         />
       }
       title={post.frontmatter.title}
+      canonical={`${SITE_URL}/${post.year}/${post.month}/${post.slug}/`}
       previousTitle={previousTitle}
       previousUrl={previousUrl}
       nextTitle={nextTitle}

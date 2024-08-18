@@ -3,6 +3,7 @@ import { PostList, getAllPostPages } from '../lib/posts';
 import type { NextPage } from 'next';
 import { PageNavProps } from '../components/PageNav';
 import Posts from '../components/Posts';
+import { SITE_URL } from '../constants/site';
 import { stripHtml } from '../lib/strip-html';
 
 type HomePageProps = {
@@ -17,6 +18,7 @@ const HomePage: NextPage<HomePageProps> = ({
   return (
     <Posts
       title="All Posts"
+      canonical={`${SITE_URL}/`}
       posts={posts}
       previousTitle={previousTitle}
       previousUrl={previousUrl}

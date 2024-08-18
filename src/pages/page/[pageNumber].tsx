@@ -3,15 +3,18 @@ import { PostList, getAllPostPages } from '../../lib/posts';
 import type { NextPage } from 'next';
 import { PageNavProps } from '../../components/PageNav';
 import Posts from '../../components/Posts';
+import { SITE_URL } from '../../constants/site';
 import { stripHtml } from '../../lib/strip-html';
 import { useRouter } from 'next/router';
 
 type PageNumberProps = {
   posts: PostList;
+  currentPage: number;
 } & PageNavProps;
 
 const PageNumber: NextPage<PageNumberProps> = ({
   posts,
+  currentPage,
   previousTitle,
   previousUrl,
   nextTitle,
@@ -20,6 +23,7 @@ const PageNumber: NextPage<PageNumberProps> = ({
   return (
     <Posts
       title="All Posts"
+      canonical={`${SITE_URL}/page/${currentPage}/`}
       posts={posts}
       previousTitle={previousTitle}
       previousUrl={previousUrl}
@@ -54,6 +58,7 @@ export const getStaticProps = async ({ params }: any) => {
   return {
     props: {
       posts: stripHtml(page),
+      currentPage,
       previousTitle: 'Older',
       previousUrl:
         previousPage <= pages.length ? `/page/${previousPage}` : null,

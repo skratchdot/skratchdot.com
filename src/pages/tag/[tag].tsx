@@ -2,6 +2,7 @@ import { PostList, getAllPostsWithTag, getAllTags } from '../../lib/posts';
 
 import type { NextPage } from 'next';
 import Posts from '../../components/Posts';
+import { SITE_URL } from '../../constants/site';
 import { stripHtml } from '../../lib/strip-html';
 import { useRouter } from 'next/router';
 
@@ -12,7 +13,13 @@ type TagListProps = {
 const TagList: NextPage<TagListProps> = ({ posts }) => {
   const router = useRouter();
   const { tag } = router.query;
-  return <Posts title={`Tag "${tag}"`} posts={posts} />;
+  return (
+    <Posts
+      title={`Tag "${tag}"`}
+      posts={posts}
+      canonical={`${SITE_URL}/category/${tag}/`}
+    />
+  );
 };
 
 export const getStaticPaths = async () => {

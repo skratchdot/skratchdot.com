@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 import Page from '../../components/Page';
+import { SITE_URL } from '../../constants/site';
 import { SocialLinks } from '../../components/SocialLinks';
 
 const ContactPage: NextPage = () => {
@@ -12,6 +13,7 @@ const ContactPage: NextPage = () => {
         title: 'Contact',
       }}
       title="Contact"
+      canonical={`${SITE_URL}/contact/`}
     >
       <h1>Contact</h1>
       <div className="center">
