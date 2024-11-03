@@ -41,7 +41,7 @@ export const SocialLinks = ({ size = 25 }: SocialLinksProps) => {
       <SocialIcon
         style={style}
         label="Bluesky Profile"
-        url="https://bsky.app/profile/skratchdot.bsky.social"
+        url="https://bsky.app/profile/skratchdot.com"
       />
       <SocialIcon
         style={style}
