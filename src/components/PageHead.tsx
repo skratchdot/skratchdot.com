@@ -7,7 +7,7 @@ type PageHeadProps = {
 };
 
 const PageHead = ({ title, canonical }: PageHeadProps) => {
-  let titleContent = title ? `${title} » ${SITE_TITLE}` : SITE_TITLE;
+  const titleContent = title ? `${title} » ${SITE_TITLE}` : SITE_TITLE;
   const canonicalContent = canonical ? (
     <link rel="canonical" href={canonical} />
   ) : undefined;

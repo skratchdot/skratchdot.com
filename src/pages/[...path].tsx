@@ -1,6 +1,6 @@
+import { GetStaticPropsContext, NextPage } from 'next';
 import { PageData, getAllPages } from '../lib/pages';
 
-import { NextPage } from 'next';
 import Page from '../components/Page';
 import { SITE_URL } from '../constants/site';
 import { useRouter } from 'next/router';
@@ -47,8 +47,8 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({ params }: any) => {
-  const { path } = params;
+export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
+  const { path } = params ?? {};
   const pages = await getAllPages();
   const slug = getPageSlug(path);
   const props = pages.find((page) => page.slug === slug);

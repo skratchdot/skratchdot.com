@@ -1,13 +1,26 @@
 import { defineConfig } from 'eslint/config';
-import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import gitignore from 'eslint-config-flat-gitignore';
+import js from '@eslint/js';
+//import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
+import tseslint from 'typescript-eslint';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-export default defineConfig([
+const eslintConfig = defineConfig([
+  gitignore(),
   {
-    extends: [...nextCoreWebVitals],
+    ignores: ['_ignore/**', 'public/**'],
   },
+  {
+    // TODO: fix these ignores
+    ignores: [
+      '_build/feeds.js',
+      '_build/readmes.js',
+      '.prettierrc.js',
+      'next.config.js',
+    ],
+  },
+  js.configs.recommended, // Use recommended rules
+  tseslint.configs.recommended,
+  //...nextCoreWebVitals,
 ]);
+
+export default eslintConfig;

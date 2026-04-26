@@ -18,7 +18,7 @@ export type PostData = {
     tags?: Array<string>;
     type?: string;
     status?: string;
-    [key: string]: any;
+    [key: string]: unknown;
   };
 };
 export type PostList = Array<PostData>;
@@ -29,12 +29,12 @@ export const getAllPosts = async () => {
   const filenames = await fs.promises.readdir(postsDirectory);
   const posts: PostList = [];
 
-  for (let filename of filenames) {
+  for (const filename of filenames) {
     const pathname = path.resolve(postsDirectory, filename);
     const fileContent = await fs.promises.readFile(pathname, 'utf8');
     const {
       content: markdownContent,
-      excerpt,
+      //excerpt,
       data: frontmatter,
     } = matter(fileContent, { excerpt: true });
     const html = await markdownToHtml(markdownContent);

@@ -11,7 +11,7 @@ export type PageData = {
   frontmatter: {
     layout?: string;
     title?: string;
-    [key: string]: any;
+    [key: string]: unknown;
   };
 };
 type PageDataList = Array<PageData>;
@@ -19,12 +19,12 @@ type PageDataList = Array<PageData>;
 export const getAllPages = async (): Promise<PageDataList> => {
   const files = await glob('_pages/**/index.md');
   const pages = [];
-  for (let filename of files) {
+  for (const filename of files) {
     const slug = path.parse(filename).dir.replace(/^_pages/gi, '');
     const fileContent = await fs.promises.readFile(filename, 'utf8');
     const {
       content: markdownContent,
-      excerpt,
+      //excerpt,
       data: frontmatter,
     } = matter(fileContent, { excerpt: true });
     const html = await markdownToHtml(markdownContent);

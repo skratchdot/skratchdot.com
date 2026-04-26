@@ -9,6 +9,7 @@ import type { PostList } from './posts';
  */
 export const stripHtml = (postList: PostList) => {
   return postList.map((post) => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { html, ...other } = post;
     return { ...other };
   });

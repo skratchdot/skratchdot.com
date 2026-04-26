@@ -26,7 +26,7 @@ const HomePage: NextPage<HomePageProps> = ({
   );
 };
 
-export const getStaticProps = async ({ params }: any) => {
+export const getStaticProps = async () => {
   const pages = await getAllPostPages();
   const page = pages[0];
   return {

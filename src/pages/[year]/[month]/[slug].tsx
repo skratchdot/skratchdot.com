@@ -1,8 +1,8 @@
+import type { GetStaticPropsContext, NextPage } from 'next';
 import { PostData, getAllPosts } from '../../../lib/posts';
 
 import BlogFooter from '../../../components/BlogFooter';
 import BlogHeader from '../../../components/BlogHeader';
-import type { NextPage } from 'next';
 import Page from '../../../components/Page';
 import { PageNavProps } from '../../../components/PageNav';
 import { SITE_URL } from '../../../constants/site';
@@ -55,7 +55,7 @@ const BlogPost: NextPage<BlogPostProps> = ({
 export const getStaticPaths = async () => {
   const posts = await getAllPosts();
   return {
-    paths: posts.map((post: any) => {
+    paths: posts.map((post: PostData) => {
       const { year, month, slug } = post;
       return {
         params: {
@@ -69,8 +69,8 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({ params }: any) => {
-  const { year, month, slug } = params;
+export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
+  const { year, month, slug } = params ?? {};
   const posts = await getAllPosts();
   const postIndex = posts.findIndex(
     (post) => post.year === year && post.month === month && post.slug === slug,
@@ -80,12 +80,12 @@ export const getStaticProps = async ({ params }: any) => {
   const previous = posts[postIndex + 1];
   const next = posts[postIndex - 1];
 
-  let previousTitle = previous ? previous.frontmatter.title : null;
-  let previousUrl = previous
+  const previousTitle = previous ? previous.frontmatter.title : null;
+  const previousUrl = previous
     ? `/${previous.year}/${previous.month}/${previous.slug}`
     : null;
-  let nextTitle = next ? next.frontmatter.title : null;
-  let nextUrl = next ? `/${next.year}/${next.month}/${next.slug}` : null;
+  const nextTitle = next ? next.frontmatter.title : null;
+  const nextUrl = next ? `/${next.year}/${next.month}/${next.slug}` : null;
 
   return {
     props: {

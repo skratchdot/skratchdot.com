@@ -1,6 +1,6 @@
+import type { GetStaticPropsContext, NextPage } from 'next';
 import { PostList, getAllPostsWithTag, getAllTags } from '../../lib/posts';
 
-import type { NextPage } from 'next';
 import Posts from '../../components/Posts';
 import { SITE_URL } from '../../constants/site';
 import { stripHtml } from '../../lib/strip-html';
@@ -36,9 +36,9 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({ params }: any) => {
-  const { tag } = params;
-  const posts = await getAllPostsWithTag(tag);
+export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
+  const { tag } = params ?? {};
+  const posts = await getAllPostsWithTag(typeof tag === 'string' ? tag : '');
   return {
     props: {
       posts: stripHtml(posts),

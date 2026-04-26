@@ -1,11 +1,10 @@
+import type { GetStaticPropsContext, NextPage } from 'next';
 import { PostList, getAllPostPages } from '../../lib/posts';
 
-import type { NextPage } from 'next';
 import { PageNavProps } from '../../components/PageNav';
 import Posts from '../../components/Posts';
 import { SITE_URL } from '../../constants/site';
 import { stripHtml } from '../../lib/strip-html';
-import { useRouter } from 'next/router';
 
 type PageNumberProps = {
   posts: PostList;
@@ -47,10 +46,12 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({ params }: any) => {
-  const { pageNumber } = params;
+export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
+  const { pageNumber } = params ?? {};
   const pages = await getAllPostPages();
-  const currentPage = parseFloat(pageNumber);
+  const currentPage = parseFloat(
+    typeof pageNumber === 'string' ? pageNumber : '',
+  );
   const pageIndex = currentPage - 1;
   const previousPage = currentPage + 1;
   const nextPage = currentPage - 1;
