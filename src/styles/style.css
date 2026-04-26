@@ -630,6 +630,16 @@ ul.postlist li div.sublist-title {
 }
 
 /* ----------------------------- */
+/* Error Page: 404               */
+/* ----------------------------- */
+.ErrorPage_404 article {
+  background-image: url('/images/404-cat-fail.gif');
+  background-size: 100% 100%;
+  text-align: center;
+  height: 300px;
+}
+
+/* ----------------------------- */
 /* FLOATING AND ALIGNMENT        */
 /* ----------------------------- */
 .right {
