@@ -60,7 +60,6 @@ hideComments: true
   organize, edit, and create .esx files for the Korg ESX-1.
 
 - **Archived:**
-
   - [Esx Wave Organizer](/projects/esx-wave-organizer/) - A program that allows you to
     organize, edit, and create .esx files for the Korg ESX-1.
 

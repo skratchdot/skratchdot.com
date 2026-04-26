@@ -35,7 +35,6 @@ status: publish
 
 - Changed the "Extract All Waves" feature. Before it would rename files with the sample name last.
   Now it renames them with the sample name first. So:
-
   - BEFORE: "ESXextracted-MONO-140-M1PickBs.wav"
 
   - NOW: "M1PickBs-MONO-140-ESXextracted.wav"

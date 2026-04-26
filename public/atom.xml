@@ -14,7 +14,7 @@
     <subtitle>The skratchdot.com feed</subtitle>
     <logo>https://www.skratchdot.com/images/logo.png</logo>
     <icon>https://www.skratchdot.com/favicon.ico</icon>
-    <rights>Copyright © 2023 skratchdot</rights>
+    <rights>Copyright © 2026 skratchdot</rights>
     <entry>
         <title type="html"><![CDATA[Creating Virtual MIDI Ports On OSX for WebMidi]]></title>
         <id>https://www.skratchdot.com/2016/01/creating-virtual-midi-ports-on-osx</id>
@@ -811,18 +811,18 @@ private struct function convertStringToStruct(required string key, required any 
 <p>Here&#39;s a quick example usage:</p>
 <pre><code class="language-cfm">&lt;cfscript&gt;
 
-    // Declare a struct. We will later append to this
-    obj = StructNew();
+	// Declare a struct. We will later append to this
+	obj = StructNew();
 
-    // Create a few top level keys
-    obj[&quot;ab&quot;] = &quot;foo&quot;;
-    obj[&quot;b&quot;] = &quot;bar&quot;;
+	// Create a few top level keys
+	obj[&quot;ab&quot;] = &quot;foo&quot;;
+	obj[&quot;b&quot;] = &quot;bar&quot;;
 
-    // Append a dynamically created structure
-    StructAppend(obj, convertStringToStruct(&quot;a.b.c&quot;, &quot;baz&quot;), false);
+	// Append a dynamically created structure
+	StructAppend(obj, convertStringToStruct(&quot;a.b.c&quot;, &quot;baz&quot;), false);
 
-    // Show our output
-    WriteDump(obj);
+	// Show our output
+	WriteDump(obj);
 
 &lt;/cfscript&gt;
 </code></pre>
@@ -971,30 +971,28 @@ default browser behavior.</p>
 <!-- prettier-ignore-start -->
 <pre><code class="language-js">/*jslint browser: true, plusplus: true */
 (function (window) {
-    &#39;use strict&#39;;
+	&#39;use strict&#39;;
 
-    var i = 0,
-        emptyFunction = function () {},
-        functionNames = [
-            &#39;assert&#39;, &#39;clear&#39;, &#39;count&#39;, &#39;debug&#39;, &#39;dir&#39;,
-            &#39;dirxml&#39;, &#39;error&#39;, &#39;exception&#39;, &#39;group&#39;, &#39;groupCollapsed&#39;,
-            &#39;groupEnd&#39;, &#39;info&#39;, &#39;log&#39;, &#39;profile&#39;, &#39;profileEnd&#39;, &#39;table&#39;,
-            &#39;time&#39;, &#39;timeEnd&#39;, &#39;timeStamp&#39;, &#39;trace&#39;, &#39;warn&#39;
-        ];
+	var i = 0,
+		emptyFunction = function () {},
+		functionNames = [
+			&#39;assert&#39;, &#39;clear&#39;, &#39;count&#39;, &#39;debug&#39;, &#39;dir&#39;,
+			&#39;dirxml&#39;, &#39;error&#39;, &#39;exception&#39;, &#39;group&#39;, &#39;groupCollapsed&#39;,
+			&#39;groupEnd&#39;, &#39;info&#39;, &#39;log&#39;, &#39;profile&#39;, &#39;profileEnd&#39;, &#39;table&#39;,
+			&#39;time&#39;, &#39;timeEnd&#39;, &#39;timeStamp&#39;, &#39;trace&#39;, &#39;warn&#39;
+		];
 
-    // Make sure window.console exists
-    window.console = window.console || {};
+	// Make sure window.console exists
+	window.console = window.console || {};
 
-    // Make sure all functions exist
-    for (i = 0; i &lt; functionNames.length; i++) {
-        window.console[functionNames[i]] = window.console[functionNames[i]] || emptyFunction;
-    }
+	// Make sure all functions exist
+	for (i = 0; i &lt; functionNames.length; i++) {
+		window.console[functionNames[i]] = window.console[functionNames[i]] || emptyFunction;
+	}
 
 }(window));
 </code></pre>
-<!-- prettier-ignore-end -->
-
-<h3>Minified Version:</h3>
+<!-- prettier-ignore-end --><h3>Minified Version:</h3>
 <!-- prettier-ignore-start -->
 <pre><code class="language-js">/* https://www.skratchdot.com/2012/05/prevent-console-calls-from-throwing-errors/ */
 (function(b){var a=0,c=function(){},d=[&quot;assert&quot;,&quot;clear&quot;,&quot;count&quot;,&quot;debug&quot;,&quot;dir&quot;,&quot;dirxml&quot;,&quot;error&quot;,&quot;exception&quot;,&quot;group&quot;,&quot;groupCollapsed&quot;,&quot;groupEnd&quot;,&quot;info&quot;,&quot;log&quot;,&quot;profile&quot;,&quot;profileEnd&quot;,&quot;table&quot;,&quot;time&quot;,&quot;timeEnd&quot;,&quot;timeStamp&quot;,&quot;trace&quot;,&quot;warn&quot;];b.console=b.console||{};for(a=0;a&lt;d.length;a++){b.console[d[a]]=b.console[d[a]]||c}}(window));
@@ -1060,90 +1058,86 @@ in which someone created a pure CSS version of the google doodle.</p>
 to turn the demo on/off or change the speed of the animation.</p>
 <h2>Demo</h2>
 <style type="text/css">
-    img#zoopraxiscope {
-        width:230px;
-        height:230px;		
-    }
-    @-webkit-keyframes spin {
-        from { -webkit-transform: rotate(0deg); }
-        to { -webkit-transform: rotate(-360deg); }
-    }
-    @-moz-keyframes spin {
-        from { -moz-transform: rotate(0deg); }
-        to { -moz-transform: rotate(-360deg); }
-    }
-    @-ms-keyframes spin {
-        from { -ms-transform: rotate(0deg); }
-        to { -ms-transform: rotate(-360deg); }
-    }
-    a#animation-on:target~input[value=fast]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 230ms infinite linear; 
-        -moz-animation: spin 230ms infinite linear; 
-        -ms-animation: spin 230ms infinite linear; 
-    }
-    a#animation-on:target~input[value=medium]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 920ms infinite linear; 
-        -moz-animation: spin 920ms infinite linear; 
-        -ms-animation: spin 920ms infinite linear; 
-    }
-    a#animation-on:target~input[value=slow]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 2000ms infinite linear; 
-        -moz-animation: spin 2000ms infinite linear; 
-        -ms-animation: spin 2000ms infinite linear; 
-    }
-</style>
-
-<form style="text-align:center">
-    <h3>Turn Animation</h3>
-    <a id="animation-off" href="#animation-off">Off</a>
-    <a id="animation-on" href="#animation-on">On</a>
-    <br />
-    <h3>Speed:</h3>
-    <label for="fast">Fast:</label>
-    <input type="radio" name="speed" id="fast" value="fast" checked="checked" />
-    <br />
-    <label for="medium">Medium:</label>
-    <input type="radio" name="speed" id="medium" value="medium" />
-    <br />
-    <label for="slow">Slow:</label>
-    <input type="radio" name="speed" id="slow" value="slow" />
-    <div style="height:50px">&nbsp;</div>
-    <img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
-</form>
-
-<h2>CSS:</h2>
+	img#zoopraxiscope {
+		width:230px;
+		height:230px;		
+	}
+	@-webkit-keyframes spin {
+		from { -webkit-transform: rotate(0deg); }
+		to { -webkit-transform: rotate(-360deg); }
+	}
+	@-moz-keyframes spin {
+		from { -moz-transform: rotate(0deg); }
+		to { -moz-transform: rotate(-360deg); }
+	}
+	@-ms-keyframes spin {
+		from { -ms-transform: rotate(0deg); }
+		to { -ms-transform: rotate(-360deg); }
+	}
+	a#animation-on:target~input[value=fast]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 230ms infinite linear; 
+		-moz-animation: spin 230ms infinite linear; 
+		-ms-animation: spin 230ms infinite linear; 
+	}
+	a#animation-on:target~input[value=medium]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 920ms infinite linear; 
+		-moz-animation: spin 920ms infinite linear; 
+		-ms-animation: spin 920ms infinite linear; 
+	}
+	a#animation-on:target~input[value=slow]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 2000ms infinite linear; 
+		-moz-animation: spin 2000ms infinite linear; 
+		-ms-animation: spin 2000ms infinite linear; 
+	}
+</style><form style="text-align:center">
+	<h3>Turn Animation</h3>
+	<a id="animation-off" href="#animation-off">Off</a>
+	<a id="animation-on" href="#animation-on">On</a>
+	<br />
+	<h3>Speed:</h3>
+	<label for="fast">Fast:</label>
+	<input type="radio" name="speed" id="fast" value="fast" checked="checked" />
+	<br />
+	<label for="medium">Medium:</label>
+	<input type="radio" name="speed" id="medium" value="medium" />
+	<br />
+	<label for="slow">Slow:</label>
+	<input type="radio" name="speed" id="slow" value="slow" />
+	<div style="height:50px">&nbsp;</div>
+	<img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
+</form><h2>CSS:</h2>
 <pre><code class="language-css">&lt;style type=&quot;text/css&quot;&gt;
-    img#zoopraxiscope {
-        width:230px;
-        height:230px;
-    }
-    @-webkit-keyframes spin {
-        from { -webkit-transform: rotate(0deg); }
-        to { -webkit-transform: rotate(-360deg); }
-    }
-    @-moz-keyframes spin {
-        from { -moz-transform: rotate(0deg); }
-        to { -moz-transform: rotate(-360deg); }
-    }
-    @-ms-keyframes spin {
-        from { -ms-transform: rotate(0deg); }
-        to { -ms-transform: rotate(-360deg); }
-    }
-    a#animation-on:target~input[value=fast]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 230ms infinite linear;
-        -moz-animation: spin 230ms infinite linear;
-        -ms-animation: spin 230ms infinite linear;
-    }
-    a#animation-on:target~input[value=medium]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 920ms infinite linear;
-        -moz-animation: spin 920ms infinite linear;
-        -ms-animation: spin 920ms infinite linear;
-    }
-    a#animation-on:target~input[value=slow]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 2000ms infinite linear;
-        -moz-animation: spin 2000ms infinite linear;
-        -ms-animation: spin 2000ms infinite linear;
-    }
+	img#zoopraxiscope {
+		width:230px;
+		height:230px;
+	}
+	@-webkit-keyframes spin {
+		from { -webkit-transform: rotate(0deg); }
+		to { -webkit-transform: rotate(-360deg); }
+	}
+	@-moz-keyframes spin {
+		from { -moz-transform: rotate(0deg); }
+		to { -moz-transform: rotate(-360deg); }
+	}
+	@-ms-keyframes spin {
+		from { -ms-transform: rotate(0deg); }
+		to { -ms-transform: rotate(-360deg); }
+	}
+	a#animation-on:target~input[value=fast]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 230ms infinite linear;
+		-moz-animation: spin 230ms infinite linear;
+		-ms-animation: spin 230ms infinite linear;
+	}
+	a#animation-on:target~input[value=medium]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 920ms infinite linear;
+		-moz-animation: spin 920ms infinite linear;
+		-ms-animation: spin 920ms infinite linear;
+	}
+	a#animation-on:target~input[value=slow]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 2000ms infinite linear;
+		-moz-animation: spin 2000ms infinite linear;
+		-ms-animation: spin 2000ms infinite linear;
+	}
 &lt;/style&gt;
 </code></pre>
 <h2>HTML:</h2>
@@ -1635,30 +1629,30 @@ actually testing the validity of the datasource (a CON).</li>
 test <em>all</em> datasources. It will work for some datasources, but not all.</p>
 <p><strong>SOURCE:</strong></p>
 <pre><code class="language-cfm">&lt;cffunction name=&quot;verifyDsnList1&quot; output=&quot;true&quot; returntype=&quot;void&quot;&gt;
-    &lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
-    &lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
-    &lt;cfset var local = StructNew() /&gt;
-    &lt;cfoutput&gt;
-        &lt;hr /&gt;
-        &lt;b&gt;&lt;u&gt;veriftyDsnList1&lt;/u&gt;&lt;/b&gt;
-        &lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
-            &lt;cftry&gt;
-                &lt;hr /&gt;
-                &lt;cfquery name=&quot;local.qVerifyDatasource&quot; datasource=&quot;#local.currentName#&quot;&gt;
-                    SELECT 1
-                &lt;/cfquery&gt;
-                &lt;cfif local.qVerifyDatasource.RecordCount gt 0&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=true]
-                &lt;cfelse&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=false]
-                &lt;/cfif&gt;
-                &lt;cfcatch&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=false] [ERROR: #cfcatch.message#]
-                &lt;/cfcatch&gt;
-            &lt;/cftry&gt;
-        &lt;/cfloop&gt;
-        &lt;hr /&gt;
-    &lt;/cfoutput&gt;
+	&lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
+	&lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
+	&lt;cfset var local = StructNew() /&gt;
+	&lt;cfoutput&gt;
+		&lt;hr /&gt;
+		&lt;b&gt;&lt;u&gt;veriftyDsnList1&lt;/u&gt;&lt;/b&gt;
+		&lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
+			&lt;cftry&gt;
+				&lt;hr /&gt;
+				&lt;cfquery name=&quot;local.qVerifyDatasource&quot; datasource=&quot;#local.currentName#&quot;&gt;
+					SELECT 1
+				&lt;/cfquery&gt;
+				&lt;cfif local.qVerifyDatasource.RecordCount gt 0&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=true]
+				&lt;cfelse&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=false]
+				&lt;/cfif&gt;
+				&lt;cfcatch&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=false] [ERROR: #cfcatch.message#]
+				&lt;/cfcatch&gt;
+			&lt;/cftry&gt;
+		&lt;/cfloop&gt;
+		&lt;hr /&gt;
+	&lt;/cfoutput&gt;
 &lt;/cffunction&gt;
 </code></pre>
 <h3>Method #2: Try/Catch using the DataSourceService verifyDatasource() method.</h3>
@@ -1673,28 +1667,28 @@ test <em>all</em> datasources. It will work for some datasources, but not all.</
 </ul>
 <p><strong>SOURCE:</strong></p>
 <pre><code class="language-cfm">&lt;cffunction name=&quot;verifyDsnList2&quot; output=&quot;true&quot; returntype=&quot;void&quot;&gt;
-    &lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
-    &lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
-    &lt;cfset var local = StructNew() /&gt;
-    &lt;cfset local.dsService = CreateObject(&quot;java&quot;, &quot;coldfusion.server.ServiceFactory&quot;).DataSourceService /&gt;
-    &lt;cfoutput&gt;
-        &lt;hr /&gt;
-        &lt;b&gt;&lt;u&gt;veriftyDsnList2&lt;/u&gt;&lt;/b&gt;
-        &lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
-            &lt;cftry&gt;
-                &lt;hr /&gt;
-                &lt;cfif local.dsService.verifyDatasource(local.currentName)&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=true]
-                &lt;cfelse&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=false]
-                &lt;/cfif&gt;
-                &lt;cfcatch&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=false] [ERROR: #cfcatch.message#]
-                &lt;/cfcatch&gt;
-            &lt;/cftry&gt;
-        &lt;/cfloop&gt;
-        &lt;hr /&gt;
-    &lt;/cfoutput&gt;
+	&lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
+	&lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
+	&lt;cfset var local = StructNew() /&gt;
+	&lt;cfset local.dsService = CreateObject(&quot;java&quot;, &quot;coldfusion.server.ServiceFactory&quot;).DataSourceService /&gt;
+	&lt;cfoutput&gt;
+		&lt;hr /&gt;
+		&lt;b&gt;&lt;u&gt;veriftyDsnList2&lt;/u&gt;&lt;/b&gt;
+		&lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
+			&lt;cftry&gt;
+				&lt;hr /&gt;
+				&lt;cfif local.dsService.verifyDatasource(local.currentName)&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=true]
+				&lt;cfelse&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=false]
+				&lt;/cfif&gt;
+				&lt;cfcatch&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=false] [ERROR: #cfcatch.message#]
+				&lt;/cfcatch&gt;
+			&lt;/cftry&gt;
+		&lt;/cfloop&gt;
+		&lt;hr /&gt;
+	&lt;/cfoutput&gt;
 &lt;/cffunction&gt;
 </code></pre>
 <h3>Method #3: Admin API verifyDSN() call</h3>
@@ -1710,33 +1704,33 @@ test <em>all</em> datasources. It will work for some datasources, but not all.</
 </ul>
 <p><strong>SOURCE:</strong></p>
 <pre><code class="language-cfm">&lt;cffunction name=&quot;verifyDsnList3&quot; output=&quot;true&quot; returntype=&quot;void&quot;&gt;
-    &lt;cfargument name=&quot;cfide_password&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
-    &lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
-    &lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
-    &lt;cfset var local = StructNew() /&gt;
-    &lt;cfset local.admin = createObject(&quot;component&quot;,&quot;cfide.adminapi.administrator&quot;).login(arguments.cfide_password) /&gt;
-    &lt;cfset local.dsObj = createObject(&quot;component&quot;,&quot;cfide.adminapi.datasource&quot;) /&gt;
-    &lt;cfoutput&gt;
-        &lt;hr /&gt;
-        &lt;b&gt;&lt;u&gt;veriftyDsnList3&lt;/u&gt;&lt;/b&gt;
-        &lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
-            &lt;hr /&gt;
-            DATASOURCE: #local.currentName# [VERIFIED=#local.dsObj.verifyDSN(local.currentName)#]
-        &lt;/cfloop&gt;
-        &lt;hr /&gt;
-    &lt;/cfoutput&gt;
+	&lt;cfargument name=&quot;cfide_password&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
+	&lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
+	&lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
+	&lt;cfset var local = StructNew() /&gt;
+	&lt;cfset local.admin = createObject(&quot;component&quot;,&quot;cfide.adminapi.administrator&quot;).login(arguments.cfide_password) /&gt;
+	&lt;cfset local.dsObj = createObject(&quot;component&quot;,&quot;cfide.adminapi.datasource&quot;) /&gt;
+	&lt;cfoutput&gt;
+		&lt;hr /&gt;
+		&lt;b&gt;&lt;u&gt;veriftyDsnList3&lt;/u&gt;&lt;/b&gt;
+		&lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
+			&lt;hr /&gt;
+			DATASOURCE: #local.currentName# [VERIFIED=#local.dsObj.verifyDSN(local.currentName)#]
+		&lt;/cfloop&gt;
+		&lt;hr /&gt;
+	&lt;/cfoutput&gt;
 &lt;/cffunction&gt;
 </code></pre>
 <h3>Helper Function:</h3>
 <p>Here&#39;s a helper function that will return a sorted list of all configured datasource names:</p>
 <pre><code class="language-cfm">&lt;cffunction name=&quot;getDatasourceList&quot; output=&quot;false&quot; returntype=&quot;string&quot;&gt;
-    &lt;cfargument name=&quot;sort_type&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;textnocase&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
-    &lt;cfargument name=&quot;sort_order&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;asc&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
-    &lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
-    &lt;cfset var dsService = CreateObject(&quot;java&quot;, &quot;coldfusion.server.ServiceFactory&quot;).DataSourceService /&gt;
-    &lt;cfset var sDatasources = dsService.getDatasources() /&gt;
-    &lt;cfset var dsList = StructKeyList(sDatasources, arguments.delimiter) /&gt;
-    &lt;cfreturn ListSort(dsList, arguments.sort_type, arguments.sort_order, arguments.delimiter) /&gt;
+	&lt;cfargument name=&quot;sort_type&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;textnocase&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
+	&lt;cfargument name=&quot;sort_order&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;asc&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
+	&lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
+	&lt;cfset var dsService = CreateObject(&quot;java&quot;, &quot;coldfusion.server.ServiceFactory&quot;).DataSourceService /&gt;
+	&lt;cfset var sDatasources = dsService.getDatasources() /&gt;
+	&lt;cfset var dsList = StructKeyList(sDatasources, arguments.delimiter) /&gt;
+	&lt;cfreturn ListSort(dsList, arguments.sort_type, arguments.sort_order, arguments.delimiter) /&gt;
 &lt;/cffunction&gt;
 </code></pre>
 <h3>Testing all 3 methods:</h3>
@@ -1746,12 +1740,12 @@ For this to work correctly, you&#39;ll need to set the correct CFIDE password.</
 &lt;cfset my_datasource_list = getDatasourceList() /&gt;
 
 &lt;cfoutput&gt;
-    #verifyDsnList1(my_datasource_list)#
-    &lt;br /&gt;
-    #verifyDsnList2(my_datasource_list)#
-    &lt;br /&gt;
-    #verifyDsnList3(my_cfide_password, my_datasource_list)#
-    &lt;br /&gt;
+	#verifyDsnList1(my_datasource_list)#
+	&lt;br /&gt;
+	#verifyDsnList2(my_datasource_list)#
+	&lt;br /&gt;
+	#verifyDsnList3(my_cfide_password, my_datasource_list)#
+	&lt;br /&gt;
 &lt;/cfoutput&gt;
 </code></pre>
 ]]></content>
@@ -1803,11 +1797,11 @@ the product related tables (ie: <strong>Sizes</strong>, <strong>Colors</strong>,
 <p>The index on <strong>MyProductView</strong> that was causing the constraint violation looked something like this:</p>
 <pre><code class="language-sql">CREATE UNIQUE CLUSTERED INDEX IXCL_MyProductView ON MyProductView
 (
-    product_id,
-    color_id,
-    size_id,
-    inventory_id,
-    currency_id
+	product_id,
+	color_id,
+	size_id,
+	inventory_id,
+	currency_id
 }
 </code></pre>
 <p>Notice the <strong>active</strong> flag/column is not in the clustered
@@ -1818,11 +1812,11 @@ clauses for the <strong>MyProductView</strong>, so no rows should&#39;ve been ad
 or deleted from the view after running the update statement.</p>
 <p>To confirm the validity of the <strong>IXCL_MyProductView</strong> constraint, I could run:</p>
 <pre><code class="language-sql">SELECT
-    product_id, color_id, size_id, inventory_id, currency_id, COUNT(1) AS confirmConstraint
+	product_id, color_id, size_id, inventory_id, currency_id, COUNT(1) AS confirmConstraint
 FROM
-    MyProductView
+	MyProductView
 GROUP BY
-    product_id, color_id, size_id, inventory_id, currency_id
+	product_id, color_id, size_id, inventory_id, currency_id
 </code></pre>
 <p>As long as the <strong>IXCL_MyProductView</strong> constraint was in place,
 the <strong>confirmConstraint</strong> column could only have a value of 1.</p>
@@ -1879,11 +1873,7 @@ You can download both the original &quot;classic&quot; theme as well as my modif
 &quot;classic-modified&quot; <a href="/downloads/theme-tutorial-classic-modified.zip">here</a>.</p>
 <div class="info-section-note">
 NOTE: For detailed instructions on creating a Wordpress theme, there are many tutorials online.  Also, the <a href="http://codex.wordpress.org/Theme_Development">Wordpress.org</a> site has fairly detailed documentation.  The first tutorial I found via a google search was for entry level Wordpress developers, yet it was very helpful: <a href="http://www.wpdesigner.com/2007/02/19/so-you-want-to-create-wordpress-themes-huh/">www.wpdesigner.com</a>.
-</div>
-
-<div>&nbsp;</div>
-
-<p>For this tutorial, the first step to take is to copy the &quot;classic&quot; theme. Rename the copy &quot;classic-modified&quot; and place it in your themes folder.</p>
+</div><div>&nbsp;</div><p>For this tutorial, the first step to take is to copy the &quot;classic&quot; theme. Rename the copy &quot;classic-modified&quot; and place it in your themes folder.</p>
 <p>Now we&#39;re going to modify the <b>functions.php</b> file by adding lines 17-18 below:</p>
 <pre><code class="language-php">&lt;?php
 /**
@@ -1894,12 +1884,12 @@ NOTE: For detailed instructions on creating a Wordpress theme, there are many tu
 automatic_feed_links();
 
 if ( function_exists(&#39;register_sidebar&#39;) )
-    register_sidebar(array(
-        &#39;before_widget&#39; =&gt; &#39;&lt;li id=&quot;%1$s&quot; class=&quot;widget %2$s&quot;&gt;&#39;,
-        &#39;after_widget&#39; =&gt; &#39;&lt;/li&gt;&#39;,
-        &#39;before_title&#39; =&gt; &#39;&#39;,
-        &#39;after_title&#39; =&gt; &#39;&#39;,
-    ));
+	register_sidebar(array(
+		&#39;before_widget&#39; =&gt; &#39;&lt;li id=&quot;%1$s&quot; class=&quot;widget %2$s&quot;&gt;&#39;,
+		&#39;after_widget&#39; =&gt; &#39;&lt;/li&gt;&#39;,
+		&#39;before_title&#39; =&gt; &#39;&#39;,
+		&#39;after_title&#39; =&gt; &#39;&#39;,
+	));
 
 // Include the script that replaces the default archive widget
 require_once(&#39;functions-widgets.php&#39;);
@@ -1916,60 +1906,60 @@ require_once(&#39;functions-widgets.php&#39;);
  */
 class WP_Widget_Archives extends WP_Widget {
 
-    function WP_Widget_Archives() {
-        $widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
-        $this-&gt;WP_Widget(&#39;archives&#39;, __(&#39;Archives&#39;), $widget_ops);
-    }
+	function WP_Widget_Archives() {
+		$widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
+		$this-&gt;WP_Widget(&#39;archives&#39;, __(&#39;Archives&#39;), $widget_ops);
+	}
 
-    function widget( $args, $instance ) {
-        extract($args);
-        $c = $instance[&#39;count&#39;] ? &#39;1&#39; : &#39;0&#39;;
-        $d = $instance[&#39;dropdown&#39;] ? &#39;1&#39; : &#39;0&#39;;
-        $title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
+	function widget( $args, $instance ) {
+		extract($args);
+		$c = $instance[&#39;count&#39;] ? &#39;1&#39; : &#39;0&#39;;
+		$d = $instance[&#39;dropdown&#39;] ? &#39;1&#39; : &#39;0&#39;;
+		$title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
 
-        echo $before_widget;
-        if ( $title )
-            echo $before_title . $title . $after_title;
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
 
-        if ( $d ) {
+		if ( $d ) {
 ?&gt;
-        &lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;&lt;?php echo esc_attr(__(&#39;Select Month&#39;)); ?&gt;&lt;/option&gt; &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_dropdown_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;format&#39; =&gt; &#39;option&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt; &lt;/select&gt;
+		&lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;&lt;?php echo esc_attr(__(&#39;Select Month&#39;)); ?&gt;&lt;/option&gt; &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_dropdown_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;format&#39; =&gt; &#39;option&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt; &lt;/select&gt;
 &lt;?php
-        } else {
+		} else {
 ?&gt;
-        &lt;ul&gt;
-        &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt;
-        &lt;/ul&gt;
+		&lt;ul&gt;
+		&lt;?php wp_get_archives(apply_filters(&#39;widget_archives_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt;
+		&lt;/ul&gt;
 &lt;?php
-        }
+		}
 
-        echo $after_widget;
-    }
+		echo $after_widget;
+	}
 
-    function update( $new_instance, $old_instance ) {
-        $instance = $old_instance;
-        $new_instance = wp_parse_args( (array) $new_instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
-        $instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
-        $instance[&#39;count&#39;] = $new_instance[&#39;count&#39;] ? 1 : 0;
-        $instance[&#39;dropdown&#39;] = $new_instance[&#39;dropdown&#39;] ? 1 : 0;
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+		$new_instance = wp_parse_args( (array) $new_instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
+		$instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
+		$instance[&#39;count&#39;] = $new_instance[&#39;count&#39;] ? 1 : 0;
+		$instance[&#39;dropdown&#39;] = $new_instance[&#39;dropdown&#39;] ? 1 : 0;
 
-        return $instance;
-    }
+		return $instance;
+	}
 
-    function form( $instance ) {
-        $instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
-        $title = strip_tags($instance[&#39;title&#39;]);
-        $count = $instance[&#39;count&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
-        $dropdown = $instance[&#39;dropdown&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
+	function form( $instance ) {
+		$instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
+		$title = strip_tags($instance[&#39;title&#39;]);
+		$count = $instance[&#39;count&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
+		$dropdown = $instance[&#39;dropdown&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
 ?&gt;
-        &lt;p&gt;&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Title:&#39;); ?&gt;&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo esc_attr($title); ?&gt;&quot; /&gt;&lt;/p&gt;
-        &lt;p&gt;
-            &lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $count; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;count&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Show post counts&#39;); ?&gt;&lt;/label&gt;
-            &lt;br /&gt;
-            &lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $dropdown; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;dropdown&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Display as a drop down&#39;); ?&gt;&lt;/label&gt;
-        &lt;/p&gt;
+		&lt;p&gt;&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Title:&#39;); ?&gt;&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo esc_attr($title); ?&gt;&quot; /&gt;&lt;/p&gt;
+		&lt;p&gt;
+			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $count; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;count&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Show post counts&#39;); ?&gt;&lt;/label&gt;
+			&lt;br /&gt;
+			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $dropdown; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;dropdown&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Display as a drop down&#39;); ?&gt;&lt;/label&gt;
+		&lt;/p&gt;
 &lt;?php
-    }
+	}
 }
 
 ?&gt;
@@ -1982,163 +1972,161 @@ class WP_Widget_Archives extends WP_Widget {
 </code></pre>
 <p>We did this because we are effectively creating a new widget, so if we want to use the old &quot;Archives&quot; widget, we can.</p>
 <p>Now change the following function from:</p>
-<pre><code class="language-php">    function WP_Widget_Archives() {
-        $widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
-        $this-&gt;WP_Widget(&#39;archives&#39;, __(&#39;Archives&#39;), $widget_ops);
-    }
+<pre><code class="language-php">	function WP_Widget_Archives() {
+		$widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
+		$this-&gt;WP_Widget(&#39;archives&#39;, __(&#39;Archives&#39;), $widget_ops);
+	}
 </code></pre>
 <p>to:</p>
-<pre><code class="language-php">    function MyTheme_Widget_Archives() {
-        $widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
-        $this-&gt;WP_Widget(&#39;mytheme_archives&#39;, __(&#39;MyTheme Archives&#39;), $widget_ops);
-    }
+<pre><code class="language-php">	function MyTheme_Widget_Archives() {
+		$widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
+		$this-&gt;WP_Widget(&#39;mytheme_archives&#39;, __(&#39;MyTheme Archives&#39;), $widget_ops);
+	}
 </code></pre>
 <p>Notice that we not only changed the function name, but we changed the parameters to the WP_Widget call. We did this for the same reason explained above (this is a &quot;new&quot; widget, and we want to be able to switch back to the old version).</p>
-<div>&nbsp;</div>
-
-<p>For this next step, we are going to modify the <i>widget()</i>, <i>form()</i>, and <i>update()</i> calls. These are the functions that display the actual widget in the sidebar, and also display the widget details in the WordPress admin console. For this new widget, I am always going to display the post count, and I&#39;m never going to display the archive results as a dropdown, so I can remove a few of the variables that are in the default archive widget ($c, $count, $d, $dropdown). To achieve this, you can modify <b>functions-widgets.php</b> like so:</p>
+<div>&nbsp;</div><p>For this next step, we are going to modify the <i>widget()</i>, <i>form()</i>, and <i>update()</i> calls. These are the functions that display the actual widget in the sidebar, and also display the widget details in the WordPress admin console. For this new widget, I am always going to display the post count, and I&#39;m never going to display the archive results as a dropdown, so I can remove a few of the variables that are in the default archive widget ($c, $count, $d, $dropdown). To achieve this, you can modify <b>functions-widgets.php</b> like so:</p>
 <p>Before changes:</p>
-<pre><code class="language-php">    function widget( $args, $instance ) {
-        extract($args);
-        $c = $instance[&#39;count&#39;] ? &#39;1&#39; : &#39;0&#39;;
-        $d = $instance[&#39;dropdown&#39;] ? &#39;1&#39; : &#39;0&#39;;
-        $title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
+<pre><code class="language-php">	function widget( $args, $instance ) {
+		extract($args);
+		$c = $instance[&#39;count&#39;] ? &#39;1&#39; : &#39;0&#39;;
+		$d = $instance[&#39;dropdown&#39;] ? &#39;1&#39; : &#39;0&#39;;
+		$title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
 
-        echo $before_widget;
-        if ( $title )
-            echo $before_title . $title . $after_title;
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
 
-        if ( $d ) {
+		if ( $d ) {
 ?&gt;
-        &lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;&lt;?php echo esc_attr(__(&#39;Select Month&#39;)); ?&gt;&lt;/option&gt; &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_dropdown_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;format&#39; =&gt; &#39;option&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt; &lt;/select&gt;
+		&lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;&lt;?php echo esc_attr(__(&#39;Select Month&#39;)); ?&gt;&lt;/option&gt; &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_dropdown_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;format&#39; =&gt; &#39;option&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt; &lt;/select&gt;
 &lt;?php
-        } else {
+		} else {
 ?&gt;
-        &lt;ul&gt;
-        &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt;
-        &lt;/ul&gt;
+		&lt;ul&gt;
+		&lt;?php wp_get_archives(apply_filters(&#39;widget_archives_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt;
+		&lt;/ul&gt;
 &lt;?php
-        }
+		}
 
-        echo $after_widget;
-    }
+		echo $after_widget;
+	}
 
-    function update( $new_instance, $old_instance ) {
-        $instance = $old_instance;
-        $new_instance = wp_parse_args( (array) $new_instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
-        $instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
-        $instance[&#39;count&#39;] = $new_instance[&#39;count&#39;] ? 1 : 0;
-        $instance[&#39;dropdown&#39;] = $new_instance[&#39;dropdown&#39;] ? 1 : 0;
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+		$new_instance = wp_parse_args( (array) $new_instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
+		$instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
+		$instance[&#39;count&#39;] = $new_instance[&#39;count&#39;] ? 1 : 0;
+		$instance[&#39;dropdown&#39;] = $new_instance[&#39;dropdown&#39;] ? 1 : 0;
 
-        return $instance;
-    }
+		return $instance;
+	}
 
-    function form( $instance ) {
-        $instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
-        $title = strip_tags($instance[&#39;title&#39;]);
-        $count = $instance[&#39;count&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
-        $dropdown = $instance[&#39;dropdown&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
+	function form( $instance ) {
+		$instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
+		$title = strip_tags($instance[&#39;title&#39;]);
+		$count = $instance[&#39;count&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
+		$dropdown = $instance[&#39;dropdown&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
 ?&gt;
-        &lt;p&gt;&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Title:&#39;); ?&gt;&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo esc_attr($title); ?&gt;&quot; /&gt;&lt;/p&gt;
-        &lt;p&gt;
-            &lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $count; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;count&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Show post counts&#39;); ?&gt;&lt;/label&gt;
-            &lt;br /&gt;
-            &lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $dropdown; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;dropdown&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Display as a drop down&#39;); ?&gt;&lt;/label&gt;
-        &lt;/p&gt;
+		&lt;p&gt;&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Title:&#39;); ?&gt;&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo esc_attr($title); ?&gt;&quot; /&gt;&lt;/p&gt;
+		&lt;p&gt;
+			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $count; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;count&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Show post counts&#39;); ?&gt;&lt;/label&gt;
+			&lt;br /&gt;
+			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $dropdown; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;dropdown&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Display as a drop down&#39;); ?&gt;&lt;/label&gt;
+		&lt;/p&gt;
 &lt;?php
-    }
+	}
 }
 
 ?&gt;
 </code></pre>
 <p>After changes:</p>
-<pre><code class="language-php">    function widget( $args, $instance ) {
-        extract($args);
-        $title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
+<pre><code class="language-php">	function widget( $args, $instance ) {
+		extract($args);
+		$title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
 
-        echo $before_widget;
-        if ( $title )
-            echo $before_title . $title . $after_title;
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
  ?&gt;
-        &lt;ul&gt;
-            // We will complete this in the next step
-        &lt;/ul&gt;
+		&lt;ul&gt;
+			// We will complete this in the next step
+		&lt;/ul&gt;
 &lt;?php
-        }
+		}
 
-        echo $after_widget;
-    }
+		echo $after_widget;
+	}
 
-    function update( $new_instance, $old_instance ) {
-        $instance = $old_instance;
-        $instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+		$instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
 
-        return $instance;
-    }
+		return $instance;
+	}
 
-    function form( $instance ) {
-        //Defaults
-        $instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;) );
-        $title = esc_attr( $instance[&#39;title&#39;] );
+	function form( $instance ) {
+		//Defaults
+		$instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;) );
+		$title = esc_attr( $instance[&#39;title&#39;] );
 ?&gt;
-        &lt;p&gt;
-            &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e( &#39;Title:&#39; ); ?&gt;&lt;/label&gt;
-            &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo $title; ?&gt;&quot; /&gt;
-        &lt;/p&gt;
+		&lt;p&gt;
+			&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e( &#39;Title:&#39; ); ?&gt;&lt;/label&gt;
+			&lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo $title; ?&gt;&quot; /&gt;
+		&lt;/p&gt;
 &lt;?php
-    }
+	}
 }
 
 ?&gt;
 </code></pre>
 <p>Now there&#39;s one final step. We need to actually display the archives. To do that, we need to modify the <i>widget()</i> function. In the last step, we were left with the following line:</p>
-<pre><code class="language-php">        &lt;ul&gt;
-            // We will complete this in the next step
-        &lt;/ul&gt;
+<pre><code class="language-php">		&lt;ul&gt;
+			// We will complete this in the next step
+		&lt;/ul&gt;
 </code></pre>
 <p>We are now going to complete this block of code. Open up <b>&quot;/wp-includes/general-template.php&quot;</b> and copy lines 799-825. Paste them into line 24 of <b>functions-widgets.php</b> which will give you:</p>
-<pre><code class="language-php">        &lt;ul&gt;
-        if ( &#39;monthly&#39; == $type ) {
-            $query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;
-            $key = md5($query);
-            $cache = wp_cache_get( &#39;wp_get_archives&#39; , &#39;general&#39;);
-            if ( !isset( $cache[ $key ] ) ) {
-                $arcresults = $wpdb-&gt;get_results($query);
-                $cache[ $key ] = $arcresults;
-                wp_cache_add( &#39;wp_get_archives&#39;, $cache, &#39;general&#39; );
-            } else {
-                $arcresults = $cache[ $key ];
-            }
-            if ( $arcresults ) {
-                $afterafter = $after;
-                foreach ( (array) $arcresults as $arcresult ) {
-                    $url = get_month_link( $arcresult-&gt;year, $arcresult-&gt;month );
-                    $text = sprintf(__(&#39;%1$s %2$d&#39;), $wp_locale-&gt;get_month($arcresult-&gt;month), $arcresult-&gt;year);
-                    if ( $show_post_count )
-                        $after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
-                    $output .= get_archives_link($url, $text, $format, $before, $after);
-                }
-            }
-        &lt;/ul&gt;
+<pre><code class="language-php">		&lt;ul&gt;
+		if ( &#39;monthly&#39; == $type ) {
+			$query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;
+			$key = md5($query);
+			$cache = wp_cache_get( &#39;wp_get_archives&#39; , &#39;general&#39;);
+			if ( !isset( $cache[ $key ] ) ) {
+				$arcresults = $wpdb-&gt;get_results($query);
+				$cache[ $key ] = $arcresults;
+				wp_cache_add( &#39;wp_get_archives&#39;, $cache, &#39;general&#39; );
+			} else {
+				$arcresults = $cache[ $key ];
+			}
+			if ( $arcresults ) {
+				$afterafter = $after;
+				foreach ( (array) $arcresults as $arcresult ) {
+					$url = get_month_link( $arcresult-&gt;year, $arcresult-&gt;month );
+					$text = sprintf(__(&#39;%1$s %2$d&#39;), $wp_locale-&gt;get_month($arcresult-&gt;month), $arcresult-&gt;year);
+					if ( $show_post_count )
+						$after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
+					$output .= get_archives_link($url, $text, $format, $before, $after);
+				}
+			}
+		&lt;/ul&gt;
 </code></pre>
 <p>The first thing you&#39;ll notice is the <b>if ( &#39;monthly&#39; == $type )</b> statement.  We can remove this clause, because the &quot;custom archive plugin&quot; will only show archives by month (I wanted to keep it simple- no need for other display types).  Also, this code is using a few global variables ($wpdb, $wp_locale) that aren&#39;t yet being used properly in our version of the <i>widget()</i> function. We need to modify <b>functions-widgets.php</b> again to have the following line which will declare our global variables for use inside the function:</p>
-<pre><code class="language-php">    function widget( $args, $instance ) {
-        global $wpdb, $wp_locale;
-        extract($args);
+<pre><code class="language-php">	function widget( $args, $instance ) {
+		global $wpdb, $wp_locale;
+		extract($args);
 </code></pre>
 <p>Also, when we copied code the first time, we didn&#39;t copy a few of the variables being used ($where and $join). Modify <b>functions-widgets.php</b> like so (adding lines 25-27):</p>
-<pre><code class="language-php">        &lt;ul&gt;
-        //filters
-        $where = apply_filters(&#39;getarchives_where&#39;, &quot;WHERE post_type = &#39;post&#39; AND post_status = &#39;publish&#39;&quot;, $r );
-        $join = apply_filters(&#39;getarchives_join&#39;, &quot;&quot;, $r);
+<pre><code class="language-php">		&lt;ul&gt;
+		//filters
+		$where = apply_filters(&#39;getarchives_where&#39;, &quot;WHERE post_type = &#39;post&#39; AND post_status = &#39;publish&#39;&quot;, $r );
+		$join = apply_filters(&#39;getarchives_join&#39;, &quot;&quot;, $r);
 
-        $query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;
+		$query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;
 </code></pre>
 <p>Another thing about the code we copied: we can ignore the $post<em>count variable (since we are _always</em> showing post counts). We also want to make sure the post count shows up inside our anchor tag. To accomplish that, we can change:</p>
 <pre><code class="language-php">$url = get_month_link( $arcresult-&gt;year, $arcresult-&gt;month );
 $text = sprintf(__(&#39;%1$s %2$d&#39;), $wp_locale-&gt;get_month($arcresult-&gt;month), $arcresult-&gt;year);
 if ( $show_post_count )
-    $after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
+	$after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
 $output .= get_archives_link($url, $text, $format, $before, $after);
 </code></pre>
 <p>to:</p>
@@ -2148,8 +2136,8 @@ $text .= &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
 $output .= get_archives_link($url, $text, $format, &#39;&lt;li&gt;&#39;, &#39;&lt;/li&gt;&#39;);
 </code></pre>
 <p>Also add the correct output line before the <i>widget()</i> function ends:</p>
-<pre><code class="language-php">        echo &#39;&lt;ul&gt;&#39; . $output . &#39;&lt;/ul&gt;&#39;;
-        echo $after_widget;
+<pre><code class="language-php">		echo &#39;&lt;ul&gt;&#39; . $output . &#39;&lt;/ul&gt;&#39;;
+		echo $after_widget;
 </code></pre>
 <p>Our hacked/modified version is almost complete. The last thing I&#39;m going to do is register the new archive widget (and unregister the default version). Do so by adding the following <i>mytheme_widget_init()</i> function to <b>functions-widgets.php</b>, then calling it:</p>
 <pre><code class="language-php">/**
@@ -2159,11 +2147,11 @@ $output .= get_archives_link($url, $text, $format, &#39;&lt;li&gt;&#39;, &#39;&l
  * @since 1.0
  */
 function mytheme_widget_init() {
-    // unregister some default widgets
-    unregister_widget(&#39;WP_Widget_Archives&#39;);
+	// unregister some default widgets
+	unregister_widget(&#39;WP_Widget_Archives&#39;);
 
-    // register my own widgets
-    register_widget(&#39;MyTheme_Widget_Archives&#39;);
+	// register my own widgets
+	register_widget(&#39;MyTheme_Widget_Archives&#39;);
 }
 
 add_action(&#39;widgets_init&#39;, &#39;mytheme_widget_init&#39;);
@@ -2199,17 +2187,15 @@ add_action(&#39;widgets_init&#39;, &#39;mytheme_widget_init&#39;);
   background: #eee;
 }
 </code></pre>
-<h4 style="text-decoration:underline">Comparison of default archive widget behavior vs. modified version</h4>
-
-<div class="clearfix" style="width:600px;margin:0 auto;">
-    <div class="left">
-        <p><b>BEFORE (default archive widget):</b></p>
-        <img src="/images/posts/2009/09/22/classic-screen.gif" alt="BEFORE (default archive widget)" title="Classic Theme Screenshot" width="212" height="102" />
-    </div>
-    <div class="right">
-        <p><b>AFTER (modified archive widget):</b></p>
-        <img src="/images/posts/2009/09/22/classic-modified-screen.gif" alt="AFTER (modified archive widget)" title="Classic-Modified Theme Screenshot" width="212" height="102" />
-    </div>
+<h4 style="text-decoration:underline">Comparison of default archive widget behavior vs. modified version</h4><div class="clearfix" style="width:600px;margin:0 auto;">
+	<div class="left">
+		<p><b>BEFORE (default archive widget):</b></p>
+		<img src="/images/posts/2009/09/22/classic-screen.gif" alt="BEFORE (default archive widget)" title="Classic Theme Screenshot" width="212" height="102" />
+	</div>
+	<div class="right">
+		<p><b>AFTER (modified archive widget):</b></p>
+		<img src="/images/posts/2009/09/22/classic-modified-screen.gif" alt="AFTER (modified archive widget)" title="Classic-Modified Theme Screenshot" width="212" height="102" />
+	</div>
 </div>
 ]]></content>
         <author>
@@ -2451,28 +2437,19 @@ the other checks I do is unnecessary.</p>
         <updated>2004-10-29T04:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>It&#39;s been awhile, but I finally got around to updating the program. Here&#39;s a feature list:</p>
 <ul>
-<li><p>Added AIFF support. The program will recognize 8 or 16 bit, mono or stereo, .aif files.</p>
-</li>
-<li><p>Added Minimize and Maximize Buttons.</p>
-</li>
-<li><p>The Play and Loop buttons work for every sample now. If you press the Loop button on a
-sample that is not a loop, it will play the whole sample repeatedly.</p>
-</li>
-<li><p>Rearranged the main dialog. Now the Mono and Stereo lists are side by side (displaying more samples at once).</p>
-</li>
-<li><p>Got rid of the &quot;quick save&quot; buttons, and added regular &quot;Windows style&quot; open and save dialogs.</p>
-</li>
-<li><p>Added a &quot;Remove All Samples&quot; feature, which deletes all the samples from the workspace, but leaves
-the pattern and song data that is loaded.</p>
-</li>
-<li><p>Got rid of the file &quot;esxwaveorganizer.data&quot;. Now you only need the .exe file for the program to work.</p>
-</li>
-<li><p>Fixed the &quot;Clear Pattern &amp; Song Data&quot;. Previously, when you cleared all pattern data, each
+<li>Added AIFF support. The program will recognize 8 or 16 bit, mono or stereo, .aif files.</li>
+<li>Added Minimize and Maximize Buttons.</li>
+<li>The Play and Loop buttons work for every sample now. If you press the Loop button on a
+sample that is not a loop, it will play the whole sample repeatedly.</li>
+<li>Rearranged the main dialog. Now the Mono and Stereo lists are side by side (displaying more samples at once).</li>
+<li>Got rid of the &quot;quick save&quot; buttons, and added regular &quot;Windows style&quot; open and save dialogs.</li>
+<li>Added a &quot;Remove All Samples&quot; feature, which deletes all the samples from the workspace, but leaves
+the pattern and song data that is loaded.</li>
+<li>Got rid of the file &quot;esxwaveorganizer.data&quot;. Now you only need the .exe file for the program to work.</li>
+<li>Fixed the &quot;Clear Pattern &amp; Song Data&quot;. Previously, when you cleared all pattern data, each
 part&#39;s sample would be set to Mono Sample #000. Now, when you clear all pattern data, and load an
-.esx file into your sampler, each parts&#39; sample will be set to NONE (not Mono Sample #000).</p>
-</li>
-<li><p>Added a Menu with the options:</p>
-<ul>
+.esx file into your sampler, each parts&#39; sample will be set to NONE (not Mono Sample #000).</li>
+<li>Added a Menu with the options:<ul>
 <li><p>File:</p>
 <ul>
 <li><p>Open/Add Files To Workspace</p>

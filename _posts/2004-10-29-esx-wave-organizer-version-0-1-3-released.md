@@ -28,9 +28,7 @@ It's been awhile, but I finally got around to updating the program. Here's a fea
   part's sample would be set to Mono Sample #000. Now, when you clear all pattern data, and load an
   .esx file into your sampler, each parts' sample will be set to NONE (not Mono Sample #000).
 - Added a Menu with the options:
-
   - File:
-
     - Open/Add Files To Workspace
 
     - Save As ESX File
@@ -40,7 +38,6 @@ It's been awhile, but I finally got around to updating the program. Here's a fea
     - Exit
 
   - Functions:
-
     - Clear All Pattern And Song Data
 
     - Pattern Organizer
@@ -50,7 +47,6 @@ It's been awhile, but I finally got around to updating the program. Here's a fea
     - Remove All Samples
 
   - Help:
-
     - About ESX Organizer
 
     - Visit Website

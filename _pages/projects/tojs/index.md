@@ -73,7 +73,6 @@ check out the **Usage** and **Options** sections below.
 - command line options have changed
 
 - now supports the following input/output types:
-
   - plain
 
   - js
@@ -89,7 +88,6 @@ check out the **Usage** and **Options** sections below.
 - fixing formatting of help text
 
 - adding 2 new command line options
-
   - **-o** | **--no-open** -- don't print the document.open() statement
 
   - **-c** | **--no-close** -- don't print the document.close() statement

@@ -13,11 +13,11 @@
             <url>https://www.skratchdot.com/images/logo.png</url>
             <link>https://www.skratchdot.com/</link>
         </image>
-        <copyright>Copyright © 2023 skratchdot</copyright>
+        <copyright>Copyright © 2026 skratchdot</copyright>
         <item>
             <title><![CDATA[Creating Virtual MIDI Ports On OSX for WebMidi]]></title>
             <link>https://www.skratchdot.com/2016/01/creating-virtual-midi-ports-on-osx</link>
-            <guid>https://www.skratchdot.com/2016/01/creating-virtual-midi-ports-on-osx</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2016/01/creating-virtual-midi-ports-on-osx</guid>
             <pubDate>Wed, 27 Jan 2016 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>Introduction</h2>
 <p><a href="http://webaudio.github.io/web-midi-api/">WebMidi</a> is a technology that has been
@@ -98,7 +98,7 @@ WebMidi enabled devices!</p>
         <item>
             <title><![CDATA[Audio Grid - Web-Based Audio Tool]]></title>
             <link>https://www.skratchdot.com/2013/08/audio-grid-web-based-audio-tool</link>
-            <guid>https://www.skratchdot.com/2013/08/audio-grid-web-based-audio-tool</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2013/08/audio-grid-web-based-audio-tool</guid>
             <pubDate>Sun, 25 Aug 2013 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>A few years ago I saw the great <a href="http://tonematrix.audiotool.com/">Tone Matrix</a> tool by
 <a href="http://andre-michelle.com/">Andre Michelle</a>. It&#39;s a flash based audio experiment that
@@ -133,7 +133,7 @@ that decodes mp3s using jsmad</p>
         <item>
             <title><![CDATA[Audio Sort - Visualize and Audibilize Sorting Algorithms]]></title>
             <link>https://www.skratchdot.com/2013/07/audio-sort-visualize-and-audibilize-sorting-algorithms</link>
-            <guid>https://www.skratchdot.com/2013/07/audio-sort-visualize-and-audibilize-sorting-algorithms</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2013/07/audio-sort-visualize-and-audibilize-sorting-algorithms</guid>
             <pubDate>Mon, 15 Jul 2013 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>A few weeks ago I saw a <a href="http://www.youtube.com/watch?v=t8g-iYGHpEA">video on youtube</a> that
 showed what different sorting algorithms look (and sound) like as they are executing.</p>
@@ -155,7 +155,7 @@ below:</p>
         <item>
             <title><![CDATA[Userscripts and Content Security Policy]]></title>
             <link>https://www.skratchdot.com/2013/05/userscripts-and-content-security-policy</link>
-            <guid>https://www.skratchdot.com/2013/05/userscripts-and-content-security-policy</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2013/05/userscripts-and-content-security-policy</guid>
             <pubDate>Sun, 19 May 2013 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>Last month, Github started to include some
 <a href="https://en.wikipedia.org/wiki/Content_Security_Policy">Content Security Policy Headers</a>.</p>
@@ -251,7 +251,7 @@ gave up trying. I ended up settling on the @require method for Firefox, and the
         <item>
             <title><![CDATA[Github Enhancement Suite]]></title>
             <link>https://www.skratchdot.com/2013/05/github-enhancement-suite</link>
-            <guid>https://www.skratchdot.com/2013/05/github-enhancement-suite</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2013/05/github-enhancement-suite</guid>
             <pubDate>Sun, 19 May 2013 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>I&#39;ve created quite a few <a href="https://github.com">Github</a> userscripts to help enhance my experience
 when checking out code online. The scripts either add functionality I wish existed, functionality
@@ -281,7 +281,7 @@ features on and off. I&#39;ll also probably clean up the code, and decommission 
         <item>
             <title><![CDATA[Open Electribe Editor - v1.2.0 Released]]></title>
             <link>https://www.skratchdot.com/2013/04/open-electribe-editor-v1-2-0-released</link>
-            <guid>https://www.skratchdot.com/2013/04/open-electribe-editor-v1-2-0-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2013/04/open-electribe-editor-v1-2-0-released</guid>
             <pubDate>Sat, 13 Apr 2013 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>v1.2.0 - Released April 13, 2013</h3>
 <p>Download here: <a href="http://code.google.com/p/open-electribe-editor/downloads/list">http://code.google.com/p/open-electribe-editor/downloads/list</a></p>
@@ -295,7 +295,7 @@ features on and off. I&#39;ll also probably clean up the code, and decommission 
         <item>
             <title><![CDATA[npm-dview - (a command line tool)]]></title>
             <link>https://www.skratchdot.com/2013/04/npm-dview-a-command-line-tool</link>
-            <guid>https://www.skratchdot.com/2013/04/npm-dview-a-command-line-tool</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2013/04/npm-dview-a-command-line-tool</guid>
             <pubDate>Sat, 13 Apr 2013 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>I&#39;ve been working on a few node apps lately, and have sometimes been specifying specific
 version numbers in my <a href="https://npmjs.org/doc/json.html#dependencies">package.json</a> files
@@ -315,7 +315,7 @@ with the latest remotely published version.</p>
         <item>
             <title><![CDATA[Open Electribe Editor - v1.1.0 Released]]></title>
             <link>https://www.skratchdot.com/2013/01/open-electribe-editor-v1-1-0-released</link>
-            <guid>https://www.skratchdot.com/2013/01/open-electribe-editor-v1-1-0-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2013/01/open-electribe-editor-v1-1-0-released</guid>
             <pubDate>Sun, 06 Jan 2013 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>v1.1.0 - Released January 6, 2013</h3>
 <p>Download here: <a href="http://code.google.com/p/open-electribe-editor/downloads/list">http://code.google.com/p/open-electribe-editor/downloads/list</a></p>
@@ -344,7 +344,7 @@ with the latest remotely published version.</p>
         <item>
             <title><![CDATA[mesh: MongoDB insertArray() addition]]></title>
             <link>https://www.skratchdot.com/2012/12/mesh-mongodb-insert-array-addition</link>
-            <guid>https://www.skratchdot.com/2012/12/mesh-mongodb-insert-array-addition</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/12/mesh-mongodb-insert-array-addition</guid>
             <pubDate>Wed, 12 Dec 2012 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>I just updated <a href="https://www.skratchdot.com/projects/mesh/">mesh - MongoDB Extended Shell</a>
 again by adding a function that you can call on <a href="http://www.mongodb.org/">MongoDB</a> collections.</p>
@@ -405,7 +405,7 @@ DBCollection.prototype.insertArray = function (arr, options, _allow_dot) {
         <item>
             <title><![CDATA[New Tabs and the Back Button - Bookmarklet]]></title>
             <link>https://www.skratchdot.com/2012/12/new-tabs-and-the-back-button-bookmarklet</link>
-            <guid>https://www.skratchdot.com/2012/12/new-tabs-and-the-back-button-bookmarklet</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/12/new-tabs-and-the-back-button-bookmarklet</guid>
             <pubDate>Mon, 10 Dec 2012 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>If you&#39;re anything like me, then you open new links in tabs. Sometimes,
 if the link has been open for a while, you forget what page you were on when you clicked
@@ -427,7 +427,7 @@ referrer. I place the bookmarklet underneath my back button, so I have easy acce
         <item>
             <title><![CDATA[Userscript - Github: Editor Theme]]></title>
             <link>https://www.skratchdot.com/2012/12/userscript-github-editor-theme</link>
-            <guid>https://www.skratchdot.com/2012/12/userscript-github-editor-theme</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/12/userscript-github-editor-theme</guid>
             <pubDate>Sat, 08 Dec 2012 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>Yesterday I saw the following post on <a href="http://news.ycombinator.com/">HackerNews</a>:</p>
 <p><a href="http://news.ycombinator.com/item?id=4886560">Let&#39;s make GitHub better, together</a>.</p>
@@ -459,7 +459,7 @@ to work on a userscript that let&#39;s you switch themes on Github.</p>
         <item>
             <title><![CDATA[List Tool: a simple way to compare lists]]></title>
             <link>https://www.skratchdot.com/2012/12/list-tool-a-simple-way-to-compare-lists</link>
-            <guid>https://www.skratchdot.com/2012/12/list-tool-a-simple-way-to-compare-lists</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/12/list-tool-a-simple-way-to-compare-lists</guid>
             <pubDate>Fri, 07 Dec 2012 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>This week at work I was comparing 2 lists from 2 different sources. I frequently
 perform tasks like this, and always end up writing the same comparison code over and over.</p>
@@ -495,7 +495,7 @@ will change the layout</p>
         <item>
             <title><![CDATA[tojs - (a shell script)]]></title>
             <link>https://www.skratchdot.com/2012/11/tojs-a-shell-script</link>
-            <guid>https://www.skratchdot.com/2012/11/tojs-a-shell-script</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/11/tojs-a-shell-script</guid>
             <pubDate>Sun, 04 Nov 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>Earlier today I was updating one of my
 <a href="http://projects.skratchdot.com/domFormat/bookmarklet/index.html">bookmarklets</a>
@@ -523,7 +523,7 @@ now requires <a href="https://npmjs.org/">npm</a> and can be installed by runnin
         <item>
             <title><![CDATA[Userscript - Github: Get Missing Descriptions]]></title>
             <link>https://www.skratchdot.com/2012/08/userscript-github-get-missing-descriptions</link>
-            <guid>https://www.skratchdot.com/2012/08/userscript-github-get-missing-descriptions</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/08/userscript-github-get-missing-descriptions</guid>
             <pubDate>Sun, 12 Aug 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>On <a href="https://github.com">Github</a> profiles, not all the repositories
 have description info listed underneath them. Only the repositories
@@ -564,7 +564,7 @@ to grab the descriptions.</p>
         <item>
             <title><![CDATA[Can't Install Userscripts in Chrome 21+]]></title>
             <link>https://www.skratchdot.com/2012/08/can't-install-userscripts-in-chrome-21+</link>
-            <guid>https://www.skratchdot.com/2012/08/can't-install-userscripts-in-chrome-21+</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/08/can't-install-userscripts-in-chrome-21+</guid>
             <pubDate>Sat, 04 Aug 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>Today I was updating one of my <a href="https://github.com/skratchdot/github-repo-filter-info.user.js/">userscripts</a>,
 but when I went to test my changes in Chrome, I saw the following warning:</p>
@@ -607,7 +607,7 @@ had a list of whitelist/blacklist URLs that you could edit. That page allows you
         <item>
             <title><![CDATA[mesh: the MongoDB Extended Shell]]></title>
             <link>https://www.skratchdot.com/2012/07/mesh-the-mongodb-extended-shell</link>
-            <guid>https://www.skratchdot.com/2012/07/mesh-the-mongodb-extended-shell</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/07/mesh-the-mongodb-extended-shell</guid>
             <pubDate>Tue, 17 Jul 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>I saw a blog post today called:
 <a href="http://blog.mongodb.org/post/27406586932/mongo-the-mongodb-shell">mongo, the MongoDB Shell</a>.</p>
@@ -640,7 +640,7 @@ are a few different types of prompts you can use:</p>
         <item>
             <title><![CDATA[Coldfusion: Convert String To Struct]]></title>
             <link>https://www.skratchdot.com/2012/07/coldfusion-convert-string-to-struct</link>
-            <guid>https://www.skratchdot.com/2012/07/coldfusion-convert-string-to-struct</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/07/coldfusion-convert-string-to-struct</guid>
             <pubDate>Sun, 15 Jul 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>The other day I had the need to create a nested structure
 based off of a key using dot notation.</p>
@@ -666,18 +666,18 @@ private struct function convertStringToStruct(required string key, required any 
 <p>Here&#39;s a quick example usage:</p>
 <pre><code class="language-cfm">&lt;cfscript&gt;
 
-    // Declare a struct. We will later append to this
-    obj = StructNew();
+	// Declare a struct. We will later append to this
+	obj = StructNew();
 
-    // Create a few top level keys
-    obj[&quot;ab&quot;] = &quot;foo&quot;;
-    obj[&quot;b&quot;] = &quot;bar&quot;;
+	// Create a few top level keys
+	obj[&quot;ab&quot;] = &quot;foo&quot;;
+	obj[&quot;b&quot;] = &quot;bar&quot;;
 
-    // Append a dynamically created structure
-    StructAppend(obj, convertStringToStruct(&quot;a.b.c&quot;, &quot;baz&quot;), false);
+	// Append a dynamically created structure
+	StructAppend(obj, convertStringToStruct(&quot;a.b.c&quot;, &quot;baz&quot;), false);
 
-    // Show our output
-    WriteDump(obj);
+	// Show our output
+	WriteDump(obj);
 
 &lt;/cfscript&gt;
 </code></pre>
@@ -691,7 +691,7 @@ private struct function convertStringToStruct(required string key, required any 
         <item>
             <title><![CDATA[OSX Screenshot With Border From Command Line]]></title>
             <link>https://www.skratchdot.com/2012/07/osx-screenshot-with-border-from-command-line</link>
-            <guid>https://www.skratchdot.com/2012/07/osx-screenshot-with-border-from-command-line</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/07/osx-screenshot-with-border-from-command-line</guid>
             <pubDate>Sat, 14 Jul 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>There are a few ways you can take <a href="http://guides.macrumors.com/Taking_Screenshots_in_Mac_OS_X">screenshots in OSX</a>,
 and a few ways you can add borders to images.</p>
@@ -724,7 +724,7 @@ sudo chmod +x /usr/local/bin/framecapture
         <item>
             <title><![CDATA[Userscript - Github: Twitter Link]]></title>
             <link>https://www.skratchdot.com/2012/07/userscript-github-twitter-link</link>
-            <guid>https://www.skratchdot.com/2012/07/userscript-github-twitter-link</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/07/userscript-github-twitter-link</guid>
             <pubDate>Thu, 05 Jul 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>While browsing <a href="https://github.com">Github</a> profiles, I notice I&#39;ll frequently
 change the url from <a href="https://github.com">github.com</a> to <a href="https://twitter.com">twitter.com</a>
@@ -759,7 +759,7 @@ may add a &quot;time limit&quot; on when to check again.</p>
         <item>
             <title><![CDATA[Open Electribe Editor - v1.0.4 Released]]></title>
             <link>https://www.skratchdot.com/2012/06/open-electribe-editor-v1-0-4-released</link>
-            <guid>https://www.skratchdot.com/2012/06/open-electribe-editor-v1-0-4-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/06/open-electribe-editor-v1-0-4-released</guid>
             <pubDate>Sun, 03 Jun 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>v1.0.4 - Released June 03, 2012</h3>
 <ul>
@@ -772,7 +772,7 @@ may add a &quot;time limit&quot; on when to check again.</p>
         <item>
             <title><![CDATA[Prevent console calls from throwing errors]]></title>
             <link>https://www.skratchdot.com/2012/05/prevent-console-calls-from-throwing-errors</link>
-            <guid>https://www.skratchdot.com/2012/05/prevent-console-calls-from-throwing-errors</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/05/prevent-console-calls-from-throwing-errors</guid>
             <pubDate>Wed, 30 May 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>If you try to use <strong>window.console</strong> calls in older browsers, an error will be thrown.</p>
 <p>There are a few ways to get around this. One way is to use a
@@ -790,30 +790,28 @@ default browser behavior.</p>
 <!-- prettier-ignore-start -->
 <pre><code class="language-js">/*jslint browser: true, plusplus: true */
 (function (window) {
-    &#39;use strict&#39;;
+	&#39;use strict&#39;;
 
-    var i = 0,
-        emptyFunction = function () {},
-        functionNames = [
-            &#39;assert&#39;, &#39;clear&#39;, &#39;count&#39;, &#39;debug&#39;, &#39;dir&#39;,
-            &#39;dirxml&#39;, &#39;error&#39;, &#39;exception&#39;, &#39;group&#39;, &#39;groupCollapsed&#39;,
-            &#39;groupEnd&#39;, &#39;info&#39;, &#39;log&#39;, &#39;profile&#39;, &#39;profileEnd&#39;, &#39;table&#39;,
-            &#39;time&#39;, &#39;timeEnd&#39;, &#39;timeStamp&#39;, &#39;trace&#39;, &#39;warn&#39;
-        ];
+	var i = 0,
+		emptyFunction = function () {},
+		functionNames = [
+			&#39;assert&#39;, &#39;clear&#39;, &#39;count&#39;, &#39;debug&#39;, &#39;dir&#39;,
+			&#39;dirxml&#39;, &#39;error&#39;, &#39;exception&#39;, &#39;group&#39;, &#39;groupCollapsed&#39;,
+			&#39;groupEnd&#39;, &#39;info&#39;, &#39;log&#39;, &#39;profile&#39;, &#39;profileEnd&#39;, &#39;table&#39;,
+			&#39;time&#39;, &#39;timeEnd&#39;, &#39;timeStamp&#39;, &#39;trace&#39;, &#39;warn&#39;
+		];
 
-    // Make sure window.console exists
-    window.console = window.console || {};
+	// Make sure window.console exists
+	window.console = window.console || {};
 
-    // Make sure all functions exist
-    for (i = 0; i &lt; functionNames.length; i++) {
-        window.console[functionNames[i]] = window.console[functionNames[i]] || emptyFunction;
-    }
+	// Make sure all functions exist
+	for (i = 0; i &lt; functionNames.length; i++) {
+		window.console[functionNames[i]] = window.console[functionNames[i]] || emptyFunction;
+	}
 
 }(window));
 </code></pre>
-<!-- prettier-ignore-end -->
-
-<h3>Minified Version:</h3>
+<!-- prettier-ignore-end --><h3>Minified Version:</h3>
 <!-- prettier-ignore-start -->
 <pre><code class="language-js">/* https://www.skratchdot.com/2012/05/prevent-console-calls-from-throwing-errors/ */
 (function(b){var a=0,c=function(){},d=[&quot;assert&quot;,&quot;clear&quot;,&quot;count&quot;,&quot;debug&quot;,&quot;dir&quot;,&quot;dirxml&quot;,&quot;error&quot;,&quot;exception&quot;,&quot;group&quot;,&quot;groupCollapsed&quot;,&quot;groupEnd&quot;,&quot;info&quot;,&quot;log&quot;,&quot;profile&quot;,&quot;profileEnd&quot;,&quot;table&quot;,&quot;time&quot;,&quot;timeEnd&quot;,&quot;timeStamp&quot;,&quot;trace&quot;,&quot;warn&quot;];b.console=b.console||{};for(a=0;a&lt;d.length;a++){b.console[d[a]]=b.console[d[a]]||c}}(window));
@@ -825,7 +823,7 @@ default browser behavior.</p>
         <item>
             <title><![CDATA[Ubuntu Dual Boot - Change Default OS]]></title>
             <link>https://www.skratchdot.com/2012/05/ubuntu-dual-boot-change-default-os</link>
-            <guid>https://www.skratchdot.com/2012/05/ubuntu-dual-boot-change-default-os</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/05/ubuntu-dual-boot-change-default-os</guid>
             <pubDate>Tue, 29 May 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>On one of my laptops, I&#39;m dual booting Windows 7 and Ubuntu 12.04 with Grub2 as the bootloader.</p>
 <p>I always forget what steps to take to &quot;remember my last OS&quot; when booting.</p>
@@ -849,7 +847,7 @@ or this <a href="http://superuser.com/questions/95828/making-default-saved-work-
         <item>
             <title><![CDATA[CSS3 Zoopraxiscope]]></title>
             <link>https://www.skratchdot.com/2012/05/css3-zoopraxiscope</link>
-            <guid>https://www.skratchdot.com/2012/05/css3-zoopraxiscope</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/05/css3-zoopraxiscope</guid>
             <pubDate>Mon, 28 May 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>I was going through some old files on my laptop, and found this snippet of code I created back in
 April. On April 9th, there was a google doodle for
@@ -861,90 +859,86 @@ in which someone created a pure CSS version of the google doodle.</p>
 to turn the demo on/off or change the speed of the animation.</p>
 <h2>Demo</h2>
 <style type="text/css">
-    img#zoopraxiscope {
-        width:230px;
-        height:230px;		
-    }
-    @-webkit-keyframes spin {
-        from { -webkit-transform: rotate(0deg); }
-        to { -webkit-transform: rotate(-360deg); }
-    }
-    @-moz-keyframes spin {
-        from { -moz-transform: rotate(0deg); }
-        to { -moz-transform: rotate(-360deg); }
-    }
-    @-ms-keyframes spin {
-        from { -ms-transform: rotate(0deg); }
-        to { -ms-transform: rotate(-360deg); }
-    }
-    a#animation-on:target~input[value=fast]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 230ms infinite linear; 
-        -moz-animation: spin 230ms infinite linear; 
-        -ms-animation: spin 230ms infinite linear; 
-    }
-    a#animation-on:target~input[value=medium]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 920ms infinite linear; 
-        -moz-animation: spin 920ms infinite linear; 
-        -ms-animation: spin 920ms infinite linear; 
-    }
-    a#animation-on:target~input[value=slow]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 2000ms infinite linear; 
-        -moz-animation: spin 2000ms infinite linear; 
-        -ms-animation: spin 2000ms infinite linear; 
-    }
-</style>
-
-<form style="text-align:center">
-    <h3>Turn Animation</h3>
-    <a id="animation-off" href="#animation-off">Off</a>
-    <a id="animation-on" href="#animation-on">On</a>
-    <br />
-    <h3>Speed:</h3>
-    <label for="fast">Fast:</label>
-    <input type="radio" name="speed" id="fast" value="fast" checked="checked" />
-    <br />
-    <label for="medium">Medium:</label>
-    <input type="radio" name="speed" id="medium" value="medium" />
-    <br />
-    <label for="slow">Slow:</label>
-    <input type="radio" name="speed" id="slow" value="slow" />
-    <div style="height:50px">&nbsp;</div>
-    <img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
-</form>
-
-<h2>CSS:</h2>
+	img#zoopraxiscope {
+		width:230px;
+		height:230px;		
+	}
+	@-webkit-keyframes spin {
+		from { -webkit-transform: rotate(0deg); }
+		to { -webkit-transform: rotate(-360deg); }
+	}
+	@-moz-keyframes spin {
+		from { -moz-transform: rotate(0deg); }
+		to { -moz-transform: rotate(-360deg); }
+	}
+	@-ms-keyframes spin {
+		from { -ms-transform: rotate(0deg); }
+		to { -ms-transform: rotate(-360deg); }
+	}
+	a#animation-on:target~input[value=fast]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 230ms infinite linear; 
+		-moz-animation: spin 230ms infinite linear; 
+		-ms-animation: spin 230ms infinite linear; 
+	}
+	a#animation-on:target~input[value=medium]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 920ms infinite linear; 
+		-moz-animation: spin 920ms infinite linear; 
+		-ms-animation: spin 920ms infinite linear; 
+	}
+	a#animation-on:target~input[value=slow]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 2000ms infinite linear; 
+		-moz-animation: spin 2000ms infinite linear; 
+		-ms-animation: spin 2000ms infinite linear; 
+	}
+</style><form style="text-align:center">
+	<h3>Turn Animation</h3>
+	<a id="animation-off" href="#animation-off">Off</a>
+	<a id="animation-on" href="#animation-on">On</a>
+	<br />
+	<h3>Speed:</h3>
+	<label for="fast">Fast:</label>
+	<input type="radio" name="speed" id="fast" value="fast" checked="checked" />
+	<br />
+	<label for="medium">Medium:</label>
+	<input type="radio" name="speed" id="medium" value="medium" />
+	<br />
+	<label for="slow">Slow:</label>
+	<input type="radio" name="speed" id="slow" value="slow" />
+	<div style="height:50px">&nbsp;</div>
+	<img id="zoopraxiscope" src="/images/posts/2012/05/28/zoopraxiscope.jpg" />
+</form><h2>CSS:</h2>
 <pre><code class="language-css">&lt;style type=&quot;text/css&quot;&gt;
-    img#zoopraxiscope {
-        width:230px;
-        height:230px;
-    }
-    @-webkit-keyframes spin {
-        from { -webkit-transform: rotate(0deg); }
-        to { -webkit-transform: rotate(-360deg); }
-    }
-    @-moz-keyframes spin {
-        from { -moz-transform: rotate(0deg); }
-        to { -moz-transform: rotate(-360deg); }
-    }
-    @-ms-keyframes spin {
-        from { -ms-transform: rotate(0deg); }
-        to { -ms-transform: rotate(-360deg); }
-    }
-    a#animation-on:target~input[value=fast]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 230ms infinite linear;
-        -moz-animation: spin 230ms infinite linear;
-        -ms-animation: spin 230ms infinite linear;
-    }
-    a#animation-on:target~input[value=medium]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 920ms infinite linear;
-        -moz-animation: spin 920ms infinite linear;
-        -ms-animation: spin 920ms infinite linear;
-    }
-    a#animation-on:target~input[value=slow]:checked~img#zoopraxiscope {
-        -webkit-animation: spin 2000ms infinite linear;
-        -moz-animation: spin 2000ms infinite linear;
-        -ms-animation: spin 2000ms infinite linear;
-    }
+	img#zoopraxiscope {
+		width:230px;
+		height:230px;
+	}
+	@-webkit-keyframes spin {
+		from { -webkit-transform: rotate(0deg); }
+		to { -webkit-transform: rotate(-360deg); }
+	}
+	@-moz-keyframes spin {
+		from { -moz-transform: rotate(0deg); }
+		to { -moz-transform: rotate(-360deg); }
+	}
+	@-ms-keyframes spin {
+		from { -ms-transform: rotate(0deg); }
+		to { -ms-transform: rotate(-360deg); }
+	}
+	a#animation-on:target~input[value=fast]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 230ms infinite linear;
+		-moz-animation: spin 230ms infinite linear;
+		-ms-animation: spin 230ms infinite linear;
+	}
+	a#animation-on:target~input[value=medium]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 920ms infinite linear;
+		-moz-animation: spin 920ms infinite linear;
+		-ms-animation: spin 920ms infinite linear;
+	}
+	a#animation-on:target~input[value=slow]:checked~img#zoopraxiscope {
+		-webkit-animation: spin 2000ms infinite linear;
+		-moz-animation: spin 2000ms infinite linear;
+		-ms-animation: spin 2000ms infinite linear;
+	}
 &lt;/style&gt;
 </code></pre>
 <h2>HTML:</h2>
@@ -990,7 +984,7 @@ on April 9th, 2012 celebrating Eadweard J. Muybridge</p>
         <item>
             <title><![CDATA[Windows is slow after adding more memory]]></title>
             <link>https://www.skratchdot.com/2012/05/windows-is-slow-after-adding-more-memory</link>
-            <guid>https://www.skratchdot.com/2012/05/windows-is-slow-after-adding-more-memory</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/05/windows-is-slow-after-adding-more-memory</guid>
             <pubDate>Tue, 15 May 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>I dual boot my <a href="http://www.dell.com/us/business/p/precision-m6500/pd">Dell Precision m6500</a> with
 Windows 7 and Ubuntu 12.04. I recently upgraded the memory from 8gb (4x2gb) to 32gb (4x8gb). Ridiculous
@@ -1012,7 +1006,7 @@ not sure if it was the upgrade, or the simply resetting/flashing the BIOS, but t
         <item>
             <title><![CDATA[Markdown not working in Jekyll]]></title>
             <link>https://www.skratchdot.com/2012/05/markdown-not-working-in-jekyll</link>
-            <guid>https://www.skratchdot.com/2012/05/markdown-not-working-in-jekyll</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/05/markdown-not-working-in-jekyll</guid>
             <pubDate>Sat, 12 May 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>I just converted my blog from <a href="http://wordpress.org/">Wordpress</a> to <a href="https://github.com/mojombo/jekyll/">Jekyll</a>.
 The process was fairly straightforward, although it took a lot of reading, and viewing other people&#39;s
@@ -1030,7 +1024,7 @@ example <a href="https://github.com/mojombo/jekyll/wiki/sites">sites</a>.</p>
         <item>
             <title><![CDATA[MongoDB - Shell Extensions]]></title>
             <link>https://www.skratchdot.com/2012/04/mongodb-shell-extensions</link>
-            <guid>https://www.skratchdot.com/2012/04/mongodb-shell-extensions</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2012/04/mongodb-shell-extensions</guid>
             <pubDate>Mon, 30 Apr 2012 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>Last Friday I read the blog post <a href="http://blog.mongodb.org/post/21923016898/meet-variety-a-schema-analyzer-for-mongodb">Meet Variety, a Schema Analyzer for MongoDB</a>.</p>
 <p>I tried <a href="https://github.com/JamesCropcho/variety/">Variety</a> out, but it didn&#39;t quite do what I wanted, and it also created a few DBs/Collections on my server that I didn&#39;t expect.</p>
@@ -1053,7 +1047,7 @@ example <a href="https://github.com/mojombo/jekyll/wiki/sites">sites</a>.</p>
         <item>
             <title><![CDATA[Open Electribe Editor - v1.0.3 Released]]></title>
             <link>https://www.skratchdot.com/2011/09/open-electribe-editor-v1-0-3-released</link>
-            <guid>https://www.skratchdot.com/2011/09/open-electribe-editor-v1-0-3-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2011/09/open-electribe-editor-v1-0-3-released</guid>
             <pubDate>Sat, 10 Sep 2011 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>v1.0.3 - Released September 10, 2011</h3>
 <ul>
@@ -1073,7 +1067,7 @@ example <a href="https://github.com/mojombo/jekyll/wiki/sites">sites</a>.</p>
         <item>
             <title><![CDATA[domFormat - v1.0 (Released July 25, 2011)]]></title>
             <link>https://www.skratchdot.com/2011/07/domformat-v1-0-released-july-25-2011</link>
-            <guid>https://www.skratchdot.com/2011/07/domformat-v1-0-released-july-25-2011</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2011/07/domformat-v1-0-released-july-25-2011</guid>
             <pubDate>Mon, 25 Jul 2011 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>domFormat is a simple javascript library to get DOM nodes as formatted/pretty strings.</p>
 <p>You can find the source code here:</p>
@@ -1093,7 +1087,7 @@ example <a href="https://github.com/mojombo/jekyll/wiki/sites">sites</a>.</p>
         <item>
             <title><![CDATA[Git Diff Build Script (AKA read your Git docs)]]></title>
             <link>https://www.skratchdot.com/2011/06/git-diff-build-script-aka-read-your-git-docs</link>
-            <guid>https://www.skratchdot.com/2011/06/git-diff-build-script-aka-read-your-git-docs</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2011/06/git-diff-build-script-aka-read-your-git-docs</guid>
             <pubDate>Sun, 05 Jun 2011 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>When working in SVN, I have a batch script I&#39;ve used in the past to create &quot;DEPLOY&quot; and &quot;RESTORE&quot; folders off of diffs between branches. The script will create a &quot;DEPLOY&quot; folder containing all <b>added</b> and <b>modified</b> files, and a &quot;RESTORE&quot; folder containing all <b>modified</b> files.</p>
 <p>The purpose of this, is to deploy a set of files to a different environment. I can just copy the &quot;DEPLOY&quot; folder to any number of servers. If there is a bug that made it through QA, and we need to immediately rollback changes, we can just copy the &quot;RESTORE&quot; folder to all the same servers.</p>
@@ -1112,7 +1106,7 @@ files=&quot;$(echo &quot;$info&quot; | awk &#39;$1 ~/M|A/ {print $2}&#39;)&quot;
         <item>
             <title><![CDATA[SerializeJSON() in ColdFusion with Unicode Characters]]></title>
             <link>https://www.skratchdot.com/2011/05/serializejson-in-coldfusion-with-unicode-characters</link>
-            <guid>https://www.skratchdot.com/2011/05/serializejson-in-coldfusion-with-unicode-characters</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2011/05/serializejson-in-coldfusion-with-unicode-characters</guid>
             <pubDate>Tue, 17 May 2011 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>This weekend I read an interesting blog post called <a href="http://timelessrepo.com/json-isnt-a-javascript-subset">JSON: The JavaScript subset that isn&#39;t</a>
 and decided to test ColdFusion&#39;s SerializeJSON() function to see if the &quot;bug&quot; existed there.
@@ -1147,7 +1141,7 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
         <item>
             <title><![CDATA[Open Electribe Editor - v1.0.2 Released]]></title>
             <link>https://www.skratchdot.com/2011/03/open-electribe-editor-v1-0-2-released</link>
-            <guid>https://www.skratchdot.com/2011/03/open-electribe-editor-v1-0-2-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2011/03/open-electribe-editor-v1-0-2-released</guid>
             <pubDate>Mon, 21 Mar 2011 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>v1.0.2 - Released March 21, 2011</h3>
 <ul>
@@ -1194,7 +1188,7 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
         <item>
             <title><![CDATA[Links: Javascript]]></title>
             <link>https://www.skratchdot.com/2010/10/links-javascript</link>
-            <guid>https://www.skratchdot.com/2010/10/links-javascript</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2010/10/links-javascript</guid>
             <pubDate>Sun, 10 Oct 2010 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>Books:</h2>
 <ul>
@@ -1270,7 +1264,7 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
         <item>
             <title><![CDATA[Open Electribe Editor - v1.0.1 Beta Released]]></title>
             <link>https://www.skratchdot.com/2010/04/open-electribe-editor-v1-0-1-beta-released</link>
-            <guid>https://www.skratchdot.com/2010/04/open-electribe-editor-v1-0-1-beta-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2010/04/open-electribe-editor-v1-0-1-beta-released</guid>
             <pubDate>Sun, 25 Apr 2010 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>v1.0.1 Beta - Released April 25, 2010</h3>
 <ul>
@@ -1288,7 +1282,7 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
         <item>
             <title><![CDATA[Open Electribe Editor - v1.0.0.Beta Released]]></title>
             <link>https://www.skratchdot.com/2010/03/open-electribe-editor-v1-0-0-beta-released</link>
-            <guid>https://www.skratchdot.com/2010/03/open-electribe-editor-v1-0-0-beta-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2010/03/open-electribe-editor-v1-0-0-beta-released</guid>
             <pubDate>Tue, 09 Mar 2010 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>v1.0.0.Beta - Released March 9, 2010</h3>
 <ul>
@@ -1306,7 +1300,7 @@ It does. To reproduce, you can create a .cfm page that contains the following HT
         <item>
             <title><![CDATA[Verify All ColdFusion DataSources]]></title>
             <link>https://www.skratchdot.com/2009/12/verify-all-coldfusion-datasources</link>
-            <guid>https://www.skratchdot.com/2009/12/verify-all-coldfusion-datasources</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2009/12/verify-all-coldfusion-datasources</guid>
             <pubDate>Sat, 12 Dec 2009 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>Recently I was asked how to programmatically verify ColdFusion DataSources.
 I came up with a few methods of doing so. Each have their pros and cons.</p>
@@ -1328,30 +1322,30 @@ actually testing the validity of the datasource (a CON).</li>
 test <em>all</em> datasources. It will work for some datasources, but not all.</p>
 <p><strong>SOURCE:</strong></p>
 <pre><code class="language-cfm">&lt;cffunction name=&quot;verifyDsnList1&quot; output=&quot;true&quot; returntype=&quot;void&quot;&gt;
-    &lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
-    &lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
-    &lt;cfset var local = StructNew() /&gt;
-    &lt;cfoutput&gt;
-        &lt;hr /&gt;
-        &lt;b&gt;&lt;u&gt;veriftyDsnList1&lt;/u&gt;&lt;/b&gt;
-        &lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
-            &lt;cftry&gt;
-                &lt;hr /&gt;
-                &lt;cfquery name=&quot;local.qVerifyDatasource&quot; datasource=&quot;#local.currentName#&quot;&gt;
-                    SELECT 1
-                &lt;/cfquery&gt;
-                &lt;cfif local.qVerifyDatasource.RecordCount gt 0&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=true]
-                &lt;cfelse&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=false]
-                &lt;/cfif&gt;
-                &lt;cfcatch&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=false] [ERROR: #cfcatch.message#]
-                &lt;/cfcatch&gt;
-            &lt;/cftry&gt;
-        &lt;/cfloop&gt;
-        &lt;hr /&gt;
-    &lt;/cfoutput&gt;
+	&lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
+	&lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
+	&lt;cfset var local = StructNew() /&gt;
+	&lt;cfoutput&gt;
+		&lt;hr /&gt;
+		&lt;b&gt;&lt;u&gt;veriftyDsnList1&lt;/u&gt;&lt;/b&gt;
+		&lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
+			&lt;cftry&gt;
+				&lt;hr /&gt;
+				&lt;cfquery name=&quot;local.qVerifyDatasource&quot; datasource=&quot;#local.currentName#&quot;&gt;
+					SELECT 1
+				&lt;/cfquery&gt;
+				&lt;cfif local.qVerifyDatasource.RecordCount gt 0&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=true]
+				&lt;cfelse&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=false]
+				&lt;/cfif&gt;
+				&lt;cfcatch&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=false] [ERROR: #cfcatch.message#]
+				&lt;/cfcatch&gt;
+			&lt;/cftry&gt;
+		&lt;/cfloop&gt;
+		&lt;hr /&gt;
+	&lt;/cfoutput&gt;
 &lt;/cffunction&gt;
 </code></pre>
 <h3>Method #2: Try/Catch using the DataSourceService verifyDatasource() method.</h3>
@@ -1366,28 +1360,28 @@ test <em>all</em> datasources. It will work for some datasources, but not all.</
 </ul>
 <p><strong>SOURCE:</strong></p>
 <pre><code class="language-cfm">&lt;cffunction name=&quot;verifyDsnList2&quot; output=&quot;true&quot; returntype=&quot;void&quot;&gt;
-    &lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
-    &lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
-    &lt;cfset var local = StructNew() /&gt;
-    &lt;cfset local.dsService = CreateObject(&quot;java&quot;, &quot;coldfusion.server.ServiceFactory&quot;).DataSourceService /&gt;
-    &lt;cfoutput&gt;
-        &lt;hr /&gt;
-        &lt;b&gt;&lt;u&gt;veriftyDsnList2&lt;/u&gt;&lt;/b&gt;
-        &lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
-            &lt;cftry&gt;
-                &lt;hr /&gt;
-                &lt;cfif local.dsService.verifyDatasource(local.currentName)&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=true]
-                &lt;cfelse&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=false]
-                &lt;/cfif&gt;
-                &lt;cfcatch&gt;
-                    DATASOURCE: #local.currentName# [VERIFIED=false] [ERROR: #cfcatch.message#]
-                &lt;/cfcatch&gt;
-            &lt;/cftry&gt;
-        &lt;/cfloop&gt;
-        &lt;hr /&gt;
-    &lt;/cfoutput&gt;
+	&lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
+	&lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
+	&lt;cfset var local = StructNew() /&gt;
+	&lt;cfset local.dsService = CreateObject(&quot;java&quot;, &quot;coldfusion.server.ServiceFactory&quot;).DataSourceService /&gt;
+	&lt;cfoutput&gt;
+		&lt;hr /&gt;
+		&lt;b&gt;&lt;u&gt;veriftyDsnList2&lt;/u&gt;&lt;/b&gt;
+		&lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
+			&lt;cftry&gt;
+				&lt;hr /&gt;
+				&lt;cfif local.dsService.verifyDatasource(local.currentName)&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=true]
+				&lt;cfelse&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=false]
+				&lt;/cfif&gt;
+				&lt;cfcatch&gt;
+					DATASOURCE: #local.currentName# [VERIFIED=false] [ERROR: #cfcatch.message#]
+				&lt;/cfcatch&gt;
+			&lt;/cftry&gt;
+		&lt;/cfloop&gt;
+		&lt;hr /&gt;
+	&lt;/cfoutput&gt;
 &lt;/cffunction&gt;
 </code></pre>
 <h3>Method #3: Admin API verifyDSN() call</h3>
@@ -1403,33 +1397,33 @@ test <em>all</em> datasources. It will work for some datasources, but not all.</
 </ul>
 <p><strong>SOURCE:</strong></p>
 <pre><code class="language-cfm">&lt;cffunction name=&quot;verifyDsnList3&quot; output=&quot;true&quot; returntype=&quot;void&quot;&gt;
-    &lt;cfargument name=&quot;cfide_password&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
-    &lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
-    &lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
-    &lt;cfset var local = StructNew() /&gt;
-    &lt;cfset local.admin = createObject(&quot;component&quot;,&quot;cfide.adminapi.administrator&quot;).login(arguments.cfide_password) /&gt;
-    &lt;cfset local.dsObj = createObject(&quot;component&quot;,&quot;cfide.adminapi.datasource&quot;) /&gt;
-    &lt;cfoutput&gt;
-        &lt;hr /&gt;
-        &lt;b&gt;&lt;u&gt;veriftyDsnList3&lt;/u&gt;&lt;/b&gt;
-        &lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
-            &lt;hr /&gt;
-            DATASOURCE: #local.currentName# [VERIFIED=#local.dsObj.verifyDSN(local.currentName)#]
-        &lt;/cfloop&gt;
-        &lt;hr /&gt;
-    &lt;/cfoutput&gt;
+	&lt;cfargument name=&quot;cfide_password&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
+	&lt;cfargument name=&quot;list&quot; type=&quot;string&quot; required=&quot;true&quot; /&gt;
+	&lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; /&gt;
+	&lt;cfset var local = StructNew() /&gt;
+	&lt;cfset local.admin = createObject(&quot;component&quot;,&quot;cfide.adminapi.administrator&quot;).login(arguments.cfide_password) /&gt;
+	&lt;cfset local.dsObj = createObject(&quot;component&quot;,&quot;cfide.adminapi.datasource&quot;) /&gt;
+	&lt;cfoutput&gt;
+		&lt;hr /&gt;
+		&lt;b&gt;&lt;u&gt;veriftyDsnList3&lt;/u&gt;&lt;/b&gt;
+		&lt;cfloop list=&quot;#arguments.list#&quot; index=&quot;local.currentName&quot;&gt;
+			&lt;hr /&gt;
+			DATASOURCE: #local.currentName# [VERIFIED=#local.dsObj.verifyDSN(local.currentName)#]
+		&lt;/cfloop&gt;
+		&lt;hr /&gt;
+	&lt;/cfoutput&gt;
 &lt;/cffunction&gt;
 </code></pre>
 <h3>Helper Function:</h3>
 <p>Here&#39;s a helper function that will return a sorted list of all configured datasource names:</p>
 <pre><code class="language-cfm">&lt;cffunction name=&quot;getDatasourceList&quot; output=&quot;false&quot; returntype=&quot;string&quot;&gt;
-    &lt;cfargument name=&quot;sort_type&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;textnocase&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
-    &lt;cfargument name=&quot;sort_order&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;asc&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
-    &lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
-    &lt;cfset var dsService = CreateObject(&quot;java&quot;, &quot;coldfusion.server.ServiceFactory&quot;).DataSourceService /&gt;
-    &lt;cfset var sDatasources = dsService.getDatasources() /&gt;
-    &lt;cfset var dsList = StructKeyList(sDatasources, arguments.delimiter) /&gt;
-    &lt;cfreturn ListSort(dsList, arguments.sort_type, arguments.sort_order, arguments.delimiter) /&gt;
+	&lt;cfargument name=&quot;sort_type&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;textnocase&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
+	&lt;cfargument name=&quot;sort_order&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;asc&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
+	&lt;cfargument name=&quot;delimiter&quot; type=&quot;string&quot; required=&quot;false&quot; default=&quot;,&quot; hint=&quot;Optional. See livedocs for ListSort().&quot; /&gt;
+	&lt;cfset var dsService = CreateObject(&quot;java&quot;, &quot;coldfusion.server.ServiceFactory&quot;).DataSourceService /&gt;
+	&lt;cfset var sDatasources = dsService.getDatasources() /&gt;
+	&lt;cfset var dsList = StructKeyList(sDatasources, arguments.delimiter) /&gt;
+	&lt;cfreturn ListSort(dsList, arguments.sort_type, arguments.sort_order, arguments.delimiter) /&gt;
 &lt;/cffunction&gt;
 </code></pre>
 <h3>Testing all 3 methods:</h3>
@@ -1439,12 +1433,12 @@ For this to work correctly, you&#39;ll need to set the correct CFIDE password.</
 &lt;cfset my_datasource_list = getDatasourceList() /&gt;
 
 &lt;cfoutput&gt;
-    #verifyDsnList1(my_datasource_list)#
-    &lt;br /&gt;
-    #verifyDsnList2(my_datasource_list)#
-    &lt;br /&gt;
-    #verifyDsnList3(my_cfide_password, my_datasource_list)#
-    &lt;br /&gt;
+	#verifyDsnList1(my_datasource_list)#
+	&lt;br /&gt;
+	#verifyDsnList2(my_datasource_list)#
+	&lt;br /&gt;
+	#verifyDsnList3(my_cfide_password, my_datasource_list)#
+	&lt;br /&gt;
 &lt;/cfoutput&gt;
 </code></pre>
 ]]></content:encoded>
@@ -1453,7 +1447,7 @@ For this to work correctly, you&#39;ll need to set the correct CFIDE password.</
         <item>
             <title><![CDATA[ESX Wave Organizer FAQ]]></title>
             <link>https://www.skratchdot.com/2009/12/esx-wave-organizer-faq</link>
-            <guid>https://www.skratchdot.com/2009/12/esx-wave-organizer-faq</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2009/12/esx-wave-organizer-faq</guid>
             <pubDate>Tue, 08 Dec 2009 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>After receiving a few emails, I&#39;ve decided to create the following FAQ:</p>
 <p><a href="/projects/esx-wave-organizer/faq/">https://www.skratchdot.com/projects/esx-wave-organizer/faq/</a></p>
@@ -1463,7 +1457,7 @@ For this to work correctly, you&#39;ll need to set the correct CFIDE password.</
         <item>
             <title><![CDATA[Cannot insert duplicate key row in object 'xxx' with unique index 'yyy']]></title>
             <link>https://www.skratchdot.com/2009/09/cannot-insert-duplicate-key-row-in-object-xxx-with-unique-index-yyy</link>
-            <guid>https://www.skratchdot.com/2009/09/cannot-insert-duplicate-key-row-in-object-xxx-with-unique-index-yyy</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2009/09/cannot-insert-duplicate-key-row-in-object-xxx-with-unique-index-yyy</guid>
             <pubDate>Wed, 23 Sep 2009 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>The other month I ran into an issue when trying to
 run a simple update statement on a table in SQL Server 2005.
@@ -1478,11 +1472,11 @@ the product related tables (ie: <strong>Sizes</strong>, <strong>Colors</strong>,
 <p>The index on <strong>MyProductView</strong> that was causing the constraint violation looked something like this:</p>
 <pre><code class="language-sql">CREATE UNIQUE CLUSTERED INDEX IXCL_MyProductView ON MyProductView
 (
-    product_id,
-    color_id,
-    size_id,
-    inventory_id,
-    currency_id
+	product_id,
+	color_id,
+	size_id,
+	inventory_id,
+	currency_id
 }
 </code></pre>
 <p>Notice the <strong>active</strong> flag/column is not in the clustered
@@ -1493,11 +1487,11 @@ clauses for the <strong>MyProductView</strong>, so no rows should&#39;ve been ad
 or deleted from the view after running the update statement.</p>
 <p>To confirm the validity of the <strong>IXCL_MyProductView</strong> constraint, I could run:</p>
 <pre><code class="language-sql">SELECT
-    product_id, color_id, size_id, inventory_id, currency_id, COUNT(1) AS confirmConstraint
+	product_id, color_id, size_id, inventory_id, currency_id, COUNT(1) AS confirmConstraint
 FROM
-    MyProductView
+	MyProductView
 GROUP BY
-    product_id, color_id, size_id, inventory_id, currency_id
+	product_id, color_id, size_id, inventory_id, currency_id
 </code></pre>
 <p>As long as the <strong>IXCL_MyProductView</strong> constraint was in place,
 the <strong>confirmConstraint</strong> column could only have a value of 1.</p>
@@ -1525,7 +1519,7 @@ and the issue disappeared. I was able to run my UPDATE statement without error.<
         <item>
             <title><![CDATA[Getting Wordpress Post Counts to show up inside anchor tag]]></title>
             <link>https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag</link>
-            <guid>https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2009/09/getting-wordpress-post-counts-to-show-up-inside-anchor-tag</guid>
             <pubDate>Tue, 22 Sep 2009 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><em>NOTE: This post is referring to my old Wordpress blog. The theme has since changed.</em></p>
 <p>When creating this blog&#39;s theme, I decided I wanted the links in the side navigation
@@ -1545,11 +1539,7 @@ You can download both the original &quot;classic&quot; theme as well as my modif
 &quot;classic-modified&quot; <a href="/downloads/theme-tutorial-classic-modified.zip">here</a>.</p>
 <div class="info-section-note">
 NOTE: For detailed instructions on creating a Wordpress theme, there are many tutorials online.  Also, the <a href="http://codex.wordpress.org/Theme_Development">Wordpress.org</a> site has fairly detailed documentation.  The first tutorial I found via a google search was for entry level Wordpress developers, yet it was very helpful: <a href="http://www.wpdesigner.com/2007/02/19/so-you-want-to-create-wordpress-themes-huh/">www.wpdesigner.com</a>.
-</div>
-
-<div>&nbsp;</div>
-
-<p>For this tutorial, the first step to take is to copy the &quot;classic&quot; theme. Rename the copy &quot;classic-modified&quot; and place it in your themes folder.</p>
+</div><div>&nbsp;</div><p>For this tutorial, the first step to take is to copy the &quot;classic&quot; theme. Rename the copy &quot;classic-modified&quot; and place it in your themes folder.</p>
 <p>Now we&#39;re going to modify the <b>functions.php</b> file by adding lines 17-18 below:</p>
 <pre><code class="language-php">&lt;?php
 /**
@@ -1560,12 +1550,12 @@ NOTE: For detailed instructions on creating a Wordpress theme, there are many tu
 automatic_feed_links();
 
 if ( function_exists(&#39;register_sidebar&#39;) )
-    register_sidebar(array(
-        &#39;before_widget&#39; =&gt; &#39;&lt;li id=&quot;%1$s&quot; class=&quot;widget %2$s&quot;&gt;&#39;,
-        &#39;after_widget&#39; =&gt; &#39;&lt;/li&gt;&#39;,
-        &#39;before_title&#39; =&gt; &#39;&#39;,
-        &#39;after_title&#39; =&gt; &#39;&#39;,
-    ));
+	register_sidebar(array(
+		&#39;before_widget&#39; =&gt; &#39;&lt;li id=&quot;%1$s&quot; class=&quot;widget %2$s&quot;&gt;&#39;,
+		&#39;after_widget&#39; =&gt; &#39;&lt;/li&gt;&#39;,
+		&#39;before_title&#39; =&gt; &#39;&#39;,
+		&#39;after_title&#39; =&gt; &#39;&#39;,
+	));
 
 // Include the script that replaces the default archive widget
 require_once(&#39;functions-widgets.php&#39;);
@@ -1582,60 +1572,60 @@ require_once(&#39;functions-widgets.php&#39;);
  */
 class WP_Widget_Archives extends WP_Widget {
 
-    function WP_Widget_Archives() {
-        $widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
-        $this-&gt;WP_Widget(&#39;archives&#39;, __(&#39;Archives&#39;), $widget_ops);
-    }
+	function WP_Widget_Archives() {
+		$widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
+		$this-&gt;WP_Widget(&#39;archives&#39;, __(&#39;Archives&#39;), $widget_ops);
+	}
 
-    function widget( $args, $instance ) {
-        extract($args);
-        $c = $instance[&#39;count&#39;] ? &#39;1&#39; : &#39;0&#39;;
-        $d = $instance[&#39;dropdown&#39;] ? &#39;1&#39; : &#39;0&#39;;
-        $title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
+	function widget( $args, $instance ) {
+		extract($args);
+		$c = $instance[&#39;count&#39;] ? &#39;1&#39; : &#39;0&#39;;
+		$d = $instance[&#39;dropdown&#39;] ? &#39;1&#39; : &#39;0&#39;;
+		$title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
 
-        echo $before_widget;
-        if ( $title )
-            echo $before_title . $title . $after_title;
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
 
-        if ( $d ) {
+		if ( $d ) {
 ?&gt;
-        &lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;&lt;?php echo esc_attr(__(&#39;Select Month&#39;)); ?&gt;&lt;/option&gt; &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_dropdown_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;format&#39; =&gt; &#39;option&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt; &lt;/select&gt;
+		&lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;&lt;?php echo esc_attr(__(&#39;Select Month&#39;)); ?&gt;&lt;/option&gt; &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_dropdown_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;format&#39; =&gt; &#39;option&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt; &lt;/select&gt;
 &lt;?php
-        } else {
+		} else {
 ?&gt;
-        &lt;ul&gt;
-        &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt;
-        &lt;/ul&gt;
+		&lt;ul&gt;
+		&lt;?php wp_get_archives(apply_filters(&#39;widget_archives_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt;
+		&lt;/ul&gt;
 &lt;?php
-        }
+		}
 
-        echo $after_widget;
-    }
+		echo $after_widget;
+	}
 
-    function update( $new_instance, $old_instance ) {
-        $instance = $old_instance;
-        $new_instance = wp_parse_args( (array) $new_instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
-        $instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
-        $instance[&#39;count&#39;] = $new_instance[&#39;count&#39;] ? 1 : 0;
-        $instance[&#39;dropdown&#39;] = $new_instance[&#39;dropdown&#39;] ? 1 : 0;
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+		$new_instance = wp_parse_args( (array) $new_instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
+		$instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
+		$instance[&#39;count&#39;] = $new_instance[&#39;count&#39;] ? 1 : 0;
+		$instance[&#39;dropdown&#39;] = $new_instance[&#39;dropdown&#39;] ? 1 : 0;
 
-        return $instance;
-    }
+		return $instance;
+	}
 
-    function form( $instance ) {
-        $instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
-        $title = strip_tags($instance[&#39;title&#39;]);
-        $count = $instance[&#39;count&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
-        $dropdown = $instance[&#39;dropdown&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
+	function form( $instance ) {
+		$instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
+		$title = strip_tags($instance[&#39;title&#39;]);
+		$count = $instance[&#39;count&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
+		$dropdown = $instance[&#39;dropdown&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
 ?&gt;
-        &lt;p&gt;&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Title:&#39;); ?&gt;&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo esc_attr($title); ?&gt;&quot; /&gt;&lt;/p&gt;
-        &lt;p&gt;
-            &lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $count; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;count&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Show post counts&#39;); ?&gt;&lt;/label&gt;
-            &lt;br /&gt;
-            &lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $dropdown; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;dropdown&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Display as a drop down&#39;); ?&gt;&lt;/label&gt;
-        &lt;/p&gt;
+		&lt;p&gt;&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Title:&#39;); ?&gt;&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo esc_attr($title); ?&gt;&quot; /&gt;&lt;/p&gt;
+		&lt;p&gt;
+			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $count; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;count&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Show post counts&#39;); ?&gt;&lt;/label&gt;
+			&lt;br /&gt;
+			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $dropdown; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;dropdown&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Display as a drop down&#39;); ?&gt;&lt;/label&gt;
+		&lt;/p&gt;
 &lt;?php
-    }
+	}
 }
 
 ?&gt;
@@ -1648,163 +1638,161 @@ class WP_Widget_Archives extends WP_Widget {
 </code></pre>
 <p>We did this because we are effectively creating a new widget, so if we want to use the old &quot;Archives&quot; widget, we can.</p>
 <p>Now change the following function from:</p>
-<pre><code class="language-php">    function WP_Widget_Archives() {
-        $widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
-        $this-&gt;WP_Widget(&#39;archives&#39;, __(&#39;Archives&#39;), $widget_ops);
-    }
+<pre><code class="language-php">	function WP_Widget_Archives() {
+		$widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
+		$this-&gt;WP_Widget(&#39;archives&#39;, __(&#39;Archives&#39;), $widget_ops);
+	}
 </code></pre>
 <p>to:</p>
-<pre><code class="language-php">    function MyTheme_Widget_Archives() {
-        $widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
-        $this-&gt;WP_Widget(&#39;mytheme_archives&#39;, __(&#39;MyTheme Archives&#39;), $widget_ops);
-    }
+<pre><code class="language-php">	function MyTheme_Widget_Archives() {
+		$widget_ops = array(&#39;classname&#39; =&gt; &#39;widget_archive&#39;, &#39;description&#39; =&gt; __( &#39;A monthly archive of your blog&amp;#8217;s posts&#39;) );
+		$this-&gt;WP_Widget(&#39;mytheme_archives&#39;, __(&#39;MyTheme Archives&#39;), $widget_ops);
+	}
 </code></pre>
 <p>Notice that we not only changed the function name, but we changed the parameters to the WP_Widget call. We did this for the same reason explained above (this is a &quot;new&quot; widget, and we want to be able to switch back to the old version).</p>
-<div>&nbsp;</div>
-
-<p>For this next step, we are going to modify the <i>widget()</i>, <i>form()</i>, and <i>update()</i> calls. These are the functions that display the actual widget in the sidebar, and also display the widget details in the WordPress admin console. For this new widget, I am always going to display the post count, and I&#39;m never going to display the archive results as a dropdown, so I can remove a few of the variables that are in the default archive widget ($c, $count, $d, $dropdown). To achieve this, you can modify <b>functions-widgets.php</b> like so:</p>
+<div>&nbsp;</div><p>For this next step, we are going to modify the <i>widget()</i>, <i>form()</i>, and <i>update()</i> calls. These are the functions that display the actual widget in the sidebar, and also display the widget details in the WordPress admin console. For this new widget, I am always going to display the post count, and I&#39;m never going to display the archive results as a dropdown, so I can remove a few of the variables that are in the default archive widget ($c, $count, $d, $dropdown). To achieve this, you can modify <b>functions-widgets.php</b> like so:</p>
 <p>Before changes:</p>
-<pre><code class="language-php">    function widget( $args, $instance ) {
-        extract($args);
-        $c = $instance[&#39;count&#39;] ? &#39;1&#39; : &#39;0&#39;;
-        $d = $instance[&#39;dropdown&#39;] ? &#39;1&#39; : &#39;0&#39;;
-        $title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
+<pre><code class="language-php">	function widget( $args, $instance ) {
+		extract($args);
+		$c = $instance[&#39;count&#39;] ? &#39;1&#39; : &#39;0&#39;;
+		$d = $instance[&#39;dropdown&#39;] ? &#39;1&#39; : &#39;0&#39;;
+		$title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
 
-        echo $before_widget;
-        if ( $title )
-            echo $before_title . $title . $after_title;
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
 
-        if ( $d ) {
+		if ( $d ) {
 ?&gt;
-        &lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;&lt;?php echo esc_attr(__(&#39;Select Month&#39;)); ?&gt;&lt;/option&gt; &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_dropdown_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;format&#39; =&gt; &#39;option&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt; &lt;/select&gt;
+		&lt;select name=&quot;archive-dropdown&quot; onchange=&#39;document.location.href=this.options[this.selectedIndex].value;&#39;&gt; &lt;option value=&quot;&quot;&gt;&lt;?php echo esc_attr(__(&#39;Select Month&#39;)); ?&gt;&lt;/option&gt; &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_dropdown_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;format&#39; =&gt; &#39;option&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt; &lt;/select&gt;
 &lt;?php
-        } else {
+		} else {
 ?&gt;
-        &lt;ul&gt;
-        &lt;?php wp_get_archives(apply_filters(&#39;widget_archives_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt;
-        &lt;/ul&gt;
+		&lt;ul&gt;
+		&lt;?php wp_get_archives(apply_filters(&#39;widget_archives_args&#39;, array(&#39;type&#39; =&gt; &#39;monthly&#39;, &#39;show_post_count&#39; =&gt; $c))); ?&gt;
+		&lt;/ul&gt;
 &lt;?php
-        }
+		}
 
-        echo $after_widget;
-    }
+		echo $after_widget;
+	}
 
-    function update( $new_instance, $old_instance ) {
-        $instance = $old_instance;
-        $new_instance = wp_parse_args( (array) $new_instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
-        $instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
-        $instance[&#39;count&#39;] = $new_instance[&#39;count&#39;] ? 1 : 0;
-        $instance[&#39;dropdown&#39;] = $new_instance[&#39;dropdown&#39;] ? 1 : 0;
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+		$new_instance = wp_parse_args( (array) $new_instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
+		$instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
+		$instance[&#39;count&#39;] = $new_instance[&#39;count&#39;] ? 1 : 0;
+		$instance[&#39;dropdown&#39;] = $new_instance[&#39;dropdown&#39;] ? 1 : 0;
 
-        return $instance;
-    }
+		return $instance;
+	}
 
-    function form( $instance ) {
-        $instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
-        $title = strip_tags($instance[&#39;title&#39;]);
-        $count = $instance[&#39;count&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
-        $dropdown = $instance[&#39;dropdown&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
+	function form( $instance ) {
+		$instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;, &#39;count&#39; =&gt; 0, &#39;dropdown&#39; =&gt; &#39;&#39;) );
+		$title = strip_tags($instance[&#39;title&#39;]);
+		$count = $instance[&#39;count&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
+		$dropdown = $instance[&#39;dropdown&#39;] ? &#39;checked=&quot;checked&quot;&#39; : &#39;&#39;;
 ?&gt;
-        &lt;p&gt;&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Title:&#39;); ?&gt;&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo esc_attr($title); ?&gt;&quot; /&gt;&lt;/p&gt;
-        &lt;p&gt;
-            &lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $count; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;count&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Show post counts&#39;); ?&gt;&lt;/label&gt;
-            &lt;br /&gt;
-            &lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $dropdown; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;dropdown&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Display as a drop down&#39;); ?&gt;&lt;/label&gt;
-        &lt;/p&gt;
+		&lt;p&gt;&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Title:&#39;); ?&gt;&lt;/label&gt; &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo esc_attr($title); ?&gt;&quot; /&gt;&lt;/p&gt;
+		&lt;p&gt;
+			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $count; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;count&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;count&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Show post counts&#39;); ?&gt;&lt;/label&gt;
+			&lt;br /&gt;
+			&lt;input class=&quot;checkbox&quot; type=&quot;checkbox&quot; &lt;?php echo $dropdown; ?&gt; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;dropdown&#39;); ?&gt;&quot; /&gt; &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;dropdown&#39;); ?&gt;&quot;&gt;&lt;?php _e(&#39;Display as a drop down&#39;); ?&gt;&lt;/label&gt;
+		&lt;/p&gt;
 &lt;?php
-    }
+	}
 }
 
 ?&gt;
 </code></pre>
 <p>After changes:</p>
-<pre><code class="language-php">    function widget( $args, $instance ) {
-        extract($args);
-        $title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
+<pre><code class="language-php">	function widget( $args, $instance ) {
+		extract($args);
+		$title = apply_filters(&#39;widget_title&#39;, empty($instance[&#39;title&#39;]) ? __(&#39;Archives&#39;) : $instance[&#39;title&#39;]);
 
-        echo $before_widget;
-        if ( $title )
-            echo $before_title . $title . $after_title;
+		echo $before_widget;
+		if ( $title )
+			echo $before_title . $title . $after_title;
  ?&gt;
-        &lt;ul&gt;
-            // We will complete this in the next step
-        &lt;/ul&gt;
+		&lt;ul&gt;
+			// We will complete this in the next step
+		&lt;/ul&gt;
 &lt;?php
-        }
+		}
 
-        echo $after_widget;
-    }
+		echo $after_widget;
+	}
 
-    function update( $new_instance, $old_instance ) {
-        $instance = $old_instance;
-        $instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
+	function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+		$instance[&#39;title&#39;] = strip_tags($new_instance[&#39;title&#39;]);
 
-        return $instance;
-    }
+		return $instance;
+	}
 
-    function form( $instance ) {
-        //Defaults
-        $instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;) );
-        $title = esc_attr( $instance[&#39;title&#39;] );
+	function form( $instance ) {
+		//Defaults
+		$instance = wp_parse_args( (array) $instance, array( &#39;title&#39; =&gt; &#39;&#39;) );
+		$title = esc_attr( $instance[&#39;title&#39;] );
 ?&gt;
-        &lt;p&gt;
-            &lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e( &#39;Title:&#39; ); ?&gt;&lt;/label&gt;
-            &lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo $title; ?&gt;&quot; /&gt;
-        &lt;/p&gt;
+		&lt;p&gt;
+			&lt;label for=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot;&gt;&lt;?php _e( &#39;Title:&#39; ); ?&gt;&lt;/label&gt;
+			&lt;input class=&quot;widefat&quot; id=&quot;&lt;?php echo $this-&gt;get_field_id(&#39;title&#39;); ?&gt;&quot; name=&quot;&lt;?php echo $this-&gt;get_field_name(&#39;title&#39;); ?&gt;&quot; type=&quot;text&quot; value=&quot;&lt;?php echo $title; ?&gt;&quot; /&gt;
+		&lt;/p&gt;
 &lt;?php
-    }
+	}
 }
 
 ?&gt;
 </code></pre>
 <p>Now there&#39;s one final step. We need to actually display the archives. To do that, we need to modify the <i>widget()</i> function. In the last step, we were left with the following line:</p>
-<pre><code class="language-php">        &lt;ul&gt;
-            // We will complete this in the next step
-        &lt;/ul&gt;
+<pre><code class="language-php">		&lt;ul&gt;
+			// We will complete this in the next step
+		&lt;/ul&gt;
 </code></pre>
 <p>We are now going to complete this block of code. Open up <b>&quot;/wp-includes/general-template.php&quot;</b> and copy lines 799-825. Paste them into line 24 of <b>functions-widgets.php</b> which will give you:</p>
-<pre><code class="language-php">        &lt;ul&gt;
-        if ( &#39;monthly&#39; == $type ) {
-            $query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;
-            $key = md5($query);
-            $cache = wp_cache_get( &#39;wp_get_archives&#39; , &#39;general&#39;);
-            if ( !isset( $cache[ $key ] ) ) {
-                $arcresults = $wpdb-&gt;get_results($query);
-                $cache[ $key ] = $arcresults;
-                wp_cache_add( &#39;wp_get_archives&#39;, $cache, &#39;general&#39; );
-            } else {
-                $arcresults = $cache[ $key ];
-            }
-            if ( $arcresults ) {
-                $afterafter = $after;
-                foreach ( (array) $arcresults as $arcresult ) {
-                    $url = get_month_link( $arcresult-&gt;year, $arcresult-&gt;month );
-                    $text = sprintf(__(&#39;%1$s %2$d&#39;), $wp_locale-&gt;get_month($arcresult-&gt;month), $arcresult-&gt;year);
-                    if ( $show_post_count )
-                        $after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
-                    $output .= get_archives_link($url, $text, $format, $before, $after);
-                }
-            }
-        &lt;/ul&gt;
+<pre><code class="language-php">		&lt;ul&gt;
+		if ( &#39;monthly&#39; == $type ) {
+			$query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;
+			$key = md5($query);
+			$cache = wp_cache_get( &#39;wp_get_archives&#39; , &#39;general&#39;);
+			if ( !isset( $cache[ $key ] ) ) {
+				$arcresults = $wpdb-&gt;get_results($query);
+				$cache[ $key ] = $arcresults;
+				wp_cache_add( &#39;wp_get_archives&#39;, $cache, &#39;general&#39; );
+			} else {
+				$arcresults = $cache[ $key ];
+			}
+			if ( $arcresults ) {
+				$afterafter = $after;
+				foreach ( (array) $arcresults as $arcresult ) {
+					$url = get_month_link( $arcresult-&gt;year, $arcresult-&gt;month );
+					$text = sprintf(__(&#39;%1$s %2$d&#39;), $wp_locale-&gt;get_month($arcresult-&gt;month), $arcresult-&gt;year);
+					if ( $show_post_count )
+						$after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
+					$output .= get_archives_link($url, $text, $format, $before, $after);
+				}
+			}
+		&lt;/ul&gt;
 </code></pre>
 <p>The first thing you&#39;ll notice is the <b>if ( &#39;monthly&#39; == $type )</b> statement.  We can remove this clause, because the &quot;custom archive plugin&quot; will only show archives by month (I wanted to keep it simple- no need for other display types).  Also, this code is using a few global variables ($wpdb, $wp_locale) that aren&#39;t yet being used properly in our version of the <i>widget()</i> function. We need to modify <b>functions-widgets.php</b> again to have the following line which will declare our global variables for use inside the function:</p>
-<pre><code class="language-php">    function widget( $args, $instance ) {
-        global $wpdb, $wp_locale;
-        extract($args);
+<pre><code class="language-php">	function widget( $args, $instance ) {
+		global $wpdb, $wp_locale;
+		extract($args);
 </code></pre>
 <p>Also, when we copied code the first time, we didn&#39;t copy a few of the variables being used ($where and $join). Modify <b>functions-widgets.php</b> like so (adding lines 25-27):</p>
-<pre><code class="language-php">        &lt;ul&gt;
-        //filters
-        $where = apply_filters(&#39;getarchives_where&#39;, &quot;WHERE post_type = &#39;post&#39; AND post_status = &#39;publish&#39;&quot;, $r );
-        $join = apply_filters(&#39;getarchives_join&#39;, &quot;&quot;, $r);
+<pre><code class="language-php">		&lt;ul&gt;
+		//filters
+		$where = apply_filters(&#39;getarchives_where&#39;, &quot;WHERE post_type = &#39;post&#39; AND post_status = &#39;publish&#39;&quot;, $r );
+		$join = apply_filters(&#39;getarchives_join&#39;, &quot;&quot;, $r);
 
-        $query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;
+		$query = &quot;SELECT YEAR(post_date) AS `year`, MONTH(post_date) AS `month`, count(ID) as posts FROM $wpdb-&gt;posts $join $where GROUP BY YEAR(post_date), MONTH(post_date) ORDER BY post_date DESC $limit&quot;;
 </code></pre>
 <p>Another thing about the code we copied: we can ignore the $post<em>count variable (since we are _always</em> showing post counts). We also want to make sure the post count shows up inside our anchor tag. To accomplish that, we can change:</p>
 <pre><code class="language-php">$url = get_month_link( $arcresult-&gt;year, $arcresult-&gt;month );
 $text = sprintf(__(&#39;%1$s %2$d&#39;), $wp_locale-&gt;get_month($arcresult-&gt;month), $arcresult-&gt;year);
 if ( $show_post_count )
-    $after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
+	$after = &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
 $output .= get_archives_link($url, $text, $format, $before, $after);
 </code></pre>
 <p>to:</p>
@@ -1814,8 +1802,8 @@ $text .= &#39;&amp;nbsp;(&#39;.$arcresult-&gt;posts.&#39;)&#39; . $afterafter;
 $output .= get_archives_link($url, $text, $format, &#39;&lt;li&gt;&#39;, &#39;&lt;/li&gt;&#39;);
 </code></pre>
 <p>Also add the correct output line before the <i>widget()</i> function ends:</p>
-<pre><code class="language-php">        echo &#39;&lt;ul&gt;&#39; . $output . &#39;&lt;/ul&gt;&#39;;
-        echo $after_widget;
+<pre><code class="language-php">		echo &#39;&lt;ul&gt;&#39; . $output . &#39;&lt;/ul&gt;&#39;;
+		echo $after_widget;
 </code></pre>
 <p>Our hacked/modified version is almost complete. The last thing I&#39;m going to do is register the new archive widget (and unregister the default version). Do so by adding the following <i>mytheme_widget_init()</i> function to <b>functions-widgets.php</b>, then calling it:</p>
 <pre><code class="language-php">/**
@@ -1825,11 +1813,11 @@ $output .= get_archives_link($url, $text, $format, &#39;&lt;li&gt;&#39;, &#39;&l
  * @since 1.0
  */
 function mytheme_widget_init() {
-    // unregister some default widgets
-    unregister_widget(&#39;WP_Widget_Archives&#39;);
+	// unregister some default widgets
+	unregister_widget(&#39;WP_Widget_Archives&#39;);
 
-    // register my own widgets
-    register_widget(&#39;MyTheme_Widget_Archives&#39;);
+	// register my own widgets
+	register_widget(&#39;MyTheme_Widget_Archives&#39;);
 }
 
 add_action(&#39;widgets_init&#39;, &#39;mytheme_widget_init&#39;);
@@ -1865,17 +1853,15 @@ add_action(&#39;widgets_init&#39;, &#39;mytheme_widget_init&#39;);
   background: #eee;
 }
 </code></pre>
-<h4 style="text-decoration:underline">Comparison of default archive widget behavior vs. modified version</h4>
-
-<div class="clearfix" style="width:600px;margin:0 auto;">
-    <div class="left">
-        <p><b>BEFORE (default archive widget):</b></p>
-        <img src="/images/posts/2009/09/22/classic-screen.gif" alt="BEFORE (default archive widget)" title="Classic Theme Screenshot" width="212" height="102" />
-    </div>
-    <div class="right">
-        <p><b>AFTER (modified archive widget):</b></p>
-        <img src="/images/posts/2009/09/22/classic-modified-screen.gif" alt="AFTER (modified archive widget)" title="Classic-Modified Theme Screenshot" width="212" height="102" />
-    </div>
+<h4 style="text-decoration:underline">Comparison of default archive widget behavior vs. modified version</h4><div class="clearfix" style="width:600px;margin:0 auto;">
+	<div class="left">
+		<p><b>BEFORE (default archive widget):</b></p>
+		<img src="/images/posts/2009/09/22/classic-screen.gif" alt="BEFORE (default archive widget)" title="Classic Theme Screenshot" width="212" height="102" />
+	</div>
+	<div class="right">
+		<p><b>AFTER (modified archive widget):</b></p>
+		<img src="/images/posts/2009/09/22/classic-modified-screen.gif" alt="AFTER (modified archive widget)" title="Classic-Modified Theme Screenshot" width="212" height="102" />
+	</div>
 </div>
 ]]></content:encoded>
             <author>jeff@skratchdot.com (skratchdot)</author>
@@ -1883,7 +1869,7 @@ add_action(&#39;widgets_init&#39;, &#39;mytheme_widget_init&#39;);
         <item>
             <title><![CDATA[About]]></title>
             <link>https://www.skratchdot.com/2009/09/about-this-blog</link>
-            <guid>https://www.skratchdot.com/2009/09/about-this-blog</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2009/09/about-this-blog</guid>
             <pubDate>Wed, 09 Sep 2009 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>I&#39;m going to use this site to share some of my projects from the past and present.
 I probably won&#39;t be blogging much, but if I come across something interesting, there&#39;s
@@ -1894,7 +1880,7 @@ always a chance it&#39;ll find it&#39;s way here.</p>
         <item>
             <title><![CDATA[ESX Wave Organizer - Version 0.1.8 Released]]></title>
             <link>https://www.skratchdot.com/2005/07/esx-wave-organizer-version-0-1-8-released</link>
-            <guid>https://www.skratchdot.com/2005/07/esx-wave-organizer-version-0-1-8-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2005/07/esx-wave-organizer-version-0-1-8-released</guid>
             <pubDate>Sun, 17 Jul 2005 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<ul>
 <li><p>BUGFIX: Fixed a bug that was ignoring certain .aif/.aiff files.</p>
@@ -1925,7 +1911,7 @@ Search the forums for more info about this bug.</p>
         <item>
             <title><![CDATA[ESX Wave Organizer - Version 0.1.7 Released]]></title>
             <link>https://www.skratchdot.com/2005/07/esx-wave-organizer-version-0-1-7-released</link>
-            <guid>https://www.skratchdot.com/2005/07/esx-wave-organizer-version-0-1-7-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2005/07/esx-wave-organizer-version-0-1-7-released</guid>
             <pubDate>Sun, 10 Jul 2005 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<ul>
 <li><p>Added a &quot;first loading slot&quot; feature. Previously, all samples would try to load into slot #000.
@@ -1989,7 +1975,7 @@ to the end of the sample name (for instance: if you type &quot;bass&quot;, your 
         <item>
             <title><![CDATA[ESX Wave Organizer - Version 0.1.6 Released]]></title>
             <link>https://www.skratchdot.com/2005/06/esx-wave-organizer-version-0-1-6-released</link>
-            <guid>https://www.skratchdot.com/2005/06/esx-wave-organizer-version-0-1-6-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2005/06/esx-wave-organizer-version-0-1-6-released</guid>
             <pubDate>Fri, 17 Jun 2005 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<ul>
 <li><p>Fixed major &quot;SLICE&quot; problem. Before, if you moved a sample that had been sliced on the ESX, it would not
@@ -2012,7 +1998,7 @@ play back properly without being &quot;re-sliced&quot;. This has now been fixed.
         <item>
             <title><![CDATA[ESX Wave Organizer - Version 0.1.5 BETA]]></title>
             <link>https://www.skratchdot.com/2004/12/esx-wave-organizer-version-0-1-5-beta</link>
-            <guid>https://www.skratchdot.com/2004/12/esx-wave-organizer-version-0-1-5-beta</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2004/12/esx-wave-organizer-version-0-1-5-beta</guid>
             <pubDate>Wed, 01 Dec 2004 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<ul>
 <li>Added the &quot;Pattern Editor&quot; with limited functionality</li>
@@ -2023,7 +2009,7 @@ play back properly without being &quot;re-sliced&quot;. This has now been fixed.
         <item>
             <title><![CDATA[ESX Wave Organizer - Version 0.1.4 Released]]></title>
             <link>https://www.skratchdot.com/2004/11/esx-wave-organizer-version-0-1-4-released</link>
-            <guid>https://www.skratchdot.com/2004/11/esx-wave-organizer-version-0-1-4-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2004/11/esx-wave-organizer-version-0-1-4-released</guid>
             <pubDate>Wed, 17 Nov 2004 05:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<ul>
 <li><p>You can now view if a sample has been time sliced or not.</p>
@@ -2050,32 +2036,23 @@ the other checks I do is unnecessary.</p>
         <item>
             <title><![CDATA[ESX Wave Organizer - Version 0.1.3 Released]]></title>
             <link>https://www.skratchdot.com/2004/10/esx-wave-organizer-version-0-1-3-released</link>
-            <guid>https://www.skratchdot.com/2004/10/esx-wave-organizer-version-0-1-3-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2004/10/esx-wave-organizer-version-0-1-3-released</guid>
             <pubDate>Fri, 29 Oct 2004 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>It&#39;s been awhile, but I finally got around to updating the program. Here&#39;s a feature list:</p>
 <ul>
-<li><p>Added AIFF support. The program will recognize 8 or 16 bit, mono or stereo, .aif files.</p>
-</li>
-<li><p>Added Minimize and Maximize Buttons.</p>
-</li>
-<li><p>The Play and Loop buttons work for every sample now. If you press the Loop button on a
-sample that is not a loop, it will play the whole sample repeatedly.</p>
-</li>
-<li><p>Rearranged the main dialog. Now the Mono and Stereo lists are side by side (displaying more samples at once).</p>
-</li>
-<li><p>Got rid of the &quot;quick save&quot; buttons, and added regular &quot;Windows style&quot; open and save dialogs.</p>
-</li>
-<li><p>Added a &quot;Remove All Samples&quot; feature, which deletes all the samples from the workspace, but leaves
-the pattern and song data that is loaded.</p>
-</li>
-<li><p>Got rid of the file &quot;esxwaveorganizer.data&quot;. Now you only need the .exe file for the program to work.</p>
-</li>
-<li><p>Fixed the &quot;Clear Pattern &amp; Song Data&quot;. Previously, when you cleared all pattern data, each
+<li>Added AIFF support. The program will recognize 8 or 16 bit, mono or stereo, .aif files.</li>
+<li>Added Minimize and Maximize Buttons.</li>
+<li>The Play and Loop buttons work for every sample now. If you press the Loop button on a
+sample that is not a loop, it will play the whole sample repeatedly.</li>
+<li>Rearranged the main dialog. Now the Mono and Stereo lists are side by side (displaying more samples at once).</li>
+<li>Got rid of the &quot;quick save&quot; buttons, and added regular &quot;Windows style&quot; open and save dialogs.</li>
+<li>Added a &quot;Remove All Samples&quot; feature, which deletes all the samples from the workspace, but leaves
+the pattern and song data that is loaded.</li>
+<li>Got rid of the file &quot;esxwaveorganizer.data&quot;. Now you only need the .exe file for the program to work.</li>
+<li>Fixed the &quot;Clear Pattern &amp; Song Data&quot;. Previously, when you cleared all pattern data, each
 part&#39;s sample would be set to Mono Sample #000. Now, when you clear all pattern data, and load an
-.esx file into your sampler, each parts&#39; sample will be set to NONE (not Mono Sample #000).</p>
-</li>
-<li><p>Added a Menu with the options:</p>
-<ul>
+.esx file into your sampler, each parts&#39; sample will be set to NONE (not Mono Sample #000).</li>
+<li>Added a Menu with the options:<ul>
 <li><p>File:</p>
 <ul>
 <li><p>Open/Add Files To Workspace</p>
@@ -2117,7 +2094,7 @@ part&#39;s sample would be set to Mono Sample #000. Now, when you clear all patt
         <item>
             <title><![CDATA[ESX Wave Organizer - Version 0.1.2 Released]]></title>
             <link>https://www.skratchdot.com/2004/05/esx-wave-organizer-version-0-1-2-released</link>
-            <guid>https://www.skratchdot.com/2004/05/esx-wave-organizer-version-0-1-2-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2004/05/esx-wave-organizer-version-0-1-2-released</guid>
             <pubDate>Thu, 13 May 2004 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>A bug was fixed that would let you add a stereo sample when you shouldn&#39;t be
 able to. This would cause the available memory to be negative, which should never
@@ -2132,7 +2109,7 @@ it would still be added, because 3000 is less than 4000. Your memory left would 
         <item>
             <title><![CDATA[ESX Wave Organizer - Version 0.1.1 Released]]></title>
             <link>https://www.skratchdot.com/2004/05/esx-wave-organizer-version-0-1-1-released</link>
-            <guid>https://www.skratchdot.com/2004/05/esx-wave-organizer-version-0-1-1-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2004/05/esx-wave-organizer-version-0-1-1-released</guid>
             <pubDate>Sun, 09 May 2004 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>You can now simulate pressing the &quot;Play&quot; button by double clicking on a sample in the list.<br>Thanks to &quot;Roonan&quot; from Dave Randalls&#39; &quot;Korg-Electribe-SX&quot; Yahoo Forum for suggesting this.<br>Also, I fixed a bug which made ESX Wave Organizer ignore .wav files that had a &#39;smpl&#39; chunk
 with the &quot;number of samples&quot; value equal to 0. Thanks to Dmitry for helping find this.</p>
@@ -2142,7 +2119,7 @@ with the &quot;number of samples&quot; value equal to 0. Thanks to Dmitry for he
         <item>
             <title><![CDATA[ESX Wave Organizer - Version 0.1 Released]]></title>
             <link>https://www.skratchdot.com/2004/05/esx-wave-organizer-version-0-1-released</link>
-            <guid>https://www.skratchdot.com/2004/05/esx-wave-organizer-version-0-1-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2004/05/esx-wave-organizer-version-0-1-released</guid>
             <pubDate>Thu, 06 May 2004 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>I decided to release it a little early to start getting some feedback. As of right now,
 the &quot;Push Down&quot; and &quot;Push Up&quot; Buttons have no effect. Also, the &quot;Play&quot;, &quot;Loop&quot;, and &quot;Stop&quot;
@@ -2165,7 +2142,7 @@ selections.</p>
         <item>
             <title><![CDATA[ES-1(step) - Version 1.0.0 Released]]></title>
             <link>https://www.skratchdot.com/2003/09/es-1step-version-1-0-0-released</link>
-            <guid>https://www.skratchdot.com/2003/09/es-1step-version-1-0-0-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2003/09/es-1step-version-1-0-0-released</guid>
             <pubDate>Wed, 03 Sep 2003 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><strong>New Features Include:</strong></p>
 <ul>
@@ -2199,7 +2176,7 @@ and select which effects and parts are allowed to be assigned.</p>
         <item>
             <title><![CDATA[ES-1(step) - Version 0.2.1 Released]]></title>
             <link>https://www.skratchdot.com/2003/08/es-1step-version-0-2-1-released</link>
-            <guid>https://www.skratchdot.com/2003/08/es-1step-version-0-2-1-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2003/08/es-1step-version-0-2-1-released</guid>
             <pubDate>Sun, 10 Aug 2003 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<ul>
 <li><p>No install program in this version. Just unzip it and run it.</p>
@@ -2216,7 +2193,7 @@ ES1step will definately recognize MidiYoke&#39;s virtual ports.</p>
         <item>
             <title><![CDATA[ES-1(step) - Bug with install fixed]]></title>
             <link>https://www.skratchdot.com/2003/08/es-1step-bug-with-install-fixed</link>
-            <guid>https://www.skratchdot.com/2003/08/es-1step-bug-with-install-fixed</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2003/08/es-1step-bug-with-install-fixed</guid>
             <pubDate>Sat, 09 Aug 2003 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<ul>
 <li>The program I used to create the install package included some unneeded DLLs. The install wizard has been fixed.</li>
@@ -2227,7 +2204,7 @@ ES1step will definately recognize MidiYoke&#39;s virtual ports.</p>
         <item>
             <title><![CDATA[ES-1(step) - Version 0.2 Released]]></title>
             <link>https://www.skratchdot.com/2003/08/es-1step-version-0-2-released</link>
-            <guid>https://www.skratchdot.com/2003/08/es-1step-version-0-2-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2003/08/es-1step-version-0-2-released</guid>
             <pubDate>Fri, 08 Aug 2003 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>Thanks to some positive feedback and suggestions, I added these features:</p>
 <ul>
@@ -2246,7 +2223,7 @@ the ES-1. If you want to manually tweak knobs on the ES-1, just use this functio
         <item>
             <title><![CDATA[ES-1(step) - Version 0.1 Released]]></title>
             <link>https://www.skratchdot.com/2003/08/es-1step-version-0-1-released</link>
-            <guid>https://www.skratchdot.com/2003/08/es-1step-version-0-1-released</guid>
+            <guid isPermaLink="false">https://www.skratchdot.com/2003/08/es-1step-version-0-1-released</guid>
             <pubDate>Fri, 01 Aug 2003 04:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>The first version is released. You can download it: <a href="/projects/es1-step">here</a>.</p>
 ]]></content:encoded>

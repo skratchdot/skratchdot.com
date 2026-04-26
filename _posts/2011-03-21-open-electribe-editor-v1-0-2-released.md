@@ -14,7 +14,6 @@ tags:
 ### v1.0.2 - Released March 21, 2011
 
 - Pattern Tab improvements:
-
   - Can drag-and-drop patterns
 
   - Adding "Pattern Editor" tab
@@ -28,13 +27,11 @@ tags:
   - Can move patterns around without changing what songs they are used in.
 
 - Sample Tab improvements:
-
   - Adding "Pattern/Part Usage" tab
 
   - Can move samples around without changing what patterns they are used in.
 
 - Song Tab improvements:
-
   - Improving Song Event display (more human readable now)
 
 - Fixing Typos

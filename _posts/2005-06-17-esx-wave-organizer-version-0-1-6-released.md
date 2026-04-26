@@ -19,7 +19,6 @@ status: publish
 - Added "Set All Play Levels To" to the Functions menu. This will let you set them to either 0dB or +12dB.
 
 - Fixed typos:
-
   - changed "Fuctions" to "Functions"
 
   - changed "Exit Part Editor" to "Exit Pattern Editor"

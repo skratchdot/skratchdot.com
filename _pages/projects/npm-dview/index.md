@@ -67,69 +67,55 @@ using [Grunt](http://gruntjs.com/).
 ## Release History
 
 - Version 2.0.3 - Released Apr 11, 2016
-
   - fixed undefined when using --hideLocal
 
 - Version 2.0.2 - Released Apr 10, 2016
-
   - add --hideLocal cli option (thanks [@syarul](https://github.com/syarul))
 
 - Version 2.0.1 - Released Apr 9, 2016
-
   - updating README
   - updating package dependencies
 
 - Version 2.0.0 - Released Aug 25, 2015
-
   - adding --excludeCurrent command line option.
 
 - Version 1.3.0 - Released Aug 16, 2015
-
   - adding an --outputFile argument
   - adding a progress bar
   - changing the format of the json output
 
 - Version 1.2.0 - Released Aug 14, 2015
-
   - Show ticks and crosses in place of boolean (for whether or not version is current)
   - New cli option that allows json to be output instead of a table
 
 - Version 1.1.2 - Released Nov 17, 2014
-
   - url test now just checks for presence of '/'
 
 - Version 1.1.1 - Released Oct 22, 2014
-
   - url parsing bugfix.
   - stop trying to get remote version for urls.
 
 - Version 1.1.0 - Released Oct 21, 2014
-
   - stop processing urls and don't update package.json with ???
 
 - Version 1.0.0 - Released Aug 4, 2014
-
   - now processing peerDependencies.
   - changed cli option names.
   - auto updating package.json when `--update` option is passed.
 
 - Version 0.3.0 - Released June 2, 2014
-
   - No longer throwing error when only devDependencies are found
 
 - Version 0.2.0 - Released May 18, 2013
-
   - Adding hardcoded column widths
 
 - Version 0.1.1 - Released May 3, 2013
-
   - New columns: "Local" and "Current?"
   - Changed column name: "Requested Version" -> "Requested"
   - Changed column name: "Remote Version" -> "Remote"
   - Updating "async" version
 
 - Version 0.1.0 - Released April 13, 2013
-
   - Initial Implementation
 
 ## Todo

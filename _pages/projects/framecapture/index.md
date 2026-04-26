@@ -29,5 +29,4 @@ a border to it in one swoop.
 ## Version History
 
 - v1.0 (Released July 14, 2012)
-
   - Initial Release
