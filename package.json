@@ -43,7 +43,6 @@
     "firebase-tools": "^15.15.0",
     "fs-extra": "^11.3.4",
     "glob": "^13.0.6",
-    "globals": "^17.5.0",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",
     "marked": "^18.0.2",
