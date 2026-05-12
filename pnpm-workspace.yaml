@@ -1,0 +1,5 @@
+allowBuilds:
+  protobufjs: false
+  re2: false
+  sharp: true
+  unrs-resolver: false
