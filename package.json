@@ -30,7 +30,6 @@
   "keywords": [],
   "dependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/glob": "^9.0.0",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@typescript-eslint/parser": "^8.59.0",

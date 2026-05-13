@@ -1,6 +1,7 @@
 _ignore
 _private
 .next
+next-env.d.ts
 node_modules
 old
 out
